@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="f10395e237be4c90bbf6b876a05cb0b2" Name="Diagram1" ZoomLevel="50">
+        <EntityTypeShape EntityType="MW_TestModel.C_Section_Feild_Mapping" Width="1.5" PointX="0.5" PointY="0.5" />
+        <EntityTypeShape EntityType="MW_TestModel.FieldStatusMaster" Width="1.5" PointX="3" PointY="2" />
+        <EntityTypeShape EntityType="MW_TestModel.M_Module" Width="1.5" PointX="6" PointY="3.5" />
+        <EntityTypeShape EntityType="MW_TestModel.m_Plant_Group" Width="1.5" PointX="9" PointY="5" />
+        <EntityTypeShape EntityType="MW_TestModel.SectionFieldMaster" Width="1.5" PointX="12" PointY="6.5" />
+        <EntityTypeShape EntityType="MW_TestModel.SectionMaster" Width="1.5" PointX="15" PointY="8" />
+        <AssociationConnector Association="MW_TestModel.FK_C_Section_Feild_Mapping_M_Module" />
+        <AssociationConnector Association="MW_TestModel.FK_C_Section_Feild_Mapping_m_Plant_Group" />
+        <AssociationConnector Association="MW_TestModel.FK_C_Section_Feild_Mapping_SectionFieldMaster" />
+        <AssociationConnector Association="MW_TestModel.FK_FinanceSection_FieldStatusMaster" />
+        <AssociationConnector Association="MW_TestModel.FK_SectionFieldMaster_SectionMaster" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

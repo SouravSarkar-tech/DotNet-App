@@ -1,0 +1,55 @@
+﻿
+.navigationBox a
+{
+    background-color: #EDF5FF;/*#9EACC0;*/
+    color: #000000;
+    padding: 8px 0px 8px 5px;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 1px solid #25354D;
+    display: block;
+    height: 100%;
+    width: 97%;
+    text-align:left;
+}
+
+
+.navigationBox a:hover
+{
+    background-color: #375073;
+    color: #FFFFFF;
+    border-color: #182433;
+}
+.navigationBox a.Active
+{
+    background-color: #506A8D; /*#C2D6D6;*/
+    color: #FFFFFF;
+    border: 1px solid #000000;
+   
+}
+
+.navigationBox a.greenStatus
+{
+    background-color: #99CCFF; /*#506A8D;*/
+    color: #000000;
+    border: 1px solid #25354D;
+   
+}
+
+.navigationBox a.redStatus
+{
+    background-color: #F5A9A9;
+    color: #282e32;
+    border: 1px solid #464c54;
+   
+}
+
+.navigationBox a.ROHStatus
+{
+    background-color: #A9B2F6;
+    color: #000000;
+    border: 1px solid #000000;
+}

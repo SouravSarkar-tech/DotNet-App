@@ -1,0 +1,181 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="Shared_MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<%@ Register Namespace="AjaxControlToolkit" Assembly="AjaxControlToolkit" TagPrefix="ajax" %>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <%--<meta http-equiv="X-UA-Compatible" content="IE=8">--%>
+    <title>:: MWT ::</title>
+    <link href="../stylesheet/main.css" rel="stylesheet" type="text/css" />
+    <link href="../stylesheet/autocomplete.css" rel="stylesheet" type="text/css" />
+    <link href="../stylesheet/Paging.css" rel="stylesheet" type="text/css" />
+    <script src="../js/jquery-1.6.4.js" type="text/javascript"></script>
+    <script src="../js/jquery.min.js" type="text/javascript"></script>
+    <script src="../js/jquery-ui-1.8.15.custom.min.js" type="text/javascript"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <ajax:ToolkitScriptManager ID="sm" runat="server">
+    </ajax:ToolkitScriptManager>
+    <div id="outer_main">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+                <td height="82">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td height="82">
+                                <img src="../images/Lupin.jpeg" alt="" border="0" style="height: 56px; width: 57px" />
+                            </td>
+                            <td width="500" valign="bottom" align="right">
+                                <table border="0" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td>
+                                            &nbsp;
+                                        </td>
+                                        <td valign="top" width="230px">
+                                            <table width="100%" cellpadding="0" cellspacing="1">
+                                                <tr valign="top" align="left">
+                                                    <td class="user">
+                                                        Welcome
+                                                    </td>
+                                                    <td class="user">
+                                                        :
+                                                    </td>
+                                                    <td class="id" align="left">
+                                                        <asp:Label ID="lblUserName" CssClass="WelcomeBar" runat="server" />
+                                                    </td>
+                                                </tr>
+                                                <tr valign="top" align="left">
+                                                    <td class="user">
+                                                        Profile
+                                                    </td>
+                                                    <td class="user">
+                                                        :
+                                                    </td>
+                                                    <td class="id" align="left">
+                                                        <asp:Label ID="lblProfile" CssClass="WelcomeBar" runat="server" />
+                                                    </td>
+                                                </tr>
+                                                <tr valign="top" align="left">
+                                                    <td class="user">
+                                                        Date
+                                                    </td>
+                                                    <td class="user">
+                                                        :
+                                                    </td>
+                                                    <td class="id" align="left">
+                                                        <asp:Label ID="lblDate" CssClass="WelcomeBar" runat="server" />
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td>
+                                            <%--<img src="../images/accenture_logo.gif" alt="" border="0" style="margin-bottom: 15px;" />--%>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="menu">
+                        <tr>
+                            <td>
+                                <asp:Menu ID="Menu1" DataSourceID="xmlDataSource" runat="server" BackColor="Transparent"
+                                    DynamicHorizontalOffset="2" Font-Names="Verdana" ForeColor="#FFFFFF" StaticSubMenuIndent="10px"
+                                    StaticDisplayLevels="1" Orientation="Horizontal" Font-Size="small">
+                                    <DataBindings>
+                                        <asp:MenuItemBinding DataMember="MenuItem" NavigateUrlField="NavigateUrl" TextField="MenuName"
+                                            TargetField="Target" ToolTipField="ToolTip" />
+                                    </DataBindings>
+                                    <StaticMenuStyle VerticalPadding="2px" />
+                                    <StaticSelectedStyle BackColor="#ffffff" />
+                                    <StaticMenuItemStyle Font-Bold="True" CssClass="staticMenuItemStyle" HorizontalPadding="10px"
+                                        VerticalPadding="2px" ItemSpacing="5px" />
+                                    <DynamicMenuStyle BackColor="#FFFFFF" Font-Bold="False" ForeColor="#333333" BorderColor="#808080"
+                                        BorderWidth="1px" BorderStyle="Solid" />
+                                    <DynamicSelectedStyle BackColor="#FFFFFF" />
+                                    <DynamicMenuItemStyle BackColor="#FFFFFF" Font-Bold="False" ForeColor="#333333" HorizontalPadding="20px"
+                                        VerticalPadding="3px" />
+                                    <DynamicHoverStyle BackColor="#E6E6E6" Font-Bold="False" ForeColor="#333333" />
+                                    <StaticHoverStyle BackColor="#FFFFFF" Font-Bold="False" ForeColor="#333333" />
+                                </asp:Menu>
+                                <%-- <asp:Menu ID="Menu1" DataSourceID="xmlDataSource" runat="server" BackColor="Transparent"
+                                    DynamicHorizontalOffset="2" Font-Names="Verdana" ForeColor="#FFFFFF" StaticSubMenuIndent="10px"
+                                    StaticDisplayLevels="1" Orientation="Horizontal" Font-Size="small">
+                                    <DataBindings>
+                                        <asp:MenuItemBinding DataMember="MenuItem" NavigateUrlField="NavigateUrl" TextField="MenuName"
+                                            ToolTipField="ToolTip" />
+                                    </DataBindings>
+                                    <StaticMenuStyle VerticalPadding="2px" />
+                                    <StaticSelectedStyle BackColor="#ffffff" />
+                                    <StaticMenuItemStyle Font-Bold="True" CssClass="staticMenuItemStyle" HorizontalPadding="10px"
+                                        VerticalPadding="2px" ItemSpacing="5px" />
+                                    <DynamicMenuStyle BackColor="#eb922c" />
+                                    <DynamicSelectedStyle BackColor="#FFFFFF" />
+                                    <DynamicMenuItemStyle CssClass="dynamicMenuItemStyle" HorizontalPadding="20px" VerticalPadding="3px" />
+                                    <DynamicHoverStyle BackColor="#FAC004" Font-Bold="False" ForeColor="White" />
+                                    <StaticHoverStyle BackColor="#a32c2c" Font-Bold="True" ForeColor="White" />
+                                </asp:Menu>--%>
+                                <asp:XmlDataSource ID="xmlDataSource" EnableCaching="false" TransformFile="~/TransformXSLT.xsl"
+                                    XPath="MenuItems/MenuItem" runat="server" />
+                            </td>
+                            <td align="right">
+                                <asp:LinkButton Text="Logout" ID="lnkLogout" runat="server" ForeColor="White" OnClick="lnkLogout_Click"
+                                    Style="font-family: Cambria;" CausesValidation="false" />&nbsp;
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td height="5">
+                </td>
+            </tr>
+            <tr>
+                <td align="center" valign="top">
+                    <table width="99%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td valign="top" align="center">
+                                <div id="divContainer" style="width: 100%; min-height: 500px; padding-top: 20px;
+                                    padding-bottom: 100px;">
+                                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                    </asp:ContentPlaceHolder>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left" valign="top">
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                        <td width="9" align="left" valign="top">
+                                            <img src="../images/btm_left.jpg" alt="" border="0" />
+                                        </td>
+                                        <td align="right" valign="middle" background="../images/btm_middle_bg.jpg" class="txt_normal copyright_txt_normal">
+                                            <%--Copyright @ 2013, All rights reserved by Accenture.--%>
+                                        </td>
+                                        <td width="9" align="right" valign="top">
+                                            <img src="../images/btm_right.jpg" alt="" border="0" />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="1" align="left" valign="top">
+                                &nbsp;
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,5 @@
+E:\MWT Development\MT\LDAPHelper\bin\x64\Debug\LDAPHelper.dll
+E:\MWT Development\MT\LDAPHelper\bin\x64\Debug\LDAPHelper.pdb
+E:\MWT Development\MT\LDAPHelper\obj\x64\Debug\LDAPHelper.dll
+E:\MWT Development\MT\LDAPHelper\obj\x64\Debug\LDAPHelper.pdb
+E:\MWT Development\MT\LDAPHelper\obj\x64\Debug\LDAPHelper.csprojResolveAssemblyReference.cache

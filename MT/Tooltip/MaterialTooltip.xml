@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ToolTips>
+  <Section id="3">
+    <control id="ddlMaterialGroup">
+      <toolTip>
+        {h3}Material Group{/h3}
+        {p}Key that you use to group together several {a href="sapevent:DOCU_LINK\DS:GLOS.material"}{strong}materials{/strong}{/a} or {a href="sapevent:DOCU_LINK\DS:GLOS.service"}{strong}services{/strong}{/a} with the same attributes, and to assign them to a particular material group.{/p}
+        {h3}Use{/h3}{p}You can use material groups to:{/p}{ul}{li}Restrict the scope of analyses{/li}{/ul}{ul}
+        {li}Search specifically for material master records via {a href="sapevent:DOCU_LINK\DS:GLOS.search_help"}{strong}search helps{/strong}{/a}{/li}
+        {/ul}{p}  {/p}{h3}Dependencies{/h3}
+        {p}If you have not defined a {a href="sapevent:DOCU_LINK\DS:GLOS.material_group_hierarchy"}{strong}material group hierarchy{/strong}{/a} using the classification system, you maintain material groups in Customizing for the {em}Material Master{/em} in {a href="sapevent:DOCU_LINK\DS:SIMG.SIMG_CFMENUOLMSOMSF"}{strong}Define material groups{/strong}{/a}.{/p}
+        {p}If you have defined a material group hierarchy, which is normally the case in retail, you maintain material groups in Customizing for {a href="sapevent:DOCU_LINK\DS:BOOK.SIMG_OWGR"}{strong}Material Groups{/strong}{/a} or from the initial {em}Retailing{/em} screen by choosing {em}Master data{/em} -&gt; {em}Material group{/em}.{/p}
+      </toolTip>
+      <width>400</width>
+    </control>
+    <control id="txtItemDesc">
+      <toolTip>
+        {h3}Item Description{/h3}
+        {p}To be  written specific item name e.g  Pipe , Valve , Vac Gauge, Cable,pH meter, Plate,Filter,Cable Tray,Lug,Pump,Mech Seal and Cable etc...){/p}
+      </toolTip>
+      <width>400</width>
+    </control>
+    <control id="txtItemType">
+      <toolTip>
+        {h3}Item Type{/h3}
+        {p}To be written down the type of items e.g. Pipe : ERW or SML type ; Valve  : Ball , Gate , Globe,Angle Type ;  Plate : Chequered  or plain type ; Filter : Hepa, Microvee or Pre type ; {/p}
+      </toolTip>
+      <width>400</width>
+    </control>
+    <control id="txtMFGStd">
+      <toolTip>
+        {h3}MFG Standard{/h3}
+        {p}To be written standard of manufacturing or testing of the items if applicable e.g. IS1239 Std of MS and GI pipe, IS 2062 std of MS Plate{/p}
+      </toolTip>
+      <width>400</width>
+    </control>
+    <control id="txtRangeCapacity">
+      <toolTip>
+        {h3}Range / Capacity{/h3}
+        {p}To be written down the range of item e.g. Pre Gauge having range from 0-6 Kg/cm2,formic acid 98-100% etc. If material is defined in capacity then written down the capacity of items e.g. Re boiler 20m2 area , Tank  25 Kl , pump 400LPH etc.{/p}
+      </toolTip>
+      <width>400</width>
+    </control>
+    <control id="txtAvgLeastCnt">
+      <toolTip>
+        {h3}Accuracy / Least Count{/h3}
+        {p}To be written item’s accuracy or least count if applicable e.g. ABT Meter 0.2S accuracy Class, Papet Dial Gauge 0.1mm Least Count.{/p}
+      </toolTip>
+      <width>400</width>
+    </control>
+    <control id="txtSupplyVolt">
+      <toolTip>
+        {h3}Supply Voltage{/h3}
+        {p}To be written down the required supply voltage for items e.g. PT required supply voltage 24VDC{/p}
+      </toolTip>
+      <width>400</width>
+    </control>
+    <control id="txtIO">
+      <toolTip>
+        {h3}Input / Output{/h3}
+        {p}Required Input / Output for items to be write down e.g. Flow meter required 4-20mA , for PT required 4-20mA input / output.{/p}
+      </toolTip>
+      <width>400</width>
+    </control>
+    <control id="txtManufacturerPartNo">
+      <toolTip>
+        {h3}Manufacturer Part No{/h3}
+        {p}Equipment spares OEM part number to be written down e.g. Crankshaft of KCX 6 PN 3394030050 .{/p}
+      </toolTip>
+      <width>400</width>
+    </control>
+    <control id="txtMakeMachModelNo">
+      <toolTip>
+        {h3}Make, Machine name and Model No{/h3}
+        {p}Spares / Equipment make to be written also spares required for Machine name to be writen along with model no. e.g. Spring plate is item and required it for Discharge valve spares of Kirlsokar make compressor, Ring Gasket EPDM PN 32330-2912-9 Of PHE Model MK15W.{/p}
+      </toolTip>
+      <width>400</width>
+    </control>
+  </Section>
+
+
+  <Section id="8">
+    <control id="ddlMrpGroup">
+      <toolTip>
+        {h3}MRP Group{/h3}{p}The MRP group contains all the materials from the point of view of MRP for assigning special control parameters for the total planning run. These control parameters include, for example, the strategy group, the consumption mode, and the planning horizon.{/p}
+        {h3}Use{/h3}{p}For each MRP group, control parameters can be created for total planning in Customizing for MRP which deviate from the plant parameters.{/p}
+        {h3}Note{/h3}{p}If this field has not been maintained, the system uses the material type instead of the MRP group. In this case, the material type has to be maintained as the MRP group in Customizing.{/p}
+      </toolTip>
+      <width>650</width>
+    </control>
+    <control id="ddlMrpType">
+      <toolTip>
+        {h3}MRP Type{/h3}{p}Key that determines whether and how the material is planned. You have the following options:{/p}{ul}{li}Manual {a href="SAPEVENT:DOCU_LINK\GL:reorder_point_planning"}{strong}reorder point planning{/strong}{/a}{/li}{/ul}{ul}
+        {li}Automatic reorder point planning{/li}{/ul}{ul}{li}{a href="SAPEVENT:DOCU_LINK\DS:GLOS.3526C357AFAB52B9E10000009B38F974"}{strong}Forecast-based planning{/strong}{/a}{/li}{/ul}{ul}{li}Material requirements planning with forecasts for unplanned consumption{/li}
+        {/ul}{ul}{li}Master production scheduling (MPS){/li}{/ul}
+      </toolTip>
+      <width>650</width>
+    </control>
+    <control id="ddlMrpController">
+      <toolTip>
+        {h3}MRP Controller (Materials Planner){/h3}
+        {p}Specifies the number of the {strong}MRP controller{/strong}{/a} or group of MRP controllers responsible for {strong}material planning{/strong}{/a} for the material.{/p}
+      </toolTip>
+      <width>650</width>
+    </control>
+    <control id="ddlLotSize">
+      <toolTip>
+        {h3}Lot size (materials planning){/h3}
+        {p}Key that determines which {strong}lot-sizing procedure{/strong}{/a} the system uses within materials planning to calculate the quantity to be procured or produced.{/p}
+      </toolTip>
+      <width>650</width>
+    </control>
+  </Section>
+  <Section id="9">
+    <control id="ddlQuotaArrangementUsage">
+      <toolTip>
+        {img src="../../images/Help/Material/QuotaArrUsage.JPG" /}
+      </toolTip>
+      <width>400</width>
+    </control>
+    <control id="ddlSchedulingMKey">
+      <toolTip>
+        {img src="../../images/Help/Material/ScheduleMarginKey.JPG" /}
+      </toolTip>
+      <width>680</width>
+    </control>
+    <control id="ddlIssueStorageLocation">
+      <toolTip>
+        {h3}Issue Storage Location{/h3}{p}In the case of a material produced in-house, this is the key of the{strong}storage location{/strong}{/a} that is copied to the {strong}planned order{/strong},{strong}production order{/strong}, or {strong}run schedule quantity{/strong}.{/p}
+        {ul}{li}If the material is a component, it is the issuing storage location to which a {strong}backflush{/strong} is posted.{/li}
+        {/ul}{ul}{li}If the material is produced, it is the receiving storage location to which the receipt of the material is posted.{/li}
+        {/ul}{p} {/p}{h3}Procedure{/h3}{p}You specify the receiving storage location for repetitive manufacturing in the production version for the material master record.{/p}
+      </toolTip>
+      <width>680</width>
+    </control>
+    <control id="ddlProposedSupplyArea">
+      <toolTip>
+        {h3}Proposed Supply Area in Material Master Record{/h3}
+        {p}The supply area is used as an interim storage area on the shop floor which is used to provide materials directly at the production line.{/p}
+        {p}The proposed supply area is mainly used for KANBAN materials that are only or usually provided at one supply area in a plant. Here, this supply area can be easily saved in the system.{/p}
+        {p}The proposed supply area is used, for example, to determine the supply area for the dependent requirements of a material.{br /}The supply area in the dependent requirements of a material is required:{/p}
+        {ul}{li}to enable the system to calculate the KANBAN control cycles automatically{/li}{/ul}
+        {ul}{li}to enable you to select requirements in the pull list with reference to a supply area{/li}{/ul}
+      </toolTip>
+      <width>680</width>
+    </control>
+    <control id="ddlRangeCoverage">
+      <toolTip>
+        {h3}Range of coverage profile{/h3}{p}The range of coverage profile contains the parameters for calculating the dynamic safety stock. This is a statistical calculation on the basis of average daily requirements.{/p}
+        {h3}Use{/h3}{p}The dynamic safety stock is calculated depending on the requirements within a specified period and the range of coverage.{/p}
+        {p} {/p}{h3}Dependencies{/h3}{p}The range of coverage profiles (period length for calculating the average consumption, range of coverage, and so on) are maintained in Customizing in the MRP screen.{/p}
+      </toolTip>
+      <width>680</width>
+    </control>
+  </Section>
+
+  <Section id="11">
+    <control id="ddlDependentReq">
+      <toolTip>
+        {h3}Dependent requirements ind. for individual and coll. reqmts{/h3}
+        {p}Indicator determining whether the following requirements are allowed for the {strong}dependent requirements{/strong} of the material:{/p}
+        {ul}{li}Individual requirements{/li}{/ul}{ul}Requirement quantities of the dependent material are stated individually.{/ul}
+        {ul}{li}Collective requirements{/li}{/ul}{ul}Requirement quantities of the dependent material are grouped together.{/ul}
+        {h3}Use{/h3}{p}You can maintain this indicator in the following places:{/p}{ul}{li}In the material master record{/li}{/ul}{ul}
+        {li}For the explosion type of the BOM item (in Customizing for {em}Basic Data{/em} in {strong}Define Explosion Types{/strong}){/li}
+        {/ul}{p}The setting for the explosion type overrides that in the material master record.{/p}{h3}Dependencies{/h3}
+        {p}If the material is assigned to a material type that does not allow quantity-based inventory management in this plant, you can set the indicator to individual requirements only.{/p}
+        {p}If the stock is to be managed in {strong}sales order stock{/strong} or {strong}project stock{/strong}, the indicator must be set to one of the following options:{/p}
+        {ul}{li}Individual and collective requirements{/li}{/ul}{ul}{li}Individual requirements only{/li}{/ul}
+        {p}If a material managed in project stock is to be procured from another plant using a cross-company-code stock transport order,
+        the indicator must be set to {em}2{/em} (collective requirements) in the issuing plant because, in this specific context, individual project stock management is not possible in both plants.{/p}
+      </toolTip>
+      <width>680</width>
+    </control>
+    <control id="ddlMRPRelevanceDepReq">
+      <toolTip>
+        {h3}MRP relevancy for dependent requirements{/h3}{p}This indicator controls whether dependent requirements are relevant to MRP or not. Dependent requirements include dependent reservations and stock transfer requirements.{/p}
+        {h3}Use{/h3}{p}You only use this indicator in connection with planning strategies for make-to-stock production, assembly planning. Note that the indicator {strong}Dependent requirements not relevant to MRP{/strong} should only be used when, for example, planned independent requirements exist for an assembly. In this case, no receipt elements for the dependent requirements in MRP should be created as receipts have already been created for the planned independent requirements.{/p}
+      </toolTip>
+      <width>680</width>
+    </control>
+    <control id="ddlFairShareRule">
+      <toolTip>
+        {h3}Fair share rule{/h3}{p}If demand exceeds supply, DRP uses fair share logic to calculate deployment based on on the available to deploy (ATD) quantity, the open sales orders, the safety stock, and the forecast.{/p}
+        {h3}Procedure{/h3}{p}Specify the fair share distribution method you want the system to use:{/p}
+        {ul}{li}Select A to distribute stock proportionally to all DCs according to demand.{/li}
+        {/ul}{ul}{li}Select B to raise the stock levels of all DCs to approximately the same percentage of their target stock.{/li}{/ul}
+      </toolTip>
+      <width>680</width>
+    </control>
+    <control id="ddlIndiPushDistribution">
+      <toolTip>
+        {h3}Indicator: push distribution{/h3}
+        {p}If there is excess inventory, surplus stock is retained at its place of origin or is distributed according to push logic.{/p}{h3}Procedure{/h3}{p}You have three options:{/p}{ul}
+        {li}If you leave the field blank, the system uses pull distribution; the demand of the current day is met through deployment, but excess stock is not distributed.{/li}
+        {/ul}{ul}{li}If you select P, the system uses pull/push distribution; excess stock is distributed to meet the demand existing within the demand horizon according to the forecast in the DCs. Distribution begins on the first day for which requirements exist in the system and ends with the last day of the demand horizon.{/li}
+        {/ul}{ul}{li}If you select X, all the requirements defined in the system are met through deployment. Distribution begins on the first day when requirements exist and continues until all the requirements defined in the system are met.{/li}{/ul}
+      </toolTip>
+      <width>680</width>
+    </control>
+    <control id="ddlStorageLocMrpIndi">
+      <toolTip>
+        {h3}Storage location MRP indicator{/h3}
+        {p}Indicator that you use to exclude storage locations from material requirements planning at plant level.{/p}
+        {p}If you do not set this indicator, stock, requirements, and receipts are included in MRP at plant level.{/p}
+        {h3}Use{/h3}{p}You can exclude storage locations from MRP at plant level in one of two ways:{/p}
+        {ul}{li}By excluding storage location stock from MRP{/li}{/ul}
+        {ul}If storage location stock is excluded from MRP at plant level, no receipts for this storage location will be created in the planning run.{/ul}
+        {ul}{li}By planning storage location stock separately{/li}{/ul}{ul}{ul}
+        {ul}If storage location stock is planned separately, the storage location is replenished with goods if the stock falls below the {/ul}
+        {/ul}{/ul}{p}{strong}reorder point{/strong}{/p}{ul}{ul}.{/ul}{/ul}
+      </toolTip>
+      <width>680</width>
+    </control>
+    <control id="ddlSpecialProcTypeSloc">
+      <toolTip>
+        {h3}Special procurement type at storage location level{/h3}
+        {p}Defines the {strong}procurement type{/strong} for the material more precisely at storage location level. The procurement type is predetermined by the {strong}material type{/strong}.{/p}
+      </toolTip>
+      <width>680</width>
+    </control>
+  </Section>
+
+  <Section id="12">
+    <control id="ddlQuotaArrangement">
+      <toolTip>
+        {img src="../../images/Help/Material/QuotaArrUsage.JPG" /}
+      </toolTip>
+      <width>400</width>
+    </control>
+    <control id="ddlPurchasingValueKey">
+      <toolTip>
+        {img src="../../images/Help/Material/PurchasingValueKey.JPG" /}
+      </toolTip>
+      <width>700</width>
+    </control>
+    <control id="ddlPurchasingGroup">
+      <toolTip>
+        {h3}Purchasing Group{/h3}
+        {p}Key for a buyer or a group of buyers, who is/are responsible for certain purchasing activities.{/p}
+        {h3}Use{/h3}{p} {/p}{ul}
+        {li}Internally, the purchasing group is responsible for the procurement of a material or a class of materials.{/li}
+        {/ul}{ul}{li}Externally, it is the medium through which contacts with the vendor are maintained.{/li}
+        {/ul}{h3}Procedure{/h3}{p}Enter the key of the purchasing group responsible.{/p}
+        {p}Any value that you enter in this field will appear in each item as the default value.{/p}
+      </toolTip>
+      <width>700</width>
+    </control>
+    <control id="ddlPurchaseOrder">
+      <toolTip>
+        {h3}Base Unit of Measure{/h3}
+        {p}Unit of measure in which {a href="sapevent:DOCU_LINK\DS:GLOS.stock"}{strong}stocks{/strong}{/a} of the material are managed. The system converts all the quantities you enter in other units of measure (alternative units of measure) to the base unit of measure.{/p}
+        {p} {/p}{h3}Procedure{/h3}{p}You define the base unit of measure and also alternative units of measure and their conversion factors in the material master record.{/p}
+        {p} {/p}{h3}Dependencies{/h3}{p}Since all data is updated in the base unit of measure, your entry is particularly important for the conversion of {a href="sapevent:DOCU_LINK\DS:GLOS.alternative_unit_of_measure"}{strong}alternative units of measure{/strong}{/a}. A quantity in the alternative unit of measure can only be shown precisely if its value can be shown with the decimal places available. To ensure this, please note the following:{/p}
+        {ul}{li}The base unit of measure is the unit satisfying the highest necessary requirement for precision.{/li}{/ul}{ul}
+        {li}The conversion of alternative units of measure to the base unit should result in simple decimal fractions (not, for example, 1/3 = 0.333...).{/li}{/ul}
+        {p}{strong}Inventory Management{/strong}{br /}In Inventory Management, the base unit of measure is the same as the stockkeeping unit.{/p}
+        {p}{strong}Services{/strong}{br /}Services have units of measure of their own, including the following:{/p}{ul}{li}Service unit{/li}{/ul}
+        {ul}Unit of measure at the higher item level. The precise quantities of the individual services are each at the detailed service line level.{/ul}
+        {ul}{li}Blanket{/li}{/ul}{ul}{ul}Unit of measure at service line level for services to be provided once only, and for which no precise quantities can or are to be specified.{/ul}{/ul}
+      </toolTip>
+      <width>700</width>
+    </control>
+  </Section>
+
+  <Section id ="63">
+    <control id="ddlPriority">
+      <toolTip>
+        {img src="../../images/Help/Material/Priority.jpg" /}
+      </toolTip>
+      <width>170</width>
+    </control>
+  </Section>
+</ToolTips>
+

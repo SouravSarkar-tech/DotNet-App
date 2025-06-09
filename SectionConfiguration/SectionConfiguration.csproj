@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'New Release|x64'">
+    <OutputPath>bin\x64\New Release\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'New Release|AnyCPU'">
+    <OutputPath>bin\New Release\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B6BFA229-485E-47F6-92D0-0A738FE8EEFE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SectionConfiguration</RootNamespace>
+    <AssemblyName>SectionConfiguration</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\MT\Bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClassFile\Accounting1.cs" />
+    <Compile Include="ClassFile\Accounting2.cs" />
+    <Compile Include="ClassFile\Basic1.cs" />
+    <Compile Include="ClassFile\Basic2.cs" />
+    <Compile Include="ClassFile\BOM.cs" />
+    <Compile Include="ClassFile\CENVAT__Determination.cs" />
+    <Compile Include="ClassFile\Chapter_Id.cs" />
+    <Compile Include="ClassFile\Classification.cs" />
+    <Compile Include="ClassFile\Company_code_data.cs" />
+    <Compile Include="ClassFile\Company_Code_Data_1.cs" />
+    <Compile Include="ClassFile\Company_Code_Data_2.cs" />
+    <Compile Include="ClassFile\Costing1.cs" />
+    <Compile Include="ClassFile\Costing2.cs" />
+    <Compile Include="ClassFile\Credit_management_data.cs" />
+    <Compile Include="ClassFile\Customer_Bulk_Change.cs" />
+    <Compile Include="ClassFile\Customer_Excise_Details.cs" />
+    <Compile Include="ClassFile\Customer_Extension.cs" />
+    <Compile Include="ClassFile\Customer_Master_Block_or_Unblock.cs" />
+    <Compile Include="ClassFile\Exception_Material_Excise_Rate.cs" />
+    <Compile Include="ClassFile\Excise_Tax_Rate.cs" />
+    <Compile Include="ClassFile\Foreign_Trade.cs" />
+    <Compile Include="ClassFile\General_data.cs" />
+    <Compile Include="ClassFile\General_Data_2.cs" />
+    <Compile Include="ClassFile\General_Data_3.cs" />
+    <Compile Include="ClassFile\Material_and_Chapter-Id_Combination.cs" />
+    <Compile Include="ClassFile\Material_Extension_Data.cs" />
+    <Compile Include="ClassFile\MRP1.cs" />
+    <Compile Include="ClassFile\MRP2.cs" />
+    <Compile Include="ClassFile\MRP3.cs" />
+    <Compile Include="ClassFile\MRP4.cs" />
+    <Compile Include="ClassFile\Plant_Storage_Location.cs" />
+    <Compile Include="ClassFile\Price_Header.cs" />
+    <Compile Include="ClassFile\Price_Region_Wise.cs" />
+    <Compile Include="ClassFile\Purchase_Org_Data.cs" />
+    <Compile Include="ClassFile\Purchasing.cs" />
+    <Compile Include="ClassFile\Quality.cs" />
+    <Compile Include="ClassFile\Receipe.cs" />
+    <Compile Include="ClassFile\Resource.cs" />
+    <Compile Include="ClassFile\Sales1.cs" />
+    <Compile Include="ClassFile\Sales2.cs" />
+    <Compile Include="ClassFile\Sales_area_data.cs" />
+    <Compile Include="ClassFile\Sales_area_data_2.cs" />
+    <Compile Include="ClassFile\Sales_Plant.cs" />
+    <Compile Include="ClassFile\Tax.cs" />
+    <Compile Include="ClassFile\Vendor_Bulk_Change.cs" />
+    <Compile Include="ClassFile\Vendor_Excise_Details.cs" />
+    <Compile Include="ClassFile\Vendor_General.cs" />
+    <Compile Include="ClassFile\Vendor_General_2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ClassFile\Vendor_Master_Block_or_Unblock.cs" />
+    <Compile Include="ClassFile\WM1.cs" />
+    <Compile Include="ClassFile\WM2.cs" />
+    <Compile Include="ClassFile\Work_Scheduling.cs" />
+    <Compile Include="FieldStatus.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SectionFieldMaster.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\AjaxControlToolkit.dll" />
+    <Content Include="bin\Debug\SectionConfiguration.dll" />
+    <Content Include="bin\Debug\SectionConfiguration.pdb" />
+    <Content Include="bin\Release\AjaxControlToolkit.dll" />
+    <Content Include="bin\Release\SectionConfiguration.dll" />
+    <Content Include="bin\Release\SectionConfiguration.pdb" />
+    <Content Include="obj\Debug\SectionConfiguration.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\SectionConfiguration.dll" />
+    <Content Include="obj\Release\SectionConfiguration.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Release\SectionConfiguration.dll" />
+    <Content Include="obj\Release\SectionConfiguration.pdb" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="obj\Debug\build.force" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\ResolveAssemblyReference.cache" />
+    <None Include="obj\Debug\SectionConfiguration.csprojResolveAssemblyReference.cache" />
+    <None Include="obj\Release\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Release\SectionConfiguration.csprojResolveAssemblyReference.cache" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="obj\Debug\TempPE\" />
+    <Folder Include="obj\Release\TempPE\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

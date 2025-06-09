@@ -1,0 +1,261 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using Accenture.MWT.LDAPHelper;
+using System.Data.SqlClient;
+using Accenture.MWT.DataAccess;
+using System.Data;
+using sapssoext;
+
+public partial class Login : System.Web.UI.Page
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        if (!IsPostBack)
+        {
+            //SetFocus();
+
+            string ticket = "AjExMDAgABhwb3J0YWw6cHJhc2FkY2hlbmR3YW5rYXKIABNiYXNpY2F1dGhlbnRpY2F0aW9uAQAAAgADMDAwAwADRVBEBAAMMjAxMzEwMjEwOTQ4BQAEAAAACAoAAP8BTzCCAUsGCSqGSIb3DQEHAqCCATwwggE4AgEBMQswCQYFKw4DAhoFADALBgkqhkiG9w0BBwExggEXMIIBEwIBATBoMF8xCzAJBgNVBAYTAklOMRQwEgYDVQQIEwtNYWhhcmFzaHRyYTEPMA0GA1UEBxMGTXVtYmFpMQ4wDAYDVQQKEwVMdXBpbjELMAkGA1UECxMCSE8xDDAKBgNVBAMTA0VQRAIFAM!ngr0wCQYFKw4DAhoFAKBdMBgGCSqGSIb3DQEJAzELBgkqhkiG9w0BBwEwHAYJKoZIhvcNAQkFMQ8XDTEzMTAyMTA5NDgyOVowIwYJKoZIhvcNAQkEMRYEFNMEZJ50lSpKHxnhewg2K6A%2F9Ad5MAkGByqGSM44BAMELzAtAhUAi%2FVvu!u9SvxSOFXFcnJUWML8rYgCFCFoQI1lHInZlU!w9h2UXEM6eVjB";
+
+            if (Request.Cookies["MYSAPSSO2"] != null)
+            {
+                lblSSO.Text = Request.Cookies["MYSAPSSO2"].Value;
+                ticket = Request.Cookies["MYSAPSSO2"].Value;
+            }
+
+
+            sapssoext.SAPSSOEXT ObjSAPSSO = new sapssoext.SAPSSOEXT();
+            TICKET_PORTAL_INFO objTICKET_PORTAL_INFO = new TICKET_PORTAL_INFO();
+            TICKET_PORTAL_INFO_LONG objTICKET_PORTAL_INFO_Long = new TICKET_PORTAL_INFO_LONG();
+            TICKET_INFO ObjTicketInfo = new TICKET_INFO();
+            ObjSAPSSO.StartSSOExt("E:/sapssoext.lib");
+
+            //sapssoext.SAPSSOEXT.EvalSAPTicket(ticket, "E:/verify.pse", "", ref ObjTicketInfo);
+
+            //lblSSO.Text = " Ticket info:<br />" + ObjTicketInfo.sapCert;
+            //lblSSO.Text += " <br />" + ObjTicketInfo.sapClient;
+            //lblSSO.Text += " <br />" + ObjTicketInfo.sapSysID;
+            //lblSSO.Text += " <br />" + ObjTicketInfo.sapUser;
+
+            //int sso_rs = ObjSAPSSO.EvalPortalTicket(ticket, "E:/verify.pse", "", ref objTICKET_PORTAL_INFO);
+            int sso_rs = ObjSAPSSO.EvalPortalTicket(ticket, "E:/verify.pse", "", ref objTICKET_PORTAL_INFO_Long);
+            if (sso_rs == 0)
+            {
+                lblSSO.Text = "<br />1. Ticket info:" + objTICKET_PORTAL_INFO.sapPortalUser;
+                lblSSO.Text += " <br />" + objTICKET_PORTAL_INFO.sapCert;
+                lblSSO.Text += " <br />" + objTICKET_PORTAL_INFO.sapClient;
+                lblSSO.Text += " <br />" + objTICKET_PORTAL_INFO.sapSysID;
+                lblSSO.Text += " <br />" + objTICKET_PORTAL_INFO.sapUser;
+
+            }
+            else
+            {
+                lblSSO.Text = "<br />2. Ticket info:" + sso_rs.ToString();
+            }
+
+            lblSSO.Text += " <br /> 3." + ObjSAPSSO.GetProperty("version");
+
+            //string sapClient = "";
+            //string sapCert = "";
+            //string sapSysID = "";
+
+            //SAPSSOEXT.SSO2TicketClass objSAPSSO = new SAPSSOEXT.SSO2TicketClass();
+
+            //objSAPSSO.EvalLogonTicket(ticket, "E:/verify.pse", "");
+            //lblSSO.Text += " Ticket info:<br />" + objSAPSSO.GetType();
+
+            ////objSAPSSO.EvalLogonTicket2(ticket, "E:/verify.pse", "", out sapClient, out sapSysID, out sapCert);
+
+
+
+            //lblSSO.Text += " Ticket info:<br />" + sapCert;
+            //lblSSO.Text += " <br />" + sapClient;
+            //lblSSO.Text += " <br />" + sapSysID;
+
+            
+
+        }
+    }
+
+    protected void SSAPcheck2()
+    {
+        string ticket = "AjExMDAgABhwb3J0YWw6cHJhc2FkY2hlbmR3YW5rYXKIABNiYXNpY2F1dGhlbnRpY2F0aW9uAQAAAgADMDAwAwADRVBEBAAMMjAxMzEwMjEwOTQ4BQAEAAAACAoAAP8BTzCCAUsGCSqGSIb3DQEHAqCCATwwggE4AgEBMQswCQYFKw4DAhoFADALBgkqhkiG9w0BBwExggEXMIIBEwIBATBoMF8xCzAJBgNVBAYTAklOMRQwEgYDVQQIEwtNYWhhcmFzaHRyYTEPMA0GA1UEBxMGTXVtYmFpMQ4wDAYDVQQKEwVMdXBpbjELMAkGA1UECxMCSE8xDDAKBgNVBAMTA0VQRAIFAM!ngr0wCQYFKw4DAhoFAKBdMBgGCSqGSIb3DQEJAzELBgkqhkiG9w0BBwEwHAYJKoZIhvcNAQkFMQ8XDTEzMTAyMTA5NDgyOVowIwYJKoZIhvcNAQkEMRYEFNMEZJ50lSpKHxnhewg2K6A%2F9Ad5MAkGByqGSM44BAMELzAtAhUAi%2FVvu!u9SvxSOFXFcnJUWML8rYgCFCFoQI1lHInZlU!w9h2UXEM6eVjB";
+
+        if (Request.Cookies["MYSAPSSO2"] != null)
+        {
+            lblSSO.Text = Request.Cookies["MYSAPSSO2"].Value;
+            ticket = Request.Cookies["MYSAPSSO2"].Value;
+        }
+
+
+        sapssoext.SAPSSOEXT ObjSAPSSO = new sapssoext.SAPSSOEXT();
+        TICKET_INFO ObjTicketInfo = new TICKET_INFO();
+        TICKET_PORTAL_INFO objTICKET_PORTAL_INFO = new TICKET_PORTAL_INFO();
+        TICKET_PORTAL_INFO_LONG objTICKET_PORTAL_INFO_Long = new TICKET_PORTAL_INFO_LONG();
+        //ObjSAPSSO.StartSSOExt("E:/sapssoext.lib");
+
+        sapssoext.SAPSSOEXT.EvalSAPTicket(ticket, "E:/verify.pse", null, ref ObjTicketInfo);
+
+        lblSSO.Text = "Start Ticket info:<br />";
+
+        lblSSO.Text += "0. Ticket info:<br />" + ObjTicketInfo.sapCert;
+        lblSSO.Text += " <br />" + ObjTicketInfo.sapClient;
+        lblSSO.Text += " <br />" + ObjTicketInfo.sapSysID;
+        lblSSO.Text += " <br />" + ObjTicketInfo.sapUser;
+
+
+        ObjSAPSSO.EvalPortalTicket(ticket, "E:/verify.pse", null, ref objTICKET_PORTAL_INFO);
+        int sso_rs = ObjSAPSSO.EvalPortalTicket(ticket, "E:/verify.pse", "", ref objTICKET_PORTAL_INFO_Long);
+
+
+        if (sso_rs == 0)
+        {
+
+            lblSSO.Text += "1. Ticket info:<br />" + objTICKET_PORTAL_INFO.sapPortalUser;
+            lblSSO.Text += " <br />" + objTICKET_PORTAL_INFO.sapCert;
+            lblSSO.Text += " <br />" + objTICKET_PORTAL_INFO.sapClient;
+            lblSSO.Text += " <br />" + objTICKET_PORTAL_INFO.sapSysID;
+            lblSSO.Text += " <br />" + objTICKET_PORTAL_INFO.sapUser;
+
+            lblSSO.Text += "2. Ticket info:<br />" + objTICKET_PORTAL_INFO_Long.sapPortalUser;
+            lblSSO.Text += " <br />" + objTICKET_PORTAL_INFO_Long.sapAuthSchema;
+            lblSSO.Text += " <br />" + objTICKET_PORTAL_INFO_Long.sapCert;
+            lblSSO.Text += " <br />" + objTICKET_PORTAL_INFO_Long.sapClient;
+            lblSSO.Text += " <br />" + objTICKET_PORTAL_INFO_Long.sapPortalUser;
+            lblSSO.Text += " <br />" + objTICKET_PORTAL_INFO_Long.sapSysID;
+            lblSSO.Text += " <br />" + objTICKET_PORTAL_INFO_Long.sapUser;
+            lblSSO.Text += " <br />" + objTICKET_PORTAL_INFO_Long.validity;
+
+
+
+        }
+        else
+        {
+            lblSSO.Text += "3. Ticket info:" + sso_rs.ToString();
+        }
+
+        lblSSO.Text += " <br />" + ObjSAPSSO.GetProperty("version");
+
+        string sapClient = "";
+        string sapCert = "";
+        string sapSysID = "";
+
+        try
+        {
+            SAPSSOEXT.SSO2TicketClass objSAPS = new SAPSSOEXT.SSO2TicketClass();
+            objSAPS.CryptLib = null;
+
+            lblSSO.Text += objSAPS.GetVersion();
+
+            //objSAPS.EvalLogonTicket(ticket, "E:/verify.pse", "");
+
+            objSAPS.EvalLogonTicket2(ticket, "E://verify.pse", null, out sapClient, out sapSysID, out sapCert);
+        }
+        catch (Exception ex)
+        {
+            lblSSO.Text += ex.Message.ToString();
+        }
+
+        lblSSO.Text += "4. Ticket info:<br />" + sapCert;
+        lblSSO.Text += " <br />" + sapClient;
+        lblSSO.Text += " <br />" + sapSysID;
+    }
+
+    protected void imgBtnLogin_Click(object sender, ImageClickEventArgs e)
+    {
+        IsValidUser(txtUserName.Text, txtPassword.Text);
+    }
+
+    private void IsValidUser(string UserName,string Pwd)
+    {
+        try
+        {
+            bool flag = false;
+            FailureText.Text = "";
+            ActiveDirectoryHelper ObjADH = new ActiveDirectoryHelper();
+            //if (ObjADH.IsAuthenticated("lupinworld", txtUserName.Text, txtPassword.Text))
+            //{
+                UserAccess userAccess = new UserAccess();
+                DataSet dstData = new DataSet();
+                //dstData = userAccess.ValidateUser(txtUserName.Text, "mwt");
+                dstData = userAccess.ValidateUser(txtUserName.Text, txtPassword.Text);
+
+                //if (dstData.Tables[0].Rows.Count < 1)
+                //{
+                //    ADUserDetail ObjADUser = ObjADH.GetUserByLoginName(txtUserName.Text);
+                //    if (userAccess.SaveUserDetail(ObjADUser, "0") == 1)
+                //    {
+                //        dstData = userAccess.ValidateUser(txtUserName.Text, "mwt");
+                //    }
+                //}
+
+                if (dstData.Tables[0].Rows.Count > 0)
+                {
+                    Session[StaticKeys.LoggedIn_User_Id] = dstData.Tables[0].Rows[0]["User_Id"].ToString();
+                    Session[StaticKeys.LoggedIn_User_Profile_Id] = dstData.Tables[0].Rows[0]["Profile_Id"].ToString();
+                    Session[StaticKeys.LoggedIn_User_Profile] = dstData.Tables[0].Rows[0]["Profile_Name"].ToString();
+                    Session[StaticKeys.LoggedIn_User_FullName] = dstData.Tables[0].Rows[0]["Full_Name"].ToString();
+                    Session[StaticKeys.LoggedIn_User_LastLogin] = dstData.Tables[0].Rows[0]["Last_Login_On"].ToString();
+                    Session[StaticKeys.LoggedIn_User_DeptId] = dstData.Tables[0].Rows[0]["Department_Id"].ToString();
+                    flag = true;
+                }
+
+                else
+                {
+                    FailureText.Text = "User Name Or Password Incorect.";
+                }
+
+                if (flag)
+                {
+                    RememberMe();
+                    Response.Redirect("Shared/Home.aspx", false);
+                }
+                //else
+                //{
+                //    FailureText.Text = "error Occured";
+                //    return;
+                //}
+            //}
+            //else
+            //{
+            //    FailureText.Text = "User Name Or Password Incorect.";
+            //}
+
+        }
+        catch
+        {
+            throw;
+        }
+    }
+
+
+    #region Private Methods
+
+    private void RememberMe()
+    {
+        if (chkRememberMe.Checked == true)
+        {
+            Response.Cookies["UNameMWT"].Value = txtUserName.Text;
+            Response.Cookies["PWDMWT"].Value = txtPassword.Text;
+            Response.Cookies["UNameMWT"].Expires = DateTime.Now.AddMonths(2);
+            Response.Cookies["PWDMWT"].Expires = DateTime.Now.AddMonths(2);
+        }
+        else
+        {
+            Response.Cookies["UNameMWT"].Expires = DateTime.Now.AddMonths(-1);
+            Response.Cookies["PWDMWT"].Expires = DateTime.Now.AddMonths(-1);
+        }
+    }
+
+    /// <summary>
+    /// Sets the focus.
+    /// </summary>
+    private void SetFocus()
+    {
+        txtUserName.Focus();
+    }
+    #endregion
+}

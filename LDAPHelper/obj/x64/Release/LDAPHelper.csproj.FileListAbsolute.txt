@@ -1,0 +1,5 @@
+E:\MWT Development\MT\LDAPHelper\bin\x64\Release\LDAPHelper.dll
+E:\MWT Development\MT\LDAPHelper\bin\x64\Release\LDAPHelper.pdb
+E:\MWT Development\MT\LDAPHelper\obj\x64\Release\ResolveAssemblyReference.cache
+E:\MWT Development\MT\LDAPHelper\obj\x64\Release\LDAPHelper.dll
+E:\MWT Development\MT\LDAPHelper\obj\x64\Release\LDAPHelper.pdb

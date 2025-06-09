@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ToolTips>
+  <Section id="29">
+    <control id="txtCustomer_Number">
+      <toolTip>
+        {p class="MsoNormal" style="line-height: normal; margin: 0in 0in 10pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-outline-level: 3"}{b}{span lang="EN-IN" style='font-family: "arial","sans-serif"; color: navy; font-size: 13.5pt; mso-fareast-font-family: "times new roman"; mso-fareast-language: en-in'}Customer Number
+        {o:p}{/o:p}{/span}{/b}{/p}
+        {p class="MsoNormal" style="line-height: normal; margin: 0in 0in 10pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"}{span lang="EN-IN" style='font-family: "arial","sans-serif"; color: black; font-size: 9.5pt; mso-fareast-font-family: "times new roman"; mso-fareast-language: en-in'}Gives an alphanumeric key, which clearly identifies the customer or vendor in the SAP system.
+        {o:p}{/o:p}{/span}{/p}
+        {p class="MsoNormal" style="line-height: normal; margin: 0in 0in 10pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-outline-level: 3"}{b}{span lang="EN-IN" style='font-family: "arial","sans-serif"; color: navy; font-size: 13.5pt; mso-fareast-font-family: "times new roman"; mso-fareast-language: en-in'}Use
+        {o:p}{/o:p}{/span}{/b}{/p}{span lang="EN-IN" style='line-height: 115%; font-family: "arial","sans-serif"; color: black; font-size: 9.5pt; mso-fareast-font-family: "times new roman"; mso-fareast-language: en-in; mso-ansi-language: en-in; mso-bidi-language: ar-sa'}The customer number is used by the payment and dunning programs for clearing open items. For {/span}{span lang="EN-IN" style='line-height: 115%; font-family: "calibri","sans-serif"; font-size: 11pt; mso-fareast-font-family: calibri; mso-fareast-language: en-us; mso-ascii-theme-font: minor-latin; mso-fareast-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: "times new roman"; mso-bidi-theme-font: minor-bidi; mso-ansi-language: en-in; mso-bidi-language: ar-sa'}{a shape="rect" href="sapevent:DOCU_LINK\GL:line_item_display"}{b}{span style='line-height: 115%; font-family: "arial","sans-serif"; color: #0063a4; font-size: 9.5pt; text-decoration: none; mso-fareast-font-family: 'times new roman'; mso-fareast-language: en-in; text-underline: none'}line item display{/span}{/b}{/a}{/span}{span lang="EN-IN" style='line-height: 115%; font-family: "arial","sans-serif"; color: black; font-size: 9.5pt; mso-fareast-font-family: "times new roman"; mso-fareast-language: en-in; mso-ansi-language: en-in; mso-bidi-language: ar-sa'}, the link to the customer line items is established using this number.{/span}
+      </toolTip>
+      <width>400</width>
+    </control>
+  </Section>
+  <Section id="30">
+    <control id="txtReconAcc">
+      <toolTip>
+        {h3 style="margin: auto 0in"}{span lang="EN-IN" style='font-family: "arial","sans-serif"'}{font size="4"}{font color="#000080"}Reconciliation Account in General Ledger
+        {o:p}{/o:p}{/font}{/font}{/span}{/h3}
+        {p}{span lang="EN-IN" style='font-family: "arial","sans-serif"; color: black; font-size: 9.5pt'}The reconciliation account in G/L accounting is the account which is updated parallel to the subledger account for normal postings (for example, invoice or payment).{/span}{/p}
+      </toolTip>
+      <width>400</width>
+    </control>
+    <control id="txtAccNoAltPayee">
+      <toolTip>
+        {h3 style="margin: auto 0in"}{span lang="EN-IN" style='font-family: "arial","sans-serif"'}{font color="#000080"}Account Number of the Alternative Payee
+        {o:p}{/o:p}{/font}{/span}{/h3}
+        {p}{span lang="EN-IN" style='font-family: "arial","sans-serif"; color: black; font-size: 9.5pt'}The account number of the vendor with whom automatic {/span}{span lang="EN-IN"}{a shape="rect" href="sapevent:DOCU_LINK\GL:payment_transactions"}{b}{span style='font-family: "arial","sans-serif"; font-size: 9.5pt'}{font color="#0063a4"}payment transactions{/font}{/span}{/b}{/a}{/span}{span lang="EN-IN" style='font-family: "arial","sans-serif"; color: black; font-size: 9.5pt'} are carried out.
+        {o:p}{/o:p}{/span}{/p}
+        {h3 style="margin: auto 0in"}{span lang="EN-IN" style='font-family: "arial","sans-serif"'}{font color="#000080"}Use
+        {o:p}{/o:p}{/font}{/span}{/h3}
+        {p}{span lang="EN-IN" style='font-family: "arial","sans-serif"; color: black; font-size: 9.5pt'}The field is only needed if payments are not to be made directly to the {/span}{span lang="EN-IN"}{a shape="rect" href="sapevent:DOCU_LINK\GL:vendor"}{b}{span style='font-family: "arial","sans-serif"; font-size: 9.5pt'}{font color="#0063a4"}vendor{/font}{/span}{/b}{/a}{/span}{span lang="EN-IN" style='font-family: "arial","sans-serif"; color: black; font-size: 9.5pt'} to whom the payable is owed. The same applies to bank collections of {/span}{span lang="EN-IN"}{a shape="rect" href="sapevent:DOCU_LINK\GL:receivable"}{b}{span style='font-family: "arial","sans-serif"; font-size: 9.5pt'}{font color="#0063a4"}receivables{/font}{/span}{/b}{/a}{/span}{span lang="EN-IN" style='font-family: "arial","sans-serif"; color: black; font-size: 9.5pt'}.
+        {o:p}{/o:p}{/span}{/p}
+      </toolTip>
+      <width>400</width>
+    </control>
+    <control id="txtTermPaymentKey">
+      <toolTip>
+        {p class="MsoNormal" style="line-height: normal; margin: 0in 0in 10pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-outline-level: 3"}{b}{span lang="EN-IN" style='font-family: "arial","sans-serif"; color: navy; font-size: 13.5pt; mso-fareast-font-family: "times new roman"; mso-fareast-language: en-in'}Terms of Payment Key
+        {o:p}{/o:p}{/span}{/b}{/p}
+        {p class="MsoNormal" style="line-height: normal; margin: 0in 0in 10pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"}{span lang="EN-IN" style='font-family: "arial","sans-serif"; color: black; font-size: 9.5pt; mso-fareast-font-family: "times new roman"; mso-fareast-language: en-in'}Key for defining payment terms composed of cash discount percentages and payment periods.
+        {o:p}{/o:p}{/span}{/p}
+        {p class="MsoNormal" style="line-height: normal; margin: 0in 0in 10pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-outline-level: 3"}{b}{span lang="EN-IN" style='font-family: "arial","sans-serif"; color: navy; font-size: 13.5pt; mso-fareast-font-family: "times new roman"; mso-fareast-language: en-in'}Use
+        {o:p}{/o:p}{/span}{/b}{/p}
+        {p class="MsoNormal" style="line-height: normal; margin: 0in 0in 10pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"}{span lang="EN-IN" style='font-family: "arial","sans-serif"; color: black; font-size: 9.5pt; mso-fareast-font-family: "times new roman"; mso-fareast-language: en-in'}It is used in sales orders, purchase orders, and invoices. Terms of payment provide information for:
+        {o:p}{/o:p}{/span}{/p}
+        {ul type="disc"}
+        {li class="MsoNormal" style="line-height: normal; margin: 0in 0in 10pt; color: black; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-list: l1 level1 lfo1; tab-stops: list .5in"}{span lang="EN-IN" style='font-family: "arial","sans-serif"; font-size: 9.5pt; mso-fareast-font-family: "times new roman"; mso-fareast-language: en-in'}Cash management
+        {o:p}{/o:p}{/span}{/li}{/ul}
+        {ul type="disc"}
+        {li class="MsoNormal" style="line-height: normal; margin: 0in 0in 10pt; color: black; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-list: l0 level1 lfo2; tab-stops: list .5in"}{span lang="EN-IN" style='font-family: "arial","sans-serif"; font-size: 9.5pt; mso-fareast-font-family: "times new roman"; mso-fareast-language: en-in'}Dunning procedures
+        {o:p}{/o:p}{/span}{/li}{/ul}{span lang="EN-IN" style='line-height: 115%; font-family: "arial","sans-serif"; color: black; font-size: 9.5pt; mso-fareast-font-family: "times new roman"; mso-fareast-language: en-in; mso-ansi-language: en-in; mso-bidi-language: ar-sa'}Payment transactions{/span}
+      </toolTip>
+      <width>400</width>
+    </control>
+    <control id="txtPreviousMasterNo">
+      <toolTip>
+        {h3 style="margin: auto 0in"}{span lang="EN-IN" style='font-family: "arial","sans-serif"'}{font size="4"}{font color="#000080"}Previous Master Record Number
+        {o:p}{/o:p}{/font}{/font}{/span}{/h3}{span lang="EN-IN" style='line-height: 115%; font-family: "arial","sans-serif"; color: black; font-size: 9.5pt; mso-fareast-font-family: calibri; mso-fareast-language: en-us; mso-fareast-theme-font: minor-latin; mso-ansi-language: en-in; mso-bidi-language: ar-sa'}If you renumber customers and/or vendors when implementing the FI System, you can store the previous master record number in this field.{/span}
+      </toolTip>
+      <width>400</width>
+    </control>
+  </Section>
+  <Section id="31">
+    <control id="txtBankControlKey">
+      <toolTip>
+        {h3 style="margin: auto 0in"}{span lang="EN-IN" style='font-family: "arial","sans-serif"'}{font size="4"}{font color="#000080"}Bank Control Key
+        {o:p}{/o:p}{/font}{/font}{/span}{/h3}
+        {h3 style="margin: auto 0in"}{span lang="EN-IN" style='font-family: "arial","sans-serif"'}{font size="4"}{font color="#000080"}Use Brazil, France, Spain, Portugal, and Italy
+        {o:p}{/o:p}{/font}{/font}{/span}{/h3}
+        {p}{span lang="EN-IN" style='font-family: "arial","sans-serif"; color: black; font-size: 9.5pt'}This field contains a key for checking the combination of bank number and bank account number.
+        {o:p}{/o:p}{/span}{/p}
+      </toolTip>
+      <width>400</width>
+    </control>
+    <control id="txtAccount_Number_Alternative_Payee">
+      <toolTip>
+        {h3 style="margin: auto 0in"}{span lang="EN-IN" style='font-family: "arial","sans-serif"'}{font color="#000080"}Account Number of the Alternative Payee
+        {o:p}{/o:p}{/font}{/span}{/h3}
+        {p}{span lang="EN-IN" style='font-family: "arial","sans-serif"; color: black; font-size: 9.5pt'}The account number of the vendor with whom automatic {/span}{span lang="EN-IN"}{a shape="rect" href="sapevent:DOCU_LINK\GL:payment_transactions"}{b}{span style='font-family: "arial","sans-serif"; font-size: 9.5pt'}{font color="#0063a4"}payment transactions{/font}{/span}{/b}{/a}{/span}{span lang="EN-IN" style='font-family: "arial","sans-serif"; color: black; font-size: 9.5pt'} are carried out.
+        {o:p}{/o:p}{/span}{/p}
+        {h3 style="margin: auto 0in"}{span lang="EN-IN" style='font-family: "arial","sans-serif"'}{font color="#000080"}Use
+        {o:p}{/o:p}{/font}{/span}{/h3}
+        {p}{span lang="EN-IN" style='font-family: "arial","sans-serif"; color: black; font-size: 9.5pt'}The field is only needed if payments are not to be made directly to the {/span}{span lang="EN-IN"}{a shape="rect" href="sapevent:DOCU_LINK\GL:vendor"}{b}{span style='font-family: "arial","sans-serif"; font-size: 9.5pt'}{font color="#0063a4"}vendor{/font}{/span}{/b}{/a}{/span}{span lang="EN-IN" style='font-family: "arial","sans-serif"; color: black; font-size: 9.5pt'} to whom the payable is owed. The same applies to bank collections of {/span}{span lang="EN-IN"}{a shape="rect" href="sapevent:DOCU_LINK\GL:receivable"}{b}{span style='font-family: "arial","sans-serif"; font-size: 9.5pt'}{font color="#0063a4"}receivables{/font}{/span}{/b}{/a}{/span}{span lang="EN-IN" style='font-family: "arial","sans-serif"; color: black; font-size: 9.5pt'}.
+        {o:p}{/o:p}{/span}{/p}
+      </toolTip>
+      <width>400</width>
+    </control>
+  </Section>
+  <Section id="32">
+    <control id="txtIncotermsPart1">
+      <toolTip>
+        {p class="MsoNormal" style="line-height: normal; margin: 0in 0in 10pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-outline-level: 3"}{b}{span lang="EN-IN" mso-fareast-language:="" roman?;="" new="" times="" en-in?="" style='font-family: "arial","sans-serif"; color: navy; font-size: 13.5pt; mso-fareast-font-family: '}Incoterms (Part 1)
+        {o:p}{/o:p}{/span}{/b}{/p}
+        {p class="MsoNormal" style="line-height: normal; margin: 0in 0in 10pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"}{span lang="EN-IN" mso-fareast-language:="" roman?;="" new="" times="" en-in?="" style='font-family: "arial","sans-serif"; color: black; font-size: 9.5pt; mso-fareast-font-family: '}Commonly-used trading terms that comply with the standards established by the International Chamber of Commerce (ICC).
+        {o:p}{/o:p}{/span}{/p}
+        {p class="MsoNormal" style="line-height: normal; margin: 0in 0in 10pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-outline-level: 3"}{b}{span lang="EN-IN" mso-fareast-language:="" roman?;="" new="" times="" en-in?="" style='font-family: "arial","sans-serif"; color: navy; font-size: 13.5pt; mso-fareast-font-family: '}Use
+        {o:p}{/o:p}{/span}{/b}{/p}{span lang="EN-IN" ar-sa?="" mso-bidi-language:="" en-in;="" mso-ansi-language:="" mso-fareast-language:="" roman?;="" new="" times="" style='line-height: 115%; font-family: "arial","sans-serif"; color: black; font-size: 9.5pt; mso-fareast-font-family: '}Incoterms specify certain internationally recognised procedures that the shipper and the receiving party must follow for the shipping transaction to be successfully completed.{/span}
+      </toolTip>
+      <width>400</width>
+    </control>
+    <control id="txtIncotermsPart2">
+      <toolTip>
+        {p class="MsoNormal" style="line-height: normal; margin: 0in 0in 10pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-outline-level: 3"}{b}{span lang="EN-IN" style='font-family: "arial","sans-serif"; color: navy; font-size: 13.5pt; mso-fareast-font-family: 'times new roman'; mso-fareast-language: en-in'}Incoterms (Part 2)
+        {o:p}{/o:p}{/span}{/b}{/p}
+        {p class="MsoNormal" style="line-height: normal; margin: 0in 0in 10pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"}{span lang="EN-IN" style='font-family: "arial","sans-serif"; color: black; font-size: 9.5pt; mso-fareast-font-family: 'times new roman'; mso-fareast-language: en-in'}Additional information for the primary Incoterm.
+        {o:p}{/o:p}{/span}{/p}
+        {p class="MsoNormal" style="line-height: normal; margin: 0in 0in 10pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-outline-level: 3"}{b}{span lang="EN-IN" style='font-family: "arial","sans-serif"; color: navy; font-size: 13.5pt; mso-fareast-font-family: 'times new roman'; mso-fareast-language: en-in'}Example
+        {o:p}{/o:p}{/span}{/b}{/p}{span lang="EN-IN" style='line-height: 115%; font-family: "arial","sans-serif"; color: black; font-size: 9.5pt; mso-fareast-font-family: 'times new roman'; mso-fareast-language: en-in; mso-ansi-language: en-in; mso-bidi-language: ar-sa'}If the primary Incoterm is, for example, FOB (&quot;Free on Board&quot;), then the second field provides details of the port from which the delivery leaves (for example, &quot;FOB Boston&quot;).{/span}
+      </toolTip>
+      <width>400</width>
+    </control>
+    <control id="txtGroupCalculation_SchemaVendor">
+      <toolTip>
+        {h3 style="margin: auto 0in"}{span lang="EN-IN" style='font-family: "arial","sans-serif"'}{font size="4"}{font color="#000080"}Group for Calculation Schema (Vendor)
+        {o:p}{/o:p}{/font}{/font}{/span}{/h3}
+        {p}{span lang="EN-IN" style='font-family: "arial","sans-serif"; color: black; font-size: 9.5pt'}Determines which calculation schema (pricing procedure) is to be used in purchasing documents containing this vendor number.
+        {o:p}{/o:p}{/span}{/p}
+      </toolTip>
+      <width>400</width>
+    </control>
+    <control id="txtTermsPayment_Key">
+      <toolTip>
+        {p class="MsoNormal" style="line-height: normal; margin: 0in 0in 10pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-outline-level: 3"}{b}{span lang="EN-IN" style='font-family: "arial","sans-serif"; color: navy; font-size: 13.5pt; mso-fareast-font-family: "times new roman"; mso-fareast-language: en-in'}Terms of Payment Key
+        {o:p}{/o:p}{/span}{/b}{/p}
+        {p class="MsoNormal" style="line-height: normal; margin: 0in 0in 10pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"}{span lang="EN-IN" style='font-family: "arial","sans-serif"; color: black; font-size: 9.5pt; mso-fareast-font-family: "times new roman"; mso-fareast-language: en-in'}Key for defining payment terms composed of cash discount percentages and payment periods.
+        {o:p}{/o:p}{/span}{/p}
+        {p class="MsoNormal" style="line-height: normal; margin: 0in 0in 10pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-outline-level: 3"}{b}{span lang="EN-IN" style='font-family: "arial","sans-serif"; color: navy; font-size: 13.5pt; mso-fareast-font-family: "times new roman"; mso-fareast-language: en-in'}Use
+        {o:p}{/o:p}{/span}{/b}{/p}
+        {p class="MsoNormal" style="line-height: normal; margin: 0in 0in 10pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"}{span lang="EN-IN" style='font-family: "arial","sans-serif"; color: black; font-size: 9.5pt; mso-fareast-font-family: "times new roman"; mso-fareast-language: en-in'}It is used in sales orders, purchase orders, and invoices. Terms of payment provide information for:
+        {o:p}{/o:p}{/span}{/p}
+        {ul type="disc"}
+        {li class="MsoNormal" style="line-height: normal; margin: 0in 0in 10pt; color: black; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-list: l1 level1 lfo1; tab-stops: list .5in"}{span lang="EN-IN" style='font-family: "arial","sans-serif"; font-size: 9.5pt; mso-fareast-font-family: "times new roman"; mso-fareast-language: en-in'}Cash management
+        {o:p}{/o:p}{/span}{/li}{/ul}
+        {ul type="disc"}
+        {li class="MsoNormal" style="line-height: normal; margin: 0in 0in 10pt; color: black; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-list: l0 level1 lfo2; tab-stops: list .5in"}{span lang="EN-IN" style='font-family: "arial","sans-serif"; font-size: 9.5pt; mso-fareast-font-family: "times new roman"; mso-fareast-language: en-in'}Dunning procedures
+        {o:p}{/o:p}{/span}{/li}{/ul}{span lang="EN-IN" style='line-height: 115%; font-family: "arial","sans-serif"; color: black; font-size: 9.5pt; mso-fareast-font-family: "times new roman"; mso-fareast-language: en-in; mso-ansi-language: en-in; mso-bidi-language: ar-sa'}Payment transactions{/span}
+      </toolTip>
+      <width>400</width>
+    </control>
+  </Section>
+  <Section id="33">
+    <control id="txtType_Industry">
+      <toolTip>
+        {h3 style="margin: auto 0in"}{span lang="EN-IN" style='font-family: "arial","sans-serif"'}{font size="4"}{font color="#000080"}Type of Industry
+        {o:p}{/o:p}{/font}{/font}{/span}{/h3}
+        {p}{span lang="EN-IN" style='font-family: "arial","sans-serif"; color: black; font-size: 9.5pt'}Specifies the {/span}{span lang="EN-IN"}{a shape="rect" href="sapevent:DOCU_LINK\DS:GLOS.35B09FA088715832E10000009B38F982"}{b}{span style='font-family: "arial","sans-serif"; font-size: 9.5pt'}{font color="#0063a4"}type of industry.{/font}{/span}{/b}{/a}{/span}{span lang="EN-IN" style='font-family: "arial","sans-serif"; color: black; font-size: 9.5pt'}
+        {o:p}{/o:p}{/span}{/p}
+        {h3 style="margin: auto 0in"}{span lang="EN-IN" style='font-family: "arial","sans-serif"'}{font size="4"}{font color="#000080"}Procedure
+        {o:p}{/o:p}{/font}{/font}{/span}{/h3}
+        {p}{span lang="EN-IN" style='font-family: "arial","sans-serif"; color: black; font-size: 9.5pt'}Enter the type of industry that this company is in.
+        {o:p}{/o:p}{/span}{/p}
+        {h3 style="margin: auto 0in"}{span lang="EN-IN" style='font-family: "arial","sans-serif"'}{font size="4"}{font color="#000080"}Dependencies
+        {o:p}{/o:p}{/font}{/font}{/span}{/h3}
+        {p}{span lang="EN-IN" style='font-family: "arial","sans-serif"; color: black; font-size: 9.5pt'}This information is printed on tax invoices and on the VAT summary report.
+        {o:p}{/o:p}{/span}{/p}{span lang="EN-IN" style='line-height: 115%; font-family: "arial","sans-serif"; color: black; font-size: 9.5pt; mso-fareast-font-family: calibri; mso-fareast-language: en-us; mso-fareast-theme-font: minor-latin; mso-ansi-language: en-in; mso-bidi-language: ar-sa'}You can customize the recognized types of industry in Cutomizing for {em}{span style='font-family: "arial","sans-serif"'}Financial Accounting{/span}{/em} (FI), by choosing {em}{span style='font-family: "arial","sans-serif"'}Financial Accounting Global Settings{/span}{/em} -&gt; {em}{span style='font-family: "arial","sans-serif"'}Tax on Sales/Purchases{/span}{/em} -&gt; {em}{span style='font-family: "arial","sans-serif"'}Basic Settings{/span}{/em} -&gt; {em}{span style='font-family: "arial","sans-serif"'}South Korea{/span}{/em} -&gt; {em}{span style='font-family: "arial","sans-serif"'}Define Types of Industry{/span}{/em}{/span}
+      </toolTip>
+      <width>400</width>
+    </control>
+  </Section>
+</ToolTips>
+

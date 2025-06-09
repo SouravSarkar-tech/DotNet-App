@@ -1,0 +1,454 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Shared/Common/MainMaster.master" AutoEventWireup="true"
+    CodeFile="BOMRecipeMasterPage.master.cs" Inherits="Shared_BOMRecipe_BOMRecipeMasterPage" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+            <td valign="top" style="width: 20%" id="trSideMenuTab" runat="server">
+                <asp:Literal ID="litTab" runat="server" />
+            </td>
+            <td valign="top" align="center" style="width: 80%;">
+                <table border="0" cellpadding="0" cellspacing="0" width="99%" class="gridHeader">
+                    <tr>
+                        <td>
+                            <b>Requestor Name.:</b>&nbsp;
+                            <asp:Label ID="lblRequestor" runat="server" />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; <b>Location:</b>&nbsp;
+                            <asp:Label ID="lblLocation" runat="server" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                            <b>Contact No:</b>&nbsp;
+                            <asp:Label ID="lblContactNo" runat="server" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tdSpace" style="border-bottom: 1px solid Black;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>Request No.:</b>&nbsp;
+                            <asp:Label ID="lblRequestNo" runat="server" />
+                            <asp:HyperLink ID="lnkRequestNo" runat="server"></asp:HyperLink>
+                            &nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;<b>Plant:</b>&nbsp;
+                            <asp:Label ID="lblPlant" runat="server" />&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;
+                            <b>Storage Loc.:</b>&nbsp;
+                            <asp:Label ID="lblStorageLocation" runat="server" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>Creation Type:</b>&nbsp;
+                            <asp:Label ID="lblSelectedModule" runat="server" />&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;<b>Material
+                                Code:</b>&nbsp;
+                            <asp:Label ID="lblMaterialNo" runat="server" />
+                        </td>
+                    </tr>
+                </table>
+                <div id="divContainer" style="width: 99%;">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+                <%--Excel download for BOM recipe start--%>
+                <%--manali Chavan BOM_8200050878 Download bom/recipe/prd excel--%>   
+                <%--Manali chava : Added below code for applying worksheet name on dt_25052021--%>
+                <div align ="left">
+                    <asp:LinkButton ID="lnkExcelDwld" runat="server" Visible="false" Text="Download Excel" OnClick="lnkExcelDwld_Click" />
+                    <asp:ImageButton ID="imgExcelDwld" runat="server" Visible="false" ImageUrl="~/images/Excel.png" Height="20px"
+                        Width="20px" OnClick="lnkExcelDwld_Click" /> 
+                </div>
+                <%--Manali chava : Added below code for applying worksheet name on dt_25052021--%>
+                <%--manali Chavan BOM_8200050878 Download bom/recipe/prd excel--%>           
+                <%--OnClientClick="return ShowSAPQAUploadPopup();"--%> 
+                <%--Excel download for BOM recipe end--%>
+                <asp:Button ID="btnValidate" runat="server" Text="Validate" CssClass="button" Visible="false"
+                    OnClientClick="return ShowValidateBOMPopup();" />
+                <asp:Button ID="btnSAPUpload" runat="server" Text="SAP Integration" CssClass="button"
+                    Visible="false" OnClientClick="return ShowSAPUploadPopup();" />
+                <asp:Button ID="btnQAUpload" runat="server" Text="Release Recipe/Prod Version" CssClass="button"
+                    Visible="false" 
+                    onclick="btnQAUpload_Click" />
+                <asp:Button ID="btnSubmit" runat="server" Text="Submit" CssClass="button" Visible="false"
+                    OnClick="btnSubmit_Click" />
+                <asp:Button ID="btnCancel" runat="server" Text="Cancel" CssClass="button" OnClick="btnCancel_Click" />
+                <asp:Button ID="btnRejectTo" runat="server" Text="Reject" CssClass="button" Visible="false"
+                    OnClientClick="return ShowRollbackPopup();" />
+                <asp:Panel ID="pnlMsg" runat="server" Visible="false">
+                    <asp:Label ID="lblMsg" runat="server" />
+                </asp:Panel>
+
+                <%-- 8400000359--%>
+                <asp:GridView ID="rptCommon" runat="server" AutoGenerateColumns="false"
+                    Width="100%" BorderColor="#9D9D9D" GridLines="Both">
+                    <RowStyle CssClass="light-gray" />
+                    <HeaderStyle CssClass="gridHeader" />
+                    <AlternatingRowStyle CssClass="gridRowStyle" />
+                    <PagerStyle CssClass="PagerStyle" />
+                    <Columns>
+                        <asp:TemplateField ItemStyle-HorizontalAlign="Center">
+                            <ItemTemplate>
+                                <%# Container.DataItemIndex+1 %>
+                            </ItemTemplate>
+                        </asp:TemplateField>
+                        <asp:BoundField HeaderText="Department" DataField="Department_Name" HeaderStyle-HorizontalAlign="Left" />
+                        <asp:BoundField HeaderText="Actioned By" DataField="Actioned_By" HeaderStyle-HorizontalAlign="Left" />
+                        <asp:BoundField HeaderText="Actioned On" DataField="Actioned_On" HeaderStyle-HorizontalAlign="Left" />
+                        <asp:BoundField HeaderText="Remarks" DataField="Remark" HeaderStyle-HorizontalAlign="Left" />
+                    </Columns>
+                </asp:GridView>
+                 <%-- 8400000359--%>
+
+            </td>
+        </tr>
+    </table>
+    <div id="divRejectTo" style="display: none;" title="Reject Request">
+        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-top: 10px;">
+            <tr>
+                <td class="leftTD" style="width: 25%">
+                    Reject To
+                </td>
+                <td class="rigthTD" runat="server" id="tdDdlReject">
+                    <asp:DropDownList ID="ddlRejectTo" runat="server" AppendDataBoundItems="true">
+                        <asp:ListItem Text="Select" Value="" />
+                    </asp:DropDownList>
+                    <asp:RequiredFieldValidator ID="rfvq" SetFocusOnError="true" Display="Dynamic" Text="<img src='../../images/Error.png' title='Select Department.'"
+                        ControlToValidate="ddlRejectTo" InitialValue="" runat="server" ForeColor="Red"
+                        ErrorMessage="Select Department." ValidationGroup="reject" />
+                </td>
+                <td class="rigthTD" runat="server" id="tdChkReject" visible="false">
+                    <asp:CheckBoxList ID="ChkRejectTo" runat="server" RepeatDirection="Horizontal">
+                    </asp:CheckBoxList>
+                    <asp:CustomValidator ID="reqChkRejectTo" ErrorMessage="Please select at least one item."
+                        ForeColor="Red" ClientValidationFunction="ValidateCheckBoxList" runat="server"
+                        ValidationGroup="reject" />
+                    <%--<asp:RequiredFieldValidator ID="reqChkRejectTo" SetFocusOnError="true" Display="Dynamic"
+                        Text="<img src='../../images/Error.png' title='Select Reject To.'" ControlToValidate="ChkRejectTo"
+                        runat="server" ForeColor="Red" ValidationGroup="reject" />--%>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="tdSpace">
+                </td>
+            </tr>
+            <tr>
+                <td class="leftTD" valign="top">
+                    Remark
+                </td>
+                <td class="rigthTD">
+                    <asp:TextBox ID="txtRejectNote" runat="server" CssClass="textarea" TextMode="MultiLine"
+                        Height="40px" Width="350px" Style="text-transform: none;" />
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator13" SetFocusOnError="true"
+                        Display="Dynamic" Text="<img src='../../images/Error.png' title='Enter Remark.'"
+                        ControlToValidate="txtRejectNote" runat="server" ForeColor="Red" ValidationGroup="reject" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="tdSpace">
+                </td>
+            </tr>
+            <tr>
+                <td class="leftTD">
+                    &nbsp;
+                </td>
+                <td class="rigthTD">
+                    <asp:Button ID="btnRollback" runat="server" Text="Reject" CssClass="button" OnClick="btnRollback_Click"
+                        ValidationGroup="reject" />
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="divSAPUpload" style="display: none;" title="Upload To SAP">
+        <%--    <iframe id="Iframe1" runat="server" width="100%" height="100%" src="SAPIntegration.aspx">--%>
+        <iframe id="Iframe1" runat="server" width="100%" height="100%" src="/Transaction/BOMRecipe/SAPIntegration.aspx">
+        </iframe>
+    </div>
+    <div id="divBOMValidate" style="display: none;" title="Validate BOM Data">
+        <iframe id="Iframe2" runat="server" width="100%" height="100%" src="/Transaction/BOMRecipe/SAPBOMValidate.aspx">
+        </iframe>
+    </div>
+    <%--<div id="divModuleQA" title="User Entry" style="display: none;">
+        <asp:UpdatePanel ID="UpdatePnlQA" runat="server">
+            <ContentTemplate>
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                        <td class="leftTD" width="25%">
+                            User
+                        </td>
+                        <td class="rigthTD">
+                            <asp:TextBox ID="txtUserName" CssClass="textboxSimple" runat="server" size="30"></asp:TextBox>
+                            <asp:RequiredFieldValidator ID="UserNameRequired" runat="server" ControlToValidate="txtUserName"
+                                ErrorMessage="User Name is required." ToolTip="User Name is required." SetFocusOnError="true"
+                                ValidationGroup="ctlLogin" Display="None"></asp:RequiredFieldValidator>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tdSpace" colspan="2">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="leftTD" width="25%">
+                            Password
+                        </td>
+                        <td class="rigthTD">
+                            <asp:TextBox ID="txtPassword" runat="server" CssClass="textboxSimple" TextMode="Password"
+                                size="30"></asp:TextBox>
+                            <asp:RequiredFieldValidator ID="PasswordRequired" runat="server" ControlToValidate="txtPassword"
+                                Display="None" ErrorMessage="Password is required." ToolTip="Password is required."
+                                ValidationGroup="ctlLogin" SetFocusOnError="true"></asp:RequiredFieldValidator>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tdSpace" colspan="2">
+                        </td>
+                    </tr>
+                </table>
+            </ContentTemplate>
+        </asp:UpdatePanel>
+        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tr>
+                <td class="centerTD" colspan = "2" >
+                    <asp:Button ID="btnDone" runat="server" ValidationGroup="ctlLogin" Text="Done"
+                        CssClass="button" />                                      
+                </td>                
+            </tr>
+        </table>
+    </div>--%>
+    <div id="divCnfrmPopup" style="display: none;" title="Confirm Approval">
+        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-top: 10px;">
+            <tr>
+                <td class="leftTD" valign="top" colspan="2">
+                    <span style="color: red; font-size: x-small"><i>Update Inspection Characteristics
+                        data manually before approving the request.</i><br />
+                        <i>Click on Cancel to update data.</i>
+                        <br />
+                        <i>Click Approve to approve the request.</i> </span>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="tdSpace">
+                </td>
+            </tr>
+            <tr>
+                <td class="leftTD">
+                    <asp:Button ID="btnMDMApprove" runat="server" Text="Approve" CssClass="button" OnClick="btnMDMApprove_Click" />
+                </td>
+                <td class="rigthTD">
+                    <asp:Button ID="btnMDMCancel" runat="server" Text="Cancel" CssClass="button" OnClick="btnMDMCancel_Click" />
+                </td>
+            </tr>
+        </table>
+    </div>
+
+     <%--SPNAIRCR_SDT05122019 Added--%>
+    <div id="divApproveTo" style="display: none;" title="Approve Request">
+        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-top: 10px;">
+          
+            <tr>
+                <td class="leftTD" valign="top">
+                    Remark
+                </td>
+                <td class="rigthTD">
+                    <asp:TextBox ID="txtApproveNote" runat="server" CssClass="textarea" TextMode="MultiLine"
+                        Height="40px" Width="350px" Style="text-transform: none;" /> 
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="tdSpace">
+                </td>
+            </tr>
+            <tr>
+                <td class="leftTD">
+                    &nbsp;
+                </td>
+                <td class="rigthTD">
+                    <asp:Button ID="btnApproveRemarks" runat="server" Text="Approve" CssClass="button"
+                        OnClick="btnApproveRemarks_Click"/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <%--SPNAIRCR_SDT05122019 Added--%>
+
+    <div id="divSAPQAUpload" style="display: none;" title="Release">
+        <iframe id="Iframe3" runat="server" width="100%" height="100%" src="/Transaction/BOMRecipe/SAPQAIntegration.aspx">
+        </iframe>
+    </div>
+    <asp:Label ID="lblUserId" runat="server" Visible="false" />
+    <asp:Label ID="lblMasterHeaderId" runat="server" Visible="false" />
+    <asp:Label ID="lblMassRequestProcessId" runat="server" Visible="false" />
+    <asp:Label ID="lblRejectionType" runat="server" Visible="false" />
+    <div id="dhtmltooltip" class="dhtmltooltip">
+    </div>
+    <script src="../../Tooltip/toolTip.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        function ShowRollbackPopup() {
+            $("#divRejectTo").dialog({
+                height: 210,
+                width: 550,
+                modal: true,
+                closeOnEscape: true,
+                draggable: true,
+                resizable: false,
+                position: 'center',
+                dialogClass: 'alert',
+                //show: { effect: 'drop', duration: 500 },
+                //hide: { effect: 'explode', duration: 100 },
+                open: function (type, data) {
+                    $(this).parent().appendTo("form");
+                    $(this).show('clip');
+                }
+            });
+            return false;
+        }
+
+        function ShowSAPUploadPopup() {
+            $("#divSAPUpload").dialog({
+                height: 500,
+                width: 850,
+                modal: true,
+                closeOnEscape: true,
+                draggable: true,
+                resizable: false,
+                position: 'center',
+                dialogClass: 'alert',
+                //show: { effect: 'drop', duration: 500 },
+                //hide: { effect: 'explode', duration: 100 },
+                open: function (type, data) {
+                    $(this).parent().appendTo("form");
+                    $(this).show('clip');
+                },
+                close: function (type, data) {
+                    window.location.href = window.location.pathname;
+                }
+            });
+            return false;
+        }
+
+        function RequestSubmitPage() {
+            window.location.assign("BOMRecipeMaster.aspx")
+        }
+
+        function ValidateCheckBoxList(sender, args) {
+            var checkBoxList = document.getElementById("<%=ChkRejectTo.ClientID %>");
+            var checkboxes = checkBoxList.getElementsByTagName("input");
+            var isValid = false;
+            for (var i = 0; i < checkboxes.length; i++) {
+                if (checkboxes[i].checked) {
+                    isValid = true;
+                    break;
+                }
+            }
+            args.IsValid = isValid;
+        }
+
+        function ShowValidateBOMPopup() {
+            $("#divBOMValidate").dialog({
+                height: 500,
+                width: 850,
+                modal: true,
+                closeOnEscape: true,
+                draggable: true,
+                resizable: false,
+                position: 'center',
+                dialogClass: 'alert',
+                open: function (type, data) {
+                    $(this).parent().appendTo("form");
+                    $(this).show('clip');
+                },
+                close: function (type, data) {
+                    window.location.href = window.location.pathname;
+                }
+            });
+            return false;
+        }
+
+        //        function ShowQADialog() {
+
+        //            $("#divModuleQA").dialog({
+        //                height: 500,
+        //                width: 850,
+        //                modal: true,
+        //                closeOnEscape: true,
+        //                draggable: true,
+        //                resizable: false,
+        //                position: 'center',
+        //                dialogClass: 'alert',
+        //                open: function (type, data) {
+        //                    $(this).parent().appendTo("form");
+        //                    $(this).show('clip');
+        //                },
+        //                close: function (type, data) {
+        //                    window.location.href = window.location.pathname;
+        //                }
+        //            });
+        //            return false;
+
+        //        }
+
+        function ShowSAPQAUploadPopup() {
+            $("#divSAPQAUpload").dialog({
+                height: 500,
+                width: 850,
+                modal: true,
+                closeOnEscape: true,
+                draggable: true,
+                resizable: false,
+                position: 'center',
+                dialogClass: 'alert',
+                //show: { effect: 'drop', duration: 500 },
+                //hide: { effect: 'explode', duration: 100 },
+                open: function (type, data) {
+                    
+                    $(this).parent().appendTo("form");
+                    $(this).show('clip');
+                },
+                close: function (type, data) {
+                    window.location.href = window.location.pathname;
+                }
+            });
+            return false;
+        }
+
+        function ShowInspCharCnfrmPopup() {
+            $("#divCnfrmPopup").dialog({
+                height: 210,
+                width: 550,
+                modal: true,
+                closeOnEscape: true,
+                draggable: true,
+                resizable: false,
+                position: 'center',
+                dialogClass: 'alert',
+                open: function (type, data) {
+                    $(this).parent().appendTo("form");
+                    $(this).show('clip');
+                }
+            });
+            return false;
+        }
+
+        //SPNAIRCR_SDT05122019 Added
+        function ShowApprovePopup() {
+            $("#divApproveTo").dialog({
+                height: 210,
+                width: 550,
+                modal: true,
+                closeOnEscape: true,
+                draggable: true,
+                resizable: false,
+                position: 'center',
+                dialogClass: 'alert',
+                open: function (type, data) {
+                    $(this).parent().appendTo("form");
+                    $(this).show('clip');
+                }
+            });
+            return false;
+        }
+        //SPNAIRCR_SDT05122019 Added
+
+    </script>
+</asp:Content>

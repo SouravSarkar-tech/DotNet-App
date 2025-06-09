@@ -1,0 +1,54 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="BankMasterPage.master.cs"
+    MasterPageFile="~/Shared/Common/MainMaster.master" Inherits="Shared_Vendor_BankMasterPage" %>
+
+<%@ Register Namespace="AjaxControlToolkit" Assembly="AjaxControlToolkit" TagPrefix="ajax" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+            <td valign="top" align="center">
+                <table border="0" cellpadding="0" cellspacing="0" width="99%" class="gridHeader">
+                    <tr>
+                        <td>
+                            <b>Requestor Name.:</b>&nbsp;
+                            <asp:Label ID="lblRequestor" runat="server" />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; <b>Location:</b>&nbsp;
+                            <asp:Label ID="lblLocation" runat="server" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                            <b>Contact No:</b>&nbsp;
+                            <asp:Label ID="lblContactNo" runat="server" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tdSpace" style="border-bottom: 1px solid Black;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>Request No.:</b>&nbsp;
+                            <asp:Label ID="lblRequestNo" runat="server" />
+                            &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; <b>Reference Code:</b>&nbsp;
+                            <asp:Label ID="lblMaterialNo" runat="server" />
+                        </td>
+                    </tr>
+                </table>
+                <div id="divContainer" style="width: 99%;">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+                <asp:Panel ID="pnlMsg" runat="server" Visible="false">
+                    <asp:Label ID="lblMsg" runat="server" />
+                </asp:Panel>
+            </td>
+        </tr>
+        <tr>
+            <td height="1" align="left" valign="top">
+                &nbsp;
+            </td>
+        </tr>
+    </table>
+    <asp:Label ID="lblUserId" runat="server" Visible="false" />
+    <asp:Label ID="lblMasterHeaderId" runat="server" Visible="false" />
+</asp:Content>

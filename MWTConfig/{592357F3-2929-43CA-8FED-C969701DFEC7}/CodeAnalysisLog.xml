@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files\microsoft visual studio\2022\community\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="17.0">
+ <Targets>
+  <Target Name="C:\Users\nitinrajeshirke\AppData\Local\Temp\tmp47FF.tmp.cadir\bin\App_Code.dll">
+   <Modules>
+    <Module Name="app_code.dll">
+     <Namespaces>
+      <Namespace Name="DAL">
+       <Types>
+        <Type Name="FieldStatusMaster" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214" Status="Active" Created="2024-05-22 05:43:56Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalWarning" Path="c:\Users\nitinrajeshirke\Documents\Nitin Develpments\MWT India\MWT Main\MWT_INDIA\MWT_INDIA\MWTConfig\App_Code\DAL" File="MWTModel.cs" Line="72">'FieldStatusMaster.FieldStatusMaster()' contains a call chain that results in a call to a virtual method defined by the class. Review the following call stack for unintended consequences: &#xD;&#xA;&#xD;&#xA;FieldStatusMaster..ctor()&#xD;&#xA;FieldStatusMaster.set_SectionFieldMasters(ICollection&lt;SectionFieldMaster&gt;):Void</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="M_Company" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214" Status="Active" Created="2024-05-22 05:43:56Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalWarning" Path="c:\Users\nitinrajeshirke\Documents\Nitin Develpments\MWT India\MWT Main\MWT_INDIA\MWT_INDIA\MWTConfig\App_Code\DAL" File="MWTModel.cs" Line="97">'M_Company.M_Company()' contains a call chain that results in a call to a virtual method defined by the class. Review the following call stack for unintended consequences: &#xD;&#xA;&#xD;&#xA;M_Company..ctor()&#xD;&#xA;M_Company.set_C_Section_Feild_Mapping(ICollection&lt;C_Section_Feild_Mapping&gt;):Void</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="M_Module" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214" Status="Active" Created="2024-05-22 05:43:56Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalWarning" Path="c:\Users\nitinrajeshirke\Documents\Nitin Develpments\MWT India\MWT Main\MWT_INDIA\MWT_INDIA\MWTConfig\App_Code\DAL" File="MWTModel.cs" Line="143">'M_Module.M_Module()' contains a call chain that results in a call to a virtual method defined by the class. Review the following call stack for unintended consequences: &#xD;&#xA;&#xD;&#xA;M_Module..ctor()&#xD;&#xA;M_Module.set_C_Section_Feild_Mapping(ICollection&lt;C_Section_Feild_Mapping&gt;):Void</Issue>
+             <Issue Certainty="95" Level="CriticalWarning" Path="c:\Users\nitinrajeshirke\Documents\Nitin Develpments\MWT India\MWT Main\MWT_INDIA\MWT_INDIA\MWTConfig\App_Code\DAL" File="MWTModel.cs" Line="143">'M_Module.M_Module()' contains a call chain that results in a call to a virtual method defined by the class. Review the following call stack for unintended consequences: &#xD;&#xA;&#xD;&#xA;M_Module..ctor()&#xD;&#xA;M_Module.set_Dept_Module_Section_Mapping(ICollection&lt;Dept_Module_Section_Mapping&gt;):Void</Issue>
+             <Issue Certainty="95" Level="CriticalWarning" Path="c:\Users\nitinrajeshirke\Documents\Nitin Develpments\MWT India\MWT Main\MWT_INDIA\MWT_INDIA\MWTConfig\App_Code\DAL" File="MWTModel.cs" Line="143">'M_Module.M_Module()' contains a call chain that results in a call to a virtual method defined by the class. Review the following call stack for unintended consequences: &#xD;&#xA;&#xD;&#xA;M_Module..ctor()&#xD;&#xA;M_Module.set_Profile_Module_Mapping(ICollection&lt;Profile_Module_Mapping&gt;):Void</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="M_Plant_Group" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214" Status="Active" Created="2024-05-22 05:43:56Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalWarning" Path="c:\Users\nitinrajeshirke\Documents\Nitin Develpments\MWT India\MWT Main\MWT_INDIA\MWT_INDIA\MWTConfig\App_Code\DAL" File="MWTModel.cs" Line="178">'M_Plant_Group.M_Plant_Group()' contains a call chain that results in a call to a virtual method defined by the class. Review the following call stack for unintended consequences: &#xD;&#xA;&#xD;&#xA;M_Plant_Group..ctor()&#xD;&#xA;M_Plant_Group.set_C_Section_Feild_Mapping(ICollection&lt;C_Section_Feild_Mapping&gt;):Void</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Menu_Master" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214" Status="Active" Created="2024-05-22 05:43:56Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalWarning" Path="c:\Users\nitinrajeshirke\Documents\Nitin Develpments\MWT India\MWT Main\MWT_INDIA\MWT_INDIA\MWTConfig\App_Code\DAL" File="MWTModel.cs" Line="205">'Menu_Master.Menu_Master()' contains a call chain that results in a call to a virtual method defined by the class. Review the following call stack for unintended consequences: &#xD;&#xA;&#xD;&#xA;Menu_Master..ctor()&#xD;&#xA;Menu_Master.set_Profile_Menu_Mapping(ICollection&lt;Profile_Menu_Mapping&gt;):Void</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Profile_Master" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214" Status="Active" Created="2024-05-22 05:43:56Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalWarning" Path="c:\Users\nitinrajeshirke\Documents\Nitin Develpments\MWT India\MWT Main\MWT_INDIA\MWT_INDIA\MWTConfig\App_Code\DAL" File="MWTModel.cs" Line="232">'Profile_Master.Profile_Master()' contains a call chain that results in a call to a virtual method defined by the class. Review the following call stack for unintended consequences: &#xD;&#xA;&#xD;&#xA;Profile_Master..ctor()&#xD;&#xA;Profile_Master.set_Profile_Menu_Mapping(ICollection&lt;Profile_Menu_Mapping&gt;):Void</Issue>
+             <Issue Certainty="95" Level="CriticalWarning" Path="c:\Users\nitinrajeshirke\Documents\Nitin Develpments\MWT India\MWT Main\MWT_INDIA\MWT_INDIA\MWTConfig\App_Code\DAL" File="MWTModel.cs" Line="232">'Profile_Master.Profile_Master()' contains a call chain that results in a call to a virtual method defined by the class. Review the following call stack for unintended consequences: &#xD;&#xA;&#xD;&#xA;Profile_Master..ctor()&#xD;&#xA;Profile_Master.set_Profile_Module_Mapping(ICollection&lt;Profile_Module_Mapping&gt;):Void</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="SectionFieldMaster" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214" Status="Active" Created="2024-05-22 05:43:56Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalWarning" Path="c:\Users\nitinrajeshirke\Documents\Nitin Develpments\MWT India\MWT Main\MWT_INDIA\MWT_INDIA\MWTConfig\App_Code\DAL" File="MWTModel.cs" Line="310">'SectionFieldMaster.SectionFieldMaster()' contains a call chain that results in a call to a virtual method defined by the class. Review the following call stack for unintended consequences: &#xD;&#xA;&#xD;&#xA;SectionFieldMaster..ctor()&#xD;&#xA;SectionFieldMaster.set_C_Section_Feild_Mapping(ICollection&lt;C_Section_Feild_Mapping&gt;):Void</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="SectionMaster" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214" Status="Active" Created="2024-05-22 05:43:56Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalWarning" Path="c:\Users\nitinrajeshirke\Documents\Nitin Develpments\MWT India\MWT Main\MWT_INDIA\MWT_INDIA\MWTConfig\App_Code\DAL" File="MWTModel.cs" Line="343">'SectionMaster.SectionMaster()' contains a call chain that results in a call to a virtual method defined by the class. Review the following call stack for unintended consequences: &#xD;&#xA;&#xD;&#xA;SectionMaster..ctor()&#xD;&#xA;SectionMaster.set_Dept_Module_Section_Mapping(ICollection&lt;Dept_Module_Section_Mapping&gt;):Void</Issue>
+             <Issue Certainty="95" Level="CriticalWarning" Path="c:\Users\nitinrajeshirke\Documents\Nitin Develpments\MWT India\MWT Main\MWT_INDIA\MWT_INDIA\MWTConfig\App_Code\DAL" File="MWTModel.cs" Line="343">'SectionMaster.SectionMaster()' contains a call chain that results in a call to a virtual method defined by the class. Review the following call stack for unintended consequences: &#xD;&#xA;&#xD;&#xA;SectionMaster..ctor()&#xD;&#xA;SectionMaster.set_SectionFieldMasters(ICollection&lt;SectionFieldMaster&gt;):Void</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+  <Target Name="C:\Users\nitinrajeshirke\AppData\Local\Temp\tmp47FF.tmp.cadir\bin\App_Web_5oodizvb.dll">
+   <Modules>
+    <Module Name="app_web_5oodizvb.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="Pages_GenerateSectionConfiguration" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#btnGenerate_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2024-05-22 05:43:56Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\nitinrajeshirke\Documents\Nitin Develpments\MWT India\MWT Main\MWT_INDIA\MWT_INDIA\MWTConfig\Pages" File="GenerateSectionConfiguration.aspx.cs" Line="85">Object 'fs' can be disposed more than once in method 'Pages_GenerateSectionConfiguration.btnGenerate_Click(object, EventArgs)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 85</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202">
+   <Name>Do not dispose objects multiple times</Name>
+   <Description>A correctly implemented Dispose method can be called multiple times without throwing an exception. However, this is not guaranteed and to avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.</Description>
+   <Resolution Name="Default">Object {0} can be disposed more than once in method {1}. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 85</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182334.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="17.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214">
+   <Name>Do not call overridable methods in constructors</Name>
+   <Description>Virtual methods defined on the class should not be called from constructors. If a derived class has overridden the method, the derived class version will be called (before the derived class constructor is called).</Description>
+   <Resolution Name="Default">{0} contains a call chain that results in a call to a virtual method defined by the class. Review the following call stack for unintended consequences: {1}</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182331.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalWarning</MessageLevel>
+   <File Name="usagerules.dll" Version="17.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Category</String>
+  <String Key="Certainty">Certainty</String>
+  <String Key="CollapseAll">Collapse All</String>
+  <String Key="CheckId">Check Id</String>
+  <String Key="Error">Error</String>
+  <String Key="Errors">error(s)</String>
+  <String Key="ExpandAll">Expand All</String>
+  <String Key="Help">Help</String>
+  <String Key="Line">Line</String>
+  <String Key="Messages">message(s)</String>
+  <String Key="LocationNotStoredInPdb">[Location not stored in Pdb]</String>
+  <String Key="Project">Project</String>
+  <String Key="Resolution">Resolution</String>
+  <String Key="Rule">Rule</String>
+  <String Key="RuleFile">Rule File</String>
+  <String Key="RuleDescription">Rule Description</String>
+  <String Key="Source">Source</String>
+  <String Key="Status">Status</String>
+  <String Key="Target">Target</String>
+  <String Key="Warning">Warning</String>
+  <String Key="Warnings">warning(s)</String>
+  <String Key="ReportTitle">Code Analysis Report</String>
+ </Localized>
+</FxCopReport>

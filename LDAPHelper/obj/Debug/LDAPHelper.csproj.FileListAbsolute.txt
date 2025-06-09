@@ -1,0 +1,139 @@
+E:\MWT Development\MT\LDAPHelper\bin\Debug\LDAPHelper.dll
+E:\MWT Development\MT\LDAPHelper\bin\Debug\LDAPHelper.pdb
+E:\MWT Development\MT\LDAPHelper\obj\Debug\LDAPHelper.dll
+E:\MWT Development\MT\LDAPHelper\obj\Debug\LDAPHelper.pdb
+E:\MWT Development\MT\LDAPHelper\obj\Debug\LDAPHelper.csprojResolveAssemblyReference.cache
+E:\MWT Development\DEV_Latest\MT\LDAPHelper\bin\Debug\LDAPHelper.dll
+E:\MWT Development\DEV_Latest\MT\LDAPHelper\bin\Debug\LDAPHelper.pdb
+E:\MWT Development\DEV_Latest\MT\LDAPHelper\obj\Debug\LDAPHelper.csprojResolveAssemblyReference.cache
+E:\MWT Development\DEV_Latest\MT\LDAPHelper\obj\Debug\LDAPHelper.dll
+E:\MWT Development\DEV_Latest\MT\LDAPHelper\obj\Debug\LDAPHelper.pdb
+E:\MWT Development\DEV_Latest\MultiSignonChanges\MT\LDAPHelper\bin\Debug\LDAPHelper.dll
+E:\MWT Development\DEV_Latest\MultiSignonChanges\MT\LDAPHelper\bin\Debug\LDAPHelper.pdb
+E:\MWT Development\DEV_Latest\MultiSignonChanges\MT\LDAPHelper\obj\Debug\LDAPHelper.csprojResolveAssemblyReference.cache
+E:\MWT Development\DEV_Latest\MultiSignonChanges\MT\LDAPHelper\obj\Debug\LDAPHelper.dll
+E:\MWT Development\DEV_Latest\MultiSignonChanges\MT\LDAPHelper\obj\Debug\LDAPHelper.pdb
+E:\MWT Development\PROD_Latest\MultiSignonChanges\MT\LDAPHelper\bin\Debug\LDAPHelper.dll
+E:\MWT Development\PROD_Latest\MultiSignonChanges\MT\LDAPHelper\bin\Debug\LDAPHelper.pdb
+E:\MWT Development\PROD_Latest\MultiSignonChanges\MT\LDAPHelper\obj\Debug\LDAPHelper.dll
+E:\MWT Development\PROD_Latest\MultiSignonChanges\MT\LDAPHelper\obj\Debug\LDAPHelper.pdb
+E:\MWT Development\PROD_Latest\MultiSignonChanges\MT\LDAPHelper\obj\Debug\LDAPHelper.csprojResolveAssemblyReference.cache
+E:\MWT Development\PROD_Latest - Prod\MultiSignonChanges\MT\LDAPHelper\bin\Debug\LDAPHelper.dll
+E:\MWT Development\PROD_Latest - Prod\MultiSignonChanges\MT\LDAPHelper\bin\Debug\LDAPHelper.pdb
+E:\MWT Development\PROD_Latest - Prod\MultiSignonChanges\MT\LDAPHelper\obj\Debug\LDAPHelper.csprojResolveAssemblyReference.cache
+E:\MWT Development\PROD_Latest - Prod\MultiSignonChanges\MT\LDAPHelper\obj\Debug\LDAPHelper.dll
+E:\MWT Development\PROD_Latest - Prod\MultiSignonChanges\MT\LDAPHelper\obj\Debug\LDAPHelper.pdb
+E:\Nitish\PROD_Latest - Prod\MultiSignonChanges\MT\LDAPHelper\bin\Debug\LDAPHelper.dll
+E:\Nitish\PROD_Latest - Prod\MultiSignonChanges\MT\LDAPHelper\bin\Debug\LDAPHelper.pdb
+E:\Nitish\PROD_Latest - Prod\MultiSignonChanges\MT\LDAPHelper\obj\Debug\LDAPHelper.csprojResolveAssemblyReference.cache
+E:\Nitish\PROD_Latest - Prod\MultiSignonChanges\MT\LDAPHelper\obj\Debug\LDAPHelper.dll
+E:\Nitish\PROD_Latest - Prod\MultiSignonChanges\MT\LDAPHelper\obj\Debug\LDAPHelper.pdb
+E:\Nitish\PROD_Latest - Prod 2\MultiSignonChanges\MT\LDAPHelper\bin\Debug\LDAPHelper.dll
+E:\Nitish\PROD_Latest - Prod 2\MultiSignonChanges\MT\LDAPHelper\bin\Debug\LDAPHelper.pdb
+E:\Nitish\PROD_Latest - Prod 2\MultiSignonChanges\MT\LDAPHelper\obj\Debug\LDAPHelper.csprojResolveAssemblyReference.cache
+E:\Nitish\PROD_Latest - Prod 2\MultiSignonChanges\MT\LDAPHelper\obj\Debug\LDAPHelper.dll
+E:\Nitish\PROD_Latest - Prod 2\MultiSignonChanges\MT\LDAPHelper\obj\Debug\LDAPHelper.pdb
+E:\Nitish\PROD_Latest - Prod 2 Optimization\MultiSignonChanges\MT\LDAPHelper\bin\Debug\LDAPHelper.dll
+E:\Nitish\PROD_Latest - Prod 2 Optimization\MultiSignonChanges\MT\LDAPHelper\bin\Debug\LDAPHelper.pdb
+E:\Nitish\PROD_Latest - Prod 2 Optimization\MultiSignonChanges\MT\LDAPHelper\obj\Debug\LDAPHelper.dll
+E:\Nitish\PROD_Latest - Prod 2 Optimization\MultiSignonChanges\MT\LDAPHelper\obj\Debug\LDAPHelper.pdb
+E:\Nitish\PROD_Latest - Prod 2 Optimization\MultiSignonChanges\MT\LDAPHelper\obj\Debug\LDAPHelper.csprojResolveAssemblyReference.cache
+E:\Nitish\PROD_Latest - Prod 2 Optimization - 02\MultiSignonChanges\MT\LDAPHelper\bin\Debug\LDAPHelper.dll
+E:\Nitish\PROD_Latest - Prod 2 Optimization - 02\MultiSignonChanges\MT\LDAPHelper\bin\Debug\LDAPHelper.pdb
+E:\Nitish\PROD_Latest - Prod 2 Optimization - 02\MultiSignonChanges\MT\LDAPHelper\obj\Debug\LDAPHelper.csprojResolveAssemblyReference.cache
+E:\Nitish\PROD_Latest - Prod 2 Optimization - 02\MultiSignonChanges\MT\LDAPHelper\obj\Debug\LDAPHelper.dll
+E:\Nitish\PROD_Latest - Prod 2 Optimization - 02\MultiSignonChanges\MT\LDAPHelper\obj\Debug\LDAPHelper.pdb
+C:\Users\nitishrao\Desktop\New folder (10)\Nitish\Nitish\PROD_Latest - Prod 2 Optimization - 02\MultiSignonChanges\MT\LDAPHelper\bin\Debug\LDAPHelper.dll
+C:\Users\nitishrao\Desktop\New folder (10)\Nitish\Nitish\PROD_Latest - Prod 2 Optimization - 02\MultiSignonChanges\MT\LDAPHelper\bin\Debug\LDAPHelper.pdb
+C:\Users\nitishrao\Desktop\New folder (10)\Nitish\Nitish\PROD_Latest - Prod 2 Optimization - 02\MultiSignonChanges\MT\LDAPHelper\obj\Debug\LDAPHelper.csprojAssemblyReference.cache
+C:\Users\nitishrao\Desktop\New folder (10)\Nitish\Nitish\PROD_Latest - Prod 2 Optimization - 02\MultiSignonChanges\MT\LDAPHelper\obj\Debug\LDAPHelper.csproj.CoreCompileInputs.cache
+C:\Users\nitishrao\Desktop\New folder (10)\Nitish\Nitish\PROD_Latest - Prod 2 Optimization - 02\MultiSignonChanges\MT\LDAPHelper\obj\Debug\LDAPHelper.dll
+C:\Users\nitishrao\Desktop\New folder (10)\Nitish\Nitish\PROD_Latest - Prod 2 Optimization - 02\MultiSignonChanges\MT\LDAPHelper\obj\Debug\LDAPHelper.pdb
+C:\Users\nitishrao\Desktop\New folder (10)\Nitish\Nitish\PROD_Latest - Prod 2 Optimization - 02_Latest_26062018\MultiSignonChanges\MT\LDAPHelper\bin\Debug\LDAPHelper.dll
+C:\Users\nitishrao\Desktop\New folder (10)\Nitish\Nitish\PROD_Latest - Prod 2 Optimization - 02_Latest_26062018\MultiSignonChanges\MT\LDAPHelper\bin\Debug\LDAPHelper.pdb
+C:\Users\nitishrao\Desktop\New folder (10)\Nitish\Nitish\PROD_Latest - Prod 2 Optimization - 02_Latest_26062018\MultiSignonChanges\MT\LDAPHelper\obj\Debug\LDAPHelper.csproj.CoreCompileInputs.cache
+C:\Users\nitishrao\Desktop\New folder (10)\Nitish\Nitish\PROD_Latest - Prod 2 Optimization - 02_Latest_26062018\MultiSignonChanges\MT\LDAPHelper\obj\Debug\LDAPHelper.dll
+C:\Users\nitishrao\Desktop\New folder (10)\Nitish\Nitish\PROD_Latest - Prod 2 Optimization - 02_Latest_26062018\MultiSignonChanges\MT\LDAPHelper\obj\Debug\LDAPHelper.pdb
+C:\Users\nitishrao\Desktop\New folder (10)\Nitish\Nitish\PROD_Latest - Prod 2 Optimization - 02_Latest_26062018\MultiSignonChanges\MT\LDAPHelper\obj\Debug\LDAPHelper.csprojAssemblyReference.cache
+C:\Users\nitishrao\Desktop\New folder (10)\Nitish\Nitish\PROD_Latest - Prod 2 Optimization - 02_Latest_06072018\MultiSignonChanges\MT\LDAPHelper\bin\Debug\LDAPHelper.dll
+C:\Users\nitishrao\Desktop\New folder (10)\Nitish\Nitish\PROD_Latest - Prod 2 Optimization - 02_Latest_06072018\MultiSignonChanges\MT\LDAPHelper\bin\Debug\LDAPHelper.pdb
+C:\Users\nitishrao\Desktop\New folder (10)\Nitish\Nitish\PROD_Latest - Prod 2 Optimization - 02_Latest_06072018\MultiSignonChanges\MT\LDAPHelper\obj\Debug\LDAPHelper.csprojAssemblyReference.cache
+C:\Users\nitishrao\Desktop\New folder (10)\Nitish\Nitish\PROD_Latest - Prod 2 Optimization - 02_Latest_06072018\MultiSignonChanges\MT\LDAPHelper\obj\Debug\LDAPHelper.csproj.CoreCompileInputs.cache
+C:\Users\nitishrao\Desktop\New folder (10)\Nitish\Nitish\PROD_Latest - Prod 2 Optimization - 02_Latest_06072018\MultiSignonChanges\MT\LDAPHelper\obj\Debug\LDAPHelper.dll
+C:\Users\nitishrao\Desktop\New folder (10)\Nitish\Nitish\PROD_Latest - Prod 2 Optimization - 02_Latest_06072018\MultiSignonChanges\MT\LDAPHelper\obj\Debug\LDAPHelper.pdb
+C:\Users\nitishrao\Desktop\New folder (10)\Nitish\Nitish\PROD_Latest - Prod 2 Optimization - 02_Latest_26072018_Quality\MultiSignonChanges\MT\LDAPHelper\bin\Debug\LDAPHelper.dll
+C:\Users\nitishrao\Desktop\New folder (10)\Nitish\Nitish\PROD_Latest - Prod 2 Optimization - 02_Latest_26072018_Quality\MultiSignonChanges\MT\LDAPHelper\bin\Debug\LDAPHelper.pdb
+C:\Users\nitishrao\Desktop\New folder (10)\Nitish\Nitish\PROD_Latest - Prod 2 Optimization - 02_Latest_26072018_Quality\MultiSignonChanges\MT\LDAPHelper\obj\Debug\LDAPHelper.csprojAssemblyReference.cache
+C:\Users\nitishrao\Desktop\New folder (10)\Nitish\Nitish\PROD_Latest - Prod 2 Optimization - 02_Latest_26072018_Quality\MultiSignonChanges\MT\LDAPHelper\obj\Debug\LDAPHelper.csproj.CoreCompileInputs.cache
+C:\Users\nitishrao\Desktop\New folder (10)\Nitish\Nitish\PROD_Latest - Prod 2 Optimization - 02_Latest_26072018_Quality\MultiSignonChanges\MT\LDAPHelper\obj\Debug\LDAPHelper.dll
+C:\Users\nitishrao\Desktop\New folder (10)\Nitish\Nitish\PROD_Latest - Prod 2 Optimization - 02_Latest_26072018_Quality\MultiSignonChanges\MT\LDAPHelper\obj\Debug\LDAPHelper.pdb
+C:\Users\nitishrao\Desktop\New folder (10)\Nitish\SVN India PROD 15102018\SVN India PROD\LDAPHelper\bin\Debug\LDAPHelper.dll
+C:\Users\nitishrao\Desktop\New folder (10)\Nitish\SVN India PROD 15102018\SVN India PROD\LDAPHelper\bin\Debug\LDAPHelper.pdb
+C:\Users\nitishrao\Desktop\New folder (10)\Nitish\SVN India PROD 15102018\SVN India PROD\LDAPHelper\obj\Debug\LDAPHelper.csprojAssemblyReference.cache
+C:\Users\nitishrao\Desktop\New folder (10)\Nitish\SVN India PROD 15102018\SVN India PROD\LDAPHelper\obj\Debug\LDAPHelper.csproj.CoreCompileInputs.cache
+C:\Users\nitishrao\Desktop\New folder (10)\Nitish\SVN India PROD 15102018\SVN India PROD\LDAPHelper\obj\Debug\LDAPHelper.dll
+C:\Users\nitishrao\Desktop\New folder (10)\Nitish\SVN India PROD 15102018\SVN India PROD\LDAPHelper\obj\Debug\LDAPHelper.pdb
+C:\Users\swatimohandas\Documents\Swati\Code\India Prd 30102018\SVN India PROD 15102018\SVN India PROD\LDAPHelper\bin\Debug\LDAPHelper.dll
+C:\Users\swatimohandas\Documents\Swati\Code\India Prd 30102018\SVN India PROD 15102018\SVN India PROD\LDAPHelper\bin\Debug\LDAPHelper.pdb
+C:\Users\swatimohandas\Documents\Swati\Code\India Prd 30102018\SVN India PROD 15102018\SVN India PROD\LDAPHelper\obj\Debug\LDAPHelper.csprojResolveAssemblyReference.cache
+C:\Users\swatimohandas\Documents\Swati\Code\India Prd 30102018\SVN India PROD 15102018\SVN India PROD\LDAPHelper\obj\Debug\LDAPHelper.csproj.CoreCompileInputs.cache
+C:\Users\swatimohandas\Documents\Swati\Code\India Prd 30102018\SVN India PROD 15102018\SVN India PROD\LDAPHelper\obj\Debug\LDAPHelper.dll
+C:\Users\swatimohandas\Documents\Swati\Code\India Prd 30102018\SVN India PROD 15102018\SVN India PROD\LDAPHelper\obj\Debug\LDAPHelper.pdb
+C:\Users\swatimohandas\Documents\Swati\Code\INDIA SVN CODES 26.03.2019\SVN India PROD\LDAPHelper\bin\Debug\LDAPHelper.dll
+C:\Users\swatimohandas\Documents\Swati\Code\INDIA SVN CODES 26.03.2019\SVN India PROD\LDAPHelper\bin\Debug\LDAPHelper.pdb
+C:\Users\swatimohandas\Documents\Swati\Code\INDIA SVN CODES 26.03.2019\SVN India PROD\LDAPHelper\obj\Debug\LDAPHelper.csprojResolveAssemblyReference.cache
+C:\Users\swatimohandas\Documents\Swati\Code\INDIA SVN CODES 26.03.2019\SVN India PROD\LDAPHelper\obj\Debug\LDAPHelper.csproj.CoreCompileInputs.cache
+C:\Users\swatimohandas\Documents\Swati\Code\INDIA SVN CODES 26.03.2019\SVN India PROD\LDAPHelper\obj\Debug\LDAPHelper.dll
+C:\Users\swatimohandas\Documents\Swati\Code\INDIA SVN CODES 26.03.2019\SVN India PROD\LDAPHelper\obj\Debug\LDAPHelper.pdb
+C:\Users\nitishrao.LUPIN\Desktop\Desktop\New folder (10)\Latest MWT PROD\SVN India PROD\LDAPHelper\bin\Debug\LDAPHelper.dll
+C:\Users\nitishrao.LUPIN\Desktop\Desktop\New folder (10)\Latest MWT PROD\SVN India PROD\LDAPHelper\bin\Debug\LDAPHelper.pdb
+C:\Users\nitishrao.LUPIN\Desktop\Desktop\New folder (10)\Latest MWT PROD\SVN India PROD\LDAPHelper\obj\Debug\LDAPHelper.csprojAssemblyReference.cache
+C:\Users\nitishrao.LUPIN\Desktop\Desktop\New folder (10)\Latest MWT PROD\SVN India PROD\LDAPHelper\obj\Debug\LDAPHelper.csproj.CoreCompileInputs.cache
+C:\Users\nitishrao.LUPIN\Desktop\Desktop\New folder (10)\Latest MWT PROD\SVN India PROD\LDAPHelper\obj\Debug\LDAPHelper.dll
+C:\Users\nitishrao.LUPIN\Desktop\Desktop\New folder (10)\Latest MWT PROD\SVN India PROD\LDAPHelper\obj\Debug\LDAPHelper.pdb
+C:\Users\nitinrajeshirke\Documents\Nitin\MWT IN Final Nitish DT08052019\MWTINFinal\LDAPHelper\bin\Debug\LDAPHelper.dll
+C:\Users\nitinrajeshirke\Documents\Nitin\MWT IN Final Nitish DT08052019\MWTINFinal\LDAPHelper\bin\Debug\LDAPHelper.pdb
+C:\Users\nitinrajeshirke\Documents\Nitin\MWT IN Final Nitish DT08052019\MWTINFinal\LDAPHelper\obj\Debug\LDAPHelper.csprojResolveAssemblyReference.cache
+C:\Users\nitinrajeshirke\Documents\Nitin\MWT IN Final Nitish DT08052019\MWTINFinal\LDAPHelper\obj\Debug\LDAPHelper.csproj.CoreCompileInputs.cache
+C:\Users\nitinrajeshirke\Documents\Nitin\MWT IN Final Nitish DT08052019\MWTINFinal\LDAPHelper\obj\Debug\LDAPHelper.dll
+C:\Users\nitinrajeshirke\Documents\Nitin\MWT IN Final Nitish DT08052019\MWTINFinal\LDAPHelper\obj\Debug\LDAPHelper.pdb
+C:\Users\nitinrajeshirke\Documents\Nitin\MWT\MWT INDIA Final\MWT_INDIA\LDAPHelper\bin\Debug\LDAPHelper.dll
+C:\Users\nitinrajeshirke\Documents\Nitin\MWT\MWT INDIA Final\MWT_INDIA\LDAPHelper\bin\Debug\LDAPHelper.pdb
+C:\Users\nitinrajeshirke\Documents\Nitin\MWT\MWT INDIA Final\MWT_INDIA\LDAPHelper\obj\Debug\LDAPHelper.csproj.CoreCompileInputs.cache
+C:\Users\nitinrajeshirke\Documents\Nitin\MWT\MWT INDIA Final\MWT_INDIA\LDAPHelper\obj\Debug\LDAPHelper.dll
+C:\Users\nitinrajeshirke\Documents\Nitin\MWT\MWT INDIA Final\MWT_INDIA\LDAPHelper\obj\Debug\LDAPHelper.pdb
+C:\Users\nitinrajeshirke\Documents\Nitin\MWT\MWT INDIA Final\MWT_INDIA\LDAPHelper\obj\Debug\LDAPHelper.csprojResolveAssemblyReference.cache
+C:\Users\nitinrajeshirke\Documents\Nitin\MWT\MWT INDIA Final\New folder\MWT_INDIA\LDAPHelper\bin\Debug\LDAPHelper.dll
+C:\Users\nitinrajeshirke\Documents\Nitin\MWT\MWT INDIA Final\New folder\MWT_INDIA\LDAPHelper\bin\Debug\LDAPHelper.pdb
+C:\Users\nitinrajeshirke\Documents\Nitin\MWT\MWT INDIA Final\New folder\MWT_INDIA\LDAPHelper\obj\Debug\LDAPHelper.csprojResolveAssemblyReference.cache
+C:\Users\nitinrajeshirke\Documents\Nitin\MWT\MWT INDIA Final\New folder\MWT_INDIA\LDAPHelper\obj\Debug\LDAPHelper.csproj.CoreCompileInputs.cache
+C:\Users\nitinrajeshirke\Documents\Nitin\MWT\MWT INDIA Final\New folder\MWT_INDIA\LDAPHelper\obj\Debug\LDAPHelper.dll
+C:\Users\nitinrajeshirke\Documents\Nitin\MWT\MWT INDIA Final\New folder\MWT_INDIA\LDAPHelper\obj\Debug\LDAPHelper.pdb
+C:\Users\nitinrajeshirke\Documents\Nitin\MWT\MWT INDIA Final\MWT_INDIA_Ctrl_Final\MWT_INDIA\LDAPHelper\bin\Debug\LDAPHelper.dll
+C:\Users\nitinrajeshirke\Documents\Nitin\MWT\MWT INDIA Final\MWT_INDIA_Ctrl_Final\MWT_INDIA\LDAPHelper\bin\Debug\LDAPHelper.pdb
+C:\Users\nitinrajeshirke\Documents\Nitin\MWT\MWT INDIA Final\MWT_INDIA_Ctrl_Final\MWT_INDIA\LDAPHelper\obj\Debug\LDAPHelper.csprojResolveAssemblyReference.cache
+C:\Users\nitinrajeshirke\Documents\Nitin\MWT\MWT INDIA Final\MWT_INDIA_Ctrl_Final\MWT_INDIA\LDAPHelper\obj\Debug\LDAPHelper.csproj.CoreCompileInputs.cache
+C:\Users\nitinrajeshirke\Documents\Nitin\MWT\MWT INDIA Final\MWT_INDIA_Ctrl_Final\MWT_INDIA\LDAPHelper\obj\Debug\LDAPHelper.dll
+C:\Users\nitinrajeshirke\Documents\Nitin\MWT\MWT INDIA Final\MWT_INDIA_Ctrl_Final\MWT_INDIA\LDAPHelper\obj\Debug\LDAPHelper.pdb
+C:\Users\nitinrajeshirke\Documents\My Apps DT_09082021\MWT India\MWT_PRD\MWT_INDIA\MWT_INDIA\LDAPHelper\bin\Debug\LDAPHelper.dll
+C:\Users\nitinrajeshirke\Documents\My Apps DT_09082021\MWT India\MWT_PRD\MWT_INDIA\MWT_INDIA\LDAPHelper\bin\Debug\LDAPHelper.pdb
+C:\Users\nitinrajeshirke\Documents\My Apps DT_09082021\MWT India\MWT_PRD\MWT_INDIA\MWT_INDIA\LDAPHelper\obj\Debug\LDAPHelper.csprojAssemblyReference.cache
+C:\Users\nitinrajeshirke\Documents\My Apps DT_09082021\MWT India\MWT_PRD\MWT_INDIA\MWT_INDIA\LDAPHelper\obj\Debug\LDAPHelper.csproj.CoreCompileInputs.cache
+C:\Users\nitinrajeshirke\Documents\My Apps DT_09082021\MWT India\MWT_PRD\MWT_INDIA\MWT_INDIA\LDAPHelper\obj\Debug\LDAPHelper.dll
+C:\Users\nitinrajeshirke\Documents\My Apps DT_09082021\MWT India\MWT_PRD\MWT_INDIA\MWT_INDIA\LDAPHelper\obj\Debug\LDAPHelper.pdb
+C:\Users\nitinrajeshirke\Documents\Nitin Develpments\MWT India\MWT Main\MWT_INDIA\MWT_INDIA\LDAPHelper\bin\Debug\LDAPHelper.dll
+C:\Users\nitinrajeshirke\Documents\Nitin Develpments\MWT India\MWT Main\MWT_INDIA\MWT_INDIA\LDAPHelper\bin\Debug\LDAPHelper.pdb
+C:\Users\nitinrajeshirke\Documents\Nitin Develpments\MWT India\MWT Main\MWT_INDIA\MWT_INDIA\LDAPHelper\bin\Debug\Newtonsoft.Json.dll
+C:\Users\nitinrajeshirke\Documents\Nitin Develpments\MWT India\MWT Main\MWT_INDIA\MWT_INDIA\LDAPHelper\obj\Debug\LDAPHelper.csproj.AssemblyReference.cache
+C:\Users\nitinrajeshirke\Documents\Nitin Develpments\MWT India\MWT Main\MWT_INDIA\MWT_INDIA\LDAPHelper\obj\Debug\LDAPHelper.csproj.CoreCompileInputs.cache
+C:\Users\nitinrajeshirke\Documents\Nitin Develpments\MWT India\MWT Main\MWT_INDIA\MWT_INDIA\LDAPHelper\obj\Debug\LDAPHelper.csproj.CopyComplete
+C:\Users\nitinrajeshirke\Documents\Nitin Develpments\MWT India\MWT Main\MWT_INDIA\MWT_INDIA\LDAPHelper\obj\Debug\LDAPHelper.dll
+C:\Users\nitinrajeshirke\Documents\Nitin Develpments\MWT India\MWT Main\MWT_INDIA\MWT_INDIA\LDAPHelper\obj\Debug\LDAPHelper.pdb
+C:\Users\nitinrajeshirke\Documents\My Project\MWT INDIA\MWT_INDIA\MWT_INDIA\LDAPHelper\bin\Debug\LDAPHelper.dll
+C:\Users\nitinrajeshirke\Documents\My Project\MWT INDIA\MWT_INDIA\MWT_INDIA\LDAPHelper\bin\Debug\LDAPHelper.pdb
+C:\Users\nitinrajeshirke\Documents\My Project\MWT INDIA\MWT_INDIA\MWT_INDIA\LDAPHelper\bin\Debug\Newtonsoft.Json.dll
+C:\Users\nitinrajeshirke\Documents\My Project\MWT INDIA\MWT_INDIA\MWT_INDIA\LDAPHelper\obj\Debug\LDAPHelper.csproj.AssemblyReference.cache
+C:\Users\nitinrajeshirke\Documents\My Project\MWT INDIA\MWT_INDIA\MWT_INDIA\LDAPHelper\obj\Debug\LDAPHelper.csproj.CoreCompileInputs.cache
+C:\Users\nitinrajeshirke\Documents\My Project\MWT INDIA\MWT_INDIA\MWT_INDIA\LDAPHelper\obj\Debug\LDAPHelper.csproj.Up2Date
+C:\Users\nitinrajeshirke\Documents\My Project\MWT INDIA\MWT_INDIA\MWT_INDIA\LDAPHelper\obj\Debug\LDAPHelper.dll
+C:\Users\nitinrajeshirke\Documents\My Project\MWT INDIA\MWT_INDIA\MWT_INDIA\LDAPHelper\obj\Debug\LDAPHelper.pdb

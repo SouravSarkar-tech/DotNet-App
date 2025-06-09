@@ -1,0 +1,6 @@
+E:\MWT Development\MT\SectionConfiguration\bin\x64\Debug\SectionConfiguration.dll
+E:\MWT Development\MT\SectionConfiguration\bin\x64\Debug\SectionConfiguration.pdb
+E:\MWT Development\MT\SectionConfiguration\bin\x64\Debug\AjaxControlToolkit.dll
+E:\MWT Development\MT\SectionConfiguration\obj\x64\Debug\SectionConfiguration.dll
+E:\MWT Development\MT\SectionConfiguration\obj\x64\Debug\SectionConfiguration.pdb
+E:\MWT Development\MT\SectionConfiguration\obj\x64\Debug\SectionConfiguration.csprojResolveAssemblyReference.cache

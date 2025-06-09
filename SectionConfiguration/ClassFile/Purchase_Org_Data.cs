@@ -1,0 +1,574 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+
+#region Class_Purchase_Org_Datanamespace SectionConfiguration{	public class Purchase_Org_Data	{		public object GetClass(string str)		{			object Obj;			switch (str)			{				case "VAL001MNFR":					Obj = new SectionConfiguration.VAL001MNFR.Purchase_Org_Data();					return Obj;				case "VAL001VMC":					Obj = new SectionConfiguration.VAL001VMC.Purchase_Org_Data();					return Obj;				case "VAL001Z001":					Obj = new SectionConfiguration.VAL001Z001.Purchase_Org_Data();					return Obj;				case "VAL001Z002":					Obj = new SectionConfiguration.VAL001Z002.Purchase_Org_Data();					return Obj;				case "VAL001Z003":					Obj = new SectionConfiguration.VAL001Z003.Purchase_Org_Data();					return Obj;				case "VAL001Z004":					Obj = new SectionConfiguration.VAL001Z004.Purchase_Org_Data();					return Obj;				case "VAL001Z005":					Obj = new SectionConfiguration.VAL001Z005.Purchase_Org_Data();					return Obj;				case "VAL001Z007":					Obj = new SectionConfiguration.VAL001Z007.Purchase_Org_Data();					return Obj;				case "VAL001Z008":					Obj = new SectionConfiguration.VAL001Z008.Purchase_Org_Data();					return Obj;				case "VAL001Z009":					Obj = new SectionConfiguration.VAL001Z009.Purchase_Org_Data();					return Obj;				case "VAL001Z010":					Obj = new SectionConfiguration.VAL001Z010.Purchase_Org_Data();					return Obj;				case "VAL001Z011":					Obj = new SectionConfiguration.VAL001Z011.Purchase_Org_Data();					return Obj;				case "VAL001Z068":					Obj = new SectionConfiguration.VAL001Z068.Purchase_Org_Data();					return Obj;				case "VCL001MNFR":					Obj = new SectionConfiguration.VCL001MNFR.Purchase_Org_Data();					return Obj;				case "VCL001VMC":					Obj = new SectionConfiguration.VCL001VMC.Purchase_Org_Data();					return Obj;				case "VCL001Z001":					Obj = new SectionConfiguration.VCL001Z001.Purchase_Org_Data();					return Obj;				case "VCL001Z002":					Obj = new SectionConfiguration.VCL001Z002.Purchase_Org_Data();					return Obj;				case "VCL001Z003":					Obj = new SectionConfiguration.VCL001Z003.Purchase_Org_Data();					return Obj;				case "VCL001Z004":					Obj = new SectionConfiguration.VCL001Z004.Purchase_Org_Data();					return Obj;				case "VCL001Z005":					Obj = new SectionConfiguration.VCL001Z005.Purchase_Org_Data();					return Obj;				case "VCL001Z007":					Obj = new SectionConfiguration.VCL001Z007.Purchase_Org_Data();					return Obj;				case "VCL001Z008":					Obj = new SectionConfiguration.VCL001Z008.Purchase_Org_Data();					return Obj;				case "VCL001Z009":					Obj = new SectionConfiguration.VCL001Z009.Purchase_Org_Data();					return Obj;				case "VCL001Z010":					Obj = new SectionConfiguration.VCL001Z010.Purchase_Org_Data();					return Obj;				case "VCL001Z011":					Obj = new SectionConfiguration.VCL001Z011.Purchase_Org_Data();					return Obj;				case "VCL001Z068":					Obj = new SectionConfiguration.VCL001Z068.Purchase_Org_Data();					return Obj;				//8400000388 Start
+				case "VCL001Z093":
+					Obj = new SectionConfiguration.VCL001Z093.Purchase_Org_Data();
+					return Obj;
+				case "VAL001Z093":
+					Obj = new SectionConfiguration.VAL001Z093.Purchase_Org_Data();
+					return Obj;
+				//8400000388 End
+				default:					return null;			}		}	}}#endregion#region 8400000388
+
+#region Class_Purchase_Org_Data_VCL001Z093
+namespace SectionConfiguration.VCL001Z093
+{
+	public class Purchase_Org_Data
+	{
+
+
+		#region Properties
+		public static int chkDeleteflag_purchasinglevel
+		{
+			get { return 3; }
+		}
+
+		public static int chkAutomatic_Generation
+		{
+			get { return 3; }
+		}
+
+		public static int chkAccountNumber_VendorCreditor
+		{
+			get { return 3; }
+		}
+
+		public static int chkABC_Indicator
+		{
+			get { return 3; }
+		}
+
+		public static int chkMaterial_Number
+		{
+			get { return 3; }
+		}
+
+		public static int chkIndicatorInvoice_Verification
+		{
+			get { return 3; }
+		}
+
+		public static int chkIndicator_vendor_accountimng
+		{
+			get { return 3; }
+		}
+
+		public static int chkIndicator_ServiceBased_Verification
+		{
+			get { return 3; }
+		}
+
+		public static int txtPreference_Zone
+		{
+			get { return 3; }
+		}
+
+		public static int txtPurchasing_Organization
+		{
+			get { return 3; }
+		}
+
+		public static int txtPurchasing_Group
+		{
+			get { return 3; }
+		}
+
+		public static int txtPlannedTime_Days_BTCI
+		{
+			get { return 3; }
+		}
+
+		public static int txtPartner_counter
+		{
+			get { return 3; }
+		}
+
+		public static int txtNameBusinessPartnerVendorMaster6
+		{
+			get { return 3; }
+		}
+
+		public static int txtNameBusinessPartnerVendorMaster5
+		{
+			get { return 3; }
+		}
+
+		public static int txtReference_vendor
+		{
+			get { return 3; }
+		}
+
+		public static int txtResponsible_SalesPerson
+		{
+			get { return 3; }
+		}
+
+		public static int txtStagingTime_Days_BatchInput
+		{
+			get { return 3; }
+		}
+
+		public static int txtShipping_Conditions
+		{
+			get { return 3; }
+		}
+
+		public static int txtVendor_TelephoneNumber
+		{
+			get { return 3; }
+		}
+
+		public static int txtVendor_Subrange
+		{
+			get { return 3; }
+		}
+
+		public static int txtNameBusinessPartnerVendorMaster4
+		{
+			get { return 3; }
+		}
+
+		public static int txtNameBusinessPartnerVendorMaster3
+		{
+			get { return 3; }
+		}
+
+		public static int txtNameBusinessPartnerVendorMaster2
+		{
+			get { return 3; }
+		}
+
+		public static int txtNameBusinessPartnerVendorMaster
+		{
+			get { return 3; }
+		}
+
+		public static int txtName_Person_who_CreatedObject
+		{
+			get { return 3; }
+		}
+
+		public static int txtModeTransport_ForeignTrade
+		{
+			get { return 3; }
+		}
+
+		public static int txtMinimumOrder_batchInput
+		{
+			get { return 3; }
+		}
+
+		public static int txtCategory_tax_codes
+		{
+			get { return 3; }
+		}
+
+		public static int ddlTermsPayment_Key
+		{
+			get { return 3; }
+		}
+
+		public static int ddlPurchaseOrder_Currency
+		{
+			get { return 3; }
+		}
+
+		public static int txtDate_Which_Record_Created
+		{
+			get { return 3; }
+		}
+
+		public static int txtCustomsOffice_ForeignTrade
+		{
+			get { return 3; }
+		}
+
+		public static int txtLanguage_BatchInputField
+		{
+			get { return 3; }
+		}
+
+		public static int txtIncotermsPart2
+		{
+			get { return 3; }
+		}
+
+		public static int ddlPartner_Function
+		{
+			get { return 3; }
+		}
+
+		public static int ddlPartner_Function3
+		{
+			get { return 3; }
+		}
+
+		public static int ddlPartner_Function2
+		{
+			get { return 3; }
+		}
+
+		public static int ddlPartner_Function5
+		{
+			get { return 3; }
+		}
+
+		public static int ddlPartner_Function4
+		{
+			get { return 3; }
+		}
+
+		public static int ddlPlant
+		{
+			get { return 3; }
+		}
+
+		public static int ddlPartner_Function6
+		{
+			get { return 3; }
+		}
+
+		public static int chkOrderAcknowledgment_Requirement
+		{
+			get { return 3; }
+		}
+
+		public static int chkPurchasingBlock_Purchasing
+		{
+			get { return 3; }
+		}
+
+		public static int chkPersonnel_Number_BatchInputField
+		{
+			get { return 3; }
+		}
+
+		public static int chkSupplyRegion_RegionSupplied
+		{
+			get { return 3; }
+		}
+
+		public static int ddlCountry
+		{
+			get { return 3; }
+		}
+
+		public static int ddlIncotermsPart1
+		{
+			get { return 3; }
+		}
+
+		public static int ddlGroupCalculation_SchemaVendor
+		{
+			get { return 3; }
+		}
+
+
+
+
+		#endregion
+    }
+
+}
+
+
+
+#endregion
+
+#region Class_Purchase_Org_Data_VAL001Z093
+namespace SectionConfiguration.VAL001Z093
+{
+	public class Purchase_Org_Data
+	{
+
+
+		#region Properties
+		public static int txtNameBusinessPartnerVendorMaster5
+		{
+			get { return 3; }
+		}
+
+		public static int txtPartner_counter
+		{
+			get { return 3; }
+		}
+
+		public static int txtNameBusinessPartnerVendorMaster6
+		{
+			get { return 3; }
+		}
+
+		public static int txtPlannedTime_Days_BTCI
+		{
+			get { return 3; }
+		}
+
+		public static int txtPreference_Zone
+		{
+			get { return 3; }
+		}
+
+		public static int txtPurchasing_Organization
+		{
+			get { return 3; }
+		}
+
+		public static int txtPurchasing_Group
+		{
+			get { return 3; }
+		}
+
+		public static int txtName_Person_who_CreatedObject
+		{
+			get { return 3; }
+		}
+
+		public static int txtModeTransport_ForeignTrade
+		{
+			get { return 3; }
+		}
+
+		public static int txtMinimumOrder_batchInput
+		{
+			get { return 3; }
+		}
+
+		public static int txtLanguage_BatchInputField
+		{
+			get { return 3; }
+		}
+
+		public static int txtNameBusinessPartnerVendorMaster4
+		{
+			get { return 3; }
+		}
+
+		public static int txtNameBusinessPartnerVendorMaster3
+		{
+			get { return 3; }
+		}
+
+		public static int txtNameBusinessPartnerVendorMaster2
+		{
+			get { return 3; }
+		}
+
+		public static int txtNameBusinessPartnerVendorMaster
+		{
+			get { return 3; }
+		}
+
+		public static int txtReference_vendor
+		{
+			get { return 3; }
+		}
+
+		public static int txtShipping_Conditions
+		{
+			get { return 3; }
+		}
+
+		public static int txtResponsible_SalesPerson
+		{
+			get { return 3; }
+		}
+
+		public static int txtVendor_Subrange
+		{
+			get { return 3; }
+		}
+
+		public static int txtStagingTime_Days_BatchInput
+		{
+			get { return 3; }
+		}
+
+		public static int txtVendor_TelephoneNumber
+		{
+			get { return 3; }
+		}
+
+		public static int ddlPartner_Function6
+		{
+			get { return 3; }
+		}
+
+		public static int ddlPartner_Function5
+		{
+			get { return 3; }
+		}
+
+		public static int ddlPartner_Function4
+		{
+			get { return 3; }
+		}
+
+		public static int ddlPartner_Function3
+		{
+			get { return 3; }
+		}
+
+		public static int ddlPartner_Function2
+		{
+			get { return 3; }
+		}
+
+		public static int ddlPartner_Function
+		{
+			get { return 3; }
+		}
+
+		public static int ddlIncotermsPart1
+		{
+			get { return 3; }
+		}
+
+		public static int txtCategory_tax_codes
+		{
+			get { return 3; }
+		}
+
+		public static int ddlTermsPayment_Key
+		{
+			get { return 3; }
+		}
+
+		public static int ddlPlant
+		{
+			get { return 3; }
+		}
+
+		public static int ddlPurchaseOrder_Currency
+		{
+			get { return 3; }
+		}
+
+		public static int txtDate_Which_Record_Created
+		{
+			get { return 3; }
+		}
+
+		public static int txtCustomsOffice_ForeignTrade
+		{
+			get { return 3; }
+		}
+
+		public static int txtIncotermsPart2
+		{
+			get { return 3; }
+		}
+
+		public static int chkIndicator_ServiceBased_Verification
+		{
+			get { return 3; }
+		}
+
+		public static int chkIndicatorInvoice_Verification
+		{
+			get { return 3; }
+		}
+
+		public static int chkIndicator_vendor_accountimng
+		{
+			get { return 3; }
+		}
+
+		public static int chkDeleteflag_purchasinglevel
+		{
+			get { return 3; }
+		}
+
+		public static int chkAutomatic_Generation
+		{
+			get { return 3; }
+		}
+
+		public static int chkAccountNumber_VendorCreditor
+		{
+			get { return 3; }
+		}
+
+		public static int chkABC_Indicator
+		{
+			get { return 3; }
+		}
+
+		public static int chkMaterial_Number
+		{
+			get { return 3; }
+		}
+
+		public static int chkOrderAcknowledgment_Requirement
+		{
+			get { return 3; }
+		}
+
+		public static int chkPurchasingBlock_Purchasing
+		{
+			get { return 3; }
+		}
+
+		public static int chkPersonnel_Number_BatchInputField
+		{
+			get { return 3; }
+		}
+
+		public static int chkSupplyRegion_RegionSupplied
+		{
+			get { return 3; }
+		}
+
+		public static int ddlCountry
+		{
+			get { return 3; }
+		}
+
+		public static int ddlGroupCalculation_SchemaVendor
+		{
+			get { return 3; }
+		}
+
+
+
+
+		#endregion
+    }
+
+}
+
+
+
+
+#endregion
+#endregion
+
+#region Class_Purchase_Org_Data_VAL001MNFRnamespace SectionConfiguration.VAL001MNFR{	public class Purchase_Org_Data	{		#region Properties		public static int ddlGroupCalculation_SchemaVendor		{ 			get { return 2; }		}		public static int ddlPartner_Function		{ 			get { return 2; }		}		public static int ddlPartner_Function2		{ 			get { return 2; }		}		public static int ddlPartner_Function3		{ 			get { return 2; }		}		public static int ddlPartner_Function4		{ 			get { return 2; }		}		public static int ddlPartner_Function5		{ 			get { return 2; }		}		public static int ddlPartner_Function6		{ 			get { return 2; }		}		public static int txtNameBusinessPartnerVendorMaster		{ 			get { return 2; }		}		public static int txtNameBusinessPartnerVendorMaster2		{ 			get { return 2; }		}		public static int txtNameBusinessPartnerVendorMaster3		{ 			get { return 2; }		}		public static int txtNameBusinessPartnerVendorMaster4		{ 			get { return 2; }		}		public static int txtNameBusinessPartnerVendorMaster5		{ 			get { return 2; }		}		public static int txtNameBusinessPartnerVendorMaster6		{ 			get { return 2; }		}		public static int txtPartner_counter		{ 			get { return 3; }		}		public static int txtPlannedTime_Days_BTCI		{ 			get { return 3; }		}		public static int txtPreference_Zone		{ 			get { return 3; }		}		public static int txtPurchasing_Group		{ 			get { return 3; }		}		public static int txtPurchasing_Organization		{ 			get { return 3; }		}		public static int txtMinimumOrder_batchInput		{ 			get { return 3; }		}		public static int txtModeTransport_ForeignTrade		{ 			get { return 3; }		}		public static int txtName_Person_who_CreatedObject		{ 			get { return 3; }		}		public static int txtReference_vendor		{ 			get { return 3; }		}		public static int txtResponsible_SalesPerson		{ 			get { return 3; }		}		public static int txtShipping_Conditions		{ 			get { return 3; }		}		public static int txtStagingTime_Days_BatchInput		{ 			get { return 3; }		}		public static int txtVendor_Subrange		{ 			get { return 3; }		}		public static int txtVendor_TelephoneNumber		{ 			get { return 3; }		}		public static int ddlPlant		{ 			get { return 3; }		}		public static int ddlPurchaseOrder_Currency		{ 			get { return 3; }		}		public static int ddlTermsPayment_Key		{ 			get { return 3; }		}		public static int txtCategory_tax_codes		{ 			get { return 3; }		}		public static int txtCustomsOffice_ForeignTrade		{ 			get { return 3; }		}		public static int txtDate_Which_Record_Created		{ 			get { return 3; }		}		public static int txtIncotermsPart2		{ 			get { return 3; }		}		public static int txtLanguage_BatchInputField		{ 			get { return 3; }		}		public static int ddlIncotermsPart1		{ 			get { return 3; }		}		public static int chkSupplyRegion_RegionSupplied		{ 			get { return 3; }		}		public static int ddlCountry		{ 			get { return 3; }		}		public static int chkOrderAcknowledgment_Requirement		{ 			get { return 3; }		}		public static int chkPersonnel_Number_BatchInputField		{ 			get { return 3; }		}		public static int chkPurchasingBlock_Purchasing		{ 			get { return 3; }		}		public static int chkABC_Indicator		{ 			get { return 3; }		}		public static int chkAccountNumber_VendorCreditor		{ 			get { return 3; }		}		public static int chkAutomatic_Generation		{ 			get { return 3; }		}		public static int chkDeleteflag_purchasinglevel		{ 			get { return 3; }		}		public static int chkIndicator_ServiceBased_Verification		{ 			get { return 3; }		}		public static int chkIndicator_vendor_accountimng		{ 			get { return 3; }		}		public static int chkIndicatorInvoice_Verification		{ 			get { return 3; }		}		public static int chkMaterial_Number		{ 			get { return 3; }		}		#endregion	}}#endregion
+#region Class_Purchase_Org_Data_VAL001VMCnamespace SectionConfiguration.VAL001VMC{	public class Purchase_Org_Data	{		#region Properties		public static int chkABC_Indicator		{ 			get { return 3; }		}		public static int chkAccountNumber_VendorCreditor		{ 			get { return 3; }		}		public static int chkAutomatic_Generation		{ 			get { return 3; }		}		public static int chkDeleteflag_purchasinglevel		{ 			get { return 3; }		}		public static int chkIndicator_ServiceBased_Verification		{ 			get { return 3; }		}		public static int chkIndicator_vendor_accountimng		{ 			get { return 3; }		}		public static int chkIndicatorInvoice_Verification		{ 			get { return 3; }		}		public static int chkMaterial_Number		{ 			get { return 3; }		}		public static int chkOrderAcknowledgment_Requirement		{ 			get { return 3; }		}		public static int chkPersonnel_Number_BatchInputField		{ 			get { return 3; }		}		public static int chkPurchasingBlock_Purchasing		{ 			get { return 3; }		}		public static int chkSupplyRegion_RegionSupplied		{ 			get { return 3; }		}		public static int txtCategory_tax_codes		{ 			get { return 3; }		}		public static int txtCustomsOffice_ForeignTrade		{ 			get { return 3; }		}		public static int txtDate_Which_Record_Created		{ 			get { return 3; }		}		public static int txtIncotermsPart2		{ 			get { return 3; }		}		public static int ddlPartner_Function6		{ 			get { return 3; }		}		public static int ddlPlant		{ 			get { return 3; }		}		public static int ddlPurchaseOrder_Currency		{ 			get { return 3; }		}		public static int ddlTermsPayment_Key		{ 			get { return 3; }		}		public static int ddlPartner_Function2		{ 			get { return 3; }		}		public static int ddlPartner_Function3		{ 			get { return 3; }		}		public static int ddlPartner_Function4		{ 			get { return 3; }		}		public static int ddlPartner_Function5		{ 			get { return 3; }		}		public static int ddlCountry		{ 			get { return 3; }		}		public static int ddlGroupCalculation_SchemaVendor		{ 			get { return 3; }		}		public static int ddlIncotermsPart1		{ 			get { return 3; }		}		public static int ddlPartner_Function		{ 			get { return 3; }		}		public static int txtVendor_TelephoneNumber		{ 			get { return 3; }		}		public static int txtResponsible_SalesPerson		{ 			get { return 3; }		}		public static int txtShipping_Conditions		{ 			get { return 3; }		}		public static int txtStagingTime_Days_BatchInput		{ 			get { return 3; }		}		public static int txtVendor_Subrange		{ 			get { return 3; }		}		public static int txtPreference_Zone		{ 			get { return 3; }		}		public static int txtPurchasing_Group		{ 			get { return 3; }		}		public static int txtPurchasing_Organization		{ 			get { return 3; }		}		public static int txtReference_vendor		{ 			get { return 3; }		}		public static int txtLanguage_BatchInputField		{ 			get { return 3; }		}		public static int txtMinimumOrder_batchInput		{ 			get { return 3; }		}		public static int txtModeTransport_ForeignTrade		{ 			get { return 3; }		}		public static int txtName_Person_who_CreatedObject		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster5		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster6		{ 			get { return 3; }		}		public static int txtPartner_counter		{ 			get { return 3; }		}		public static int txtPlannedTime_Days_BTCI		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster2		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster3		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster4		{ 			get { return 3; }		}		#endregion	}}#endregion
+#region Class_Purchase_Org_Data_VAL001Z001namespace SectionConfiguration.VAL001Z001{	public class Purchase_Org_Data	{		#region Properties		public static int ddlTermsPayment_Key		{ 			get { return 1; }		}		public static int ddlPurchaseOrder_Currency		{ 			get { return 1; }		}		public static int txtIncotermsPart2		{ 			get { return 1; }		}		public static int ddlIncotermsPart1		{ 			get { return 1; }		}		public static int ddlGroupCalculation_SchemaVendor		{ 			get { return 2; }		}		public static int ddlCountry		{ 			get { return 3; }		}		public static int chkSupplyRegion_RegionSupplied		{ 			get { return 3; }		}		public static int chkOrderAcknowledgment_Requirement		{ 			get { return 3; }		}		public static int chkPurchasingBlock_Purchasing		{ 			get { return 3; }		}		public static int chkPersonnel_Number_BatchInputField		{ 			get { return 3; }		}		public static int chkIndicator_ServiceBased_Verification		{ 			get { return 3; }		}		public static int chkIndicator_vendor_accountimng		{ 			get { return 3; }		}		public static int chkMaterial_Number		{ 			get { return 3; }		}		public static int chkIndicatorInvoice_Verification		{ 			get { return 3; }		}		public static int chkDeleteflag_purchasinglevel		{ 			get { return 3; }		}		public static int chkAutomatic_Generation		{ 			get { return 3; }		}		public static int chkAccountNumber_VendorCreditor		{ 			get { return 3; }		}		public static int chkABC_Indicator		{ 			get { return 3; }		}		public static int txtLanguage_BatchInputField		{ 			get { return 3; }		}		public static int txtDate_Which_Record_Created		{ 			get { return 3; }		}		public static int txtCustomsOffice_ForeignTrade		{ 			get { return 3; }		}		public static int txtCategory_tax_codes		{ 			get { return 3; }		}		public static int ddlPartner_Function		{ 			get { return 3; }		}		public static int ddlPartner_Function3		{ 			get { return 3; }		}		public static int ddlPartner_Function2		{ 			get { return 3; }		}		public static int ddlPartner_Function6		{ 			get { return 3; }		}		public static int ddlPlant		{ 			get { return 3; }		}		public static int ddlPartner_Function5		{ 			get { return 3; }		}		public static int ddlPartner_Function4		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster5		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster6		{ 			get { return 3; }		}		public static int txtPlannedTime_Days_BTCI		{ 			get { return 3; }		}		public static int txtPartner_counter		{ 			get { return 3; }		}		public static int txtPreference_Zone		{ 			get { return 3; }		}		public static int txtPurchasing_Organization		{ 			get { return 3; }		}		public static int txtPurchasing_Group		{ 			get { return 3; }		}		public static int txtName_Person_who_CreatedObject		{ 			get { return 3; }		}		public static int txtModeTransport_ForeignTrade		{ 			get { return 3; }		}		public static int txtMinimumOrder_batchInput		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster4		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster3		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster2		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster		{ 			get { return 3; }		}		public static int txtResponsible_SalesPerson		{ 			get { return 3; }		}		public static int txtReference_vendor		{ 			get { return 3; }		}		public static int txtStagingTime_Days_BatchInput		{ 			get { return 3; }		}		public static int txtShipping_Conditions		{ 			get { return 3; }		}		public static int txtVendor_Subrange		{ 			get { return 3; }		}		public static int txtVendor_TelephoneNumber		{ 			get { return 3; }		}		#endregion	}}#endregion
+#region Class_Purchase_Org_Data_VAL001Z002namespace SectionConfiguration.VAL001Z002{	public class Purchase_Org_Data	{		#region Properties		public static int ddlPurchaseOrder_Currency		{ 			get { return 1; }		}		public static int ddlTermsPayment_Key		{ 			get { return 1; }		}		public static int txtIncotermsPart2		{ 			get { return 1; }		}		public static int ddlIncotermsPart1		{ 			get { return 1; }		}		public static int ddlGroupCalculation_SchemaVendor		{ 			get { return 2; }		}		public static int chkSupplyRegion_RegionSupplied		{ 			get { return 3; }		}		public static int ddlCountry		{ 			get { return 3; }		}		public static int chkPersonnel_Number_BatchInputField		{ 			get { return 3; }		}		public static int chkPurchasingBlock_Purchasing		{ 			get { return 3; }		}		public static int chkOrderAcknowledgment_Requirement		{ 			get { return 3; }		}		public static int chkABC_Indicator		{ 			get { return 3; }		}		public static int chkAccountNumber_VendorCreditor		{ 			get { return 3; }		}		public static int chkAutomatic_Generation		{ 			get { return 3; }		}		public static int chkDeleteflag_purchasinglevel		{ 			get { return 3; }		}		public static int chkIndicatorInvoice_Verification		{ 			get { return 3; }		}		public static int chkMaterial_Number		{ 			get { return 3; }		}		public static int chkIndicator_vendor_accountimng		{ 			get { return 3; }		}		public static int chkIndicator_ServiceBased_Verification		{ 			get { return 3; }		}		public static int txtLanguage_BatchInputField		{ 			get { return 3; }		}		public static int txtCustomsOffice_ForeignTrade		{ 			get { return 3; }		}		public static int txtDate_Which_Record_Created		{ 			get { return 3; }		}		public static int txtCategory_tax_codes		{ 			get { return 3; }		}		public static int ddlPartner_Function4		{ 			get { return 3; }		}		public static int ddlPartner_Function5		{ 			get { return 3; }		}		public static int ddlPlant		{ 			get { return 3; }		}		public static int ddlPartner_Function6		{ 			get { return 3; }		}		public static int ddlPartner_Function2		{ 			get { return 3; }		}		public static int ddlPartner_Function3		{ 			get { return 3; }		}		public static int ddlPartner_Function		{ 			get { return 3; }		}		public static int txtVendor_TelephoneNumber		{ 			get { return 3; }		}		public static int txtVendor_Subrange		{ 			get { return 3; }		}		public static int txtShipping_Conditions		{ 			get { return 3; }		}		public static int txtStagingTime_Days_BatchInput		{ 			get { return 3; }		}		public static int txtReference_vendor		{ 			get { return 3; }		}		public static int txtResponsible_SalesPerson		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster2		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster3		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster4		{ 			get { return 3; }		}		public static int txtMinimumOrder_batchInput		{ 			get { return 3; }		}		public static int txtModeTransport_ForeignTrade		{ 			get { return 3; }		}		public static int txtName_Person_who_CreatedObject		{ 			get { return 3; }		}		public static int txtPurchasing_Group		{ 			get { return 3; }		}		public static int txtPurchasing_Organization		{ 			get { return 3; }		}		public static int txtPreference_Zone		{ 			get { return 3; }		}		public static int txtPartner_counter		{ 			get { return 3; }		}		public static int txtPlannedTime_Days_BTCI		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster6		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster5		{ 			get { return 3; }		}		#endregion	}}#endregion
+#region Class_Purchase_Org_Data_VAL001Z003namespace SectionConfiguration.VAL001Z003{	public class Purchase_Org_Data	{		#region Properties		public static int ddlTermsPayment_Key		{ 			get { return 1; }		}		public static int ddlPurchaseOrder_Currency		{ 			get { return 1; }		}		public static int txtIncotermsPart2		{ 			get { return 1; }		}		public static int ddlIncotermsPart1		{ 			get { return 1; }		}		public static int ddlGroupCalculation_SchemaVendor		{ 			get { return 2; }		}		public static int ddlCountry		{ 			get { return 3; }		}		public static int chkSupplyRegion_RegionSupplied		{ 			get { return 3; }		}		public static int chkOrderAcknowledgment_Requirement		{ 			get { return 3; }		}		public static int chkPurchasingBlock_Purchasing		{ 			get { return 3; }		}		public static int chkPersonnel_Number_BatchInputField		{ 			get { return 3; }		}		public static int chkIndicator_ServiceBased_Verification		{ 			get { return 3; }		}		public static int chkIndicator_vendor_accountimng		{ 			get { return 3; }		}		public static int chkMaterial_Number		{ 			get { return 3; }		}		public static int chkIndicatorInvoice_Verification		{ 			get { return 3; }		}		public static int chkDeleteflag_purchasinglevel		{ 			get { return 3; }		}		public static int chkAutomatic_Generation		{ 			get { return 3; }		}		public static int chkAccountNumber_VendorCreditor		{ 			get { return 3; }		}		public static int chkABC_Indicator		{ 			get { return 3; }		}		public static int txtLanguage_BatchInputField		{ 			get { return 3; }		}		public static int txtDate_Which_Record_Created		{ 			get { return 3; }		}		public static int txtCustomsOffice_ForeignTrade		{ 			get { return 3; }		}		public static int txtCategory_tax_codes		{ 			get { return 3; }		}		public static int ddlPartner_Function		{ 			get { return 3; }		}		public static int ddlPartner_Function3		{ 			get { return 3; }		}		public static int ddlPartner_Function2		{ 			get { return 3; }		}		public static int ddlPartner_Function6		{ 			get { return 3; }		}		public static int ddlPlant		{ 			get { return 3; }		}		public static int ddlPartner_Function5		{ 			get { return 3; }		}		public static int ddlPartner_Function4		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster5		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster6		{ 			get { return 3; }		}		public static int txtPlannedTime_Days_BTCI		{ 			get { return 3; }		}		public static int txtPartner_counter		{ 			get { return 3; }		}		public static int txtPreference_Zone		{ 			get { return 3; }		}		public static int txtPurchasing_Organization		{ 			get { return 3; }		}		public static int txtPurchasing_Group		{ 			get { return 3; }		}		public static int txtName_Person_who_CreatedObject		{ 			get { return 3; }		}		public static int txtModeTransport_ForeignTrade		{ 			get { return 3; }		}		public static int txtMinimumOrder_batchInput		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster4		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster3		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster2		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster		{ 			get { return 3; }		}		public static int txtResponsible_SalesPerson		{ 			get { return 3; }		}		public static int txtReference_vendor		{ 			get { return 3; }		}		public static int txtStagingTime_Days_BatchInput		{ 			get { return 3; }		}		public static int txtShipping_Conditions		{ 			get { return 3; }		}		public static int txtVendor_Subrange		{ 			get { return 3; }		}		public static int txtVendor_TelephoneNumber		{ 			get { return 3; }		}		#endregion	}}#endregion
+#region Class_Purchase_Org_Data_VAL001Z004namespace SectionConfiguration.VAL001Z004{	public class Purchase_Org_Data	{		#region Properties		public static int ddlPurchaseOrder_Currency		{ 			get { return 1; }		}		public static int ddlTermsPayment_Key		{ 			get { return 1; }		}		public static int txtIncotermsPart2		{ 			get { return 1; }		}		public static int ddlIncotermsPart1		{ 			get { return 1; }		}		public static int ddlGroupCalculation_SchemaVendor		{ 			get { return 2; }		}		public static int chkSupplyRegion_RegionSupplied		{ 			get { return 3; }		}		public static int ddlCountry		{ 			get { return 3; }		}		public static int chkPersonnel_Number_BatchInputField		{ 			get { return 3; }		}		public static int chkPurchasingBlock_Purchasing		{ 			get { return 3; }		}		public static int chkOrderAcknowledgment_Requirement		{ 			get { return 3; }		}		public static int chkABC_Indicator		{ 			get { return 3; }		}		public static int chkAccountNumber_VendorCreditor		{ 			get { return 3; }		}		public static int chkAutomatic_Generation		{ 			get { return 3; }		}		public static int chkDeleteflag_purchasinglevel		{ 			get { return 3; }		}		public static int chkIndicatorInvoice_Verification		{ 			get { return 3; }		}		public static int chkMaterial_Number		{ 			get { return 3; }		}		public static int chkIndicator_vendor_accountimng		{ 			get { return 3; }		}		public static int chkIndicator_ServiceBased_Verification		{ 			get { return 3; }		}		public static int txtLanguage_BatchInputField		{ 			get { return 3; }		}		public static int txtCustomsOffice_ForeignTrade		{ 			get { return 3; }		}		public static int txtDate_Which_Record_Created		{ 			get { return 3; }		}		public static int txtCategory_tax_codes		{ 			get { return 3; }		}		public static int ddlPartner_Function4		{ 			get { return 3; }		}		public static int ddlPartner_Function5		{ 			get { return 3; }		}		public static int ddlPlant		{ 			get { return 3; }		}		public static int ddlPartner_Function6		{ 			get { return 3; }		}		public static int ddlPartner_Function2		{ 			get { return 3; }		}		public static int ddlPartner_Function3		{ 			get { return 3; }		}		public static int ddlPartner_Function		{ 			get { return 3; }		}		public static int txtVendor_TelephoneNumber		{ 			get { return 3; }		}		public static int txtVendor_Subrange		{ 			get { return 3; }		}		public static int txtShipping_Conditions		{ 			get { return 3; }		}		public static int txtStagingTime_Days_BatchInput		{ 			get { return 3; }		}		public static int txtReference_vendor		{ 			get { return 3; }		}		public static int txtResponsible_SalesPerson		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster2		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster3		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster4		{ 			get { return 3; }		}		public static int txtMinimumOrder_batchInput		{ 			get { return 3; }		}		public static int txtModeTransport_ForeignTrade		{ 			get { return 3; }		}		public static int txtName_Person_who_CreatedObject		{ 			get { return 3; }		}		public static int txtPurchasing_Group		{ 			get { return 3; }		}		public static int txtPurchasing_Organization		{ 			get { return 3; }		}		public static int txtPreference_Zone		{ 			get { return 3; }		}		public static int txtPartner_counter		{ 			get { return 3; }		}		public static int txtPlannedTime_Days_BTCI		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster6		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster5		{ 			get { return 3; }		}		#endregion	}}#endregion
+#region Class_Purchase_Org_Data_VAL001Z005namespace SectionConfiguration.VAL001Z005{	public class Purchase_Org_Data	{		#region Properties		public static int ddlTermsPayment_Key		{ 			get { return 1; }		}		public static int ddlPurchaseOrder_Currency		{ 			get { return 1; }		}		public static int txtIncotermsPart2		{ 			get { return 1; }		}		public static int ddlIncotermsPart1		{ 			get { return 1; }		}		public static int ddlGroupCalculation_SchemaVendor		{ 			get { return 2; }		}		public static int ddlCountry		{ 			get { return 3; }		}		public static int chkSupplyRegion_RegionSupplied		{ 			get { return 3; }		}		public static int chkOrderAcknowledgment_Requirement		{ 			get { return 3; }		}		public static int chkPurchasingBlock_Purchasing		{ 			get { return 3; }		}		public static int chkPersonnel_Number_BatchInputField		{ 			get { return 3; }		}		public static int chkIndicator_ServiceBased_Verification		{ 			get { return 3; }		}		public static int chkIndicator_vendor_accountimng		{ 			get { return 3; }		}		public static int chkMaterial_Number		{ 			get { return 3; }		}		public static int chkIndicatorInvoice_Verification		{ 			get { return 3; }		}		public static int chkDeleteflag_purchasinglevel		{ 			get { return 3; }		}		public static int chkAutomatic_Generation		{ 			get { return 3; }		}		public static int chkAccountNumber_VendorCreditor		{ 			get { return 3; }		}		public static int chkABC_Indicator		{ 			get { return 3; }		}		public static int txtLanguage_BatchInputField		{ 			get { return 3; }		}		public static int txtDate_Which_Record_Created		{ 			get { return 3; }		}		public static int txtCustomsOffice_ForeignTrade		{ 			get { return 3; }		}		public static int txtCategory_tax_codes		{ 			get { return 3; }		}		public static int ddlPartner_Function		{ 			get { return 3; }		}		public static int ddlPartner_Function3		{ 			get { return 3; }		}		public static int ddlPartner_Function2		{ 			get { return 3; }		}		public static int ddlPartner_Function6		{ 			get { return 3; }		}		public static int ddlPlant		{ 			get { return 3; }		}		public static int ddlPartner_Function5		{ 			get { return 3; }		}		public static int ddlPartner_Function4		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster5		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster6		{ 			get { return 3; }		}		public static int txtPlannedTime_Days_BTCI		{ 			get { return 3; }		}		public static int txtPartner_counter		{ 			get { return 3; }		}		public static int txtPreference_Zone		{ 			get { return 3; }		}		public static int txtPurchasing_Organization		{ 			get { return 3; }		}		public static int txtPurchasing_Group		{ 			get { return 3; }		}		public static int txtName_Person_who_CreatedObject		{ 			get { return 3; }		}		public static int txtModeTransport_ForeignTrade		{ 			get { return 3; }		}		public static int txtMinimumOrder_batchInput		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster4		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster3		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster2		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster		{ 			get { return 3; }		}		public static int txtResponsible_SalesPerson		{ 			get { return 3; }		}		public static int txtReference_vendor		{ 			get { return 3; }		}		public static int txtStagingTime_Days_BatchInput		{ 			get { return 3; }		}		public static int txtShipping_Conditions		{ 			get { return 3; }		}		public static int txtVendor_Subrange		{ 			get { return 3; }		}		public static int txtVendor_TelephoneNumber		{ 			get { return 3; }		}		#endregion	}}#endregion
+#region Class_Purchase_Org_Data_VAL001Z007namespace SectionConfiguration.VAL001Z007{	public class Purchase_Org_Data	{		#region Properties		public static int ddlIncotermsPart1		{ 			get { return 1; }		}		public static int ddlTermsPayment_Key		{ 			get { return 1; }		}		public static int ddlPurchaseOrder_Currency		{ 			get { return 1; }		}		public static int txtIncotermsPart2		{ 			get { return 1; }		}		public static int ddlGroupCalculation_SchemaVendor		{ 			get { return 2; }		}		public static int ddlCountry		{ 			get { return 3; }		}		public static int chkSupplyRegion_RegionSupplied		{ 			get { return 3; }		}		public static int chkPersonnel_Number_BatchInputField		{ 			get { return 3; }		}		public static int chkPurchasingBlock_Purchasing		{ 			get { return 3; }		}		public static int chkOrderAcknowledgment_Requirement		{ 			get { return 3; }		}		public static int chkMaterial_Number		{ 			get { return 3; }		}		public static int chkABC_Indicator		{ 			get { return 3; }		}		public static int chkAccountNumber_VendorCreditor		{ 			get { return 3; }		}		public static int chkAutomatic_Generation		{ 			get { return 3; }		}		public static int chkDeleteflag_purchasinglevel		{ 			get { return 3; }		}		public static int chkIndicator_vendor_accountimng		{ 			get { return 3; }		}		public static int chkIndicatorInvoice_Verification		{ 			get { return 3; }		}		public static int chkIndicator_ServiceBased_Verification		{ 			get { return 3; }		}		public static int txtCustomsOffice_ForeignTrade		{ 			get { return 3; }		}		public static int txtDate_Which_Record_Created		{ 			get { return 3; }		}		public static int ddlPlant		{ 			get { return 3; }		}		public static int txtCategory_tax_codes		{ 			get { return 3; }		}		public static int ddlPartner_Function		{ 			get { return 3; }		}		public static int ddlPartner_Function2		{ 			get { return 3; }		}		public static int ddlPartner_Function3		{ 			get { return 3; }		}		public static int ddlPartner_Function4		{ 			get { return 3; }		}		public static int ddlPartner_Function5		{ 			get { return 3; }		}		public static int ddlPartner_Function6		{ 			get { return 3; }		}		public static int txtVendor_TelephoneNumber		{ 			get { return 3; }		}		public static int txtStagingTime_Days_BatchInput		{ 			get { return 3; }		}		public static int txtVendor_Subrange		{ 			get { return 3; }		}		public static int txtResponsible_SalesPerson		{ 			get { return 3; }		}		public static int txtShipping_Conditions		{ 			get { return 3; }		}		public static int txtReference_vendor		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster2		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster3		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster4		{ 			get { return 3; }		}		public static int txtLanguage_BatchInputField		{ 			get { return 3; }		}		public static int txtMinimumOrder_batchInput		{ 			get { return 3; }		}		public static int txtModeTransport_ForeignTrade		{ 			get { return 3; }		}		public static int txtName_Person_who_CreatedObject		{ 			get { return 3; }		}		public static int txtPurchasing_Group		{ 			get { return 3; }		}		public static int txtPurchasing_Organization		{ 			get { return 3; }		}		public static int txtPreference_Zone		{ 			get { return 3; }		}		public static int txtPlannedTime_Days_BTCI		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster6		{ 			get { return 3; }		}		public static int txtPartner_counter		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster5		{ 			get { return 3; }		}		#endregion	}}#endregion
+#region Class_Purchase_Org_Data_VAL001Z008namespace SectionConfiguration.VAL001Z008{	public class Purchase_Org_Data	{		#region Properties		public static int ddlIncotermsPart1		{ 			get { return 1; }		}		public static int ddlTermsPayment_Key		{ 			get { return 1; }		}		public static int ddlPurchaseOrder_Currency		{ 			get { return 1; }		}		public static int txtIncotermsPart2		{ 			get { return 1; }		}		public static int ddlGroupCalculation_SchemaVendor		{ 			get { return 2; }		}		public static int ddlCountry		{ 			get { return 3; }		}		public static int chkSupplyRegion_RegionSupplied		{ 			get { return 3; }		}		public static int chkMaterial_Number		{ 			get { return 3; }		}		public static int chkOrderAcknowledgment_Requirement		{ 			get { return 3; }		}		public static int chkPurchasingBlock_Purchasing		{ 			get { return 3; }		}		public static int chkPersonnel_Number_BatchInputField		{ 			get { return 3; }		}		public static int chkIndicator_ServiceBased_Verification		{ 			get { return 3; }		}		public static int chkIndicatorInvoice_Verification		{ 			get { return 3; }		}		public static int chkIndicator_vendor_accountimng		{ 			get { return 3; }		}		public static int chkDeleteflag_purchasinglevel		{ 			get { return 3; }		}		public static int chkAutomatic_Generation		{ 			get { return 3; }		}		public static int chkAccountNumber_VendorCreditor		{ 			get { return 3; }		}		public static int chkABC_Indicator		{ 			get { return 3; }		}		public static int txtDate_Which_Record_Created		{ 			get { return 3; }		}		public static int txtCustomsOffice_ForeignTrade		{ 			get { return 3; }		}		public static int ddlPlant		{ 			get { return 3; }		}		public static int txtCategory_tax_codes		{ 			get { return 3; }		}		public static int ddlPartner_Function		{ 			get { return 3; }		}		public static int ddlPartner_Function3		{ 			get { return 3; }		}		public static int ddlPartner_Function2		{ 			get { return 3; }		}		public static int ddlPartner_Function6		{ 			get { return 3; }		}		public static int ddlPartner_Function5		{ 			get { return 3; }		}		public static int ddlPartner_Function4		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster5		{ 			get { return 3; }		}		public static int txtPartner_counter		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster6		{ 			get { return 3; }		}		public static int txtPlannedTime_Days_BTCI		{ 			get { return 3; }		}		public static int txtPreference_Zone		{ 			get { return 3; }		}		public static int txtPurchasing_Organization		{ 			get { return 3; }		}		public static int txtPurchasing_Group		{ 			get { return 3; }		}		public static int txtName_Person_who_CreatedObject		{ 			get { return 3; }		}		public static int txtModeTransport_ForeignTrade		{ 			get { return 3; }		}		public static int txtMinimumOrder_batchInput		{ 			get { return 3; }		}		public static int txtLanguage_BatchInputField		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster4		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster3		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster2		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster		{ 			get { return 3; }		}		public static int txtReference_vendor		{ 			get { return 3; }		}		public static int txtShipping_Conditions		{ 			get { return 3; }		}		public static int txtResponsible_SalesPerson		{ 			get { return 3; }		}		public static int txtVendor_Subrange		{ 			get { return 3; }		}		public static int txtStagingTime_Days_BatchInput		{ 			get { return 3; }		}		public static int txtVendor_TelephoneNumber		{ 			get { return 3; }		}		#endregion	}}#endregion
+#region Class_Purchase_Org_Data_VAL001Z009namespace SectionConfiguration.VAL001Z009{	public class Purchase_Org_Data	{		#region Properties		public static int ddlIncotermsPart1		{ 			get { return 1; }		}		public static int ddlTermsPayment_Key		{ 			get { return 1; }		}		public static int ddlPurchaseOrder_Currency		{ 			get { return 1; }		}		public static int txtIncotermsPart2		{ 			get { return 1; }		}		public static int ddlGroupCalculation_SchemaVendor		{ 			get { return 2; }		}		public static int ddlCountry		{ 			get { return 3; }		}		public static int chkSupplyRegion_RegionSupplied		{ 			get { return 3; }		}		public static int chkPersonnel_Number_BatchInputField		{ 			get { return 3; }		}		public static int chkPurchasingBlock_Purchasing		{ 			get { return 3; }		}		public static int chkOrderAcknowledgment_Requirement		{ 			get { return 3; }		}		public static int chkMaterial_Number		{ 			get { return 3; }		}		public static int chkABC_Indicator		{ 			get { return 3; }		}		public static int chkAccountNumber_VendorCreditor		{ 			get { return 3; }		}		public static int chkAutomatic_Generation		{ 			get { return 3; }		}		public static int chkDeleteflag_purchasinglevel		{ 			get { return 3; }		}		public static int chkIndicator_vendor_accountimng		{ 			get { return 3; }		}		public static int chkIndicatorInvoice_Verification		{ 			get { return 3; }		}		public static int chkIndicator_ServiceBased_Verification		{ 			get { return 3; }		}		public static int txtCustomsOffice_ForeignTrade		{ 			get { return 3; }		}		public static int txtDate_Which_Record_Created		{ 			get { return 3; }		}		public static int ddlPlant		{ 			get { return 3; }		}		public static int txtCategory_tax_codes		{ 			get { return 3; }		}		public static int ddlPartner_Function		{ 			get { return 3; }		}		public static int ddlPartner_Function2		{ 			get { return 3; }		}		public static int ddlPartner_Function3		{ 			get { return 3; }		}		public static int ddlPartner_Function4		{ 			get { return 3; }		}		public static int ddlPartner_Function5		{ 			get { return 3; }		}		public static int ddlPartner_Function6		{ 			get { return 3; }		}		public static int txtVendor_TelephoneNumber		{ 			get { return 3; }		}		public static int txtStagingTime_Days_BatchInput		{ 			get { return 3; }		}		public static int txtVendor_Subrange		{ 			get { return 3; }		}		public static int txtResponsible_SalesPerson		{ 			get { return 3; }		}		public static int txtShipping_Conditions		{ 			get { return 3; }		}		public static int txtReference_vendor		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster2		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster3		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster4		{ 			get { return 3; }		}		public static int txtLanguage_BatchInputField		{ 			get { return 3; }		}		public static int txtMinimumOrder_batchInput		{ 			get { return 3; }		}		public static int txtModeTransport_ForeignTrade		{ 			get { return 3; }		}		public static int txtName_Person_who_CreatedObject		{ 			get { return 3; }		}		public static int txtPurchasing_Group		{ 			get { return 3; }		}		public static int txtPurchasing_Organization		{ 			get { return 3; }		}		public static int txtPreference_Zone		{ 			get { return 3; }		}		public static int txtPlannedTime_Days_BTCI		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster6		{ 			get { return 3; }		}		public static int txtPartner_counter		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster5		{ 			get { return 3; }		}		#endregion	}}#endregion
+#region Class_Purchase_Org_Data_VAL001Z010namespace SectionConfiguration.VAL001Z010{	public class Purchase_Org_Data	{		#region Properties		public static int txtNameBusinessPartnerVendorMaster5		{ 			get { return 3; }		}		public static int txtPartner_counter		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster6		{ 			get { return 3; }		}		public static int txtPlannedTime_Days_BTCI		{ 			get { return 3; }		}		public static int txtPreference_Zone		{ 			get { return 3; }		}		public static int txtPurchasing_Organization		{ 			get { return 3; }		}		public static int txtPurchasing_Group		{ 			get { return 3; }		}		public static int txtName_Person_who_CreatedObject		{ 			get { return 3; }		}		public static int txtModeTransport_ForeignTrade		{ 			get { return 3; }		}		public static int txtMinimumOrder_batchInput		{ 			get { return 3; }		}		public static int txtLanguage_BatchInputField		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster4		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster3		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster2		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster		{ 			get { return 3; }		}		public static int txtReference_vendor		{ 			get { return 3; }		}		public static int txtShipping_Conditions		{ 			get { return 3; }		}		public static int txtResponsible_SalesPerson		{ 			get { return 3; }		}		public static int txtVendor_Subrange		{ 			get { return 3; }		}		public static int txtStagingTime_Days_BatchInput		{ 			get { return 3; }		}		public static int txtVendor_TelephoneNumber		{ 			get { return 3; }		}		public static int ddlPartner_Function6		{ 			get { return 3; }		}		public static int ddlPartner_Function5		{ 			get { return 3; }		}		public static int ddlPartner_Function4		{ 			get { return 3; }		}		public static int ddlPartner_Function3		{ 			get { return 3; }		}		public static int ddlPartner_Function2		{ 			get { return 3; }		}		public static int ddlPartner_Function		{ 			get { return 3; }		}		public static int ddlIncotermsPart1		{ 			get { return 3; }		}		public static int txtCategory_tax_codes		{ 			get { return 3; }		}		public static int ddlTermsPayment_Key		{ 			get { return 3; }		}		public static int ddlPlant		{ 			get { return 3; }		}		public static int ddlPurchaseOrder_Currency		{ 			get { return 3; }		}		public static int txtDate_Which_Record_Created		{ 			get { return 3; }		}		public static int txtCustomsOffice_ForeignTrade		{ 			get { return 3; }		}		public static int txtIncotermsPart2		{ 			get { return 3; }		}		public static int chkIndicator_ServiceBased_Verification		{ 			get { return 3; }		}		public static int chkIndicatorInvoice_Verification		{ 			get { return 3; }		}		public static int chkIndicator_vendor_accountimng		{ 			get { return 3; }		}		public static int chkDeleteflag_purchasinglevel		{ 			get { return 3; }		}		public static int chkAutomatic_Generation		{ 			get { return 3; }		}		public static int chkAccountNumber_VendorCreditor		{ 			get { return 3; }		}		public static int chkABC_Indicator		{ 			get { return 3; }		}		public static int chkMaterial_Number		{ 			get { return 3; }		}		public static int chkOrderAcknowledgment_Requirement		{ 			get { return 3; }		}		public static int chkPurchasingBlock_Purchasing		{ 			get { return 3; }		}		public static int chkPersonnel_Number_BatchInputField		{ 			get { return 3; }		}		public static int chkSupplyRegion_RegionSupplied		{ 			get { return 3; }		}		public static int ddlCountry		{ 			get { return 3; }		}		public static int ddlGroupCalculation_SchemaVendor		{ 			get { return 3; }		}		#endregion	}}#endregion
+#region Class_Purchase_Org_Data_VAL001Z011namespace SectionConfiguration.VAL001Z011{	public class Purchase_Org_Data	{		#region Properties		public static int ddlGroupCalculation_SchemaVendor		{ 			get { return 3; }		}		public static int ddlCountry		{ 			get { return 3; }		}		public static int chkSupplyRegion_RegionSupplied		{ 			get { return 3; }		}		public static int chkPersonnel_Number_BatchInputField		{ 			get { return 3; }		}		public static int chkPurchasingBlock_Purchasing		{ 			get { return 3; }		}		public static int chkOrderAcknowledgment_Requirement		{ 			get { return 3; }		}		public static int chkMaterial_Number		{ 			get { return 3; }		}		public static int chkABC_Indicator		{ 			get { return 3; }		}		public static int chkAccountNumber_VendorCreditor		{ 			get { return 3; }		}		public static int chkAutomatic_Generation		{ 			get { return 3; }		}		public static int chkDeleteflag_purchasinglevel		{ 			get { return 3; }		}		public static int chkIndicator_vendor_accountimng		{ 			get { return 3; }		}		public static int chkIndicatorInvoice_Verification		{ 			get { return 3; }		}		public static int chkIndicator_ServiceBased_Verification		{ 			get { return 3; }		}		public static int txtIncotermsPart2		{ 			get { return 3; }		}		public static int txtCustomsOffice_ForeignTrade		{ 			get { return 3; }		}		public static int txtDate_Which_Record_Created		{ 			get { return 3; }		}		public static int ddlPurchaseOrder_Currency		{ 			get { return 3; }		}		public static int ddlPlant		{ 			get { return 3; }		}		public static int ddlTermsPayment_Key		{ 			get { return 3; }		}		public static int txtCategory_tax_codes		{ 			get { return 3; }		}		public static int ddlIncotermsPart1		{ 			get { return 3; }		}		public static int ddlPartner_Function		{ 			get { return 3; }		}		public static int ddlPartner_Function2		{ 			get { return 3; }		}		public static int ddlPartner_Function3		{ 			get { return 3; }		}		public static int ddlPartner_Function4		{ 			get { return 3; }		}		public static int ddlPartner_Function5		{ 			get { return 3; }		}		public static int ddlPartner_Function6		{ 			get { return 3; }		}		public static int txtVendor_TelephoneNumber		{ 			get { return 3; }		}		public static int txtStagingTime_Days_BatchInput		{ 			get { return 3; }		}		public static int txtVendor_Subrange		{ 			get { return 3; }		}		public static int txtResponsible_SalesPerson		{ 			get { return 3; }		}		public static int txtShipping_Conditions		{ 			get { return 3; }		}		public static int txtReference_vendor		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster2		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster3		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster4		{ 			get { return 3; }		}		public static int txtLanguage_BatchInputField		{ 			get { return 3; }		}		public static int txtMinimumOrder_batchInput		{ 			get { return 3; }		}		public static int txtModeTransport_ForeignTrade		{ 			get { return 3; }		}		public static int txtName_Person_who_CreatedObject		{ 			get { return 3; }		}		public static int txtPurchasing_Group		{ 			get { return 3; }		}		public static int txtPurchasing_Organization		{ 			get { return 3; }		}		public static int txtPreference_Zone		{ 			get { return 3; }		}		public static int txtPlannedTime_Days_BTCI		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster6		{ 			get { return 3; }		}		public static int txtPartner_counter		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster5		{ 			get { return 3; }		}		#endregion	}}#endregion
+#region Class_Purchase_Org_Data_VAL001Z068namespace SectionConfiguration.VAL001Z068{	public class Purchase_Org_Data	{		#region Properties		public static int txtNameBusinessPartnerVendorMaster6		{ 			get { return 1; }		}		public static int txtNameBusinessPartnerVendorMaster5		{ 			get { return 1; }		}		public static int txtPlannedTime_Days_BTCI		{ 			get { return 1; }		}		public static int txtPartner_counter		{ 			get { return 1; }		}		public static int txtPreference_Zone		{ 			get { return 1; }		}		public static int txtPurchasing_Organization		{ 			get { return 1; }		}		public static int txtPurchasing_Group		{ 			get { return 1; }		}		public static int txtName_Person_who_CreatedObject		{ 			get { return 1; }		}		public static int txtModeTransport_ForeignTrade		{ 			get { return 1; }		}		public static int txtMinimumOrder_batchInput		{ 			get { return 1; }		}		public static int txtNameBusinessPartnerVendorMaster4		{ 			get { return 1; }		}		public static int txtNameBusinessPartnerVendorMaster3		{ 			get { return 1; }		}		public static int txtNameBusinessPartnerVendorMaster2		{ 			get { return 1; }		}		public static int txtNameBusinessPartnerVendorMaster		{ 			get { return 1; }		}		public static int txtReference_vendor		{ 			get { return 1; }		}		public static int txtResponsible_SalesPerson		{ 			get { return 1; }		}		public static int txtStagingTime_Days_BatchInput		{ 			get { return 1; }		}		public static int txtShipping_Conditions		{ 			get { return 1; }		}		public static int txtVendor_Subrange		{ 			get { return 1; }		}		public static int txtVendor_TelephoneNumber		{ 			get { return 1; }		}		public static int ddlPlant		{ 			get { return 1; }		}		public static int ddlPartner_Function6		{ 			get { return 1; }		}		public static int ddlPartner_Function5		{ 			get { return 1; }		}		public static int ddlPartner_Function4		{ 			get { return 1; }		}		public static int ddlPartner_Function3		{ 			get { return 1; }		}		public static int ddlPartner_Function2		{ 			get { return 1; }		}		public static int ddlPartner_Function		{ 			get { return 1; }		}		public static int txtCategory_tax_codes		{ 			get { return 1; }		}		public static int ddlPurchaseOrder_Currency		{ 			get { return 1; }		}		public static int ddlTermsPayment_Key		{ 			get { return 1; }		}		public static int txtDate_Which_Record_Created		{ 			get { return 1; }		}		public static int txtCustomsOffice_ForeignTrade		{ 			get { return 1; }		}		public static int txtIncotermsPart2		{ 			get { return 1; }		}		public static int txtLanguage_BatchInputField		{ 			get { return 1; }		}		public static int chkIndicator_vendor_accountimng		{ 			get { return 1; }		}		public static int chkIndicator_ServiceBased_Verification		{ 			get { return 1; }		}		public static int chkMaterial_Number		{ 			get { return 1; }		}		public static int chkIndicatorInvoice_Verification		{ 			get { return 1; }		}		public static int chkDeleteflag_purchasinglevel		{ 			get { return 1; }		}		public static int chkAutomatic_Generation		{ 			get { return 1; }		}		public static int chkAccountNumber_VendorCreditor		{ 			get { return 1; }		}		public static int chkABC_Indicator		{ 			get { return 1; }		}		public static int chkOrderAcknowledgment_Requirement		{ 			get { return 1; }		}		public static int chkPurchasingBlock_Purchasing		{ 			get { return 1; }		}		public static int chkPersonnel_Number_BatchInputField		{ 			get { return 1; }		}		public static int chkSupplyRegion_RegionSupplied		{ 			get { return 1; }		}		public static int ddlCountry		{ 			get { return 1; }		}		public static int ddlGroupCalculation_SchemaVendor		{ 			get { return 1; }		}		public static int ddlIncotermsPart1		{ 			get { return 1; }		}		#endregion	}}#endregion
+#region Class_Purchase_Org_Data_VCL001MNFRnamespace SectionConfiguration.VCL001MNFR{	public class Purchase_Org_Data	{		#region Properties		public static int ddlGroupCalculation_SchemaVendor		{ 			get { return 2; }		}		public static int ddlPartner_Function		{ 			get { return 2; }		}		public static int ddlPartner_Function2		{ 			get { return 2; }		}		public static int ddlPartner_Function3		{ 			get { return 2; }		}		public static int ddlPartner_Function4		{ 			get { return 2; }		}		public static int ddlPartner_Function5		{ 			get { return 2; }		}		public static int ddlPartner_Function6		{ 			get { return 2; }		}		public static int txtNameBusinessPartnerVendorMaster		{ 			get { return 2; }		}		public static int txtNameBusinessPartnerVendorMaster2		{ 			get { return 2; }		}		public static int txtNameBusinessPartnerVendorMaster3		{ 			get { return 2; }		}		public static int txtNameBusinessPartnerVendorMaster4		{ 			get { return 2; }		}		public static int txtNameBusinessPartnerVendorMaster5		{ 			get { return 2; }		}		public static int txtNameBusinessPartnerVendorMaster6		{ 			get { return 2; }		}		public static int txtPartner_counter		{ 			get { return 3; }		}		public static int txtPlannedTime_Days_BTCI		{ 			get { return 3; }		}		public static int txtPreference_Zone		{ 			get { return 3; }		}		public static int txtPurchasing_Group		{ 			get { return 3; }		}		public static int txtPurchasing_Organization		{ 			get { return 3; }		}		public static int txtReference_vendor		{ 			get { return 3; }		}		public static int txtResponsible_SalesPerson		{ 			get { return 3; }		}		public static int txtShipping_Conditions		{ 			get { return 3; }		}		public static int txtStagingTime_Days_BatchInput		{ 			get { return 3; }		}		public static int txtVendor_Subrange		{ 			get { return 3; }		}		public static int txtVendor_TelephoneNumber		{ 			get { return 3; }		}		public static int txtName_Person_who_CreatedObject		{ 			get { return 3; }		}		public static int txtMinimumOrder_batchInput		{ 			get { return 3; }		}		public static int txtModeTransport_ForeignTrade		{ 			get { return 3; }		}		public static int ddlPurchaseOrder_Currency		{ 			get { return 3; }		}		public static int ddlTermsPayment_Key		{ 			get { return 3; }		}		public static int txtCategory_tax_codes		{ 			get { return 3; }		}		public static int txtCustomsOffice_ForeignTrade		{ 			get { return 3; }		}		public static int txtDate_Which_Record_Created		{ 			get { return 3; }		}		public static int txtIncotermsPart2		{ 			get { return 3; }		}		public static int txtLanguage_BatchInputField		{ 			get { return 3; }		}		public static int ddlPlant		{ 			get { return 3; }		}		public static int ddlIncotermsPart1		{ 			get { return 3; }		}		public static int ddlCountry		{ 			get { return 3; }		}		public static int chkOrderAcknowledgment_Requirement		{ 			get { return 3; }		}		public static int chkPersonnel_Number_BatchInputField		{ 			get { return 3; }		}		public static int chkPurchasingBlock_Purchasing		{ 			get { return 3; }		}		public static int chkSupplyRegion_RegionSupplied		{ 			get { return 3; }		}		public static int chkABC_Indicator		{ 			get { return 3; }		}		public static int chkAccountNumber_VendorCreditor		{ 			get { return 3; }		}		public static int chkAutomatic_Generation		{ 			get { return 3; }		}		public static int chkDeleteflag_purchasinglevel		{ 			get { return 3; }		}		public static int chkIndicator_ServiceBased_Verification		{ 			get { return 3; }		}		public static int chkIndicator_vendor_accountimng		{ 			get { return 3; }		}		public static int chkIndicatorInvoice_Verification		{ 			get { return 3; }		}		public static int chkMaterial_Number		{ 			get { return 3; }		}		#endregion	}}#endregion
+#region Class_Purchase_Org_Data_VCL001VMCnamespace SectionConfiguration.VCL001VMC{	public class Purchase_Org_Data	{		#region Properties		public static int chkABC_Indicator		{ 			get { return 3; }		}		public static int chkAccountNumber_VendorCreditor		{ 			get { return 3; }		}		public static int chkAutomatic_Generation		{ 			get { return 3; }		}		public static int chkDeleteflag_purchasinglevel		{ 			get { return 3; }		}		public static int chkIndicator_ServiceBased_Verification		{ 			get { return 3; }		}		public static int chkIndicator_vendor_accountimng		{ 			get { return 3; }		}		public static int chkIndicatorInvoice_Verification		{ 			get { return 3; }		}		public static int chkMaterial_Number		{ 			get { return 3; }		}		public static int chkOrderAcknowledgment_Requirement		{ 			get { return 3; }		}		public static int chkPersonnel_Number_BatchInputField		{ 			get { return 3; }		}		public static int chkPurchasingBlock_Purchasing		{ 			get { return 3; }		}		public static int chkSupplyRegion_RegionSupplied		{ 			get { return 3; }		}		public static int ddlPartner_Function2		{ 			get { return 3; }		}		public static int ddlPartner_Function3		{ 			get { return 3; }		}		public static int ddlPartner_Function4		{ 			get { return 3; }		}		public static int ddlPartner_Function5		{ 			get { return 3; }		}		public static int ddlCountry		{ 			get { return 3; }		}		public static int ddlGroupCalculation_SchemaVendor		{ 			get { return 3; }		}		public static int ddlIncotermsPart1		{ 			get { return 3; }		}		public static int ddlPartner_Function		{ 			get { return 3; }		}		public static int txtCategory_tax_codes		{ 			get { return 3; }		}		public static int txtCustomsOffice_ForeignTrade		{ 			get { return 3; }		}		public static int txtDate_Which_Record_Created		{ 			get { return 3; }		}		public static int txtIncotermsPart2		{ 			get { return 3; }		}		public static int ddlPartner_Function6		{ 			get { return 3; }		}		public static int ddlPlant		{ 			get { return 3; }		}		public static int ddlPurchaseOrder_Currency		{ 			get { return 3; }		}		public static int ddlTermsPayment_Key		{ 			get { return 3; }		}		public static int txtLanguage_BatchInputField		{ 			get { return 3; }		}		public static int txtMinimumOrder_batchInput		{ 			get { return 3; }		}		public static int txtModeTransport_ForeignTrade		{ 			get { return 3; }		}		public static int txtName_Person_who_CreatedObject		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster2		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster3		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster4		{ 			get { return 3; }		}		public static int txtResponsible_SalesPerson		{ 			get { return 3; }		}		public static int txtShipping_Conditions		{ 			get { return 3; }		}		public static int txtStagingTime_Days_BatchInput		{ 			get { return 3; }		}		public static int txtVendor_Subrange		{ 			get { return 3; }		}		public static int txtVendor_TelephoneNumber		{ 			get { return 3; }		}		public static int txtPreference_Zone		{ 			get { return 3; }		}		public static int txtPurchasing_Group		{ 			get { return 3; }		}		public static int txtPurchasing_Organization		{ 			get { return 3; }		}		public static int txtReference_vendor		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster5		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster6		{ 			get { return 3; }		}		public static int txtPartner_counter		{ 			get { return 3; }		}		public static int txtPlannedTime_Days_BTCI		{ 			get { return 3; }		}		#endregion	}}#endregion
+#region Class_Purchase_Org_Data_VCL001Z001namespace SectionConfiguration.VCL001Z001{	public class Purchase_Org_Data	{		#region Properties		public static int ddlTermsPayment_Key		{ 			get { return 2; }		}		public static int ddlPurchaseOrder_Currency		{ 			get { return 2; }		}		public static int txtIncotermsPart2		{ 			get { return 2; }		}		public static int ddlIncotermsPart1		{ 			get { return 2; }		}		public static int ddlGroupCalculation_SchemaVendor		{ 			get { return 2; }		}		public static int ddlCountry		{ 			get { return 3; }		}		public static int chkOrderAcknowledgment_Requirement		{ 			get { return 3; }		}		public static int chkPersonnel_Number_BatchInputField		{ 			get { return 3; }		}		public static int chkSupplyRegion_RegionSupplied		{ 			get { return 3; }		}		public static int chkPurchasingBlock_Purchasing		{ 			get { return 3; }		}		public static int ddlPartner_Function2		{ 			get { return 3; }		}		public static int ddlPartner_Function		{ 			get { return 3; }		}		public static int ddlPartner_Function4		{ 			get { return 3; }		}		public static int ddlPartner_Function3		{ 			get { return 3; }		}		public static int ddlPartner_Function5		{ 			get { return 3; }		}		public static int ddlPlant		{ 			get { return 3; }		}		public static int ddlPartner_Function6		{ 			get { return 3; }		}		public static int txtDate_Which_Record_Created		{ 			get { return 3; }		}		public static int txtLanguage_BatchInputField		{ 			get { return 3; }		}		public static int txtCategory_tax_codes		{ 			get { return 3; }		}		public static int txtCustomsOffice_ForeignTrade		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster4		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster3		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster2		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster		{ 			get { return 3; }		}		public static int txtName_Person_who_CreatedObject		{ 			get { return 3; }		}		public static int txtModeTransport_ForeignTrade		{ 			get { return 3; }		}		public static int txtMinimumOrder_batchInput		{ 			get { return 3; }		}		public static int txtPreference_Zone		{ 			get { return 3; }		}		public static int txtPurchasing_Group		{ 			get { return 3; }		}		public static int txtReference_vendor		{ 			get { return 3; }		}		public static int txtPurchasing_Organization		{ 			get { return 3; }		}		public static int txtPlannedTime_Days_BTCI		{ 			get { return 3; }		}		public static int txtPartner_counter		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster6		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster5		{ 			get { return 3; }		}		public static int txtResponsible_SalesPerson		{ 			get { return 3; }		}		public static int txtStagingTime_Days_BatchInput		{ 			get { return 3; }		}		public static int txtShipping_Conditions		{ 			get { return 3; }		}		public static int txtVendor_TelephoneNumber		{ 			get { return 3; }		}		public static int txtVendor_Subrange		{ 			get { return 3; }		}		public static int chkDeleteflag_purchasinglevel		{ 			get { return 3; }		}		public static int chkAutomatic_Generation		{ 			get { return 3; }		}		public static int chkAccountNumber_VendorCreditor		{ 			get { return 3; }		}		public static int chkMaterial_Number		{ 			get { return 3; }		}		public static int chkIndicatorInvoice_Verification		{ 			get { return 3; }		}		public static int chkIndicator_vendor_accountimng		{ 			get { return 3; }		}		public static int chkIndicator_ServiceBased_Verification		{ 			get { return 3; }		}		public static int chkABC_Indicator		{ 			get { return 3; }		}		#endregion	}}#endregion
+#region Class_Purchase_Org_Data_VCL001Z002namespace SectionConfiguration.VCL001Z002{	public class Purchase_Org_Data	{		#region Properties		public static int ddlPurchaseOrder_Currency		{ 			get { return 2; }		}		public static int ddlTermsPayment_Key		{ 			get { return 2; }		}		public static int txtIncotermsPart2		{ 			get { return 2; }		}		public static int ddlGroupCalculation_SchemaVendor		{ 			get { return 2; }		}		public static int ddlIncotermsPart1		{ 			get { return 2; }		}		public static int ddlCountry		{ 			get { return 3; }		}		public static int chkPurchasingBlock_Purchasing		{ 			get { return 3; }		}		public static int chkSupplyRegion_RegionSupplied		{ 			get { return 3; }		}		public static int chkPersonnel_Number_BatchInputField		{ 			get { return 3; }		}		public static int chkOrderAcknowledgment_Requirement		{ 			get { return 3; }		}		public static int ddlPartner_Function6		{ 			get { return 3; }		}		public static int ddlPlant		{ 			get { return 3; }		}		public static int ddlPartner_Function5		{ 			get { return 3; }		}		public static int ddlPartner_Function3		{ 			get { return 3; }		}		public static int ddlPartner_Function4		{ 			get { return 3; }		}		public static int ddlPartner_Function		{ 			get { return 3; }		}		public static int ddlPartner_Function2		{ 			get { return 3; }		}		public static int txtDate_Which_Record_Created		{ 			get { return 3; }		}		public static int txtLanguage_BatchInputField		{ 			get { return 3; }		}		public static int txtCustomsOffice_ForeignTrade		{ 			get { return 3; }		}		public static int txtCategory_tax_codes		{ 			get { return 3; }		}		public static int txtMinimumOrder_batchInput		{ 			get { return 3; }		}		public static int txtModeTransport_ForeignTrade		{ 			get { return 3; }		}		public static int txtName_Person_who_CreatedObject		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster2		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster3		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster4		{ 			get { return 3; }		}		public static int txtVendor_Subrange		{ 			get { return 3; }		}		public static int txtVendor_TelephoneNumber		{ 			get { return 3; }		}		public static int txtShipping_Conditions		{ 			get { return 3; }		}		public static int txtStagingTime_Days_BatchInput		{ 			get { return 3; }		}		public static int txtResponsible_SalesPerson		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster5		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster6		{ 			get { return 3; }		}		public static int txtPartner_counter		{ 			get { return 3; }		}		public static int txtPlannedTime_Days_BTCI		{ 			get { return 3; }		}		public static int txtPurchasing_Organization		{ 			get { return 3; }		}		public static int txtReference_vendor		{ 			get { return 3; }		}		public static int txtPurchasing_Group		{ 			get { return 3; }		}		public static int txtPreference_Zone		{ 			get { return 3; }		}		public static int chkABC_Indicator		{ 			get { return 3; }		}		public static int chkIndicator_ServiceBased_Verification		{ 			get { return 3; }		}		public static int chkIndicator_vendor_accountimng		{ 			get { return 3; }		}		public static int chkIndicatorInvoice_Verification		{ 			get { return 3; }		}		public static int chkMaterial_Number		{ 			get { return 3; }		}		public static int chkAccountNumber_VendorCreditor		{ 			get { return 3; }		}		public static int chkAutomatic_Generation		{ 			get { return 3; }		}		public static int chkDeleteflag_purchasinglevel		{ 			get { return 3; }		}		#endregion	}}#endregion
+#region Class_Purchase_Org_Data_VCL001Z003namespace SectionConfiguration.VCL001Z003{	public class Purchase_Org_Data	{		#region Properties		public static int ddlTermsPayment_Key		{ 			get { return 2; }		}		public static int ddlPurchaseOrder_Currency		{ 			get { return 2; }		}		public static int txtIncotermsPart2		{ 			get { return 2; }		}		public static int ddlIncotermsPart1		{ 			get { return 2; }		}		public static int ddlGroupCalculation_SchemaVendor		{ 			get { return 2; }		}		public static int ddlCountry		{ 			get { return 3; }		}		public static int chkOrderAcknowledgment_Requirement		{ 			get { return 3; }		}		public static int chkPersonnel_Number_BatchInputField		{ 			get { return 3; }		}		public static int chkSupplyRegion_RegionSupplied		{ 			get { return 3; }		}		public static int chkPurchasingBlock_Purchasing		{ 			get { return 3; }		}		public static int ddlPartner_Function2		{ 			get { return 3; }		}		public static int ddlPartner_Function		{ 			get { return 3; }		}		public static int ddlPartner_Function4		{ 			get { return 3; }		}		public static int ddlPartner_Function3		{ 			get { return 3; }		}		public static int ddlPartner_Function5		{ 			get { return 3; }		}		public static int ddlPlant		{ 			get { return 3; }		}		public static int ddlPartner_Function6		{ 			get { return 3; }		}		public static int txtDate_Which_Record_Created		{ 			get { return 3; }		}		public static int txtLanguage_BatchInputField		{ 			get { return 3; }		}		public static int txtCategory_tax_codes		{ 			get { return 3; }		}		public static int txtCustomsOffice_ForeignTrade		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster4		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster3		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster2		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster		{ 			get { return 3; }		}		public static int txtName_Person_who_CreatedObject		{ 			get { return 3; }		}		public static int txtModeTransport_ForeignTrade		{ 			get { return 3; }		}		public static int txtMinimumOrder_batchInput		{ 			get { return 3; }		}		public static int txtPreference_Zone		{ 			get { return 3; }		}		public static int txtPurchasing_Group		{ 			get { return 3; }		}		public static int txtReference_vendor		{ 			get { return 3; }		}		public static int txtPurchasing_Organization		{ 			get { return 3; }		}		public static int txtPlannedTime_Days_BTCI		{ 			get { return 3; }		}		public static int txtPartner_counter		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster6		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster5		{ 			get { return 3; }		}		public static int txtResponsible_SalesPerson		{ 			get { return 3; }		}		public static int txtStagingTime_Days_BatchInput		{ 			get { return 3; }		}		public static int txtShipping_Conditions		{ 			get { return 3; }		}		public static int txtVendor_TelephoneNumber		{ 			get { return 3; }		}		public static int txtVendor_Subrange		{ 			get { return 3; }		}		public static int chkDeleteflag_purchasinglevel		{ 			get { return 3; }		}		public static int chkAutomatic_Generation		{ 			get { return 3; }		}		public static int chkAccountNumber_VendorCreditor		{ 			get { return 3; }		}		public static int chkMaterial_Number		{ 			get { return 3; }		}		public static int chkIndicatorInvoice_Verification		{ 			get { return 3; }		}		public static int chkIndicator_vendor_accountimng		{ 			get { return 3; }		}		public static int chkIndicator_ServiceBased_Verification		{ 			get { return 3; }		}		public static int chkABC_Indicator		{ 			get { return 3; }		}		#endregion	}}#endregion
+#region Class_Purchase_Org_Data_VCL001Z004namespace SectionConfiguration.VCL001Z004{	public class Purchase_Org_Data	{		#region Properties		public static int ddlPurchaseOrder_Currency		{ 			get { return 2; }		}		public static int ddlTermsPayment_Key		{ 			get { return 2; }		}		public static int txtIncotermsPart2		{ 			get { return 2; }		}		public static int ddlGroupCalculation_SchemaVendor		{ 			get { return 2; }		}		public static int ddlIncotermsPart1		{ 			get { return 2; }		}		public static int ddlCountry		{ 			get { return 3; }		}		public static int chkPurchasingBlock_Purchasing		{ 			get { return 3; }		}		public static int chkSupplyRegion_RegionSupplied		{ 			get { return 3; }		}		public static int chkPersonnel_Number_BatchInputField		{ 			get { return 3; }		}		public static int chkOrderAcknowledgment_Requirement		{ 			get { return 3; }		}		public static int ddlPartner_Function6		{ 			get { return 3; }		}		public static int ddlPlant		{ 			get { return 3; }		}		public static int ddlPartner_Function5		{ 			get { return 3; }		}		public static int ddlPartner_Function3		{ 			get { return 3; }		}		public static int ddlPartner_Function4		{ 			get { return 3; }		}		public static int ddlPartner_Function		{ 			get { return 3; }		}		public static int ddlPartner_Function2		{ 			get { return 3; }		}		public static int txtDate_Which_Record_Created		{ 			get { return 3; }		}		public static int txtLanguage_BatchInputField		{ 			get { return 3; }		}		public static int txtCustomsOffice_ForeignTrade		{ 			get { return 3; }		}		public static int txtCategory_tax_codes		{ 			get { return 3; }		}		public static int txtMinimumOrder_batchInput		{ 			get { return 3; }		}		public static int txtModeTransport_ForeignTrade		{ 			get { return 3; }		}		public static int txtName_Person_who_CreatedObject		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster2		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster3		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster4		{ 			get { return 3; }		}		public static int txtVendor_Subrange		{ 			get { return 3; }		}		public static int txtVendor_TelephoneNumber		{ 			get { return 3; }		}		public static int txtShipping_Conditions		{ 			get { return 3; }		}		public static int txtStagingTime_Days_BatchInput		{ 			get { return 3; }		}		public static int txtResponsible_SalesPerson		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster5		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster6		{ 			get { return 3; }		}		public static int txtPartner_counter		{ 			get { return 3; }		}		public static int txtPlannedTime_Days_BTCI		{ 			get { return 3; }		}		public static int txtPurchasing_Organization		{ 			get { return 3; }		}		public static int txtReference_vendor		{ 			get { return 3; }		}		public static int txtPurchasing_Group		{ 			get { return 3; }		}		public static int txtPreference_Zone		{ 			get { return 3; }		}		public static int chkABC_Indicator		{ 			get { return 3; }		}		public static int chkIndicator_ServiceBased_Verification		{ 			get { return 3; }		}		public static int chkIndicator_vendor_accountimng		{ 			get { return 3; }		}		public static int chkIndicatorInvoice_Verification		{ 			get { return 3; }		}		public static int chkMaterial_Number		{ 			get { return 3; }		}		public static int chkAccountNumber_VendorCreditor		{ 			get { return 3; }		}		public static int chkAutomatic_Generation		{ 			get { return 3; }		}		public static int chkDeleteflag_purchasinglevel		{ 			get { return 3; }		}		#endregion	}}#endregion
+#region Class_Purchase_Org_Data_VCL001Z005namespace SectionConfiguration.VCL001Z005{	public class Purchase_Org_Data	{		#region Properties		public static int ddlTermsPayment_Key		{ 			get { return 2; }		}		public static int ddlPurchaseOrder_Currency		{ 			get { return 2; }		}		public static int txtIncotermsPart2		{ 			get { return 2; }		}		public static int ddlIncotermsPart1		{ 			get { return 2; }		}		public static int ddlGroupCalculation_SchemaVendor		{ 			get { return 2; }		}		public static int ddlCountry		{ 			get { return 3; }		}		public static int chkOrderAcknowledgment_Requirement		{ 			get { return 3; }		}		public static int chkPersonnel_Number_BatchInputField		{ 			get { return 3; }		}		public static int chkSupplyRegion_RegionSupplied		{ 			get { return 3; }		}		public static int chkPurchasingBlock_Purchasing		{ 			get { return 3; }		}		public static int ddlPartner_Function2		{ 			get { return 3; }		}		public static int ddlPartner_Function		{ 			get { return 3; }		}		public static int ddlPartner_Function4		{ 			get { return 3; }		}		public static int ddlPartner_Function3		{ 			get { return 3; }		}		public static int ddlPartner_Function5		{ 			get { return 3; }		}		public static int ddlPlant		{ 			get { return 3; }		}		public static int ddlPartner_Function6		{ 			get { return 3; }		}		public static int txtDate_Which_Record_Created		{ 			get { return 3; }		}		public static int txtLanguage_BatchInputField		{ 			get { return 3; }		}		public static int txtCategory_tax_codes		{ 			get { return 3; }		}		public static int txtCustomsOffice_ForeignTrade		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster4		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster3		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster2		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster		{ 			get { return 3; }		}		public static int txtName_Person_who_CreatedObject		{ 			get { return 3; }		}		public static int txtModeTransport_ForeignTrade		{ 			get { return 3; }		}		public static int txtMinimumOrder_batchInput		{ 			get { return 3; }		}		public static int txtPreference_Zone		{ 			get { return 3; }		}		public static int txtPurchasing_Group		{ 			get { return 3; }		}		public static int txtReference_vendor		{ 			get { return 3; }		}		public static int txtPurchasing_Organization		{ 			get { return 3; }		}		public static int txtPlannedTime_Days_BTCI		{ 			get { return 3; }		}		public static int txtPartner_counter		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster6		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster5		{ 			get { return 3; }		}		public static int txtResponsible_SalesPerson		{ 			get { return 3; }		}		public static int txtStagingTime_Days_BatchInput		{ 			get { return 3; }		}		public static int txtShipping_Conditions		{ 			get { return 3; }		}		public static int txtVendor_TelephoneNumber		{ 			get { return 3; }		}		public static int txtVendor_Subrange		{ 			get { return 3; }		}		public static int chkDeleteflag_purchasinglevel		{ 			get { return 3; }		}		public static int chkAutomatic_Generation		{ 			get { return 3; }		}		public static int chkAccountNumber_VendorCreditor		{ 			get { return 3; }		}		public static int chkMaterial_Number		{ 			get { return 3; }		}		public static int chkIndicatorInvoice_Verification		{ 			get { return 3; }		}		public static int chkIndicator_vendor_accountimng		{ 			get { return 3; }		}		public static int chkIndicator_ServiceBased_Verification		{ 			get { return 3; }		}		public static int chkABC_Indicator		{ 			get { return 3; }		}		#endregion	}}#endregion
+#region Class_Purchase_Org_Data_VCL001Z007namespace SectionConfiguration.VCL001Z007{	public class Purchase_Org_Data	{		#region Properties		public static int ddlPurchaseOrder_Currency		{ 			get { return 2; }		}		public static int ddlTermsPayment_Key		{ 			get { return 2; }		}		public static int txtIncotermsPart2		{ 			get { return 2; }		}		public static int ddlGroupCalculation_SchemaVendor		{ 			get { return 2; }		}		public static int ddlIncotermsPart1		{ 			get { return 2; }		}		public static int ddlCountry		{ 			get { return 3; }		}		public static int chkSupplyRegion_RegionSupplied		{ 			get { return 3; }		}		public static int chkPersonnel_Number_BatchInputField		{ 			get { return 3; }		}		public static int chkPurchasingBlock_Purchasing		{ 			get { return 3; }		}		public static int chkOrderAcknowledgment_Requirement		{ 			get { return 3; }		}		public static int ddlPartner_Function6		{ 			get { return 3; }		}		public static int ddlPlant		{ 			get { return 3; }		}		public static int ddlPartner_Function4		{ 			get { return 3; }		}		public static int ddlPartner_Function5		{ 			get { return 3; }		}		public static int ddlPartner_Function2		{ 			get { return 3; }		}		public static int ddlPartner_Function3		{ 			get { return 3; }		}		public static int ddlPartner_Function		{ 			get { return 3; }		}		public static int txtLanguage_BatchInputField		{ 			get { return 3; }		}		public static int txtCustomsOffice_ForeignTrade		{ 			get { return 3; }		}		public static int txtDate_Which_Record_Created		{ 			get { return 3; }		}		public static int txtCategory_tax_codes		{ 			get { return 3; }		}		public static int txtMinimumOrder_batchInput		{ 			get { return 3; }		}		public static int txtModeTransport_ForeignTrade		{ 			get { return 3; }		}		public static int txtName_Person_who_CreatedObject		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster2		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster3		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster4		{ 			get { return 3; }		}		public static int txtVendor_Subrange		{ 			get { return 3; }		}		public static int txtVendor_TelephoneNumber		{ 			get { return 3; }		}		public static int txtShipping_Conditions		{ 			get { return 3; }		}		public static int txtStagingTime_Days_BatchInput		{ 			get { return 3; }		}		public static int txtResponsible_SalesPerson		{ 			get { return 3; }		}		public static int txtReference_vendor		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster5		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster6		{ 			get { return 3; }		}		public static int txtPartner_counter		{ 			get { return 3; }		}		public static int txtPlannedTime_Days_BTCI		{ 			get { return 3; }		}		public static int txtPurchasing_Group		{ 			get { return 3; }		}		public static int txtPurchasing_Organization		{ 			get { return 3; }		}		public static int txtPreference_Zone		{ 			get { return 3; }		}		public static int chkIndicator_ServiceBased_Verification		{ 			get { return 3; }		}		public static int chkIndicator_vendor_accountimng		{ 			get { return 3; }		}		public static int chkIndicatorInvoice_Verification		{ 			get { return 3; }		}		public static int chkMaterial_Number		{ 			get { return 3; }		}		public static int chkABC_Indicator		{ 			get { return 3; }		}		public static int chkAccountNumber_VendorCreditor		{ 			get { return 3; }		}		public static int chkAutomatic_Generation		{ 			get { return 3; }		}		public static int chkDeleteflag_purchasinglevel		{ 			get { return 3; }		}		#endregion	}}#endregion
+#region Class_Purchase_Org_Data_VCL001Z008namespace SectionConfiguration.VCL001Z008{	public class Purchase_Org_Data	{		#region Properties		public static int ddlTermsPayment_Key		{ 			get { return 2; }		}		public static int ddlPurchaseOrder_Currency		{ 			get { return 2; }		}		public static int txtIncotermsPart2		{ 			get { return 2; }		}		public static int ddlIncotermsPart1		{ 			get { return 2; }		}		public static int ddlGroupCalculation_SchemaVendor		{ 			get { return 2; }		}		public static int chkSupplyRegion_RegionSupplied		{ 			get { return 3; }		}		public static int ddlCountry		{ 			get { return 3; }		}		public static int chkOrderAcknowledgment_Requirement		{ 			get { return 3; }		}		public static int chkPurchasingBlock_Purchasing		{ 			get { return 3; }		}		public static int chkPersonnel_Number_BatchInputField		{ 			get { return 3; }		}		public static int ddlPartner_Function		{ 			get { return 3; }		}		public static int ddlPartner_Function3		{ 			get { return 3; }		}		public static int ddlPartner_Function2		{ 			get { return 3; }		}		public static int ddlPartner_Function5		{ 			get { return 3; }		}		public static int ddlPartner_Function4		{ 			get { return 3; }		}		public static int ddlPlant		{ 			get { return 3; }		}		public static int ddlPartner_Function6		{ 			get { return 3; }		}		public static int txtLanguage_BatchInputField		{ 			get { return 3; }		}		public static int txtDate_Which_Record_Created		{ 			get { return 3; }		}		public static int txtCustomsOffice_ForeignTrade		{ 			get { return 3; }		}		public static int txtCategory_tax_codes		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster4		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster3		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster2		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster		{ 			get { return 3; }		}		public static int txtName_Person_who_CreatedObject		{ 			get { return 3; }		}		public static int txtModeTransport_ForeignTrade		{ 			get { return 3; }		}		public static int txtMinimumOrder_batchInput		{ 			get { return 3; }		}		public static int txtPreference_Zone		{ 			get { return 3; }		}		public static int txtPurchasing_Organization		{ 			get { return 3; }		}		public static int txtPurchasing_Group		{ 			get { return 3; }		}		public static int txtPlannedTime_Days_BTCI		{ 			get { return 3; }		}		public static int txtPartner_counter		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster6		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster5		{ 			get { return 3; }		}		public static int txtReference_vendor		{ 			get { return 3; }		}		public static int txtResponsible_SalesPerson		{ 			get { return 3; }		}		public static int txtStagingTime_Days_BatchInput		{ 			get { return 3; }		}		public static int txtShipping_Conditions		{ 			get { return 3; }		}		public static int txtVendor_TelephoneNumber		{ 			get { return 3; }		}		public static int txtVendor_Subrange		{ 			get { return 3; }		}		public static int chkDeleteflag_purchasinglevel		{ 			get { return 3; }		}		public static int chkAutomatic_Generation		{ 			get { return 3; }		}		public static int chkAccountNumber_VendorCreditor		{ 			get { return 3; }		}		public static int chkABC_Indicator		{ 			get { return 3; }		}		public static int chkMaterial_Number		{ 			get { return 3; }		}		public static int chkIndicatorInvoice_Verification		{ 			get { return 3; }		}		public static int chkIndicator_vendor_accountimng		{ 			get { return 3; }		}		public static int chkIndicator_ServiceBased_Verification		{ 			get { return 3; }		}		#endregion	}}#endregion
+#region Class_Purchase_Org_Data_VCL001Z009namespace SectionConfiguration.VCL001Z009{	public class Purchase_Org_Data	{		#region Properties		public static int ddlPurchaseOrder_Currency		{ 			get { return 2; }		}		public static int ddlTermsPayment_Key		{ 			get { return 2; }		}		public static int txtIncotermsPart2		{ 			get { return 2; }		}		public static int ddlGroupCalculation_SchemaVendor		{ 			get { return 2; }		}		public static int ddlIncotermsPart1		{ 			get { return 2; }		}		public static int ddlCountry		{ 			get { return 3; }		}		public static int chkSupplyRegion_RegionSupplied		{ 			get { return 3; }		}		public static int chkPersonnel_Number_BatchInputField		{ 			get { return 3; }		}		public static int chkPurchasingBlock_Purchasing		{ 			get { return 3; }		}		public static int chkOrderAcknowledgment_Requirement		{ 			get { return 3; }		}		public static int ddlPartner_Function6		{ 			get { return 3; }		}		public static int ddlPlant		{ 			get { return 3; }		}		public static int ddlPartner_Function4		{ 			get { return 3; }		}		public static int ddlPartner_Function5		{ 			get { return 3; }		}		public static int ddlPartner_Function2		{ 			get { return 3; }		}		public static int ddlPartner_Function3		{ 			get { return 3; }		}		public static int ddlPartner_Function		{ 			get { return 3; }		}		public static int txtLanguage_BatchInputField		{ 			get { return 3; }		}		public static int txtCustomsOffice_ForeignTrade		{ 			get { return 3; }		}		public static int txtDate_Which_Record_Created		{ 			get { return 3; }		}		public static int txtCategory_tax_codes		{ 			get { return 3; }		}		public static int txtMinimumOrder_batchInput		{ 			get { return 3; }		}		public static int txtModeTransport_ForeignTrade		{ 			get { return 3; }		}		public static int txtName_Person_who_CreatedObject		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster2		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster3		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster4		{ 			get { return 3; }		}		public static int txtVendor_Subrange		{ 			get { return 3; }		}		public static int txtVendor_TelephoneNumber		{ 			get { return 3; }		}		public static int txtShipping_Conditions		{ 			get { return 3; }		}		public static int txtStagingTime_Days_BatchInput		{ 			get { return 3; }		}		public static int txtResponsible_SalesPerson		{ 			get { return 3; }		}		public static int txtReference_vendor		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster5		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster6		{ 			get { return 3; }		}		public static int txtPartner_counter		{ 			get { return 3; }		}		public static int txtPlannedTime_Days_BTCI		{ 			get { return 3; }		}		public static int txtPurchasing_Group		{ 			get { return 3; }		}		public static int txtPurchasing_Organization		{ 			get { return 3; }		}		public static int txtPreference_Zone		{ 			get { return 3; }		}		public static int chkIndicator_ServiceBased_Verification		{ 			get { return 3; }		}		public static int chkIndicator_vendor_accountimng		{ 			get { return 3; }		}		public static int chkIndicatorInvoice_Verification		{ 			get { return 3; }		}		public static int chkMaterial_Number		{ 			get { return 3; }		}		public static int chkABC_Indicator		{ 			get { return 3; }		}		public static int chkAccountNumber_VendorCreditor		{ 			get { return 3; }		}		public static int chkAutomatic_Generation		{ 			get { return 3; }		}		public static int chkDeleteflag_purchasinglevel		{ 			get { return 3; }		}		#endregion	}}#endregion
+#region Class_Purchase_Org_Data_VCL001Z010namespace SectionConfiguration.VCL001Z010{	public class Purchase_Org_Data	{		#region Properties		public static int chkDeleteflag_purchasinglevel		{ 			get { return 3; }		}		public static int chkAutomatic_Generation		{ 			get { return 3; }		}		public static int chkAccountNumber_VendorCreditor		{ 			get { return 3; }		}		public static int chkABC_Indicator		{ 			get { return 3; }		}		public static int chkMaterial_Number		{ 			get { return 3; }		}		public static int chkIndicatorInvoice_Verification		{ 			get { return 3; }		}		public static int chkIndicator_vendor_accountimng		{ 			get { return 3; }		}		public static int chkIndicator_ServiceBased_Verification		{ 			get { return 3; }		}		public static int txtPreference_Zone		{ 			get { return 3; }		}		public static int txtPurchasing_Organization		{ 			get { return 3; }		}		public static int txtPurchasing_Group		{ 			get { return 3; }		}		public static int txtPlannedTime_Days_BTCI		{ 			get { return 3; }		}		public static int txtPartner_counter		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster6		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster5		{ 			get { return 3; }		}		public static int txtReference_vendor		{ 			get { return 3; }		}		public static int txtResponsible_SalesPerson		{ 			get { return 3; }		}		public static int txtStagingTime_Days_BatchInput		{ 			get { return 3; }		}		public static int txtShipping_Conditions		{ 			get { return 3; }		}		public static int txtVendor_TelephoneNumber		{ 			get { return 3; }		}		public static int txtVendor_Subrange		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster4		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster3		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster2		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster		{ 			get { return 3; }		}		public static int txtName_Person_who_CreatedObject		{ 			get { return 3; }		}		public static int txtModeTransport_ForeignTrade		{ 			get { return 3; }		}		public static int txtMinimumOrder_batchInput		{ 			get { return 3; }		}		public static int txtCategory_tax_codes		{ 			get { return 3; }		}		public static int ddlTermsPayment_Key		{ 			get { return 3; }		}		public static int ddlPurchaseOrder_Currency		{ 			get { return 3; }		}		public static int txtDate_Which_Record_Created		{ 			get { return 3; }		}		public static int txtCustomsOffice_ForeignTrade		{ 			get { return 3; }		}		public static int txtLanguage_BatchInputField		{ 			get { return 3; }		}		public static int txtIncotermsPart2		{ 			get { return 3; }		}		public static int ddlPartner_Function		{ 			get { return 3; }		}		public static int ddlPartner_Function3		{ 			get { return 3; }		}		public static int ddlPartner_Function2		{ 			get { return 3; }		}		public static int ddlPartner_Function5		{ 			get { return 3; }		}		public static int ddlPartner_Function4		{ 			get { return 3; }		}		public static int ddlPlant		{ 			get { return 3; }		}		public static int ddlPartner_Function6		{ 			get { return 3; }		}		public static int chkOrderAcknowledgment_Requirement		{ 			get { return 3; }		}		public static int chkPurchasingBlock_Purchasing		{ 			get { return 3; }		}		public static int chkPersonnel_Number_BatchInputField		{ 			get { return 3; }		}		public static int chkSupplyRegion_RegionSupplied		{ 			get { return 3; }		}		public static int ddlCountry		{ 			get { return 3; }		}		public static int ddlIncotermsPart1		{ 			get { return 3; }		}		public static int ddlGroupCalculation_SchemaVendor		{ 			get { return 3; }		}		#endregion	}}#endregion
+#region Class_Purchase_Org_Data_VCL001Z011namespace SectionConfiguration.VCL001Z011{	public class Purchase_Org_Data	{		#region Properties		public static int ddlGroupCalculation_SchemaVendor		{ 			get { return 3; }		}		public static int ddlIncotermsPart1		{ 			get { return 3; }		}		public static int ddlCountry		{ 			get { return 3; }		}		public static int chkSupplyRegion_RegionSupplied		{ 			get { return 3; }		}		public static int chkPersonnel_Number_BatchInputField		{ 			get { return 3; }		}		public static int chkPurchasingBlock_Purchasing		{ 			get { return 3; }		}		public static int chkOrderAcknowledgment_Requirement		{ 			get { return 3; }		}		public static int ddlPartner_Function6		{ 			get { return 3; }		}		public static int ddlPlant		{ 			get { return 3; }		}		public static int ddlPartner_Function4		{ 			get { return 3; }		}		public static int ddlPartner_Function5		{ 			get { return 3; }		}		public static int ddlPartner_Function2		{ 			get { return 3; }		}		public static int ddlPartner_Function3		{ 			get { return 3; }		}		public static int ddlPartner_Function		{ 			get { return 3; }		}		public static int txtIncotermsPart2		{ 			get { return 3; }		}		public static int txtLanguage_BatchInputField		{ 			get { return 3; }		}		public static int txtCustomsOffice_ForeignTrade		{ 			get { return 3; }		}		public static int txtDate_Which_Record_Created		{ 			get { return 3; }		}		public static int ddlPurchaseOrder_Currency		{ 			get { return 3; }		}		public static int ddlTermsPayment_Key		{ 			get { return 3; }		}		public static int txtCategory_tax_codes		{ 			get { return 3; }		}		public static int txtMinimumOrder_batchInput		{ 			get { return 3; }		}		public static int txtModeTransport_ForeignTrade		{ 			get { return 3; }		}		public static int txtName_Person_who_CreatedObject		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster2		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster3		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster4		{ 			get { return 3; }		}		public static int txtVendor_Subrange		{ 			get { return 3; }		}		public static int txtVendor_TelephoneNumber		{ 			get { return 3; }		}		public static int txtShipping_Conditions		{ 			get { return 3; }		}		public static int txtStagingTime_Days_BatchInput		{ 			get { return 3; }		}		public static int txtResponsible_SalesPerson		{ 			get { return 3; }		}		public static int txtReference_vendor		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster5		{ 			get { return 3; }		}		public static int txtNameBusinessPartnerVendorMaster6		{ 			get { return 3; }		}		public static int txtPartner_counter		{ 			get { return 3; }		}		public static int txtPlannedTime_Days_BTCI		{ 			get { return 3; }		}		public static int txtPurchasing_Group		{ 			get { return 3; }		}		public static int txtPurchasing_Organization		{ 			get { return 3; }		}		public static int txtPreference_Zone		{ 			get { return 3; }		}		public static int chkIndicator_ServiceBased_Verification		{ 			get { return 3; }		}		public static int chkIndicator_vendor_accountimng		{ 			get { return 3; }		}		public static int chkIndicatorInvoice_Verification		{ 			get { return 3; }		}		public static int chkMaterial_Number		{ 			get { return 3; }		}		public static int chkABC_Indicator		{ 			get { return 3; }		}		public static int chkAccountNumber_VendorCreditor		{ 			get { return 3; }		}		public static int chkAutomatic_Generation		{ 			get { return 3; }		}		public static int chkDeleteflag_purchasinglevel		{ 			get { return 3; }		}		#endregion	}}#endregion
+#region Class_Purchase_Org_Data_VCL001Z068namespace SectionConfiguration.VCL001Z068{	public class Purchase_Org_Data	{		#region Properties		public static int chkDeleteflag_purchasinglevel		{ 			get { return 2; }		}		public static int chkAutomatic_Generation		{ 			get { return 2; }		}		public static int chkAccountNumber_VendorCreditor		{ 			get { return 2; }		}		public static int chkMaterial_Number		{ 			get { return 2; }		}		public static int chkIndicatorInvoice_Verification		{ 			get { return 2; }		}		public static int chkIndicator_vendor_accountimng		{ 			get { return 2; }		}		public static int chkIndicator_ServiceBased_Verification		{ 			get { return 2; }		}		public static int chkABC_Indicator		{ 			get { return 2; }		}		public static int txtPurchasing_Group		{ 			get { return 2; }		}		public static int txtPreference_Zone		{ 			get { return 2; }		}		public static int txtReference_vendor		{ 			get { return 2; }		}		public static int txtPurchasing_Organization		{ 			get { return 2; }		}		public static int txtPlannedTime_Days_BTCI		{ 			get { return 2; }		}		public static int txtPartner_counter		{ 			get { return 2; }		}		public static int txtNameBusinessPartnerVendorMaster6		{ 			get { return 2; }		}		public static int txtNameBusinessPartnerVendorMaster5		{ 			get { return 2; }		}		public static int txtResponsible_SalesPerson		{ 			get { return 2; }		}		public static int txtStagingTime_Days_BatchInput		{ 			get { return 2; }		}		public static int txtShipping_Conditions		{ 			get { return 2; }		}		public static int txtVendor_Subrange		{ 			get { return 2; }		}		public static int txtVendor_TelephoneNumber		{ 			get { return 2; }		}		public static int txtNameBusinessPartnerVendorMaster4		{ 			get { return 2; }		}		public static int txtNameBusinessPartnerVendorMaster3		{ 			get { return 2; }		}		public static int txtNameBusinessPartnerVendorMaster2		{ 			get { return 2; }		}		public static int txtName_Person_who_CreatedObject		{ 			get { return 2; }		}		public static int txtNameBusinessPartnerVendorMaster		{ 			get { return 2; }		}		public static int txtModeTransport_ForeignTrade		{ 			get { return 2; }		}		public static int txtMinimumOrder_batchInput		{ 			get { return 2; }		}		public static int txtCustomsOffice_ForeignTrade		{ 			get { return 2; }		}		public static int txtCategory_tax_codes		{ 			get { return 2; }		}		public static int ddlTermsPayment_Key		{ 			get { return 2; }		}		public static int ddlPurchaseOrder_Currency		{ 			get { return 2; }		}		public static int txtIncotermsPart2		{ 			get { return 2; }		}		public static int txtDate_Which_Record_Created		{ 			get { return 2; }		}		public static int txtLanguage_BatchInputField		{ 			get { return 2; }		}		public static int ddlPartner_Function		{ 			get { return 2; }		}		public static int ddlPartner_Function2		{ 			get { return 2; }		}		public static int ddlPartner_Function4		{ 			get { return 2; }		}		public static int ddlPartner_Function3		{ 			get { return 2; }		}		public static int ddlPartner_Function5		{ 			get { return 2; }		}		public static int ddlPlant		{ 			get { return 2; }		}		public static int ddlPartner_Function6		{ 			get { return 2; }		}		public static int chkPersonnel_Number_BatchInputField		{ 			get { return 2; }		}		public static int chkOrderAcknowledgment_Requirement		{ 			get { return 2; }		}		public static int chkSupplyRegion_RegionSupplied		{ 			get { return 2; }		}		public static int chkPurchasingBlock_Purchasing		{ 			get { return 2; }		}		public static int ddlCountry		{ 			get { return 2; }		}		public static int ddlIncotermsPart1		{ 			get { return 2; }		}		public static int ddlGroupCalculation_SchemaVendor		{ 			get { return 2; }		}		#endregion	}}#endregion

@@ -1,0 +1,17 @@
+
+
+
+cd Program Files\Microsoft SQL Server\110\DTS\Binn
+DTExec.exe /FILE "\"E:\EPM\SSISSchedule\SSISSchedule\MasterPackageReport.dtsx\"
+
+
+Program Files\Microsoft SQL Server\110\DTS\Binn
+
+Ok:	DTExec.exe /FILE "\"E:\EPM\SSISSchedule\SSISSchedule\OtherMarketNotReview.dtsx\"
+OK:	DTExec.exe /FILE "\"E:\EPM\SSISSchedule\SSISSchedule\OtherMarketReview.dtsx\"
+OK:	DTExec.exe /FILE "\"E:\EPM\SSISSchedule\SSISSchedule\USMarketNotReview.dtsx\"   (Data Path otherMarketNotReviw)
+
+Ok:	DTExec.exe /FILE "\"E:\EPM\SSISSchedule\SSISSchedule\USMarketReview.dtsx\"
+
+
+

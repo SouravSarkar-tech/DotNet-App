@@ -1,0 +1,270 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Shared/Common/MainMaster.master" AutoEventWireup="true" CodeFile="SoftwareApprovalMasterPage.master.cs"
+     Inherits="Shared_SoftwareApproval_SoftwareApprovalMasterPage" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">  
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+            <td valign="top" style="width: 20%" id="trSideMenuTab" runat="server">
+                <asp:Literal ID="litTab" runat="server" />
+            </td>
+            <td valign="top" align="center" style="width: 80%;">
+                <table border="0" cellpadding="0" cellspacing="0" width="99%" class="gridHeader">
+                    <tr>
+                        <td>
+                            <b>Requestor Name.:</b>&nbsp;
+                            <asp:Label ID="lblRequestor" runat="server" />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; <b>Location:</b>&nbsp;
+                            <asp:Label ID="lblLocation" runat="server" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                            <b>Contact No:</b>&nbsp;
+                            <asp:Label ID="lblContactNo" runat="server" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tdSpace" style="border-bottom: 1px solid Black;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>Request No.:</b>&nbsp;
+                            <asp:Label ID="lblRequestNo" runat="server" />
+                            <asp:HyperLink ID="lnkRequestNo" runat="server"></asp:HyperLink>
+                            &nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;
+                        </td>
+                    </tr>                    
+                </table>
+                <div id="divContainer" style="width: 99%;">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div> 
+                <asp:Button ID="btnReject" runat="server" Text="Drop" CssClass="button" 
+                    OnClientClick="return ShowRejectPopup();" Visible = "false"/>
+                <asp:Button ID="btnRejectTo" runat="server" Text="Return" CssClass="button" Visible="false"
+                    OnClientClick="return ShowRollbackPopup();" />                                
+                <asp:Button ID="btnSubmit" runat="server" Text="Submit" CssClass="button" Visible="false"
+                    OnClientClick="return ShowApprovePopup();"/>
+                <asp:Button ID="btnCancel" runat="server" Text="Back" CssClass="button" OnClick="btnCancel_Click" />                
+                
+                <asp:Panel ID="pnlMsg" runat="server" Visible="false">
+                    <asp:Label ID="lblMsg" runat="server" />
+                </asp:Panel>
+            </td>
+        </tr>
+    </table>
+
+    <div id="divRejectTo" style="display: none;" title="Return Request">
+        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-top: 10px;">
+            <tr>
+                <td class="leftTD" style="width: 25%">
+                    Return To
+                </td>
+                <td class="rigthTD" runat="server" id="tdDdlReject">
+                    <asp:DropDownList ID="ddlRejectTo" runat="server" AppendDataBoundItems="true">
+                        <asp:ListItem Text="Select" Value="" />
+                    </asp:DropDownList>
+                    <asp:RequiredFieldValidator ID="rfvq" SetFocusOnError="true" Display="Dynamic" Text="<img src='../../images/Error.png' title='Select Department.'"
+                        ControlToValidate="ddlRejectTo" InitialValue="" runat="server" ForeColor="Red"
+                        ErrorMessage="Select Department." ValidationGroup="return" />
+                </td>                
+            </tr>
+            <tr>
+                <td colspan="2" class="tdSpace">
+                </td>
+            </tr>
+            <tr>
+                <td class="leftTD" valign="top">
+                    Remark
+                </td>
+                <td class="rigthTD">
+                    <asp:TextBox ID="txtRejectNote" runat="server" CssClass="textarea" TextMode="MultiLine"
+                        Height="40px" Width="350px" Style="text-transform: none;" />
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator13" SetFocusOnError="true"
+                        Display="Dynamic" Text="<img src='../../images/Error.png' title='Enter Remark.'"  ErrorMessage="Enter Return Remarks."
+                        ControlToValidate="txtRejectNote" runat="server" ForeColor="Red" ValidationGroup="return" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="tdSpace">
+                </td>
+            </tr>
+            <tr>
+                <td class="leftTD">
+                    &nbsp;
+                </td>
+                <td class="rigthTD">
+                    <asp:Button ID="btnRollback" runat="server" Text="Return" CssClass="button" OnClick="btnRollback_Click"
+                        ValidationGroup="return" />
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="divRejectA" style="display: none;" title="Drop Request">
+        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-top: 10px;">
+            <tr>
+                <td class="leftTD" style="width: 25%">
+                    Drop To
+                </td>
+                <td class="rigthTD" runat="server" id="tdDdlRejectA">
+                    <asp:DropDownList ID="ddlRejectA" runat="server" AppendDataBoundItems="true">
+                        <asp:ListItem Text="Select" Value="" />
+                    </asp:DropDownList>
+                    <asp:RequiredFieldValidator ID="reqddlRejectA" SetFocusOnError="true" Display="Dynamic" Text="<img src='../../images/Error.png' title='Select Department.'"
+                        ControlToValidate="ddlRejectA" InitialValue="" runat="server" ForeColor="Red" ErrorMessage = "Select Department."
+                        ValidationGroup="reject" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="tdSpace">
+                </td>
+            </tr>
+            <tr>
+                <td class="leftTD" valign="top">
+                    Remark
+                </td>
+                <td class="rigthTD">
+                    <asp:TextBox ID="txtRejectRemark" runat="server" CssClass="textarea" TextMode="MultiLine"
+                        Height="40px" Width="350px" Style="text-transform: none;" />
+                    <asp:RequiredFieldValidator ID="reqtxtRejectRemark" SetFocusOnError="true"
+                        Display="Dynamic" Text="<img src='../../images/Error.png' title='Enter Rejection Remark.'" ErrorMessage = "Enter Rejection Remark."
+                        ControlToValidate="txtRejectRemark" runat="server" ForeColor="Red" ValidationGroup="reject" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="tdSpace">
+                </td>
+            </tr>
+            <tr>
+                <td class="leftTD">
+                    &nbsp;
+                </td>
+                <td class="rigthTD">
+                    <asp:Button ID="btnRejectA" runat="server" Text="Drop" CssClass="button" OnClick="btnRejectA_Click" ValidationGroup = "reject" />                   
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="divApproveComments" style="display: none;" title="Approval Comments">
+        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-top: 10px;">
+            <tr>
+                <td class="leftTD" valign="top">
+                    Approval Comments
+                </td>
+                <td class="rigthTD">
+                    <asp:TextBox ID="txtApprovalComments" runat="server" CssClass="textarea" TextMode="MultiLine"
+                        Height="40px" Width="350px" Style="text-transform: none;" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="tdSpace">
+                </td>
+            </tr>
+            <tr runat = "server" visible = "false" id = "trMisc">
+                <td class="leftTD" style="width: 25%">
+                    MISC required
+                </td>
+                <td id="Td1" class="rigthTD" runat="server">
+                    <asp:DropDownList ID="ddlMISC" runat="server" AppendDataBoundItems="true">
+                        <asp:ListItem Text="Select" Value="" />
+                        <asp:ListItem Text="Yes" Value="Yes" />
+                        <asp:ListItem Text="No" Value="No" />
+                    </asp:DropDownList>
+                    <asp:RequiredFieldValidator ID="reqddlMISC" SetFocusOnError="true" Display="Dynamic" Text="<img src='../../images/Error.png' title='Please enter whether MISC is required.'"
+                        ControlToValidate="ddlMISC" InitialValue="" runat="server" ForeColor="Red" Enabled = "false"
+                        ErrorMessage="Please enter whether MISC is required." ValidationGroup="approve" />
+                </td> 
+            </tr>
+            <tr>
+                <td class="leftTD">
+                    &nbsp;
+                </td>
+                <td class="rigthTD">
+                    <asp:Button ID="btnApproveComments" runat="server" Text="Approve" CssClass="button"  ValidationGroup = "approve"
+                         OnClick="btnApproveComments_Click"/>
+                        
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <asp:ValidationSummary ID="sm" runat="server" ValidationGroup="approve" ShowMessageBox="true"
+        ShowSummary="false" />
+    <asp:ValidationSummary ID="ValidationSummary1" runat="server" ValidationGroup="return" ShowMessageBox="true"
+        ShowSummary="false" />
+    <asp:ValidationSummary ID="ValidationSummary2" runat="server" ValidationGroup="reject" ShowMessageBox="true"
+        ShowSummary="false" />
+
+    <asp:Label ID="lblUserId" runat="server" Visible="false" />
+    <asp:Label ID="lblMasterHeaderId" runat="server" Visible="false" />    
+    <div id="dhtmltooltip" class="dhtmltooltip">
+    </div>
+
+    <script src="../../Tooltip/toolTip.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        function ShowRollbackPopup() {
+            $("#divRejectTo").dialog({
+                height: 210,
+                width: 550,
+                modal: true,
+                closeOnEscape: true,
+                draggable: true,
+                resizable: false,
+                position: 'center',
+                dialogClass: 'alert',
+                //show: { effect: 'drop', duration: 500 },
+                //hide: { effect: 'explode', duration: 100 },
+                open: function (type, data) {
+                    $(this).parent().appendTo("form");
+                    $(this).show('clip');
+                }
+            });
+            return false;
+        }
+
+        function ShowApprovePopup() {
+            $("#divApproveComments").dialog({
+                height: 210,
+                width: 550,
+                modal: true,
+                closeOnEscape: true,
+                draggable: true,
+                resizable: false,
+                position: 'center',
+                dialogClass: 'alert',
+                //show: { effect: 'drop', duration: 500 },
+                //hide: { effect: 'explode', duration: 100 },
+                open: function (type, data) {
+                    $(this).parent().appendTo("form");
+                    $(this).show('clip');
+                }
+            });
+            return false;
+        }
+
+        function ShowRejectPopup() {
+            $("#divRejectA").dialog({
+                height: 210,
+                width: 550,
+                modal: true,
+                closeOnEscape: true,
+                draggable: true,
+                resizable: false,
+                position: 'center',
+                dialogClass: 'alert',
+                //show: { effect: 'drop', duration: 500 },
+                //hide: { effect: 'explode', duration: 100 },
+                open: function (type, data) {
+                    $(this).parent().appendTo("form");
+                    $(this).show('clip');
+                }
+            });
+            return false;
+        }
+    </script>
+</asp:Content>
+

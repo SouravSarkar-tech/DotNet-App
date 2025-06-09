@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:tns="http://tempuri.org/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMaterialDetailsWS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="uid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mco" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mty" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pla" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stg" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pog" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sal" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="dch" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sec" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMaterialDetailsWSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetMaterialDetailsWSResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMaterialDetailsWSL">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="uid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mco" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mty" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pla" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stg" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pog" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sal" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="dch" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pplgr" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sec" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetMaterialDetailsWSLResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetMaterialDetailsWSLResult" type="tns:MsgdialogClass" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="MsgdialogClass">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="msgdialog" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MasterHId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="mRequestNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="rURL" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="mModule_Id" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetMaterialExtDetailsWSL">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="uid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mco" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mty" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pla" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stg" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pog" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sal" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="dch" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="valtyp" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="refpla" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="refstg" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMaterialExtDetailsWSLResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetMaterialExtDetailsWSLResult" type="tns:MsgdialogClass" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMaterialDetailsForBOMWSL">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="mco" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMaterialDetailsForBOMWSLResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetMaterialDetailsForBOMWSLResult" type="tns:MsgdialogClass" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetResourcesDetailsForBOMWSL">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="resources" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetResourcesDetailsForBOMWSLResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetResourcesDetailsForBOMWSLResult" type="tns:MsgdialogClass" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+      <s:element name="MsgdialogClass" nillable="true" type="tns:MsgdialogClass" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetMaterialDetailsWSSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMaterialDetailsWS" />
+  </wsdl:message>
+  <wsdl:message name="GetMaterialDetailsWSSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMaterialDetailsWSResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetMaterialDetailsWSLSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMaterialDetailsWSL" />
+  </wsdl:message>
+  <wsdl:message name="GetMaterialDetailsWSLSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMaterialDetailsWSLResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetMaterialExtDetailsWSLSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMaterialExtDetailsWSL" />
+  </wsdl:message>
+  <wsdl:message name="GetMaterialExtDetailsWSLSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMaterialExtDetailsWSLResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetMaterialDetailsForBOMWSLSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMaterialDetailsForBOMWSL" />
+  </wsdl:message>
+  <wsdl:message name="GetMaterialDetailsForBOMWSLSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMaterialDetailsForBOMWSLResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetResourcesDetailsForBOMWSLSoapIn">
+    <wsdl:part name="parameters" element="tns:GetResourcesDetailsForBOMWSL" />
+  </wsdl:message>
+  <wsdl:message name="GetResourcesDetailsForBOMWSLSoapOut">
+    <wsdl:part name="parameters" element="tns:GetResourcesDetailsForBOMWSLResponse" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldHttpGetIn" />
+  <wsdl:message name="HelloWorldHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetMaterialDetailsWSHttpGetIn">
+    <wsdl:part name="uid" type="s:string" />
+    <wsdl:part name="mco" type="s:string" />
+    <wsdl:part name="mty" type="s:string" />
+    <wsdl:part name="pla" type="s:string" />
+    <wsdl:part name="stg" type="s:string" />
+    <wsdl:part name="pog" type="s:string" />
+    <wsdl:part name="sal" type="s:string" />
+    <wsdl:part name="dch" type="s:string" />
+    <wsdl:part name="sec" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetMaterialDetailsWSHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetMaterialExtDetailsWSLHttpGetIn">
+    <wsdl:part name="uid" type="s:string" />
+    <wsdl:part name="mco" type="s:string" />
+    <wsdl:part name="mty" type="s:string" />
+    <wsdl:part name="pla" type="s:string" />
+    <wsdl:part name="stg" type="s:string" />
+    <wsdl:part name="pog" type="s:string" />
+    <wsdl:part name="sal" type="s:string" />
+    <wsdl:part name="dch" type="s:string" />
+    <wsdl:part name="valtyp" type="s:string" />
+    <wsdl:part name="refpla" type="s:string" />
+    <wsdl:part name="refstg" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetMaterialExtDetailsWSLHttpGetOut">
+    <wsdl:part name="Body" element="tns:MsgdialogClass" />
+  </wsdl:message>
+  <wsdl:message name="GetMaterialDetailsForBOMWSLHttpGetIn">
+    <wsdl:part name="mco" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetMaterialDetailsForBOMWSLHttpGetOut">
+    <wsdl:part name="Body" element="tns:MsgdialogClass" />
+  </wsdl:message>
+  <wsdl:message name="GetResourcesDetailsForBOMWSLHttpGetIn">
+    <wsdl:part name="resources" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetResourcesDetailsForBOMWSLHttpGetOut">
+    <wsdl:part name="Body" element="tns:MsgdialogClass" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldHttpPostIn" />
+  <wsdl:message name="HelloWorldHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetMaterialDetailsWSHttpPostIn">
+    <wsdl:part name="uid" type="s:string" />
+    <wsdl:part name="mco" type="s:string" />
+    <wsdl:part name="mty" type="s:string" />
+    <wsdl:part name="pla" type="s:string" />
+    <wsdl:part name="stg" type="s:string" />
+    <wsdl:part name="pog" type="s:string" />
+    <wsdl:part name="sal" type="s:string" />
+    <wsdl:part name="dch" type="s:string" />
+    <wsdl:part name="sec" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetMaterialDetailsWSHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetMaterialExtDetailsWSLHttpPostIn">
+    <wsdl:part name="uid" type="s:string" />
+    <wsdl:part name="mco" type="s:string" />
+    <wsdl:part name="mty" type="s:string" />
+    <wsdl:part name="pla" type="s:string" />
+    <wsdl:part name="stg" type="s:string" />
+    <wsdl:part name="pog" type="s:string" />
+    <wsdl:part name="sal" type="s:string" />
+    <wsdl:part name="dch" type="s:string" />
+    <wsdl:part name="valtyp" type="s:string" />
+    <wsdl:part name="refpla" type="s:string" />
+    <wsdl:part name="refstg" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetMaterialExtDetailsWSLHttpPostOut">
+    <wsdl:part name="Body" element="tns:MsgdialogClass" />
+  </wsdl:message>
+  <wsdl:message name="GetMaterialDetailsForBOMWSLHttpPostIn">
+    <wsdl:part name="mco" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetMaterialDetailsForBOMWSLHttpPostOut">
+    <wsdl:part name="Body" element="tns:MsgdialogClass" />
+  </wsdl:message>
+  <wsdl:message name="GetResourcesDetailsForBOMWSLHttpPostIn">
+    <wsdl:part name="resources" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetResourcesDetailsForBOMWSLHttpPostOut">
+    <wsdl:part name="Body" element="tns:MsgdialogClass" />
+  </wsdl:message>
+  <wsdl:portType name="GetMaterialDetailsSoap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMaterialDetailsWS">
+      <wsdl:input message="tns:GetMaterialDetailsWSSoapIn" />
+      <wsdl:output message="tns:GetMaterialDetailsWSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMaterialDetailsWSL">
+      <wsdl:input message="tns:GetMaterialDetailsWSLSoapIn" />
+      <wsdl:output message="tns:GetMaterialDetailsWSLSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMaterialExtDetailsWSL">
+      <wsdl:input message="tns:GetMaterialExtDetailsWSLSoapIn" />
+      <wsdl:output message="tns:GetMaterialExtDetailsWSLSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMaterialDetailsForBOMWSL">
+      <wsdl:input message="tns:GetMaterialDetailsForBOMWSLSoapIn" />
+      <wsdl:output message="tns:GetMaterialDetailsForBOMWSLSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetResourcesDetailsForBOMWSL">
+      <wsdl:input message="tns:GetResourcesDetailsForBOMWSLSoapIn" />
+      <wsdl:output message="tns:GetResourcesDetailsForBOMWSLSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="GetMaterialDetailsHttpGet">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldHttpGetIn" />
+      <wsdl:output message="tns:HelloWorldHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMaterialDetailsWS">
+      <wsdl:input message="tns:GetMaterialDetailsWSHttpGetIn" />
+      <wsdl:output message="tns:GetMaterialDetailsWSHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMaterialExtDetailsWSL">
+      <wsdl:input message="tns:GetMaterialExtDetailsWSLHttpGetIn" />
+      <wsdl:output message="tns:GetMaterialExtDetailsWSLHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMaterialDetailsForBOMWSL">
+      <wsdl:input message="tns:GetMaterialDetailsForBOMWSLHttpGetIn" />
+      <wsdl:output message="tns:GetMaterialDetailsForBOMWSLHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetResourcesDetailsForBOMWSL">
+      <wsdl:input message="tns:GetResourcesDetailsForBOMWSLHttpGetIn" />
+      <wsdl:output message="tns:GetResourcesDetailsForBOMWSLHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="GetMaterialDetailsHttpPost">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldHttpPostIn" />
+      <wsdl:output message="tns:HelloWorldHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMaterialDetailsWS">
+      <wsdl:input message="tns:GetMaterialDetailsWSHttpPostIn" />
+      <wsdl:output message="tns:GetMaterialDetailsWSHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMaterialExtDetailsWSL">
+      <wsdl:input message="tns:GetMaterialExtDetailsWSLHttpPostIn" />
+      <wsdl:output message="tns:GetMaterialExtDetailsWSLHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMaterialDetailsForBOMWSL">
+      <wsdl:input message="tns:GetMaterialDetailsForBOMWSLHttpPostIn" />
+      <wsdl:output message="tns:GetMaterialDetailsForBOMWSLHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetResourcesDetailsForBOMWSL">
+      <wsdl:input message="tns:GetResourcesDetailsForBOMWSLHttpPostIn" />
+      <wsdl:output message="tns:GetResourcesDetailsForBOMWSLHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="GetMaterialDetailsSoap" type="tns:GetMaterialDetailsSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMaterialDetailsWS">
+      <soap:operation soapAction="http://tempuri.org/GetMaterialDetailsWS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMaterialDetailsWSL">
+      <soap:operation soapAction="http://tempuri.org/GetMaterialDetailsWSL" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMaterialExtDetailsWSL">
+      <soap:operation soapAction="http://tempuri.org/GetMaterialExtDetailsWSL" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMaterialDetailsForBOMWSL">
+      <soap:operation soapAction="http://tempuri.org/GetMaterialDetailsForBOMWSL" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetResourcesDetailsForBOMWSL">
+      <soap:operation soapAction="http://tempuri.org/GetResourcesDetailsForBOMWSL" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="GetMaterialDetailsSoap12" type="tns:GetMaterialDetailsSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMaterialDetailsWS">
+      <soap12:operation soapAction="http://tempuri.org/GetMaterialDetailsWS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMaterialDetailsWSL">
+      <soap12:operation soapAction="http://tempuri.org/GetMaterialDetailsWSL" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMaterialExtDetailsWSL">
+      <soap12:operation soapAction="http://tempuri.org/GetMaterialExtDetailsWSL" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMaterialDetailsForBOMWSL">
+      <soap12:operation soapAction="http://tempuri.org/GetMaterialDetailsForBOMWSL" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetResourcesDetailsForBOMWSL">
+      <soap12:operation soapAction="http://tempuri.org/GetResourcesDetailsForBOMWSL" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="GetMaterialDetailsHttpGet" type="tns:GetMaterialDetailsHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="HelloWorld">
+      <http:operation location="/HelloWorld" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMaterialDetailsWS">
+      <http:operation location="/GetMaterialDetailsWS" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMaterialExtDetailsWSL">
+      <http:operation location="/GetMaterialExtDetailsWSL" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMaterialDetailsForBOMWSL">
+      <http:operation location="/GetMaterialDetailsForBOMWSL" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetResourcesDetailsForBOMWSL">
+      <http:operation location="/GetResourcesDetailsForBOMWSL" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="GetMaterialDetailsHttpPost" type="tns:GetMaterialDetailsHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="HelloWorld">
+      <http:operation location="/HelloWorld" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMaterialDetailsWS">
+      <http:operation location="/GetMaterialDetailsWS" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMaterialExtDetailsWSL">
+      <http:operation location="/GetMaterialExtDetailsWSL" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMaterialDetailsForBOMWSL">
+      <http:operation location="/GetMaterialDetailsForBOMWSL" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetResourcesDetailsForBOMWSL">
+      <http:operation location="/GetResourcesDetailsForBOMWSL" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="GetMaterialDetails">
+    <wsdl:port name="GetMaterialDetailsSoap" binding="tns:GetMaterialDetailsSoap">
+      <soap:address location="http://mwtindia.lupin.com/SAPIntegration/GetMaterialDetails.asmx" />
+    </wsdl:port>
+    <wsdl:port name="GetMaterialDetailsSoap12" binding="tns:GetMaterialDetailsSoap12">
+      <soap12:address location="http://mwtindia.lupin.com/SAPIntegration/GetMaterialDetails.asmx" />
+    </wsdl:port>
+    <wsdl:port name="GetMaterialDetailsHttpGet" binding="tns:GetMaterialDetailsHttpGet">
+      <http:address location="http://mwtindia.lupin.com/SAPIntegration/GetMaterialDetails.asmx" />
+    </wsdl:port>
+    <wsdl:port name="GetMaterialDetailsHttpPost" binding="tns:GetMaterialDetailsHttpPost">
+      <http:address location="http://mwtindia.lupin.com/SAPIntegration/GetMaterialDetails.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,65 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="shared_Site" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+<!DOCTYPE html>
+<html lang="en">
+<head id="Head1" runat="server">
+    <meta charset="utf-8" />
+    <title>M W T</title>
+    <link href="../css/Site.css" rel="stylesheet" />
+    <script src="../scripts/jquery-1.7.1.js"></script>
+    <meta name="viewport" content="width=device-width" />
+    <asp:ContentPlaceHolder runat="server" ID="HeadContent" />
+</head>
+<body>
+    <form id="Form1" runat="server">
+    <asp:ToolkitScriptManager ID="ScriptManager1" runat="server" AsyncPostBackTimeout="360000">
+    </asp:ToolkitScriptManager>
+    <header>
+            <div class="content-wrapper">
+                <div class="float-left">
+                    <p class="site-title">
+                        <a id="A1" runat="server" href="~/">
+                            MWT
+                            <%--<img src="../images/Dabur_logo_big.gif" />--%>
+                        </a>
+                    </p>
+                </div>
+                <div class="float-right">
+
+                    <nav>
+                        <ul id="menu">
+
+                            <li><a id="A3" runat="server" href="~/pages/SectionMaster.aspx">Section Master</a></li>
+                            <li><a id="A4" runat="server" href="~/pages/FieldStatusMaster.aspx">Field Status Master</a></li>
+                            <li><a id="A5" runat="server" href="~/pages/SectionConfigure.aspx">Section Configure</a></li>
+                            <li><a id="A7" runat="server" href="~/Pages/NewSectionConfigure.aspx">Feilds Status Configure</a></li>
+                            <li><a id="A6" runat="server" href="~/pages/GenerateSectionConfiguration.aspx">Gen Section Configuration</a></li>
+                            <%--<li><a id="A2" runat="server" href="~/pages/TestPage.aspx">Test Page</a></li>--%>
+                            <li><a id="A10" runat="server" href="~/Pages/ProfileModuleMapping.aspx">Module Mapping</a></li>
+                            <li><a id="A8" runat="server" href="~/Pages/ProfileMenuMapping.aspx">Menu Mapping</a></li>
+                            <li><a id="A9" runat="server" href="~/Pages/ModuleSectionConfigure.aspx">Dept Section Mapping</a></li>
+                            
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+    <div id="body">
+        <asp:ContentPlaceHolder runat="server" ID="FeaturedContent" />
+        <section class="content-wrapper main-content clear-fix">
+                <asp:ContentPlaceHolder runat="server" ID="MainContent" />
+            </section>
+    </div>
+    <footer>
+            <div class="content-wrapper">
+                <div class="float-left">
+                    <p>
+                       
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </form>
+</body>
+</html>

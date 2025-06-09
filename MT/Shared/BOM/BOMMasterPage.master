@@ -1,0 +1,69 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Shared/Common/MainMaster.master" AutoEventWireup="true" CodeFile="BOMMasterPage.master.cs" Inherits="Shared_BOM_BOMMasterPage" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <%--  <td valign="top" style="width: 20%" id="trSideMenuTab" runat="server">
+                <asp:Literal ID="litTab" runat="server" />
+            </td>--%>
+            <td valign="top" align="center" style="width: 80%;">
+                <table border="0" cellpadding="0" cellspacing="0" width="99%" class="gridHeader">
+                    <tr>
+                        <td>
+                            <b>Requestor Name.:</b>&nbsp;
+                            <asp:Label ID="lblRequestor" runat="server" />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; <b>Location:</b>&nbsp;
+                            <asp:Label ID="lblLocation" runat="server" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                            <b>Contact No:</b>&nbsp;
+                            <asp:Label ID="lblContactNo" runat="server" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tdSpace" style="border-bottom: 1px solid Black;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>Request No.:</b>&nbsp;
+                            <asp:Label ID="lblRequestNo" runat="server" />
+                            <asp:HyperLink ID="lnkRequestNo" runat="server"></asp:HyperLink>
+                            &nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;<b>Plant:</b>&nbsp;
+                            <asp:Label ID="lblPlant" runat="server" />&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;
+                            <b>Storage Loc.:</b>&nbsp;
+                            <asp:Label ID="lblStorageLocation" runat="server" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>Material Type:</b>&nbsp;
+                            <asp:Label ID="lblSelectedModule" runat="server" />&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;<b>Material
+                                Code:</b>&nbsp;
+                            <asp:Label ID="lblMaterialNo" runat="server" />
+                        </td>
+                    </tr>
+                </table>
+                <div id="divContainer" style="width: 99%;">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+                <asp:Button ID="btnSAPUpload" runat="server" Text="SAP Integration" CssClass="button" Visible="false" />
+                    <%--OnClientClick="return ShowSAPUploadPopup();"  OnClick="btnSubmit_Click" OnClick="btnCancel_Click" OnClientClick="return ShowRollbackPopup();"--%>
+                <asp:Button ID="btnSubmit" runat="server" Text="Submit" CssClass="button" Visible="false" />
+                <asp:Button ID="btnCancel" runat="server" Text="Cancel" CssClass="button"  />
+                <asp:Button ID="btnRejectTo" runat="server" Text="Reject" CssClass="button" />
+                <asp:Panel ID="pnlMsg" runat="server" Visible="false">
+                    <asp:Label ID="lblMsg" runat="server" />
+                </asp:Panel>
+            </td>
+        </tr>
+    </table>
+    <asp:Label ID="lblUserId" runat="server" Visible="false" />
+    <asp:Label ID="lblMasterHeaderId" runat="server" Visible="false" />
+    <asp:Label ID="lblMassRequestProcessId" runat="server" Visible="false" />
+    <asp:Label ID="lblRejectionType" runat="server" Visible="false" />
+</asp:Content>
+

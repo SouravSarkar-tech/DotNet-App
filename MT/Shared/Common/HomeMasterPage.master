@@ -1,0 +1,188 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="HomeMasterPage.master.cs"
+    MasterPageFile="~/Shared/Common/MainMaster.master" Inherits="Shared_MasterPage" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <%-- Added new css to hide close button of popup on 28th may 2018 --%>
+    <style type="text/css">
+        .ui-dialog-titlebar-close {
+            display: none;
+        }
+    </style>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+    <table width="99%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+            <td valign="top" align="right">
+                <img alt="Profile" height="20px" width="20px" src="../../images/employee-icon.jpg" onclick="return ShowChangeDialog();" />
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" align="center">
+                <div id="divContainer" style="width: 100%; min-height: 500px; padding-top: 20px; padding-bottom: 100px;">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td height="1" align="left" valign="top">&nbsp;
+            </td>
+        </tr>
+    </table>
+    <div id="divChangeModulePopUp" style="display: none;" title="User Details Confirmation"> 
+        <asp:UpdatePanel ID="UpdChangePopup" runat="server">
+            <ContentTemplate>
+                <asp:Panel ID="pnlMsg" runat="server" Visible="false">
+                    <asp:Label ID="lblMsg" runat="server" />
+                </asp:Panel> 
+                <table border="0" cellpadding="0" cellspacing="0" width="100%" >
+                    <tr>
+                        <td class="leftTD" width="25%">Full Name
+                        </td>
+                        <td class="rigthTD">
+                            <asp:TextBox ID="txtUserFirstName" runat="server" CssClass="textbox" MaxLength="100"
+                                Enabled="false" TabIndex="1" Width="180" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="leftTD" width="25%">E-mail Id
+                            <asp:Label ID="labletxtEmailId" runat="server" ForeColor="Red" Text="*"></asp:Label>
+                        </td>
+                        <td class="rigthTD">
+                            <asp:TextBox ID="txtEmailId" runat="server" CssClass="textbox" MaxLength="60" TabIndex="2"
+                                Width="180" />
+                            <asp:RequiredFieldValidator ID="reqtxtEmailId" runat="server" ControlToValidate="txtEmailId"
+                                ValidationGroup="update" ErrorMessage="Email Id cannot be blank." SetFocusOnError="true"
+                                Display="Dynamic" Text="<img src='../../images/Error.png' title='Email Id cannot be blank.' />" />
+                            <asp:RegularExpressionValidator ID="regtxtEmailId" runat="server" ControlToValidate="txtEmailId"
+                                ValidationExpression="^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$"
+                                ValidationGroup="update" ErrorMessage="Invalid E-Mail Id" SetFocusOnError="true"
+                                Display="Dynamic" Text="<img src='../../images/Error.png' title='Invalid E-Mail Id.' />" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tdSpace" colspan="2"></td>
+                    </tr>
+                    <tr>
+                        <td class="leftTD">Contact No
+                            <asp:Label ID="labletxtMobileNum" runat="server" ForeColor="Red" Text="*"></asp:Label>
+                        </td>
+                        <td class="rigthTD">
+                            <asp:TextBox ID="txtMobileNum" runat="server" CssClass="textbox" MaxLength="30" Width="180"
+                                TabIndex="3" />
+                            <asp:RequiredFieldValidator ID="reqtxtMobileNum" runat="server" ControlToValidate="txtMobileNum"
+                                ValidationGroup="update" ErrorMessage="Contact No cannot be blank." SetFocusOnError="true"
+                                Display="Dynamic" Text="<img src='../../images/Error.png' title='Contact No cannot be blank.' />" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tdSpace" colspan="2"></td>
+                    </tr>
+                    <tr>
+                        <td class="leftTD" width="25%">Location
+                            <asp:Label ID="labletxtLocation" runat="server" ForeColor="Red" Text="*"></asp:Label>
+                        </td>
+                        <td class="rigthTD">
+                            <asp:TextBox ID="txtLocation" runat="server" CssClass="textbox" MaxLength="60" TabIndex="4"
+                                Width="180" />
+                            <asp:RequiredFieldValidator ID="reqtxtLocation" runat="server" ControlToValidate="txtLocation"
+                                ValidationGroup="update" ErrorMessage="Location cannot be blank." SetFocusOnError="true"
+                                Display="Dynamic" Text="<img src='../../images/Error.png' title='Location cannot be blank.' />" />
+                        </td>
+                    </tr>
+                    <%--Added new row to input Department Name (req. for SAR Module) on 28th may 2018--%>
+                    <tr>
+                        <td class="leftTD" width="25%">Department Name
+                            <asp:Label ID="lblDepartmentName" runat="server" ForeColor="Red" Text="*"></asp:Label>
+                        </td>
+                        <td class="rigthTD">
+                            <asp:DropDownList ID="ddlDepartment" runat="server" AppendDataBoundItems="true">
+                                <asp:ListItem Text="Select" Value="" />
+                            </asp:DropDownList>
+
+                            <asp:RequiredFieldValidator ID="reqddlDepartment" runat="server" ControlToValidate="ddlDepartment"
+                                ValidationGroup="update" ErrorMessage="Department Name cannot be blank." SetFocusOnError="true"
+                                Display="Dynamic" Text="<img src='../../images/Error.png' title='Department Name cannot be blank.' />" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="leftTD" width="25%">Cost Center
+                            <asp:Label ID="labletxtCostCenter" runat="server" ForeColor="Red" Text="*"></asp:Label>
+                        </td>
+                        <td class="rigthTD">
+                            <asp:TextBox ID="txtCostCenter" runat="server" CssClass="textbox" MaxLength="60"
+                                onkeypress="return IsNumber();" TabIndex="5" Width="180" />
+                            <asp:RequiredFieldValidator ID="reqtxtCostCenter" runat="server" ControlToValidate="txtCostCenter"
+                                ValidationGroup="update" ErrorMessage="Cost Center cannot be blank." SetFocusOnError="true"
+                                Display="Dynamic" Text="<img src='../../images/Error.png' title='Cost Center cannot be blank.' />" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="leftTD">Plant
+                            <asp:Label ID="lableddlPlant" runat="server" ForeColor="Red" Text="*"></asp:Label>
+                        </td>
+                        <td class="rigthTD">
+                            <asp:DropDownList ID="ddlPlant" runat="server" TabIndex="6">
+                                <asp:ListItem Text="--Select--" Value=""></asp:ListItem>
+                            </asp:DropDownList>
+                            <asp:RequiredFieldValidator ID="reqddlPlant" runat="server" ControlToValidate="ddlPlant"
+                                ValidationGroup="update" ErrorMessage="Plant cannot be blank." SetFocusOnError="true"
+                                InitialValue="0" Display="Dynamic" Text="<img src='../../images/Error.png' title='Plant cannot be blank.' />" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tdSpace" colspan="2"></td>
+                    </tr>
+                    <tr>
+                        <td class="leftTD" colspan="2">
+                            <span style="color: Orange; font-size: x-small"><i>Note: Please select the Plant which
+                                is applicable.</i><br />
+                                <i>Other User's please select Plant as "L000 - Lupin Corporate".</i></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tdSpace" colspan="2"></td>
+                    </tr>
+                    <tr>
+                        <td class="centerTD" colspan="2">
+                            <asp:Button ID="btnUpdate" runat="server" ValidationGroup="update" Text="Update"
+                                TabIndex="7" CssClass="button" OnClick="btnUpdate_Click" />
+                        </td>
+                    </tr>
+                </table>
+            </ContentTemplate>
+        </asp:UpdatePanel>
+        <asp:ValidationSummary ID="sm" runat="server" ValidationGroup="update" ShowMessageBox="true"
+            ShowSummary="false" />
+    </div>
+    <script type="text/javascript" language="javascript">
+
+        $(function () {
+
+        });
+
+        function ShowChangeDialog() {
+
+            $("#divChangeModulePopUp").dialog({
+                height: 320,
+                width: 500,
+                modal: true,
+                //closeOnEscape: false,
+                closeOnEscape: true,
+                draggable: true,
+                resizable: false,
+                position: 'center',
+                dialogClass: 'alert',
+                //show: { effect: 'drop', duration: 500 },
+                //hide: { effect: 'explode', duration: 100 },
+                open: function (type, data) {
+                    $(this).parent().appendTo("form");
+                    $(this).show('clip');
+                }
+            });
+        }
+
+    </script>
+</asp:Content>

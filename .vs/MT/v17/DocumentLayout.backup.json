@@ -1,0 +1,896 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT|c:\\users\\nitinrajeshirke\\downloads\\myproject\\mwt india\\mwt_latest\\mt\\shared\\common\\homemasterpage.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT|solutionrelative:mt\\shared\\common\\homemasterpage.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT|c:\\users\\nitinrajeshirke\\downloads\\myproject\\mwt india\\mwt_latest\\mt\\transaction\\costcenter\\costcentermaster.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT|solutionrelative:mt\\transaction\\costcenter\\costcentermaster.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT|c:\\users\\nitinrajeshirke\\downloads\\myproject\\mwt india\\mwt_latest\\mt\\shared\\common\\mainmaster.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT|solutionrelative:mt\\shared\\common\\mainmaster.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\mt\\passlogin.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT|solutionrelative:mt\\passlogin.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT|c:\\users\\nitinrajeshirke\\downloads\\myproject\\mwt india\\mwt_latest\\mt\\shared\\common\\homemasterpage.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT|solutionrelative:mt\\shared\\common\\homemasterpage.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT|c:\\users\\nitinrajeshirke\\downloads\\myproject\\mwt india\\mwt_latest\\mt\\adlogin.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT|solutionrelative:mt\\adlogin.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\mt\\ssoredirect.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT|solutionrelative:mt\\ssoredirect.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\mt\\passlogindiff.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT|solutionrelative:mt\\passlogindiff.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\mt\\adminlogin.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT|solutionrelative:mt\\adminlogin.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT|c:\\users\\nitinrajeshirke\\downloads\\myproject\\mwt india\\mwt_latest\\mt\\shared\\common\\home.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT|solutionrelative:mt\\shared\\common\\home.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Documents\\Nitin Develpments\\MWT India\\MWT Main\\MWT_INDIA\\MWT_INDIA\\MT|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\mt\\shared\\common\\home.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Documents\\Nitin Develpments\\MWT India\\MWT Main\\MWT_INDIA\\MWT_INDIA\\MT|solutionrelative:mt\\shared\\common\\home.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT|c:\\users\\nitinrajeshirke\\downloads\\myproject\\mwt india\\mwt_latest\\mt\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT|solutionrelative:mt\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\mt\\shared\\common\\home.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT|solutionrelative:mt\\shared\\common\\home.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\mt\\adminlogin.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT|solutionrelative:mt\\adminlogin.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Documents\\My Project\\MWT INDIA\\MWT_INDIA\\MWT_INDIA\\MT|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\mt\\shared\\common\\homemasterpage.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Documents\\My Project\\MWT INDIA\\MWT_INDIA\\MWT_INDIA\\MT|solutionrelative:mt\\shared\\common\\homemasterpage.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Documents\\Nitin Develpments\\MWT India\\MWT Main\\MWT_INDIA\\MWT_INDIA\\MT|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\mt\\shared\\common\\home.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Documents\\Nitin Develpments\\MWT India\\MWT Main\\MWT_INDIA\\MWT_INDIA\\MT|solutionrelative:mt\\shared\\common\\home.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\mt\\administration\\excelreport.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT|solutionrelative:mt\\administration\\excelreport.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Documents\\My Project\\MWT INDIA\\MWT_INDIA\\MWT_INDIA\\MT|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\mt\\administration\\excelreport.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Documents\\My Project\\MWT INDIA\\MWT_INDIA\\MWT_INDIA\\MT|solutionrelative:mt\\administration\\excelreport.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\mt\\transaction\\pricemaster\\sapintegration.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT|solutionrelative:mt\\transaction\\pricemaster\\sapintegration.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\mt\\shared\\pricemaster\\pricemasterpage.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT|solutionrelative:mt\\shared\\pricemaster\\pricemasterpage.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Documents\\My Project\\MWT INDIA\\MWT_INDIA\\MWT_INDIA\\MT|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\mt\\shared\\pricemaster\\pricemasterpage.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Documents\\My Project\\MWT INDIA\\MWT_INDIA\\MWT_INDIA\\MT|solutionrelative:mt\\shared\\pricemaster\\pricemasterpage.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Documents\\My Project\\MWT INDIA\\MWT_INDIA\\MWT_INDIA\\MT|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\mt\\passlogin.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Documents\\My Project\\MWT INDIA\\MWT_INDIA\\MWT_INDIA\\MT|solutionrelative:mt\\passlogin.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\mt\\transaction\\material\\basicdata1.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT|solutionrelative:mt\\transaction\\material\\basicdata1.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Documents\\My Project\\MWT INDIA\\MWT_INDIA\\MWT_INDIA\\MT|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\mt\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Documents\\My Project\\MWT INDIA\\MWT_INDIA\\MWT_INDIA\\MT|solutionrelative:mt\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\mt\\administration\\usermaster.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT|solutionrelative:mt\\administration\\usermaster.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Documents\\My Project\\MWT INDIA\\MWT_INDIA\\MWT_INDIA\\MT|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\mt\\transaction\\customer\\sapintegration.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Documents\\My Project\\MWT INDIA\\MWT_INDIA\\MWT_INDIA\\MT|solutionrelative:mt\\transaction\\customer\\sapintegration.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Documents\\My Project\\MWT INDIA\\MWT_INDIA\\MWT_INDIA\\MT|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\mt\\adminlogin.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Documents\\My Project\\MWT INDIA\\MWT_INDIA\\MWT_INDIA\\MT|solutionrelative:mt\\adminlogin.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Documents\\My Project\\MWT INDIA\\MWT_INDIA\\MWT_INDIA\\MT|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\mt\\shared\\pricemaster\\pricemasterpage.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Documents\\My Project\\MWT INDIA\\MWT_INDIA\\MWT_INDIA\\MT|solutionrelative:mt\\shared\\pricemaster\\pricemasterpage.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Documents\\My Project\\MWT INDIA\\MWT_INDIA\\MWT_INDIA\\MT|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\mt\\shared\\customer\\customermasterpage.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Documents\\My Project\\MWT INDIA\\MWT_INDIA\\MWT_INDIA\\MT|solutionrelative:mt\\shared\\customer\\customermasterpage.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Documents\\My Project\\MWT INDIA\\MWT_INDIA\\MWT_INDIA\\MT|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\mt\\transaction\\pricemaster\\pricemaster.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Documents\\My Project\\MWT INDIA\\MWT_INDIA\\MWT_INDIA\\MT|solutionrelative:mt\\transaction\\pricemaster\\pricemaster.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Documents\\My Project\\MWT INDIA\\MWT_INDIA\\MWT_INDIA\\MT|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\mt\\shared\\pricemaster\\pricemaster.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Documents\\My Project\\MWT INDIA\\MWT_INDIA\\MWT_INDIA\\MT|solutionrelative:mt\\shared\\pricemaster\\pricemaster.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Documents\\My Project\\MWT INDIA\\MWT_INDIA\\MWT_INDIA\\MT|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\mt\\transaction\\pricemaster\\sapintegration.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Documents\\My Project\\MWT INDIA\\MWT_INDIA\\MWT_INDIA\\MT|solutionrelative:mt\\transaction\\pricemaster\\sapintegration.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Documents\\My Project\\MWT INDIA\\MWT_INDIA\\MWT_INDIA\\MT|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\mt\\transaction\\pricemaster\\materialbatchprice.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Documents\\My Project\\MWT INDIA\\MWT_INDIA\\MWT_INDIA\\MT|solutionrelative:mt\\transaction\\pricemaster\\materialbatchprice.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Documents\\My Project\\MWT INDIA\\MWT_INDIA\\MWT_INDIA\\MT|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\mt\\transaction\\pricemaster\\pricemaster.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Documents\\My Project\\MWT INDIA\\MWT_INDIA\\MWT_INDIA\\MT|solutionrelative:mt\\transaction\\pricemaster\\pricemaster.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Documents\\My Project\\MWT INDIA\\MWT_INDIA\\MWT_INDIA\\MT|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\mt\\transaction\\pricemaster\\pricedetail.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Documents\\My Project\\MWT INDIA\\MWT_INDIA\\MWT_INDIA\\MT|solutionrelative:mt\\transaction\\pricemaster\\pricedetail.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Documents\\My Project\\MWT INDIA\\MWT_INDIA\\MWT_INDIA\\MT|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\mt\\shared\\pricemaster\\pricemaster.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Documents\\My Project\\MWT INDIA\\MWT_INDIA\\MWT_INDIA\\MT|solutionrelative:mt\\shared\\pricemaster\\pricemaster.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Documents\\My Project\\MWT INDIA\\MWT_INDIA\\MWT_INDIA\\MT|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\mt\\transaction\\pricemaster\\priceheader.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Documents\\My Project\\MWT INDIA\\MWT_INDIA\\MWT_INDIA\\MT|solutionrelative:mt\\transaction\\pricemaster\\priceheader.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Documents\\My Project\\MWT INDIA\\MWT_INDIA\\MWT_INDIA\\MT|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\mt\\transaction\\bankmaster\\bankmaster.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Documents\\My Project\\MWT INDIA\\MWT_INDIA\\MWT_INDIA\\MT|solutionrelative:mt\\transaction\\bankmaster\\bankmaster.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Documents\\My Project\\MWT INDIA\\MWT_INDIA\\MWT_INDIA\\MT|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\mt\\transaction\\bankmaster\\bankmaster.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Documents\\My Project\\MWT INDIA\\MWT_INDIA\\MWT_INDIA\\MT|solutionrelative:mt\\transaction\\bankmaster\\bankmaster.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Documents\\My Project\\MWT INDIA\\MWT_INDIA\\MWT_INDIA\\MT|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\mt\\shared\\bankmaster\\bankmasterpage.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Documents\\My Project\\MWT INDIA\\MWT_INDIA\\MWT_INDIA\\MT|solutionrelative:mt\\shared\\bankmaster\\bankmasterpage.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Documents\\My Project\\MWT INDIA\\MWT_INDIA\\MWT_INDIA\\MT|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\mt\\transaction\\bankmaster\\bankdata.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Documents\\My Project\\MWT INDIA\\MWT_INDIA\\MWT_INDIA\\MT|solutionrelative:mt\\transaction\\bankmaster\\bankdata.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Documents\\My Project\\MWT INDIA\\MWT_INDIA\\MWT_INDIA\\MT|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\mt\\transaction\\bomrecipe\\prodversion.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Documents\\My Project\\MWT INDIA\\MWT_INDIA\\MWT_INDIA\\MT|solutionrelative:mt\\transaction\\bomrecipe\\prodversion.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Documents\\My Project\\MWT INDIA\\MWT_INDIA\\MWT_INDIA\\MT|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\mt\\shared\\bomrecipe\\bomrecipemasterpage.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Documents\\My Project\\MWT INDIA\\MWT_INDIA\\MWT_INDIA\\MT|solutionrelative:mt\\shared\\bomrecipe\\bomrecipemasterpage.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Documents\\My Project\\MWT INDIA\\MWT_INDIA\\MWT_INDIA\\MT|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\mt\\transaction\\bomrecipe\\bomheadercomp.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Documents\\My Project\\MWT INDIA\\MWT_INDIA\\MWT_INDIA\\MT|solutionrelative:mt\\transaction\\bomrecipe\\bomheadercomp.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Documents\\My Project\\MWT INDIA\\MWT_INDIA\\MWT_INDIA\\MT|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\mt\\transaction\\bomrecipe\\prodversion.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Documents\\My Project\\MWT INDIA\\MWT_INDIA\\MWT_INDIA\\MT|solutionrelative:mt\\transaction\\bomrecipe\\prodversion.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Documents\\My Project\\MWT INDIA\\MWT_INDIA\\MWT_INDIA\\MT|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\mt\\transaction\\bomrecipe\\reciepeoperation.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Documents\\My Project\\MWT INDIA\\MWT_INDIA\\MWT_INDIA\\MT|solutionrelative:mt\\transaction\\bomrecipe\\reciepeoperation.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Documents\\My Project\\MWT INDIA\\MWT_INDIA\\MWT_INDIA\\MT|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\mt\\transaction\\bomrecipe\\masssapvalidation.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Documents\\My Project\\MWT INDIA\\MWT_INDIA\\MWT_INDIA\\MT|solutionrelative:mt\\transaction\\bomrecipe\\masssapvalidation.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Documents\\My Project\\MWT INDIA\\MWT_INDIA\\MWT_INDIA\\MT|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\mt\\transaction\\bomrecipe\\reciepeoperation.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Documents\\My Project\\MWT INDIA\\MWT_INDIA\\MWT_INDIA\\MT|solutionrelative:mt\\transaction\\bomrecipe\\reciepeoperation.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Documents\\My Project\\MWT INDIA\\MWT_INDIA\\MWT_INDIA\\MT|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\mt\\transaction\\common\\callprosolapi.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Documents\\My Project\\MWT INDIA\\MWT_INDIA\\MWT_INDIA\\MT|solutionrelative:mt\\transaction\\common\\callprosolapi.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Documents\\My Project\\MWT INDIA\\MWT_INDIA\\MWT_INDIA\\MT|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\mt\\transaction\\material\\materialmaster.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Documents\\My Project\\MWT INDIA\\MWT_INDIA\\MWT_INDIA\\MT|solutionrelative:mt\\transaction\\material\\materialmaster.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Documents\\My Project\\MWT INDIA\\MWT_INDIA\\MWT_INDIA\\MT|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\mt\\shared\\customer\\customermasterpage.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Documents\\My Project\\MWT INDIA\\MWT_INDIA\\MWT_INDIA\\MT|solutionrelative:mt\\shared\\customer\\customermasterpage.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Documents\\My Project\\MWT INDIA\\MWT_INDIA\\MWT_INDIA\\MT|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\mt\\shared\\common\\homemasterpage.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Documents\\My Project\\MWT INDIA\\MWT_INDIA\\MWT_INDIA\\MT|solutionrelative:mt\\shared\\common\\homemasterpage.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Documents\\Nitin Develpments\\MWT India\\MWT Main\\MWT_INDIA\\MWT_INDIA\\MT|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\mt\\shared\\common\\homemasterpage.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Documents\\Nitin Develpments\\MWT India\\MWT Main\\MWT_INDIA\\MWT_INDIA\\MT|solutionrelative:mt\\shared\\common\\homemasterpage.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Documents\\My Project\\MWT INDIA\\MWT_INDIA\\MWT_INDIA\\MT|C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\mt\\shared\\bomrecipe\\bomrecipemasterpage.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{C4A0777F-90C0-4F51-954B-2036D357590E}|C:\\Users\\nitinrajeshirke\\Documents\\My Project\\MWT INDIA\\MWT_INDIA\\MWT_INDIA\\MT|solutionrelative:mt\\shared\\bomrecipe\\bomrecipemasterpage.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CostCenterMaster.aspx",
+              "DocumentMoniker": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Transaction\\CostCenter\\CostCenterMaster.aspx",
+              "RelativeDocumentMoniker": "MT\\Transaction\\CostCenter\\CostCenterMaster.aspx",
+              "ToolTip": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Transaction\\CostCenter\\CostCenterMaster.aspx",
+              "RelativeToolTip": "MT\\Transaction\\CostCenter\\CostCenterMaster.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-05-23T09:10:48.067Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainMaster.master.cs",
+              "DocumentMoniker": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Shared\\Common\\MainMaster.master.cs",
+              "RelativeDocumentMoniker": "MT\\Shared\\Common\\MainMaster.master.cs",
+              "ToolTip": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Shared\\Common\\MainMaster.master.cs",
+              "RelativeToolTip": "MT\\Shared\\Common\\MainMaster.master.cs",
+              "ViewState": "AgIAAEwBAAAAAAAAAAAswF0BAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-23T09:10:23.36Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ADLogin.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\ADLogin.aspx.cs",
+              "RelativeDocumentMoniker": "MT\\ADLogin.aspx.cs",
+              "ToolTip": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\ADLogin.aspx.cs",
+              "RelativeToolTip": "MT\\ADLogin.aspx.cs",
+              "ViewState": "AgIAALgAAAAAAAAAAAAvwMEAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-23T09:10:17.874Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeMasterPage.master.cs",
+              "DocumentMoniker": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Shared\\Common\\HomeMasterPage.master.cs",
+              "RelativeDocumentMoniker": "MT\\Shared\\Common\\HomeMasterPage.master.cs",
+              "ToolTip": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Shared\\Common\\HomeMasterPage.master.cs",
+              "RelativeToolTip": "MT\\Shared\\Common\\HomeMasterPage.master.cs",
+              "ViewState": "AgIAAHwAAAAAAAAAAAAvwFoAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-23T09:05:08.392Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PassLogin.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\PassLogin.aspx.cs",
+              "RelativeDocumentMoniker": "MT\\PassLogin.aspx.cs",
+              "ToolTip": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\PassLogin.aspx.cs",
+              "RelativeToolTip": "MT\\PassLogin.aspx.cs",
+              "ViewState": "AgIAABICAAAAAAAAAAAvwBsCAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T04:26:33.816Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HomeMasterPage.master",
+              "DocumentMoniker": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Shared\\Common\\HomeMasterPage.master",
+              "RelativeDocumentMoniker": "MT\\Shared\\Common\\HomeMasterPage.master",
+              "ToolTip": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Shared\\Common\\HomeMasterPage.master",
+              "RelativeToolTip": "MT\\Shared\\Common\\HomeMasterPage.master",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-05-23T09:04:09.799Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PassLogindiff.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\PassLogindiff.aspx.cs",
+              "RelativeDocumentMoniker": "MT\\PassLogindiff.aspx.cs",
+              "ToolTip": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\PassLogindiff.aspx.cs",
+              "RelativeToolTip": "MT\\PassLogindiff.aspx.cs",
+              "ViewState": "AgIAAOsAAAAAAAAAAAAvwPQAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-13T08:40:40.871Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AdminLogin.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\AdminLogin.aspx.cs",
+              "RelativeDocumentMoniker": "MT\\AdminLogin.aspx.cs",
+              "ToolTip": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\AdminLogin.aspx.cs",
+              "RelativeToolTip": "MT\\AdminLogin.aspx.cs",
+              "ViewState": "AgIAAJIAAAAAAAAAAAAvwJsAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T11:23:35.003Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SSORedirect.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\SSORedirect.aspx.cs",
+              "RelativeDocumentMoniker": "MT\\SSORedirect.aspx.cs",
+              "ToolTip": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\SSORedirect.aspx.cs",
+              "RelativeToolTip": "MT\\SSORedirect.aspx.cs",
+              "ViewState": "AgIAADYBAAAAAAAAAAAvwD8BAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T04:27:21.342Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "home.aspx",
+              "DocumentMoniker": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Shared\\Common\\home.aspx",
+              "RelativeDocumentMoniker": "MT\\Shared\\Common\\home.aspx",
+              "ToolTip": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Shared\\Common\\home.aspx",
+              "RelativeToolTip": "MT\\Shared\\Common\\home.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-05-23T09:04:09.703Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Web.config",
+              "RelativeDocumentMoniker": "MT\\Web.config",
+              "ToolTip": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Web.config",
+              "RelativeToolTip": "MT\\Web.config",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAIIAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-03-13T08:39:31.092Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "home.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Shared\\Common\\home.aspx.cs",
+              "RelativeDocumentMoniker": "MT\\Shared\\Common\\home.aspx.cs",
+              "ToolTip": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Shared\\Common\\home.aspx.cs",
+              "RelativeToolTip": "MT\\Shared\\Common\\home.aspx.cs",
+              "ViewState": "AQIAABsBAAAAAAAAAAAAAB4BAAAAAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMcSURBVEhL7ZbLTxNRFMa/vqAPpgQDLQWKKRTkzUKjSHhpxMSwURPcaoxuNG74C3Dh2p0biLJmISuCQRdgmhg1ksgr0ICJ2NgONK1TaIGWtp5zOwFBCK\u002B485eczL1n7pzv3nPPnRlNLBZL4wik0\u002BmnFoulV\u002B0eGU00Gu3VaDTt1O5gh9cfwdfvYSwFo8g1Z8Ftl3C\u002B7Awkk2GMRMZ5zD6smEymQa1Wu6L2t9FEIpEavV7/iNqP2TE2I2Po8xLeTvphNRtwyZ2Pe\u002B3lcDskGHVAMBhEIpEABYPRaAStiq\u002BL9GhPMpn8YLVad4lwiqZpZjZaRQE7VtcTWAisYmB8ER8XgojEEuhscODWxVKcy0uhv78ffr8fZrMZFRUVaGpqQkNDwyY9/4PiPCfBFyKyip6s1jO3gvdzcsZDsMisT4H8awNKLI7xWRnZeh2Ushy4q\u002BoRi8Yw753H2tqaWAmRXVlZ6aY0dVPKNX\u002BmiwVE8Gevp7i5L7wvxiwdTGQPr3YiFY9ianoKPp9P3OeUcaqKi4s7KLiNRMbILQSE/GlYXl7GxMQERkdH4fV6Ve8OYgVtVXbgtugLOEVfvoXEXnCKSvMtaK2yob3ahpxsHZesOhKIx\u002BMIhUKYnJyEy\u002BVCY2OjeicDC8y2VtsK2NixupHZ5PV4UrQ5LW3VdtxoLBICqVQKkmSFs8TJwwWJrQRkWUY4HFY9O\u002BiptO7odDouUzYx86FPS3g35efax7V6B\u002B62uVBuyxHBefLNl5tRV1vHwwWBQACvBl6qvd3QZmu76VqT6QJFeSa0UDruX3HjAdnNCyUiuCVbL4Izubm5cDqd21boKITBYMjc3IOW6pcFbJTXRbJNuzmNlrNZeHLdTSLlIi2WPXk/DlpOERu1e/iweDwe9PX1QQ7ISG6lttNyUrSSJM2wkcgC9TcVRYH/p5\u002BqIyFmfZrgzKnPwWH8FziUfy4g3kV7USIKRt6MiAN1FCJUefThUnu70ahXHsBftsHh4eFaMtV7PLq6uthm\u002BVxx6bPvLwE6B7V8Fk4Cr5jsQIECeumJ10bGc2IO/AH4BwC/AUj7WaI2rKwqAAAAAElFTkSuQmCC",
+              "WhenOpened": "2025-01-15T04:43:17.777Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AdminLogin.aspx",
+              "DocumentMoniker": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\AdminLogin.aspx",
+              "RelativeDocumentMoniker": "MT\\AdminLogin.aspx",
+              "ToolTip": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\AdminLogin.aspx",
+              "RelativeToolTip": "MT\\AdminLogin.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-04-15T04:49:37.471Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ExcelReport.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Administration\\ExcelReport.aspx.cs",
+              "RelativeDocumentMoniker": "MT\\Administration\\ExcelReport.aspx.cs",
+              "ToolTip": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Administration\\ExcelReport.aspx.cs",
+              "RelativeToolTip": "MT\\Administration\\ExcelReport.aspx.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAIwEIAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T10:54:41.017Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "home.aspx",
+              "DocumentMoniker": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Shared\\Common\\home.aspx",
+              "RelativeDocumentMoniker": "MT\\Shared\\Common\\home.aspx",
+              "ToolTip": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Shared\\Common\\home.aspx",
+              "RelativeToolTip": "MT\\Shared\\Common\\home.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARSSURBVEhLrVbLT2NVGP/dR1\u002BUglJahkcZy4CJVlwMLowzmPpYaJSMC0HDaly4YadLXTgudOPoP\u002BBqXGgCY6IxBiZxZMjM0GgGDQMopgNleBRa2mHa0tve3pffOXPFEgsMib/k5H7n3HO\u002Bx\u002B/7vnOvgBrI5/NPyrI8SmLkwcqx8IdhGEM\u002Bn2\u002BBTQ41MDc3F6Fhrx4MSZLg9XrR09ODcDi8TWfHaG3M4/Fck\u002B09NcGUj42Nwe/3wyE77NX9yOVzKJVKfE80GmWGAoQRemWRo\u002BlDDTCwg\u002BfPv4PWE632yn6MT4zjypUJZLNZxGIxFAoFDAwMIBgMDjmdzqho7zsQzHOmPBQK1RyNjY2wLAuapiGdTmN\u002Bfh6Tk5NIJBIBOh450sBxwKhKJpOYmppCPB7na/\u002BrAQZd1zldxWKRz/dyQAkJUOYHSQwKgtBMYQe7urp46FRyEEWRU8FGNZ6KUCW/9bY9Iz25HKZj06BS5XNepky5JUnPwsIXRd3qzldMlA0L25ksTxrLgdfthEcCfLIAJ8V9UOhr62u4ePEz9Pf3Y3h4\u002BEEEzHPdwns7qhG6vlXBTxslLOxoyKsV8sQBx3IOYZ8Dfc1OvNbpwck6EV5J\u002BE80tSASVxdKBgbXikb310uK69a2iophYrmgIVjnxAsd9cioJjJlAzv0HF1WcDNdQZEiNG0lh0Ekvj\u002Big9Hb9yoYXyvhXlnH4w0y3OTh2aAT7/Z40ewS0eIR0UbjZqqMaTKwqpggJo8Ep5Ipn0qW0ed34PUON86QYi9xXY1TPhmvtLtwLuShCC38sFpCgXglB\u002B0dtcEN3N3VcYM8\u002Bz1bwY/rZYyulLBD7t0gT7\u002BMFzlFM1kNXy0piBGFv9KYyVSgUKEcaUAzLaSJ33hOx\u002BqugV/o4NWkikLFwuJ9bZ88sVFGPK8jUdCxQk5pRNER\u002BiFul00oFGp7nYRPTjfg0tkmfNrXgHavhDeoYqpl9o4NJj8sRMa1QxRQIHd\u002B3lTxHXF7lZ55mi\u002BSt9Uye8cGkx8WYiN1TYND4BXxPVXRNwnlQIq\u002BvVvCpTsKFkh2CxZ2qQlTqRRvrn9GamuLuv9fB3ijtdXJeK7FhceIimeaHbyCPvwtjxdPuPBSm2tPHgx7eIn\u002BRRGUi7uYnZnF1J0FLCeWuTIGpjybzdgz28ATjzjwfKsbsxkVmyWT17tBXdrsFtFVL/OroULFcJ8iSVAhtHhkRIINCJc7UaT37R3tXFk1ent7\u002BVNQFGWB7p7AYk4LfH47D8o1mqixLq8oOEfJfLnVhQ8oghBFd9rvxC0q5VdDdRg\u002B5VUfdYnrlD\u002BVazoAAl1mEVMQRhQdI2QEsZSK65usW1VKPig/Ijao4Lupu8\u002B0uBGlSHubnOisl5ZkQXrfNLUlW1dN8CqmD0VUM6w3i5o5tFTQA39SEpNksfoq8FNUJ4mOp0k5eX6NbtbL9FEfpWt8295SE3ttcpxfFbpFP6aP\u002BwV7egiAvwHCoDGo\u002BzxcpAAAAABJRU5ErkJggg==",
+              "WhenOpened": "2025-01-15T04:43:17.783Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "HomeMasterPage.master.cs",
+              "DocumentMoniker": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Shared\\Common\\HomeMasterPage.master.cs",
+              "RelativeDocumentMoniker": "MT\\Shared\\Common\\HomeMasterPage.master.cs",
+              "ToolTip": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Shared\\Common\\HomeMasterPage.master.cs",
+              "RelativeToolTip": "MT\\Shared\\Common\\HomeMasterPage.master.cs",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAuwHQAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T04:43:17.624Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "home.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Shared\\Common\\home.aspx.cs",
+              "RelativeDocumentMoniker": "MT\\Shared\\Common\\home.aspx.cs",
+              "ToolTip": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Shared\\Common\\home.aspx.cs",
+              "RelativeToolTip": "MT\\Shared\\Common\\home.aspx.cs",
+              "ViewState": "AgIAABsBAAAAAAAAAAAAAB4BAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T04:35:25.341Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ExcelReport.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Administration\\ExcelReport.aspx.cs",
+              "RelativeDocumentMoniker": "MT\\Administration\\ExcelReport.aspx.cs",
+              "ToolTip": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Administration\\ExcelReport.aspx.cs",
+              "RelativeToolTip": "MT\\Administration\\ExcelReport.aspx.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAIwEIAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T05:17:32.69Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "SAPIntegration.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Transaction\\PriceMaster\\SAPIntegration.aspx.cs",
+              "RelativeDocumentMoniker": "MT\\Transaction\\PriceMaster\\SAPIntegration.aspx.cs",
+              "ToolTip": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Transaction\\PriceMaster\\SAPIntegration.aspx.cs",
+              "RelativeToolTip": "MT\\Transaction\\PriceMaster\\SAPIntegration.aspx.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAAAGQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T06:42:22.445Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "PriceMasterPage.master.cs",
+              "DocumentMoniker": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Shared\\PriceMaster\\PriceMasterPage.master.cs",
+              "RelativeDocumentMoniker": "MT\\Shared\\PriceMaster\\PriceMasterPage.master.cs",
+              "ToolTip": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Shared\\PriceMaster\\PriceMasterPage.master.cs",
+              "RelativeToolTip": "MT\\Shared\\PriceMaster\\PriceMasterPage.master.cs",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAAAIoAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T06:40:28.019Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "BasicData1.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Transaction\\Material\\BasicData1.aspx.cs",
+              "RelativeDocumentMoniker": "MT\\Transaction\\Material\\BasicData1.aspx.cs",
+              "ToolTip": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Transaction\\Material\\BasicData1.aspx.cs",
+              "RelativeToolTip": "MT\\Transaction\\Material\\BasicData1.aspx.cs",
+              "ViewState": "AgIAAN0BAAAAAAAAAAAcwPMBAACXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T06:33:01.442Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "PriceMasterPage.master.cs",
+              "DocumentMoniker": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Shared\\PriceMaster\\PriceMasterPage.master.cs",
+              "RelativeDocumentMoniker": "MT\\Shared\\PriceMaster\\PriceMasterPage.master.cs",
+              "ToolTip": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Shared\\PriceMaster\\PriceMasterPage.master.cs",
+              "RelativeToolTip": "MT\\Shared\\PriceMaster\\PriceMasterPage.master.cs",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAAAIoAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-31T10:19:16.178Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "PassLogin.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\PassLogin.aspx.cs",
+              "RelativeDocumentMoniker": "MT\\PassLogin.aspx.cs",
+              "ToolTip": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\PassLogin.aspx.cs",
+              "RelativeToolTip": "MT\\PassLogin.aspx.cs",
+              "ViewState": "AgIAAPsBAAAAAAAAAAAowAECAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-31T04:08:24.97Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "UserMaster.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Administration\\UserMaster.aspx.cs",
+              "RelativeDocumentMoniker": "MT\\Administration\\UserMaster.aspx.cs",
+              "ToolTip": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Administration\\UserMaster.aspx.cs",
+              "RelativeToolTip": "MT\\Administration\\UserMaster.aspx.cs",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAmwHwAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T10:49:58.939Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "PriceMasterPage.master",
+              "DocumentMoniker": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Shared\\PriceMaster\\PriceMasterPage.master",
+              "RelativeDocumentMoniker": "MT\\Shared\\PriceMaster\\PriceMasterPage.master",
+              "ToolTip": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Shared\\PriceMaster\\PriceMasterPage.master",
+              "RelativeToolTip": "MT\\Shared\\PriceMaster\\PriceMasterPage.master",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-03-07T04:50:29.486Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Web.config",
+              "RelativeDocumentMoniker": "MT\\Web.config",
+              "ToolTip": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Web.config",
+              "RelativeToolTip": "MT\\Web.config",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAIIAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-01-31T04:11:46.131Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "SAPIntegration.aspx",
+              "DocumentMoniker": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Transaction\\Customer\\SAPIntegration.aspx",
+              "RelativeDocumentMoniker": "MT\\Transaction\\Customer\\SAPIntegration.aspx",
+              "ToolTip": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Transaction\\Customer\\SAPIntegration.aspx",
+              "RelativeToolTip": "MT\\Transaction\\Customer\\SAPIntegration.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-03-07T06:44:43.669Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "AdminLogin.aspx",
+              "DocumentMoniker": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\AdminLogin.aspx",
+              "RelativeDocumentMoniker": "MT\\AdminLogin.aspx",
+              "ToolTip": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\AdminLogin.aspx",
+              "RelativeToolTip": "MT\\AdminLogin.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-02-24T06:51:56.077Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "PriceMaster.aspx",
+              "DocumentMoniker": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Transaction\\PriceMaster\\PriceMaster.aspx",
+              "RelativeDocumentMoniker": "MT\\Transaction\\PriceMaster\\PriceMaster.aspx",
+              "ToolTip": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Transaction\\PriceMaster\\PriceMaster.aspx",
+              "RelativeToolTip": "MT\\Transaction\\PriceMaster\\PriceMaster.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-03-07T04:49:11.16Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "CustomerMasterPage.master",
+              "DocumentMoniker": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Shared\\Customer\\CustomerMasterPage.master",
+              "RelativeDocumentMoniker": "MT\\Shared\\Customer\\CustomerMasterPage.master",
+              "ToolTip": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Shared\\Customer\\CustomerMasterPage.master",
+              "RelativeToolTip": "MT\\Shared\\Customer\\CustomerMasterPage.master",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-03-07T06:40:49.037Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "PriceMaster.master",
+              "DocumentMoniker": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Shared\\PriceMaster\\PriceMaster.master",
+              "RelativeDocumentMoniker": "MT\\Shared\\PriceMaster\\PriceMaster.master",
+              "ToolTip": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Shared\\PriceMaster\\PriceMaster.master",
+              "RelativeToolTip": "MT\\Shared\\PriceMaster\\PriceMaster.master",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-03-07T04:50:26.413Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "MaterialBatchPrice.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Transaction\\PriceMaster\\MaterialBatchPrice.aspx.cs",
+              "RelativeDocumentMoniker": "MT\\Transaction\\PriceMaster\\MaterialBatchPrice.aspx.cs",
+              "ToolTip": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Transaction\\PriceMaster\\MaterialBatchPrice.aspx.cs",
+              "RelativeToolTip": "MT\\Transaction\\PriceMaster\\MaterialBatchPrice.aspx.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAAAAkAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T06:23:09.37Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "SAPIntegration.aspx",
+              "DocumentMoniker": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Transaction\\PriceMaster\\SAPIntegration.aspx",
+              "RelativeDocumentMoniker": "MT\\Transaction\\PriceMaster\\SAPIntegration.aspx",
+              "ToolTip": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Transaction\\PriceMaster\\SAPIntegration.aspx",
+              "RelativeToolTip": "MT\\Transaction\\PriceMaster\\SAPIntegration.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-01-20T06:44:20.061Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "PriceMaster.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Transaction\\PriceMaster\\PriceMaster.aspx.cs",
+              "RelativeDocumentMoniker": "MT\\Transaction\\PriceMaster\\PriceMaster.aspx.cs",
+              "ToolTip": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Transaction\\PriceMaster\\PriceMaster.aspx.cs",
+              "RelativeToolTip": "MT\\Transaction\\PriceMaster\\PriceMaster.aspx.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAwwFsAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T04:49:11.27Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "PriceDetail.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Transaction\\PriceMaster\\PriceDetail.aspx.cs",
+              "RelativeDocumentMoniker": "MT\\Transaction\\PriceMaster\\PriceDetail.aspx.cs",
+              "ToolTip": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Transaction\\PriceMaster\\PriceDetail.aspx.cs",
+              "RelativeToolTip": "MT\\Transaction\\PriceMaster\\PriceDetail.aspx.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAcwFMAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T04:49:14.82Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "PriceMaster.master.cs",
+              "DocumentMoniker": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Shared\\PriceMaster\\PriceMaster.master.cs",
+              "RelativeDocumentMoniker": "MT\\Shared\\PriceMaster\\PriceMaster.master.cs",
+              "ToolTip": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Shared\\PriceMaster\\PriceMaster.master.cs",
+              "RelativeToolTip": "MT\\Shared\\PriceMaster\\PriceMaster.master.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T04:50:26.539Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "PriceHeader.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Transaction\\PriceMaster\\PriceHeader.aspx.cs",
+              "RelativeDocumentMoniker": "MT\\Transaction\\PriceMaster\\PriceHeader.aspx.cs",
+              "ToolTip": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Transaction\\PriceMaster\\PriceHeader.aspx.cs",
+              "RelativeToolTip": "MT\\Transaction\\PriceMaster\\PriceHeader.aspx.cs",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAowOYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T04:49:08.16Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "BankMaster.aspx",
+              "DocumentMoniker": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Transaction\\BankMaster\\BankMaster.aspx",
+              "RelativeDocumentMoniker": "MT\\Transaction\\BankMaster\\BankMaster.aspx",
+              "ToolTip": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Transaction\\BankMaster\\BankMaster.aspx",
+              "RelativeToolTip": "MT\\Transaction\\BankMaster\\BankMaster.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-02-26T06:20:44.353Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "BankMasterPage.master.cs",
+              "DocumentMoniker": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Shared\\BankMaster\\BankMasterPage.master.cs",
+              "RelativeDocumentMoniker": "MT\\Shared\\BankMaster\\BankMasterPage.master.cs",
+              "ToolTip": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Shared\\BankMaster\\BankMasterPage.master.cs",
+              "RelativeToolTip": "MT\\Shared\\BankMaster\\BankMasterPage.master.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-26T06:22:03.208Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "BankMaster.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Transaction\\BankMaster\\BankMaster.aspx.cs",
+              "RelativeDocumentMoniker": "MT\\Transaction\\BankMaster\\BankMaster.aspx.cs",
+              "ToolTip": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Transaction\\BankMaster\\BankMaster.aspx.cs",
+              "RelativeToolTip": "MT\\Transaction\\BankMaster\\BankMaster.aspx.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAowD0AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-26T06:21:26.523Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "BankData.aspx",
+              "DocumentMoniker": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Transaction\\BankMaster\\BankData.aspx",
+              "RelativeDocumentMoniker": "MT\\Transaction\\BankMaster\\BankData.aspx",
+              "ToolTip": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Transaction\\BankMaster\\BankData.aspx",
+              "RelativeToolTip": "MT\\Transaction\\BankMaster\\BankData.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-02-26T06:20:57.211Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "ProdVersion.aspx",
+              "DocumentMoniker": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Transaction\\BOMRecipe\\ProdVersion.aspx",
+              "RelativeDocumentMoniker": "MT\\Transaction\\BOMRecipe\\ProdVersion.aspx",
+              "ToolTip": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Transaction\\BOMRecipe\\ProdVersion.aspx",
+              "RelativeToolTip": "MT\\Transaction\\BOMRecipe\\ProdVersion.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-02-24T06:44:46.34Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "ProdVersion.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Transaction\\BOMRecipe\\ProdVersion.aspx.cs",
+              "RelativeDocumentMoniker": "MT\\Transaction\\BOMRecipe\\ProdVersion.aspx.cs",
+              "ToolTip": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Transaction\\BOMRecipe\\ProdVersion.aspx.cs",
+              "RelativeToolTip": "MT\\Transaction\\BOMRecipe\\ProdVersion.aspx.cs",
+              "ViewState": "AgIAAJEBAAAAAAAAAAAowKIBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T06:45:02.438Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "MassSAPValidation.aspx",
+              "DocumentMoniker": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Transaction\\BOMRecipe\\MassSAPValidation.aspx",
+              "RelativeDocumentMoniker": "MT\\Transaction\\BOMRecipe\\MassSAPValidation.aspx",
+              "ToolTip": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Transaction\\BOMRecipe\\MassSAPValidation.aspx",
+              "RelativeToolTip": "MT\\Transaction\\BOMRecipe\\MassSAPValidation.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-02-24T06:44:31.414Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "ReciepeOperation.aspx",
+              "DocumentMoniker": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Transaction\\BOMRecipe\\ReciepeOperation.aspx",
+              "RelativeDocumentMoniker": "MT\\Transaction\\BOMRecipe\\ReciepeOperation.aspx",
+              "ToolTip": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Transaction\\BOMRecipe\\ReciepeOperation.aspx",
+              "RelativeToolTip": "MT\\Transaction\\BOMRecipe\\ReciepeOperation.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-02-24T06:43:50.206Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "BOMRecipeMasterPage.master.cs",
+              "DocumentMoniker": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Shared\\BOMRecipe\\BOMRecipeMasterPage.master.cs",
+              "RelativeDocumentMoniker": "MT\\Shared\\BOMRecipe\\BOMRecipeMasterPage.master.cs",
+              "ToolTip": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Shared\\BOMRecipe\\BOMRecipeMasterPage.master.cs",
+              "RelativeToolTip": "MT\\Shared\\BOMRecipe\\BOMRecipeMasterPage.master.cs",
+              "ViewState": "AgIAAAwBAAAAAAAAAAAAAAQBAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T04:48:20.732Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "BOMHeaderComp.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Transaction\\BOMRecipe\\BOMHeaderComp.aspx.cs",
+              "RelativeDocumentMoniker": "MT\\Transaction\\BOMRecipe\\BOMHeaderComp.aspx.cs",
+              "ToolTip": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Transaction\\BOMRecipe\\BOMHeaderComp.aspx.cs",
+              "RelativeToolTip": "MT\\Transaction\\BOMRecipe\\BOMHeaderComp.aspx.cs",
+              "ViewState": "AgIAACkEAAAAAAAAAAAswCYEAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T06:48:10.29Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "ReciepeOperation.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Transaction\\BOMRecipe\\ReciepeOperation.aspx.cs",
+              "RelativeDocumentMoniker": "MT\\Transaction\\BOMRecipe\\ReciepeOperation.aspx.cs",
+              "ToolTip": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Transaction\\BOMRecipe\\ReciepeOperation.aspx.cs",
+              "RelativeToolTip": "MT\\Transaction\\BOMRecipe\\ReciepeOperation.aspx.cs",
+              "ViewState": "AgIAANcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T06:43:50.285Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "CallProsolAPI.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Transaction\\Common\\CallProsolAPI.aspx.cs",
+              "RelativeDocumentMoniker": "MT\\Transaction\\Common\\CallProsolAPI.aspx.cs",
+              "ToolTip": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Transaction\\Common\\CallProsolAPI.aspx.cs",
+              "RelativeToolTip": "MT\\Transaction\\Common\\CallProsolAPI.aspx.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAowDkAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T10:42:48.219Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "MaterialMaster.aspx",
+              "DocumentMoniker": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Transaction\\Material\\MaterialMaster.aspx",
+              "RelativeDocumentMoniker": "MT\\Transaction\\Material\\MaterialMaster.aspx",
+              "ToolTip": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Transaction\\Material\\MaterialMaster.aspx",
+              "RelativeToolTip": "MT\\Transaction\\Material\\MaterialMaster.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-01-30T06:16:46.387Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "CustomerMasterPage.master.cs",
+              "DocumentMoniker": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Shared\\Customer\\CustomerMasterPage.master.cs",
+              "RelativeDocumentMoniker": "MT\\Shared\\Customer\\CustomerMasterPage.master.cs",
+              "ToolTip": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Shared\\Customer\\CustomerMasterPage.master.cs",
+              "RelativeToolTip": "MT\\Shared\\Customer\\CustomerMasterPage.master.cs",
+              "ViewState": "AgIAAKgBAAAAAAAAAAAYwLgBAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T08:57:13.768Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "HomeMasterPage.master",
+              "DocumentMoniker": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Shared\\Common\\HomeMasterPage.master",
+              "RelativeDocumentMoniker": "MT\\Shared\\Common\\HomeMasterPage.master",
+              "ToolTip": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Shared\\Common\\HomeMasterPage.master",
+              "RelativeToolTip": "MT\\Shared\\Common\\HomeMasterPage.master",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-01-15T08:56:59.874Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "BOMRecipeMasterPage.master",
+              "DocumentMoniker": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Shared\\BOMRecipe\\BOMRecipeMasterPage.master",
+              "RelativeDocumentMoniker": "MT\\Shared\\BOMRecipe\\BOMRecipeMasterPage.master",
+              "ToolTip": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Shared\\BOMRecipe\\BOMRecipeMasterPage.master",
+              "RelativeToolTip": "MT\\Shared\\BOMRecipe\\BOMRecipeMasterPage.master",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-01-15T04:48:20.622Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "HomeMasterPage.master",
+              "DocumentMoniker": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Shared\\Common\\HomeMasterPage.master",
+              "RelativeDocumentMoniker": "MT\\Shared\\Common\\HomeMasterPage.master",
+              "ToolTip": "C:\\Users\\nitinrajeshirke\\Downloads\\MyProject\\MWT India\\MWT_Latest\\MT\\Shared\\Common\\HomeMasterPage.master",
+              "RelativeToolTip": "MT\\Shared\\Common\\HomeMasterPage.master",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFKSURBVEhL1ZU9boNAEIWfI1NAAQUNlkIbF3HhlCGij8UNqHBO4j4\u002BBycwsitKp7QL\u002BwLBhQtTsBFQJrBaVgQlkX9YS/mkEbMj4MHM7A5E00nTdMJ8IXSyLPtMkgSltYmmadSoQBAEKK1NHMehRgV830dpbeK6LrUbthaGcIEuu0JVVVjWEy0MKQq\u002BfFvCvDVxPxiwO46jeraCC2iqhtHzCKZpYr/f4xAfMBw\u002B0NgpRLsIm\u002B2GrX5Jka7rGHsvsB4tFjkfLpCQBPPFHNtCPc9zrNcr7IqvIYRgweLH\u002BE24QPXS9yhC0bpYnek34fsgDEN43hj9uz4URUEcx5Bl\u002BWSffBBMp6\u002Bwbfv7PpC6EnpGj3ZRPUWSJMEwDBo/xm/yY5H/\u002BuVTuV4X1amn6FL\u002Bf4p4m85mM34WXUJ1FpWzoGzT6wwcoSNT9NAXDPAFNPcGihwU0PAAAAAASUVORK5CYII=",
+              "WhenOpened": "2025-01-15T04:43:17.769Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

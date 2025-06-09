@@ -1,0 +1,331 @@
+﻿<%--<%@ Master Language="C#" AutoEventWireup="true" CodeFile="PriceMasterPage.master.cs" MasterPageFile="~/Shared/Common/MainMaster.master"
+    Inherits="Shared_PriceMaster_PriceMasterPage" %>--%>
+
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="PriceMasterPage.master.cs" Inherits="Shared_PriceMaster_PriceMasterPage   " %>
+
+
+<%--<%@ Register Namespace="AjaxControlToolkit" Assembly="AjaxControlToolkit" TagPrefix="ajax" %>--%>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>MWT</title>
+    <link href="../../stylesheet/main.css" rel="stylesheet" type="text/css" />
+    <link href="../../stylesheet/autocomplete.css" rel="stylesheet" type="text/css" />
+    <link href="../../stylesheet/Paging.css" rel="stylesheet" type="text/css" />
+    <script src="../../js/jquery-1.6.4.js" type="text/javascript"></script>
+    <script src="../../js/jquery.min.js" type="text/javascript"></script>
+    <script src="../../js/jquery-ui-1.8.15.custom.min.js" type="text/javascript"></script>
+    <link href="../../stylesheet/TabStyle.css" rel="stylesheet" type="text/css" />
+    <script src="../../js/Common.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <%-- <ajax:ToolkitScriptManager ID="sm" runat="server">
+        </ajax:ToolkitScriptManager>--%>
+            <div id="outer_main">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td height="82">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td height="82">
+                                        <img src="" alt="" border="0" />
+                                    </td>
+                                    <td width="500" valign="bottom" align="right">
+                                        <table border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td valign="top">
+                                                    <table width="100%" cellpadding="0" cellspacing="1">
+                                                        <tr valign="top" align="right">
+                                                            <td class="user">Welcome
+                                                            </td>
+                                                            <td class="user">:
+                                                            </td>
+                                                            <td class="id" align="left">
+                                                                <asp:Label ID="lblUserName" ForeColor="Green" Font-Bold="true" runat="server" />
+                                                            </td>
+                                                        </tr>
+                                                        <tr valign="top" align="right">
+                                                            <td class="user">Profile
+                                                            </td>
+                                                            <td class="user">:
+                                                            </td>
+                                                            <td class="id" align="left">
+                                                                <asp:Label ForeColor="Green" Font-Bold="true" ID="lblProfile" runat="server" />
+                                                            </td>
+                                                        </tr>
+                                                        <tr valign="top" align="right">
+                                                            <td class="user">Date
+                                                            </td>
+                                                            <td class="user">:
+                                                            </td>
+                                                            <td class="id" align="left">
+                                                                <asp:Label ID="lblDate" ForeColor="Green" Font-Bold="true" runat="server" />
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td>
+                                                    <%--<img src="../../images/accenture_logo.gif" alt="" border="0" style="margin-bottom: 15px;" />--%>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%" class="menu">
+                                <tr>
+                                    <td>
+                                        <asp:Menu ID="Menu1" DataSourceID="xmlDataSource" runat="server" BackColor="Transparent"
+                                            DynamicHorizontalOffset="2" Font-Names="Verdana" ForeColor="#FFFFFF" StaticSubMenuIndent="10px"
+                                            StaticDisplayLevels="1" Orientation="Horizontal" Font-Size="small">
+                                            <DataBindings>
+                                                <asp:MenuItemBinding DataMember="MenuItem" NavigateUrlField="NavigateUrl" TextField="MenuName"
+                                                    ToolTipField="ToolTip" />
+                                            </DataBindings>
+                                            <StaticMenuStyle VerticalPadding="2px" />
+                                            <StaticSelectedStyle BackColor="#ffffff" />
+                                            <StaticMenuItemStyle Font-Bold="True" CssClass="staticMenuItemStyle" HorizontalPadding="10px"
+                                                VerticalPadding="2px" ItemSpacing="5px" />
+                                            <DynamicMenuStyle BackColor="#eb922c" />
+                                            <DynamicSelectedStyle BackColor="#FFFFFF" />
+                                            <DynamicMenuItemStyle CssClass="dynamicMenuItemStyle" HorizontalPadding="20px" VerticalPadding="3px" />
+                                            <DynamicHoverStyle BackColor="#FAC004" Font-Bold="False" ForeColor="White" />
+                                            <StaticHoverStyle BackColor="#a32c2c" Font-Bold="True" ForeColor="White" />
+                                        </asp:Menu>
+                                        <asp:XmlDataSource ID="xmlDataSource" EnableCaching="false" TransformFile="~/TransformXSLT.xsl"
+                                            XPath="MenuItems/MenuItem" runat="server" />
+                                    </td>
+                                    <td align="right">
+                                        <asp:LinkButton Text="Logout" ID="lnkLogout" runat="server" ForeColor="White" OnClick="lnkLogout_Click"
+                                            Style="font-family: Cambria;" CausesValidation="false" />&nbsp;
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="5"></td>
+                    </tr>
+                    <tr>
+                        <td align="center" valign="top">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td valign="top" style="width: 20%">
+                                        <asp:Literal ID="litTab" runat="server" />
+                                    </td>
+                                    <td valign="top" align="center" style="width: 80%;">
+                                        <div id="divContainer" style="width: 99%;">
+                                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                            </asp:ContentPlaceHolder>
+                                        </div>
+                                        <asp:Button ID="btnSAPUpload" runat="server" Text="SAP Integration" CssClass="button"
+                                            OnClientClick="return ShowSAPUploadPopup();" Visible="false" /> 
+                                        
+                                          <asp:Button ID="btnSubmit" runat="server" Text="Submit" CssClass="button" OnClick="btnSubmit_Click"
+                                         Visible="false" />
+                                         
+                                        <asp:Button ID="btnCancel" runat="server" Text="Cancel" CssClass="button" OnClick="btnCancel_Click" />
+                                        <asp:Button ID="btnRejectTo" runat="server" Text="Reject" CssClass="button" OnClientClick="return ShowRollbackPopup();" />
+                                        <asp:Panel ID="pnlMsg" runat="server" Visible="false">
+                                            <asp:Label ID="lblMsg" runat="server" />
+                                        </asp:Panel>
+
+                                        <%-- 8400000359--%>
+                <asp:GridView ID="rptCommon" runat="server" AutoGenerateColumns="false"
+                    Width="100%" BorderColor="#9D9D9D" GridLines="Both">
+                    <RowStyle CssClass="light-gray" />
+                    <HeaderStyle CssClass="gridHeader" />
+                    <AlternatingRowStyle CssClass="gridRowStyle" />
+                    <PagerStyle CssClass="PagerStyle" />
+                    <Columns>
+                        <asp:TemplateField ItemStyle-HorizontalAlign="Center">
+                            <ItemTemplate>
+                                <%# Container.DataItemIndex+1 %>
+                            </ItemTemplate>
+                        </asp:TemplateField>
+                        <asp:BoundField HeaderText="Department" DataField="Department_Name" HeaderStyle-HorizontalAlign="Left" />
+                        <asp:BoundField HeaderText="Actioned By" DataField="Actioned_By" HeaderStyle-HorizontalAlign="Left" />
+                        <asp:BoundField HeaderText="Actioned On" DataField="Actioned_On" HeaderStyle-HorizontalAlign="Left" />
+                        <asp:BoundField HeaderText="Remarks" DataField="Remark" HeaderStyle-HorizontalAlign="Left" />
+                    </Columns>
+                </asp:GridView>
+                 <%-- 8400000359--%>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left" valign="top" colspan="2">
+                                        <br />
+                                        <table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-top: 100px;">
+                                            <tr>
+                                                <td width="9" align="left" valign="top">
+                                                    <img src="../../images/btm_left.jpg" alt="" border="0" />
+                                                </td>
+                                                <td align="right" valign="middle" background="../../images/btm_middle_bg.jpg" class="txt_normal copyright_txt_normal">
+                                                    <%--Copyright @ 2013, All rights reserved by Accenture.--%>
+                                                </td>
+                                                <td width="9" align="right" valign="top">
+                                                    <img src="../../images/btm_right.jpg" alt="" border="0" />
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td height="1" align="left" valign="top">&nbsp;
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="divRejectTo" style="display: none;" title="Reject Request">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-top: 10px;">
+                    <tr>
+                        <td class="leftTD" style="width: 25%">Reject To
+                        </td>
+                        <td class="rigthTD">
+                            <asp:DropDownList ID="ddlRejectTo" runat="server" AppendDataBoundItems="true">
+                                <asp:ListItem Text="Select" Value="" />
+                            </asp:DropDownList>
+                            <asp:RequiredFieldValidator ID="rfvq" SetFocusOnError="true" Display="Dynamic" Text="<img src='../images/Error.png' title='Select Department.'"
+                                ControlToValidate="ddlRejectTo" InitialValue="" runat="server" ForeColor="Red"
+                                ValidationGroup="reject" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="tdSpace"></td>
+                    </tr>
+                    <tr>
+                        <td class="leftTD" valign="top">Remark
+                        </td>
+                        <td class="rigthTD">
+                            <asp:TextBox ID="txtRejectNote" runat="server" CssClass="textarea" TextMode="MultiLine"
+                                Height="40px" Width="350px" Style="text-transform: none;" />
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator13" SetFocusOnError="true"
+                                Display="Dynamic" Text="<img src='../images/Error.png' title='Enter Remark.'"
+                                ControlToValidate="txtRejectNote" runat="server" ForeColor="Red" ValidationGroup="reject" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="tdSpace"></td>
+                    </tr>
+                    <tr>
+                        <td class="leftTD">&nbsp;
+                        </td>
+                        <td class="rigthTD">
+                            <asp:Button ID="btnRollback" runat="server" Text="Reject" CssClass="button" OnClick="btnRollback_Click"
+                                ValidationGroup="reject" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <%--SPNAIRCR_SDT05122019 Added--%>
+            <div id="divApproveTo" style="display: none;" title="Approve Request">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-top: 10px;">
+
+                    <tr>
+                        <td class="leftTD" valign="top">Remark
+                        </td>
+                        <td class="rigthTD">
+                            <asp:TextBox ID="txtApproveNote" runat="server" CssClass="textarea" TextMode="MultiLine"
+                                Height="40px" Width="350px" Style="text-transform: none;" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="tdSpace"></td>
+                    </tr>
+                    <tr>
+                        <td class="leftTD">&nbsp;
+                        </td>
+                        <td class="rigthTD">
+                            <asp:Button ID="btnApproveRemarks" runat="server" Text="Approve" CssClass="button"
+                                OnClick="btnApproveRemarks_Click" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <%--SPNAIRCR_SDT05122019 Added--%>
+
+            <div id="divSAPUpload" style="display: none;" title="Upload To SAP">
+                <iframe runat="server" width="100%" height="100%" src="/Transaction/PriceMaster/SAPIntegration.aspx"></iframe>
+            </div>
+            <asp:Label ID="lblUserId" runat="server" Visible="false" />
+            <asp:Label ID="lblMasterHeaderId" runat="server" Visible="false" />
+        </div>
+        <script type="text/javascript">
+
+            function ShowSAPUploadPopup() {
+                $("#divSAPUpload").dialog({
+                    height: 500,
+                    width: 850,
+                    modal: true,
+                    closeOnEscape: true,
+                    draggable: true,
+                    resizable: false,
+                    position: 'center',
+                    dialogClass: 'alert',
+                    //show: { effect: 'drop', duration: 500 },
+                    //hide: { effect: 'explode', duration: 100 },
+                    open: function (type, data) {
+                        $(this).parent().appendTo("form");
+                        $(this).show('clip');
+                    }
+                });
+                return false;
+            }
+
+            function ShowRollbackPopup() {
+                $("#divRejectTo").dialog({
+                    height: 210,
+                    width: 550,
+                    modal: true,
+                    closeOnEscape: true,
+                    draggable: true,
+                    resizable: false,
+                    position: 'center',
+                    dialogClass: 'alert',
+                    //show: { effect: 'drop', duration: 500 },
+                    //hide: { effect: 'explode', duration: 100 },
+                    open: function (type, data) {
+                        $(this).parent().appendTo("form");
+                        $(this).show('clip');
+                    }
+                });
+                return false;
+            }
+
+            //SPNAIRCR_SDT05122019 Added
+            function ShowApprovePopup() {
+                $("#divApproveTo").dialog({
+                    height: 210,
+                    width: 550,
+                    modal: true,
+                    closeOnEscape: true,
+                    draggable: true,
+                    resizable: false,
+                    position: 'center',
+                    dialogClass: 'alert',
+                    open: function (type, data) {
+                        $(this).parent().appendTo("form");
+                        $(this).show('clip');
+                    }
+                });
+                return false;
+            }
+        //SPNAIRCR_SDT05122019 Added
+
+        </script>
+    </form>
+</body>
+</html>

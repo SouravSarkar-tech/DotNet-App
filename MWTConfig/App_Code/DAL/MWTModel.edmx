@@ -1,0 +1,1310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="MW_TestModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="MW_TestModelStoreContainer">
+          <EntitySet Name="C_Section_Feild_Mapping" EntityType="MW_TestModel.Store.C_Section_Feild_Mapping" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Dept_Module_Section_Mapping" EntityType="MW_TestModel.Store.Dept_Module_Section_Mapping" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="FieldStatusMaster" EntityType="MW_TestModel.Store.FieldStatusMaster" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="M_Company" EntityType="MW_TestModel.Store.M_Company" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="M_Department" EntityType="MW_TestModel.Store.M_Department" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="M_Module" EntityType="MW_TestModel.Store.M_Module" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="M_Plant_Group" EntityType="MW_TestModel.Store.M_Plant_Group" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Menu_Master" EntityType="MW_TestModel.Store.Menu_Master" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Profile_Master" EntityType="MW_TestModel.Store.Profile_Master" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Profile_Menu_Mapping" EntityType="MW_TestModel.Store.Profile_Menu_Mapping" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Profile_Module_Mapping" EntityType="MW_TestModel.Store.Profile_Module_Mapping" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="SectionFieldMaster" EntityType="MW_TestModel.Store.SectionFieldMaster" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="SectionMaster" EntityType="MW_TestModel.Store.SectionMaster" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_C_Section_Feild_Mapping_M_Company" Association="MW_TestModel.Store.FK_C_Section_Feild_Mapping_M_Company">
+            <End Role="M_Company" EntitySet="M_Company" />
+            <End Role="C_Section_Feild_Mapping" EntitySet="C_Section_Feild_Mapping" />
+          </AssociationSet>
+          <AssociationSet Name="FK_C_Section_Feild_Mapping_M_Module" Association="MW_TestModel.Store.FK_C_Section_Feild_Mapping_M_Module">
+            <End Role="M_Module" EntitySet="M_Module" />
+            <End Role="C_Section_Feild_Mapping" EntitySet="C_Section_Feild_Mapping" />
+          </AssociationSet>
+          <AssociationSet Name="FK_C_Section_Feild_Mapping_m_Plant_Group" Association="MW_TestModel.Store.FK_C_Section_Feild_Mapping_m_Plant_Group">
+            <End Role="M_Plant_Group" EntitySet="M_Plant_Group" />
+            <End Role="C_Section_Feild_Mapping" EntitySet="C_Section_Feild_Mapping" />
+          </AssociationSet>
+          <AssociationSet Name="FK_C_Section_Feild_Mapping_SectionFieldMaster" Association="MW_TestModel.Store.FK_C_Section_Feild_Mapping_SectionFieldMaster">
+            <End Role="SectionFieldMaster" EntitySet="SectionFieldMaster" />
+            <End Role="C_Section_Feild_Mapping" EntitySet="C_Section_Feild_Mapping" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Dept_Module_Section_Mapping_M_Module" Association="MW_TestModel.Store.FK_Dept_Module_Section_Mapping_M_Module">
+            <End Role="M_Module" EntitySet="M_Module" />
+            <End Role="Dept_Module_Section_Mapping" EntitySet="Dept_Module_Section_Mapping" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Dept_Module_Section_Mapping_SectionMaster" Association="MW_TestModel.Store.FK_Dept_Module_Section_Mapping_SectionMaster">
+            <End Role="SectionMaster" EntitySet="SectionMaster" />
+            <End Role="Dept_Module_Section_Mapping" EntitySet="Dept_Module_Section_Mapping" />
+          </AssociationSet>
+          <AssociationSet Name="FK_FinanceSection_FieldStatusMaster" Association="MW_TestModel.Store.FK_FinanceSection_FieldStatusMaster">
+            <End Role="FieldStatusMaster" EntitySet="FieldStatusMaster" />
+            <End Role="SectionFieldMaster" EntitySet="SectionFieldMaster" />
+          </AssociationSet>
+          <AssociationSet Name="FK_M_Company_M_Company" Association="MW_TestModel.Store.FK_M_Company_M_Company">
+            <End Role="M_Company" EntitySet="M_Company" />
+            <End Role="M_Company1" EntitySet="M_Company" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Profile_Menu_Mapping_Menu_Master" Association="MW_TestModel.Store.FK_Profile_Menu_Mapping_Menu_Master">
+            <End Role="Menu_Master" EntitySet="Menu_Master" />
+            <End Role="Profile_Menu_Mapping" EntitySet="Profile_Menu_Mapping" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Profile_Menu_Mapping_Profile_Master" Association="MW_TestModel.Store.FK_Profile_Menu_Mapping_Profile_Master">
+            <End Role="Profile_Master" EntitySet="Profile_Master" />
+            <End Role="Profile_Menu_Mapping" EntitySet="Profile_Menu_Mapping" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Profile_Module_Mapping_M_Module" Association="MW_TestModel.Store.FK_Profile_Module_Mapping_M_Module">
+            <End Role="M_Module" EntitySet="M_Module" />
+            <End Role="Profile_Module_Mapping" EntitySet="Profile_Module_Mapping" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Profile_Module_Mapping_Profile_Master" Association="MW_TestModel.Store.FK_Profile_Module_Mapping_Profile_Master">
+            <End Role="Profile_Master" EntitySet="Profile_Master" />
+            <End Role="Profile_Module_Mapping" EntitySet="Profile_Module_Mapping" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SectionFieldMaster_SectionMaster" Association="MW_TestModel.Store.FK_SectionFieldMaster_SectionMaster">
+            <End Role="SectionMaster" EntitySet="SectionMaster" />
+            <End Role="SectionFieldMaster" EntitySet="SectionFieldMaster" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="C_Section_Feild_Mapping">
+          <Key>
+            <PropertyRef Name="Section_Feild_Mapping_Id" />
+          </Key>
+          <Property Name="Section_Feild_Mapping_Id" Type="numeric" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Action_Type" Type="varchar" MaxLength="5" />
+          <Property Name="Module_Id" Type="numeric" />
+          <Property Name="Plant_Group_Id" Type="numeric" />
+          <Property Name="Company_Id" Type="numeric" />
+          <Property Name="Section_Feild_Master_Id" Type="numeric" />
+          <Property Name="Feild_Status" Type="numeric" />
+          <Property Name="Approval_Dept" Type="varchar" MaxLength="5" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+          <Property Name="CreatedOn" Type="datetime" />
+          <Property Name="CreatedBy" Type="numeric" />
+          <Property Name="CreatedIp" Type="varchar" MaxLength="50" />
+          <Property Name="ModifiedOn" Type="datetime" />
+          <Property Name="ModifiedBy" Type="numeric" />
+          <Property Name="ModifiedIp" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Dept_Module_Section_Mapping">
+          <Key>
+            <PropertyRef Name="Mapping_Id" />
+          </Key>
+          <Property Name="Mapping_Id" Type="numeric" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Module_Id" Type="numeric" Nullable="false" />
+          <Property Name="Plant_Group_Id" Type="numeric" />
+          <Property Name="Company_Id" Type="numeric" />
+          <Property Name="Department_Id" Type="numeric" Nullable="false" />
+          <Property Name="Section_Id" Type="numeric" Nullable="false" />
+          <Property Name="Sequence" Type="numeric" Nullable="false" />
+          <Property Name="Input_Rights" Type="bit" Nullable="false" />
+          <Property Name="View_Rights" Type="bit" Nullable="false" />
+          <Property Name="IsRequestor" Type="bit" />
+          <Property Name="Approval_Dept" Type="varchar" MaxLength="5" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+          <Property Name="CreatedOn" Type="datetime" />
+          <Property Name="CreatedBy" Type="numeric" />
+        </EntityType>
+        <EntityType Name="FieldStatusMaster">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="numeric" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="200" />
+          <Property Name="Active" Type="bit" />
+          <Property Name="AddedOn" Type="datetime" />
+          <Property Name="AddedBy" Type="numeric" />
+          <Property Name="UpdatedOn" Type="datetime" />
+          <Property Name="UpdatedBy" Type="numeric" />
+          <Property Name="IPAddress" Type="nvarchar" MaxLength="10" />
+          <Property Name="Description" Type="nvarchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="M_Company">
+          <Key>
+            <PropertyRef Name="Company_Id" />
+          </Key>
+          <Property Name="Company_Id" Type="numeric" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Company_Code" Type="varchar" Nullable="false" MaxLength="4" />
+          <Property Name="Name" Type="varchar" MaxLength="60" />
+          <Property Name="Company_City" Type="varchar" MaxLength="150" />
+          <Property Name="Currency_Id" Type="numeric" />
+          <Property Name="Country_Id" Type="numeric" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+          <Property Name="CreatedOn" Type="datetime" />
+          <Property Name="CreatedBy" Type="numeric" />
+          <Property Name="CreatedIp" Type="varchar" MaxLength="50" />
+          <Property Name="ModifiedOn" Type="datetime" />
+          <Property Name="ModifiedBy" Type="numeric" />
+          <Property Name="ModifiedIp" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="M_Department">
+          <Key>
+            <PropertyRef Name="Department_Id" />
+          </Key>
+          <Property Name="Department_Id" Type="numeric" Nullable="false" />
+          <Property Name="Department_Name" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="isActive" Type="bit" />
+          <Property Name="CreatedOn" Type="datetime" />
+          <Property Name="CreatedBy" Type="numeric" />
+          <Property Name="CreatedIp" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="M_Module">
+          <Key>
+            <PropertyRef Name="Module_Id" />
+          </Key>
+          <Property Name="Module_Id" Type="numeric" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Module_Code" Type="varchar" MaxLength="50" />
+          <Property Name="Module_Name" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Description" Type="varchar" MaxLength="50" />
+          <Property Name="Workflow_Code" Type="varchar" Nullable="false" MaxLength="10" />
+          <Property Name="Code_Start" Type="varchar" MaxLength="10" />
+          <Property Name="Request_No_Size" Type="numeric" />
+          <Property Name="ModuleType" Type="char" MaxLength="1" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+          <Property Name="CreatedOn" Type="datetime" />
+          <Property Name="CreatedBy" Type="numeric" />
+          <Property Name="CreatedIp" Type="varchar" MaxLength="50" />
+          <Property Name="ModifiedOn" Type="datetime" />
+          <Property Name="ModifiedBy" Type="numeric" />
+          <Property Name="ModifiedIp" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="M_Plant_Group">
+          <Key>
+            <PropertyRef Name="Plant_Group_Id" />
+          </Key>
+          <Property Name="Plant_Group_Id" Type="numeric" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Plant_Group_Code" Type="varchar" MaxLength="10" />
+          <Property Name="Plant_group_Name" Type="varchar" MaxLength="150" />
+          <Property Name="Description" Type="varchar" MaxLength="500" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+          <Property Name="CreatedOn" Type="datetime" />
+          <Property Name="CreatedBy" Type="numeric" />
+          <Property Name="CreatedIp" Type="varchar" MaxLength="50" />
+          <Property Name="ModifiedOn" Type="datetime" />
+          <Property Name="ModifiedBy" Type="numeric" />
+          <Property Name="ModifiedIp" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Menu_Master">
+          <Key>
+            <PropertyRef Name="Menu_ID" />
+          </Key>
+          <Property Name="Menu_ID" Type="numeric" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Menu_Name" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="Parent_Id" Type="numeric" />
+          <Property Name="Page_URL" Type="nvarchar" MaxLength="100" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+          <Property Name="CreatedOn" Type="datetime" />
+          <Property Name="CreatedBy" Type="numeric" />
+          <Property Name="CreatedIp" Type="varchar" MaxLength="50" />
+          <Property Name="ModifiedOn" Type="datetime" />
+          <Property Name="ModifiedBy" Type="numeric" />
+          <Property Name="ModifiedIp" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Profile_Master">
+          <Key>
+            <PropertyRef Name="Profile_Id" />
+          </Key>
+          <Property Name="Profile_Id" Type="numeric" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Profile_Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+          <Property Name="CreatedBy" Type="numeric" Nullable="false" />
+          <Property Name="CreatedOn" Type="datetime" />
+          <Property Name="ModifiedBy" Type="numeric" />
+          <Property Name="ModifiedOn" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Profile_Menu_Mapping">
+          <Key>
+            <PropertyRef Name="Mapping_Id" />
+          </Key>
+          <Property Name="Mapping_Id" Type="numeric" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Menu_ID" Type="numeric" Nullable="false" />
+          <Property Name="Profile_Id" Type="numeric" Nullable="false" />
+          <Property Name="Menu_Seq" Type="int" />
+          <Property Name="View_Right" Type="bit" />
+          <Property Name="Add_Right" Type="bit" />
+          <Property Name="Update_Right" Type="bit" />
+          <Property Name="Delete_Right" Type="bit" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+          <Property Name="CreatedOn" Type="datetime" />
+          <Property Name="CreatedBy" Type="numeric" />
+          <Property Name="CreatedIp" Type="varchar" MaxLength="50" />
+          <Property Name="ModifiedOn" Type="datetime" />
+          <Property Name="ModifiedBy" Type="numeric" />
+          <Property Name="ModifiedIp" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Profile_Module_Mapping">
+          <Key>
+            <PropertyRef Name="Mapping_Id" />
+          </Key>
+          <Property Name="Mapping_Id" Type="numeric" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Profile_Id" Type="numeric" Nullable="false" />
+          <Property Name="Module_Id" Type="numeric" Nullable="false" />
+          <Property Name="View_Right" Type="bit" />
+          <Property Name="Add_Right" Type="bit" />
+          <Property Name="Update_Right" Type="bit" />
+          <Property Name="Delete_Right" Type="bit" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+          <Property Name="CreatedOn" Type="datetime" />
+          <Property Name="CreatedBy" Type="numeric" />
+          <Property Name="CreatedIp" Type="varchar" MaxLength="50" />
+          <Property Name="ModifiedOn" Type="datetime" />
+          <Property Name="ModifiedBy" Type="numeric" />
+          <Property Name="ModifiedIp" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="SectionFieldMaster">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="numeric" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="SectionID" Type="numeric" Nullable="false" />
+          <Property Name="FieldName" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="FieldDescription" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="FeildDisplayName" Type="varchar" MaxLength="150" />
+          <Property Name="Field_Help_Text" Type="varchar" MaxLength="500" />
+          <Property Name="FieldStatus" Type="numeric" />
+          <Property Name="SAP_Feild" Type="varchar" MaxLength="50" />
+          <Property Name="Feild_Length" Type="numeric" />
+          <Property Name="Active" Type="bit" />
+          <Property Name="AddedOn" Type="datetime" />
+          <Property Name="AddedBy" Type="numeric" />
+          <Property Name="UpdatedOn" Type="datetime" />
+          <Property Name="UpdatedBy" Type="numeric" />
+          <Property Name="IPAddress" Type="nvarchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="SectionMaster">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="numeric" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="ShortName" Type="varchar" MaxLength="50" />
+          <Property Name="Decsription" Type="nvarchar" MaxLength="200" />
+          <Property Name="Sequence" Type="numeric" />
+          <Property Name="Section_URL" Type="varchar" MaxLength="100" />
+          <Property Name="Module_Type" Type="char" MaxLength="1" />
+          <Property Name="Active" Type="bit" />
+          <Property Name="AddedOn" Type="datetime" />
+          <Property Name="AddedBy" Type="numeric" />
+          <Property Name="UpdatedOn" Type="datetime" />
+          <Property Name="UpdatedBy" Type="numeric" />
+          <Property Name="IPAddress" Type="nvarchar" MaxLength="10" />
+        </EntityType>
+        <Association Name="FK_C_Section_Feild_Mapping_M_Company">
+          <End Role="M_Company" Type="MW_TestModel.Store.M_Company" Multiplicity="0..1" />
+          <End Role="C_Section_Feild_Mapping" Type="MW_TestModel.Store.C_Section_Feild_Mapping" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="M_Company">
+              <PropertyRef Name="Company_Id" />
+            </Principal>
+            <Dependent Role="C_Section_Feild_Mapping">
+              <PropertyRef Name="Company_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_C_Section_Feild_Mapping_M_Module">
+          <End Role="M_Module" Type="MW_TestModel.Store.M_Module" Multiplicity="0..1" />
+          <End Role="C_Section_Feild_Mapping" Type="MW_TestModel.Store.C_Section_Feild_Mapping" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="M_Module">
+              <PropertyRef Name="Module_Id" />
+            </Principal>
+            <Dependent Role="C_Section_Feild_Mapping">
+              <PropertyRef Name="Module_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_C_Section_Feild_Mapping_m_Plant_Group">
+          <End Role="M_Plant_Group" Type="MW_TestModel.Store.M_Plant_Group" Multiplicity="0..1" />
+          <End Role="C_Section_Feild_Mapping" Type="MW_TestModel.Store.C_Section_Feild_Mapping" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="M_Plant_Group">
+              <PropertyRef Name="Plant_Group_Id" />
+            </Principal>
+            <Dependent Role="C_Section_Feild_Mapping">
+              <PropertyRef Name="Plant_Group_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_C_Section_Feild_Mapping_SectionFieldMaster">
+          <End Role="SectionFieldMaster" Type="MW_TestModel.Store.SectionFieldMaster" Multiplicity="0..1" />
+          <End Role="C_Section_Feild_Mapping" Type="MW_TestModel.Store.C_Section_Feild_Mapping" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SectionFieldMaster">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="C_Section_Feild_Mapping">
+              <PropertyRef Name="Section_Feild_Master_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Dept_Module_Section_Mapping_M_Module">
+          <End Role="M_Module" Type="MW_TestModel.Store.M_Module" Multiplicity="1" />
+          <End Role="Dept_Module_Section_Mapping" Type="MW_TestModel.Store.Dept_Module_Section_Mapping" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="M_Module">
+              <PropertyRef Name="Module_Id" />
+            </Principal>
+            <Dependent Role="Dept_Module_Section_Mapping">
+              <PropertyRef Name="Module_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Dept_Module_Section_Mapping_SectionMaster">
+          <End Role="SectionMaster" Type="MW_TestModel.Store.SectionMaster" Multiplicity="1" />
+          <End Role="Dept_Module_Section_Mapping" Type="MW_TestModel.Store.Dept_Module_Section_Mapping" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SectionMaster">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Dept_Module_Section_Mapping">
+              <PropertyRef Name="Section_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_FinanceSection_FieldStatusMaster">
+          <End Role="FieldStatusMaster" Type="MW_TestModel.Store.FieldStatusMaster" Multiplicity="0..1" />
+          <End Role="SectionFieldMaster" Type="MW_TestModel.Store.SectionFieldMaster" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="FieldStatusMaster">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="SectionFieldMaster">
+              <PropertyRef Name="FieldStatus" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_M_Company_M_Company">
+          <End Role="M_Company" Type="MW_TestModel.Store.M_Company" Multiplicity="1" />
+          <End Role="M_Company1" Type="MW_TestModel.Store.M_Company" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="M_Company">
+              <PropertyRef Name="Company_Id" />
+            </Principal>
+            <Dependent Role="M_Company1">
+              <PropertyRef Name="Company_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Profile_Menu_Mapping_Menu_Master">
+          <End Role="Menu_Master" Type="MW_TestModel.Store.Menu_Master" Multiplicity="1" />
+          <End Role="Profile_Menu_Mapping" Type="MW_TestModel.Store.Profile_Menu_Mapping" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Menu_Master">
+              <PropertyRef Name="Menu_ID" />
+            </Principal>
+            <Dependent Role="Profile_Menu_Mapping">
+              <PropertyRef Name="Menu_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Profile_Menu_Mapping_Profile_Master">
+          <End Role="Profile_Master" Type="MW_TestModel.Store.Profile_Master" Multiplicity="1" />
+          <End Role="Profile_Menu_Mapping" Type="MW_TestModel.Store.Profile_Menu_Mapping" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Profile_Master">
+              <PropertyRef Name="Profile_Id" />
+            </Principal>
+            <Dependent Role="Profile_Menu_Mapping">
+              <PropertyRef Name="Profile_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Profile_Module_Mapping_M_Module">
+          <End Role="M_Module" Type="MW_TestModel.Store.M_Module" Multiplicity="1" />
+          <End Role="Profile_Module_Mapping" Type="MW_TestModel.Store.Profile_Module_Mapping" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="M_Module">
+              <PropertyRef Name="Module_Id" />
+            </Principal>
+            <Dependent Role="Profile_Module_Mapping">
+              <PropertyRef Name="Module_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Profile_Module_Mapping_Profile_Master">
+          <End Role="Profile_Master" Type="MW_TestModel.Store.Profile_Master" Multiplicity="1" />
+          <End Role="Profile_Module_Mapping" Type="MW_TestModel.Store.Profile_Module_Mapping" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Profile_Master">
+              <PropertyRef Name="Profile_Id" />
+            </Principal>
+            <Dependent Role="Profile_Module_Mapping">
+              <PropertyRef Name="Profile_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SectionFieldMaster_SectionMaster">
+          <End Role="SectionMaster" Type="MW_TestModel.Store.SectionMaster" Multiplicity="1" />
+          <End Role="SectionFieldMaster" Type="MW_TestModel.Store.SectionFieldMaster" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SectionMaster">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="SectionFieldMaster">
+              <PropertyRef Name="SectionID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Function Name="GenerateClassPropertyC" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Section_Id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="pr_GetCompanyList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Master_Header_Id" Type="int" Mode="In" />
+          <Parameter Name="Section_Code" Type="varchar" Mode="In" />
+          <Parameter Name="Reference_Id" Type="int" Mode="In" />
+        </Function>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="MW_TestModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="MW_TestEntities" annotation:LazyLoadingEnabled="true">
+          <FunctionImport Name="GenerateClassPropertyC" ReturnType="Collection(MW_TestModel.GenerateClassPropertyC_Result)">
+          <Parameter Name="Section_Id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <EntitySet Name="C_Section_Feild_Mapping" EntityType="MW_TestModel.C_Section_Feild_Mapping" />
+          <EntitySet Name="FieldStatusMasters" EntityType="MW_TestModel.FieldStatusMaster" />
+          <EntitySet Name="M_Module" EntityType="MW_TestModel.M_Module" />
+          <EntitySet Name="SectionFieldMasters" EntityType="MW_TestModel.SectionFieldMaster" />
+          <EntitySet Name="SectionMasters" EntityType="MW_TestModel.SectionMaster" />
+          <AssociationSet Name="FK_C_Section_Feild_Mapping_M_Module" Association="MW_TestModel.FK_C_Section_Feild_Mapping_M_Module">
+            <End Role="M_Module" EntitySet="M_Module" />
+            <End Role="C_Section_Feild_Mapping" EntitySet="C_Section_Feild_Mapping" />
+          </AssociationSet>
+          <AssociationSet Name="FK_C_Section_Feild_Mapping_SectionFieldMaster" Association="MW_TestModel.FK_C_Section_Feild_Mapping_SectionFieldMaster">
+            <End Role="SectionFieldMaster" EntitySet="SectionFieldMasters" />
+            <End Role="C_Section_Feild_Mapping" EntitySet="C_Section_Feild_Mapping" />
+          </AssociationSet>
+          <AssociationSet Name="FK_FinanceSection_FieldStatusMaster" Association="MW_TestModel.FK_FinanceSection_FieldStatusMaster">
+            <End Role="FieldStatusMaster" EntitySet="FieldStatusMasters" />
+            <End Role="SectionFieldMaster" EntitySet="SectionFieldMasters" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SectionFieldMaster_SectionMaster" Association="MW_TestModel.FK_SectionFieldMaster_SectionMaster">
+            <End Role="SectionMaster" EntitySet="SectionMasters" />
+            <End Role="SectionFieldMaster" EntitySet="SectionFieldMasters" />
+          </AssociationSet>
+          <EntitySet Name="M_Company" EntityType="MW_TestModel.M_Company" />
+          <AssociationSet Name="FK_C_Section_Feild_Mapping_M_Company" Association="MW_TestModel.FK_C_Section_Feild_Mapping_M_Company">
+            <End Role="M_Company" EntitySet="M_Company" />
+            <End Role="C_Section_Feild_Mapping" EntitySet="C_Section_Feild_Mapping" />
+          </AssociationSet>
+          <EntitySet Name="Dept_Module_Section_Mapping" EntityType="MW_TestModel.Dept_Module_Section_Mapping" />
+          <EntitySet Name="Menu_Master" EntityType="MW_TestModel.Menu_Master" />
+          <EntitySet Name="Profile_Master" EntityType="MW_TestModel.Profile_Master" />
+          <EntitySet Name="Profile_Menu_Mapping" EntityType="MW_TestModel.Profile_Menu_Mapping" />
+          <EntitySet Name="Profile_Module_Mapping" EntityType="MW_TestModel.Profile_Module_Mapping" />
+          <AssociationSet Name="FK_Dept_Module_Section_Mapping_M_Module" Association="MW_TestModel.FK_Dept_Module_Section_Mapping_M_Module">
+            <End Role="M_Module" EntitySet="M_Module" />
+            <End Role="Dept_Module_Section_Mapping" EntitySet="Dept_Module_Section_Mapping" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Dept_Module_Section_Mapping_SectionMaster" Association="MW_TestModel.FK_Dept_Module_Section_Mapping_SectionMaster">
+            <End Role="SectionMaster" EntitySet="SectionMasters" />
+            <End Role="Dept_Module_Section_Mapping" EntitySet="Dept_Module_Section_Mapping" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Profile_Module_Mapping_M_Module" Association="MW_TestModel.FK_Profile_Module_Mapping_M_Module">
+            <End Role="M_Module" EntitySet="M_Module" />
+            <End Role="Profile_Module_Mapping" EntitySet="Profile_Module_Mapping" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Profile_Menu_Mapping_Menu_Master" Association="MW_TestModel.FK_Profile_Menu_Mapping_Menu_Master">
+            <End Role="Menu_Master" EntitySet="Menu_Master" />
+            <End Role="Profile_Menu_Mapping" EntitySet="Profile_Menu_Mapping" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Profile_Menu_Mapping_Profile_Master" Association="MW_TestModel.FK_Profile_Menu_Mapping_Profile_Master">
+            <End Role="Profile_Master" EntitySet="Profile_Master" />
+            <End Role="Profile_Menu_Mapping" EntitySet="Profile_Menu_Mapping" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Profile_Module_Mapping_Profile_Master" Association="MW_TestModel.FK_Profile_Module_Mapping_Profile_Master">
+            <End Role="Profile_Master" EntitySet="Profile_Master" />
+            <End Role="Profile_Module_Mapping" EntitySet="Profile_Module_Mapping" />
+          </AssociationSet>
+          <EntitySet Name="M_Department" EntityType="MW_TestModel.M_Department" />
+          <AssociationSet Name="FK_M_Company_M_Company" Association="MW_TestModel.FK_M_Company_M_Company">
+            <End Role="M_Company" EntitySet="M_Company" />
+            <End Role="M_Company1" EntitySet="M_Company" />
+          </AssociationSet>
+          <FunctionImport Name="pr_GetCompanyList" ReturnType="Collection(MW_TestModel.pr_GetCompanyList_Result)">
+            <Parameter Name="Master_Header_Id" Mode="In" Type="Int32" />
+            <Parameter Name="Section_Code" Mode="In" Type="String" />
+            <Parameter Name="Reference_Id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <EntitySet Name="M_Plant_Group" EntityType="MW_TestModel.M_Plant_Group" />
+          <AssociationSet Name="FK_C_Section_Feild_Mapping_m_Plant_Group" Association="MW_TestModel.FK_C_Section_Feild_Mapping_m_Plant_Group">
+            <End Role="M_Plant_Group" EntitySet="M_Plant_Group" />
+            <End Role="C_Section_Feild_Mapping" EntitySet="C_Section_Feild_Mapping" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="C_Section_Feild_Mapping">
+          <Key>
+            <PropertyRef Name="Section_Feild_Mapping_Id" />
+          </Key>
+          <Property Type="Decimal" Name="Section_Feild_Mapping_Id" Nullable="false" Precision="18" Scale="0" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Decimal" Name="Module_Id" Precision="18" Scale="0" />
+          <Property Type="Decimal" Name="Plant_Group_Id" Precision="18" Scale="0" />
+          <Property Type="Decimal" Name="Section_Feild_Master_Id" Precision="18" Scale="0" />
+          <Property Type="Decimal" Name="Feild_Status" Precision="18" Scale="0" />
+          <Property Type="Boolean" Name="IsActive" Nullable="false" />
+          <Property Type="DateTime" Name="CreatedOn" Precision="3" />
+          <Property Type="Decimal" Name="CreatedBy" Precision="18" Scale="0" />
+          <Property Type="String" Name="CreatedIp" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="ModifiedOn" Precision="3" />
+          <Property Type="Decimal" Name="ModifiedBy" Precision="18" Scale="0" />
+          <Property Type="String" Name="ModifiedIp" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="M_Module" Relationship="MW_TestModel.FK_C_Section_Feild_Mapping_M_Module" FromRole="C_Section_Feild_Mapping" ToRole="M_Module" />
+          <NavigationProperty Name="SectionFieldMaster" Relationship="MW_TestModel.FK_C_Section_Feild_Mapping_SectionFieldMaster" FromRole="C_Section_Feild_Mapping" ToRole="SectionFieldMaster" />
+          <Property Type="Decimal" Name="Company_Id" Precision="18" Scale="0" />
+          <NavigationProperty Name="M_Company" Relationship="MW_TestModel.FK_C_Section_Feild_Mapping_M_Company" FromRole="C_Section_Feild_Mapping" ToRole="M_Company" />
+          <Property Type="String" Name="Action_Type" MaxLength="5" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="M_Plant_Group" Relationship="MW_TestModel.FK_C_Section_Feild_Mapping_m_Plant_Group" FromRole="C_Section_Feild_Mapping" ToRole="M_Plant_Group" />
+          <Property Type="String" Name="Approval_Dept" MaxLength="5" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="FieldStatusMaster">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="18" Scale="0" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Type="Boolean" Name="Active" />
+          <Property Type="DateTime" Name="AddedOn" Precision="3" />
+          <Property Type="Decimal" Name="AddedBy" Precision="18" Scale="0" />
+          <Property Type="DateTime" Name="UpdatedOn" Precision="3" />
+          <Property Type="Decimal" Name="UpdatedBy" Precision="18" Scale="0" />
+          <Property Type="String" Name="IPAddress" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Description" MaxLength="200" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="SectionFieldMasters" Relationship="MW_TestModel.FK_FinanceSection_FieldStatusMaster" FromRole="FieldStatusMaster" ToRole="SectionFieldMaster" />
+        </EntityType>
+        <EntityType Name="M_Module">
+          <Key>
+            <PropertyRef Name="Module_Id" />
+          </Key>
+          <Property Type="Decimal" Name="Module_Id" Nullable="false" Precision="18" Scale="0" />
+          <Property Type="String" Name="Module_Code" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Module_Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Description" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Workflow_Code" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Code_Start" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Type="Decimal" Name="Request_No_Size" Precision="18" Scale="0" />
+          <Property Type="Boolean" Name="IsActive" Nullable="false" />
+          <Property Type="String" Name="ModuleType" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="DateTime" Name="CreatedOn" Precision="3" />
+          <Property Type="Decimal" Name="CreatedBy" Precision="18" Scale="0" />
+          <Property Type="String" Name="CreatedIp" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="ModifiedOn" Precision="3" />
+          <Property Type="Decimal" Name="ModifiedBy" Precision="18" Scale="0" />
+          <Property Type="String" Name="ModifiedIp" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="C_Section_Feild_Mapping" Relationship="MW_TestModel.FK_C_Section_Feild_Mapping_M_Module" FromRole="M_Module" ToRole="C_Section_Feild_Mapping" />
+          <NavigationProperty Name="Dept_Module_Section_Mapping" Relationship="MW_TestModel.FK_Dept_Module_Section_Mapping_M_Module" FromRole="M_Module" ToRole="Dept_Module_Section_Mapping" />
+          <NavigationProperty Name="Profile_Module_Mapping" Relationship="MW_TestModel.FK_Profile_Module_Mapping_M_Module" FromRole="M_Module" ToRole="Profile_Module_Mapping" />
+        </EntityType>
+        <EntityType Name="SectionFieldMaster">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="18" Scale="0" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Decimal" Name="SectionID" Nullable="false" Precision="18" Scale="0" />
+          <Property Type="String" Name="FieldName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="FieldDescription" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="FieldStatus" Precision="18" Scale="0" />
+          <Property Type="String" Name="SAP_Feild" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Decimal" Name="Feild_Length" Precision="18" Scale="0" />
+          <Property Type="Boolean" Name="Active" />
+          <Property Type="DateTime" Name="AddedOn" Precision="3" />
+          <Property Type="Decimal" Name="AddedBy" Precision="18" Scale="0" />
+          <Property Type="DateTime" Name="UpdatedOn" Precision="3" />
+          <Property Type="Decimal" Name="UpdatedBy" Precision="18" Scale="0" />
+          <Property Type="String" Name="IPAddress" MaxLength="10" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="C_Section_Feild_Mapping" Relationship="MW_TestModel.FK_C_Section_Feild_Mapping_SectionFieldMaster" FromRole="SectionFieldMaster" ToRole="C_Section_Feild_Mapping" />
+          <NavigationProperty Name="FieldStatusMaster" Relationship="MW_TestModel.FK_FinanceSection_FieldStatusMaster" FromRole="SectionFieldMaster" ToRole="FieldStatusMaster" />
+          <NavigationProperty Name="SectionMaster" Relationship="MW_TestModel.FK_SectionFieldMaster_SectionMaster" FromRole="SectionFieldMaster" ToRole="SectionMaster" />
+          <Property Type="String" Name="Field_Help_Text" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="FeildDisplayName" MaxLength="150" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="SectionMaster">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Decimal" Name="ID" Nullable="false" Precision="18" Scale="0" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ShortName" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Decsription" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="Sequence" Precision="18" Scale="0" />
+          <Property Type="String" Name="Section_URL" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Module_Type" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Type="Boolean" Name="Active" />
+          <Property Type="DateTime" Name="AddedOn" Precision="3" />
+          <Property Type="Decimal" Name="AddedBy" Precision="18" Scale="0" />
+          <Property Type="DateTime" Name="UpdatedOn" Precision="3" />
+          <Property Type="Decimal" Name="UpdatedBy" Precision="18" Scale="0" />
+          <Property Type="String" Name="IPAddress" MaxLength="10" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="SectionFieldMasters" Relationship="MW_TestModel.FK_SectionFieldMaster_SectionMaster" FromRole="SectionMaster" ToRole="SectionFieldMaster" />
+          <NavigationProperty Name="Dept_Module_Section_Mapping" Relationship="MW_TestModel.FK_Dept_Module_Section_Mapping_SectionMaster" FromRole="SectionMaster" ToRole="Dept_Module_Section_Mapping" />
+        </EntityType>
+        <Association Name="FK_C_Section_Feild_Mapping_M_Module">
+          <End Type="MW_TestModel.M_Module" Role="M_Module" Multiplicity="0..1" />
+          <End Type="MW_TestModel.C_Section_Feild_Mapping" Role="C_Section_Feild_Mapping" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="M_Module">
+              <PropertyRef Name="Module_Id" />
+            </Principal>
+            <Dependent Role="C_Section_Feild_Mapping">
+              <PropertyRef Name="Module_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_C_Section_Feild_Mapping_SectionFieldMaster">
+          <End Type="MW_TestModel.SectionFieldMaster" Role="SectionFieldMaster" Multiplicity="0..1" />
+          <End Type="MW_TestModel.C_Section_Feild_Mapping" Role="C_Section_Feild_Mapping" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SectionFieldMaster">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="C_Section_Feild_Mapping">
+              <PropertyRef Name="Section_Feild_Master_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_FinanceSection_FieldStatusMaster">
+          <End Type="MW_TestModel.FieldStatusMaster" Role="FieldStatusMaster" Multiplicity="0..1" />
+          <End Type="MW_TestModel.SectionFieldMaster" Role="SectionFieldMaster" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="FieldStatusMaster">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="SectionFieldMaster">
+              <PropertyRef Name="FieldStatus" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SectionFieldMaster_SectionMaster">
+          <End Type="MW_TestModel.SectionMaster" Role="SectionMaster" Multiplicity="1" />
+          <End Type="MW_TestModel.SectionFieldMaster" Role="SectionFieldMaster" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SectionMaster">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="SectionFieldMaster">
+              <PropertyRef Name="SectionID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="M_Company">
+          <Key>
+            <PropertyRef Name="Company_Id" />
+          </Key>
+          <Property Type="Decimal" Name="Company_Id" Nullable="false" Precision="18" Scale="0" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Company_Code" Nullable="false" MaxLength="4" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Name" MaxLength="60" FixedLength="false" Unicode="false" />
+          <Property Type="Boolean" Name="IsActive" Nullable="false" />
+          <Property Type="DateTime" Name="CreatedOn" />
+          <Property Type="Decimal" Name="CreatedBy" Precision="18" Scale="0" />
+          <Property Type="String" Name="CreatedIp" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="ModifiedOn" />
+          <Property Type="Decimal" Name="ModifiedBy" Precision="18" Scale="0" />
+          <Property Type="String" Name="ModifiedIp" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="C_Section_Feild_Mapping" Relationship="MW_TestModel.FK_C_Section_Feild_Mapping_M_Company" FromRole="M_Company" ToRole="C_Section_Feild_Mapping" />
+          <Property Type="String" Name="Company_City" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Type="Decimal" Name="Currency_Id" Precision="18" Scale="0" />
+          <NavigationProperty Name="M_Company1" Relationship="MW_TestModel.FK_M_Company_M_Company" FromRole="M_Company" ToRole="M_Company1" />
+          <NavigationProperty Name="M_Company2" Relationship="MW_TestModel.FK_M_Company_M_Company" FromRole="M_Company1" ToRole="M_Company" />
+          <Property Type="Decimal" Name="Country_Id" Precision="18" Scale="0" />
+        </EntityType>
+        <Association Name="FK_C_Section_Feild_Mapping_M_Company">
+          <End Type="MW_TestModel.M_Company" Role="M_Company" Multiplicity="0..1" />
+          <End Type="MW_TestModel.C_Section_Feild_Mapping" Role="C_Section_Feild_Mapping" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="M_Company">
+              <PropertyRef Name="Company_Id" />
+            </Principal>
+            <Dependent Role="C_Section_Feild_Mapping">
+              <PropertyRef Name="Company_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Dept_Module_Section_Mapping">
+          <Key>
+            <PropertyRef Name="Mapping_Id" />
+          </Key>
+          <Property Type="Decimal" Name="Mapping_Id" Nullable="false" Precision="18" Scale="0" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Decimal" Name="Module_Id" Nullable="false" Precision="18" Scale="0" />
+          <Property Type="Decimal" Name="Plant_Group_Id" Precision="18" Scale="0" />
+          <Property Type="Decimal" Name="Company_Id" Precision="18" Scale="0" />
+          <Property Type="Decimal" Name="Department_Id" Nullable="false" Precision="18" Scale="0" />
+          <Property Type="Decimal" Name="Section_Id" Nullable="false" Precision="18" Scale="0" />
+          <Property Type="Decimal" Name="Sequence" Nullable="false" Precision="18" Scale="0" />
+          <Property Type="Boolean" Name="Input_Rights" Nullable="false" />
+          <Property Type="Boolean" Name="View_Rights" Nullable="false" />
+          <Property Type="Boolean" Name="IsRequestor" />
+          <Property Type="Boolean" Name="IsActive" Nullable="false" />
+          <Property Type="DateTime" Name="CreatedOn" Nullable="false" />
+          <Property Type="Decimal" Name="CreatedBy" Precision="18" Scale="0" />
+          <NavigationProperty Name="M_Module" Relationship="MW_TestModel.FK_Dept_Module_Section_Mapping_M_Module" FromRole="Dept_Module_Section_Mapping" ToRole="M_Module" />
+          <NavigationProperty Name="SectionMaster" Relationship="MW_TestModel.FK_Dept_Module_Section_Mapping_SectionMaster" FromRole="Dept_Module_Section_Mapping" ToRole="SectionMaster" />
+          <Property Type="String" Name="Approval_Dept" MaxLength="5" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Menu_Master">
+          <Key>
+            <PropertyRef Name="Menu_ID" />
+          </Key>
+          <Property Type="Decimal" Name="Menu_ID" Nullable="false" Precision="18" Scale="0" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Menu_Name" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="Parent_Id" Precision="18" Scale="0" />
+          <Property Type="String" Name="Page_URL" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="Boolean" Name="IsActive" Nullable="false" />
+          <Property Type="DateTime" Name="CreatedOn" />
+          <Property Type="Decimal" Name="CreatedBy" Precision="18" Scale="0" />
+          <Property Type="String" Name="CreatedIp" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="ModifiedOn" />
+          <Property Type="Decimal" Name="ModifiedBy" Precision="18" Scale="0" />
+          <Property Type="String" Name="ModifiedIp" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Profile_Menu_Mapping" Relationship="MW_TestModel.FK_Profile_Menu_Mapping_Menu_Master" FromRole="Menu_Master" ToRole="Profile_Menu_Mapping" />
+        </EntityType>
+        <EntityType Name="Profile_Master">
+          <Key>
+            <PropertyRef Name="Profile_Id" />
+          </Key>
+          <Property Type="Decimal" Name="Profile_Id" Nullable="false" Precision="18" Scale="0" />
+          <Property Type="String" Name="Profile_Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Boolean" Name="IsActive" Nullable="false" />
+          <Property Type="Decimal" Name="CreatedBy" Nullable="false" Precision="18" Scale="0" />
+          <Property Type="DateTime" Name="CreatedOn" />
+          <Property Type="Decimal" Name="ModifiedBy" Precision="18" Scale="0" />
+          <Property Type="DateTime" Name="ModifiedOn" />
+          <NavigationProperty Name="Profile_Menu_Mapping" Relationship="MW_TestModel.FK_Profile_Menu_Mapping_Profile_Master" FromRole="Profile_Master" ToRole="Profile_Menu_Mapping" />
+          <NavigationProperty Name="Profile_Module_Mapping" Relationship="MW_TestModel.FK_Profile_Module_Mapping_Profile_Master" FromRole="Profile_Master" ToRole="Profile_Module_Mapping" />
+        </EntityType>
+        <EntityType Name="Profile_Menu_Mapping">
+          <Key>
+            <PropertyRef Name="Mapping_Id" />
+          </Key>
+          <Property Type="Decimal" Name="Mapping_Id" Nullable="false" Precision="18" Scale="0" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Decimal" Name="Menu_ID" Nullable="false" Precision="18" Scale="0" />
+          <Property Type="Decimal" Name="Profile_Id" Nullable="false" Precision="18" Scale="0" />
+          <Property Type="Boolean" Name="View_Right" />
+          <Property Type="Boolean" Name="Add_Right" />
+          <Property Type="Boolean" Name="Update_Right" />
+          <Property Type="Boolean" Name="Delete_Right" />
+          <Property Type="Boolean" Name="IsActive" Nullable="false" />
+          <Property Type="DateTime" Name="CreatedOn" />
+          <Property Type="Decimal" Name="CreatedBy" Precision="18" Scale="0" />
+          <Property Type="String" Name="CreatedIp" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="ModifiedOn" />
+          <Property Type="Decimal" Name="ModifiedBy" Precision="18" Scale="0" />
+          <Property Type="String" Name="ModifiedIp" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Menu_Master" Relationship="MW_TestModel.FK_Profile_Menu_Mapping_Menu_Master" FromRole="Profile_Menu_Mapping" ToRole="Menu_Master" />
+          <NavigationProperty Name="Profile_Master" Relationship="MW_TestModel.FK_Profile_Menu_Mapping_Profile_Master" FromRole="Profile_Menu_Mapping" ToRole="Profile_Master" />
+          <Property Type="Int32" Name="Menu_Seq" />
+        </EntityType>
+        <EntityType Name="Profile_Module_Mapping">
+          <Key>
+            <PropertyRef Name="Mapping_Id" />
+          </Key>
+          <Property Type="Decimal" Name="Mapping_Id" Nullable="false" Precision="18" Scale="0" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Decimal" Name="Profile_Id" Nullable="false" Precision="18" Scale="0" />
+          <Property Type="Decimal" Name="Module_Id" Nullable="false" Precision="18" Scale="0" />
+          <Property Type="Boolean" Name="View_Right" />
+          <Property Type="Boolean" Name="Add_Right" />
+          <Property Type="Boolean" Name="Update_Right" />
+          <Property Type="Boolean" Name="Delete_Right" />
+          <Property Type="Boolean" Name="IsActive" Nullable="false" />
+          <Property Type="DateTime" Name="CreatedOn" />
+          <Property Type="Decimal" Name="CreatedBy" Precision="18" Scale="0" />
+          <Property Type="String" Name="CreatedIp" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="ModifiedOn" />
+          <Property Type="Decimal" Name="ModifiedBy" Precision="18" Scale="0" />
+          <Property Type="String" Name="ModifiedIp" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="M_Module" Relationship="MW_TestModel.FK_Profile_Module_Mapping_M_Module" FromRole="Profile_Module_Mapping" ToRole="M_Module" />
+          <NavigationProperty Name="Profile_Master" Relationship="MW_TestModel.FK_Profile_Module_Mapping_Profile_Master" FromRole="Profile_Module_Mapping" ToRole="Profile_Master" />
+        </EntityType>
+        <Association Name="FK_Dept_Module_Section_Mapping_M_Module">
+          <End Type="MW_TestModel.M_Module" Role="M_Module" Multiplicity="1" />
+          <End Type="MW_TestModel.Dept_Module_Section_Mapping" Role="Dept_Module_Section_Mapping" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="M_Module">
+              <PropertyRef Name="Module_Id" />
+            </Principal>
+            <Dependent Role="Dept_Module_Section_Mapping">
+              <PropertyRef Name="Module_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Dept_Module_Section_Mapping_SectionMaster">
+          <End Type="MW_TestModel.SectionMaster" Role="SectionMaster" Multiplicity="1" />
+          <End Type="MW_TestModel.Dept_Module_Section_Mapping" Role="Dept_Module_Section_Mapping" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SectionMaster">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Dept_Module_Section_Mapping">
+              <PropertyRef Name="Section_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Profile_Module_Mapping_M_Module">
+          <End Type="MW_TestModel.M_Module" Role="M_Module" Multiplicity="1" />
+          <End Type="MW_TestModel.Profile_Module_Mapping" Role="Profile_Module_Mapping" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="M_Module">
+              <PropertyRef Name="Module_Id" />
+            </Principal>
+            <Dependent Role="Profile_Module_Mapping">
+              <PropertyRef Name="Module_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Profile_Menu_Mapping_Menu_Master">
+          <End Type="MW_TestModel.Menu_Master" Role="Menu_Master" Multiplicity="1" />
+          <End Type="MW_TestModel.Profile_Menu_Mapping" Role="Profile_Menu_Mapping" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Menu_Master">
+              <PropertyRef Name="Menu_ID" />
+            </Principal>
+            <Dependent Role="Profile_Menu_Mapping">
+              <PropertyRef Name="Menu_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Profile_Menu_Mapping_Profile_Master">
+          <End Type="MW_TestModel.Profile_Master" Role="Profile_Master" Multiplicity="1" />
+          <End Type="MW_TestModel.Profile_Menu_Mapping" Role="Profile_Menu_Mapping" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Profile_Master">
+              <PropertyRef Name="Profile_Id" />
+            </Principal>
+            <Dependent Role="Profile_Menu_Mapping">
+              <PropertyRef Name="Profile_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Profile_Module_Mapping_Profile_Master">
+          <End Type="MW_TestModel.Profile_Master" Role="Profile_Master" Multiplicity="1" />
+          <End Type="MW_TestModel.Profile_Module_Mapping" Role="Profile_Module_Mapping" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Profile_Master">
+              <PropertyRef Name="Profile_Id" />
+            </Principal>
+            <Dependent Role="Profile_Module_Mapping">
+              <PropertyRef Name="Profile_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="M_Department">
+          <Key>
+            <PropertyRef Name="Department_Id" />
+          </Key>
+          <Property Type="Decimal" Name="Department_Id" Nullable="false" Precision="18" Scale="0" />
+          <Property Type="String" Name="Department_Name" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="Boolean" Name="isActive" />
+          <Property Type="DateTime" Name="CreatedOn" />
+          <Property Type="Decimal" Name="CreatedBy" Precision="18" Scale="0" />
+          <Property Type="String" Name="CreatedIp" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <Association Name="FK_M_Company_M_Company">
+          <End Type="MW_TestModel.M_Company" Role="M_Company" Multiplicity="1" />
+          <End Type="MW_TestModel.M_Company" Role="M_Company1" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="M_Company">
+              <PropertyRef Name="Company_Id" />
+            </Principal>
+            <Dependent Role="M_Company1">
+              <PropertyRef Name="Company_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <ComplexType Name="pr_GetCompanyList_Result">
+          <Property Type="Decimal" Name="Company_Id" Nullable="false" Precision="18" Scale="0" />
+          <Property Type="String" Name="Company_Name" Nullable="true" MaxLength="67" />
+        </ComplexType>
+        <ComplexType Name="GenerateClassPropertyC_Result">
+          <Property Type="String" Name="ProperyScript" Nullable="true" />
+        </ComplexType>
+        <EntityType Name="M_Plant_Group">
+          <Key>
+            <PropertyRef Name="Plant_Group_Id" />
+          </Key>
+          <Property Type="Decimal" Name="Plant_Group_Id" Nullable="false" Precision="18" Scale="0" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Plant_Group_Code" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Plant_group_Name" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Description" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Type="Boolean" Name="IsActive" Nullable="false" />
+          <Property Type="DateTime" Name="CreatedOn" />
+          <Property Type="Decimal" Name="CreatedBy" Precision="18" Scale="0" />
+          <Property Type="String" Name="CreatedIp" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="ModifiedOn" />
+          <Property Type="Decimal" Name="ModifiedBy" Precision="18" Scale="0" />
+          <Property Type="String" Name="ModifiedIp" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="C_Section_Feild_Mapping" Relationship="MW_TestModel.FK_C_Section_Feild_Mapping_m_Plant_Group" FromRole="M_Plant_Group" ToRole="C_Section_Feild_Mapping" />
+        </EntityType>
+        <Association Name="FK_C_Section_Feild_Mapping_m_Plant_Group">
+          <End Type="MW_TestModel.M_Plant_Group" Role="M_Plant_Group" Multiplicity="0..1" />
+          <End Type="MW_TestModel.C_Section_Feild_Mapping" Role="C_Section_Feild_Mapping" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="M_Plant_Group">
+              <PropertyRef Name="Plant_Group_Id" />
+            </Principal>
+            <Dependent Role="C_Section_Feild_Mapping">
+              <PropertyRef Name="Plant_Group_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="MW_TestModelStoreContainer" CdmEntityContainer="MW_TestEntities">
+          <FunctionImportMapping FunctionImportName="GenerateClassPropertyC" FunctionName="MW_TestModel.Store.GenerateClassPropertyC" >
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="MW_TestModel.GenerateClassPropertyC_Result">
+                <ScalarProperty Name="ProperyScript" ColumnName="ProperyScript" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <EntitySetMapping Name="C_Section_Feild_Mapping">
+            <EntityTypeMapping TypeName="MW_TestModel.C_Section_Feild_Mapping">
+              <MappingFragment StoreEntitySet="C_Section_Feild_Mapping">
+                <ScalarProperty Name="Approval_Dept" ColumnName="Approval_Dept" />
+                <ScalarProperty Name="Action_Type" ColumnName="Action_Type" />
+                <ScalarProperty Name="Company_Id" ColumnName="Company_Id" />
+                <ScalarProperty Name="ModifiedIp" ColumnName="ModifiedIp" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+                <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+                <ScalarProperty Name="CreatedIp" ColumnName="CreatedIp" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="Feild_Status" ColumnName="Feild_Status" />
+                <ScalarProperty Name="Section_Feild_Master_Id" ColumnName="Section_Feild_Master_Id" />
+                <ScalarProperty Name="Plant_Group_Id" ColumnName="Plant_Group_Id" />
+                <ScalarProperty Name="Module_Id" ColumnName="Module_Id" />
+                <ScalarProperty Name="Section_Feild_Mapping_Id" ColumnName="Section_Feild_Mapping_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="FieldStatusMasters">
+            <EntityTypeMapping TypeName="MW_TestModel.FieldStatusMaster">
+              <MappingFragment StoreEntitySet="FieldStatusMaster">
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="IPAddress" ColumnName="IPAddress" />
+                <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+                <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+                <ScalarProperty Name="AddedBy" ColumnName="AddedBy" />
+                <ScalarProperty Name="AddedOn" ColumnName="AddedOn" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="M_Module">
+            <EntityTypeMapping TypeName="MW_TestModel.M_Module">
+              <MappingFragment StoreEntitySet="M_Module">
+                <ScalarProperty Name="ModifiedIp" ColumnName="ModifiedIp" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+                <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+                <ScalarProperty Name="CreatedIp" ColumnName="CreatedIp" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="ModuleType" ColumnName="ModuleType" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="Request_No_Size" ColumnName="Request_No_Size" />
+                <ScalarProperty Name="Code_Start" ColumnName="Code_Start" />
+                <ScalarProperty Name="Workflow_Code" ColumnName="Workflow_Code" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Module_Name" ColumnName="Module_Name" />
+                <ScalarProperty Name="Module_Code" ColumnName="Module_Code" />
+                <ScalarProperty Name="Module_Id" ColumnName="Module_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SectionFieldMasters">
+            <EntityTypeMapping TypeName="MW_TestModel.SectionFieldMaster">
+              <MappingFragment StoreEntitySet="SectionFieldMaster">
+                <ScalarProperty Name="FeildDisplayName" ColumnName="FeildDisplayName" />
+                <ScalarProperty Name="Field_Help_Text" ColumnName="Field_Help_Text" />
+                <ScalarProperty Name="IPAddress" ColumnName="IPAddress" />
+                <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+                <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+                <ScalarProperty Name="AddedBy" ColumnName="AddedBy" />
+                <ScalarProperty Name="AddedOn" ColumnName="AddedOn" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="Feild_Length" ColumnName="Feild_Length" />
+                <ScalarProperty Name="SAP_Feild" ColumnName="SAP_Feild" />
+                <ScalarProperty Name="FieldStatus" ColumnName="FieldStatus" />
+                <ScalarProperty Name="FieldDescription" ColumnName="FieldDescription" />
+                <ScalarProperty Name="FieldName" ColumnName="FieldName" />
+                <ScalarProperty Name="SectionID" ColumnName="SectionID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SectionMasters">
+            <EntityTypeMapping TypeName="MW_TestModel.SectionMaster">
+              <MappingFragment StoreEntitySet="SectionMaster">
+                <ScalarProperty Name="IPAddress" ColumnName="IPAddress" />
+                <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+                <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+                <ScalarProperty Name="AddedBy" ColumnName="AddedBy" />
+                <ScalarProperty Name="AddedOn" ColumnName="AddedOn" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="Module_Type" ColumnName="Module_Type" />
+                <ScalarProperty Name="Section_URL" ColumnName="Section_URL" />
+                <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+                <ScalarProperty Name="Decsription" ColumnName="Decsription" />
+                <ScalarProperty Name="ShortName" ColumnName="ShortName" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="M_Company">
+            <EntityTypeMapping TypeName="MW_TestModel.M_Company">
+              <MappingFragment StoreEntitySet="M_Company">
+                <ScalarProperty Name="Country_Id" ColumnName="Country_Id" />
+                <ScalarProperty Name="Currency_Id" ColumnName="Currency_Id" />
+                <ScalarProperty Name="Company_City" ColumnName="Company_City" />
+                <ScalarProperty Name="ModifiedIp" ColumnName="ModifiedIp" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+                <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+                <ScalarProperty Name="CreatedIp" ColumnName="CreatedIp" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Company_Code" ColumnName="Company_Code" />
+                <ScalarProperty Name="Company_Id" ColumnName="Company_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Dept_Module_Section_Mapping">
+            <EntityTypeMapping TypeName="MW_TestModel.Dept_Module_Section_Mapping">
+              <MappingFragment StoreEntitySet="Dept_Module_Section_Mapping">
+                <ScalarProperty Name="Approval_Dept" ColumnName="Approval_Dept" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="IsRequestor" ColumnName="IsRequestor" />
+                <ScalarProperty Name="View_Rights" ColumnName="View_Rights" />
+                <ScalarProperty Name="Input_Rights" ColumnName="Input_Rights" />
+                <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+                <ScalarProperty Name="Section_Id" ColumnName="Section_Id" />
+                <ScalarProperty Name="Department_Id" ColumnName="Department_Id" />
+                <ScalarProperty Name="Company_Id" ColumnName="Company_Id" />
+                <ScalarProperty Name="Plant_Group_Id" ColumnName="Plant_Group_Id" />
+                <ScalarProperty Name="Module_Id" ColumnName="Module_Id" />
+                <ScalarProperty Name="Mapping_Id" ColumnName="Mapping_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Menu_Master">
+            <EntityTypeMapping TypeName="MW_TestModel.Menu_Master">
+              <MappingFragment StoreEntitySet="Menu_Master">
+                <ScalarProperty Name="ModifiedIp" ColumnName="ModifiedIp" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+                <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+                <ScalarProperty Name="CreatedIp" ColumnName="CreatedIp" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="Page_URL" ColumnName="Page_URL" />
+                <ScalarProperty Name="Parent_Id" ColumnName="Parent_Id" />
+                <ScalarProperty Name="Menu_Name" ColumnName="Menu_Name" />
+                <ScalarProperty Name="Menu_ID" ColumnName="Menu_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Profile_Master">
+            <EntityTypeMapping TypeName="MW_TestModel.Profile_Master">
+              <MappingFragment StoreEntitySet="Profile_Master">
+                <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="Profile_Name" ColumnName="Profile_Name" />
+                <ScalarProperty Name="Profile_Id" ColumnName="Profile_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Profile_Menu_Mapping">
+            <EntityTypeMapping TypeName="MW_TestModel.Profile_Menu_Mapping">
+              <MappingFragment StoreEntitySet="Profile_Menu_Mapping">
+                <ScalarProperty Name="Menu_Seq" ColumnName="Menu_Seq" />
+                <ScalarProperty Name="ModifiedIp" ColumnName="ModifiedIp" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+                <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+                <ScalarProperty Name="CreatedIp" ColumnName="CreatedIp" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="Delete_Right" ColumnName="Delete_Right" />
+                <ScalarProperty Name="Update_Right" ColumnName="Update_Right" />
+                <ScalarProperty Name="Add_Right" ColumnName="Add_Right" />
+                <ScalarProperty Name="View_Right" ColumnName="View_Right" />
+                <ScalarProperty Name="Profile_Id" ColumnName="Profile_Id" />
+                <ScalarProperty Name="Menu_ID" ColumnName="Menu_ID" />
+                <ScalarProperty Name="Mapping_Id" ColumnName="Mapping_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Profile_Module_Mapping">
+            <EntityTypeMapping TypeName="MW_TestModel.Profile_Module_Mapping">
+              <MappingFragment StoreEntitySet="Profile_Module_Mapping">
+                <ScalarProperty Name="ModifiedIp" ColumnName="ModifiedIp" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+                <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+                <ScalarProperty Name="CreatedIp" ColumnName="CreatedIp" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="Delete_Right" ColumnName="Delete_Right" />
+                <ScalarProperty Name="Update_Right" ColumnName="Update_Right" />
+                <ScalarProperty Name="Add_Right" ColumnName="Add_Right" />
+                <ScalarProperty Name="View_Right" ColumnName="View_Right" />
+                <ScalarProperty Name="Module_Id" ColumnName="Module_Id" />
+                <ScalarProperty Name="Profile_Id" ColumnName="Profile_Id" />
+                <ScalarProperty Name="Mapping_Id" ColumnName="Mapping_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="M_Department">
+            <EntityTypeMapping TypeName="MW_TestModel.M_Department">
+              <MappingFragment StoreEntitySet="M_Department">
+                <ScalarProperty Name="CreatedIp" ColumnName="CreatedIp" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="isActive" ColumnName="isActive" />
+                <ScalarProperty Name="Department_Name" ColumnName="Department_Name" />
+                <ScalarProperty Name="Department_Id" ColumnName="Department_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="pr_GetCompanyList" FunctionName="MW_TestModel.Store.pr_GetCompanyList">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="MW_TestModel.pr_GetCompanyList_Result">
+                <ScalarProperty Name="Company_Id" ColumnName="Company_Id" />
+                <ScalarProperty Name="Company_Name" ColumnName="Company_Name" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <EntitySetMapping Name="M_Plant_Group">
+            <EntityTypeMapping TypeName="MW_TestModel.M_Plant_Group">
+              <MappingFragment StoreEntitySet="M_Plant_Group">
+                <ScalarProperty Name="ModifiedIp" ColumnName="ModifiedIp" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+                <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+                <ScalarProperty Name="CreatedIp" ColumnName="CreatedIp" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Plant_group_Name" ColumnName="Plant_group_Name" />
+                <ScalarProperty Name="Plant_Group_Code" ColumnName="Plant_Group_Code" />
+                <ScalarProperty Name="Plant_Group_Id" ColumnName="Plant_Group_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="MWTModel">
+        <EntityTypeShape EntityType="MW_TestModel.C_Section_Feild_Mapping" Width="2" PointX="6" PointY="0.625" Height="3.8931689453124996" IsExpanded="true" />
+        <EntityTypeShape EntityType="MW_TestModel.FieldStatusMaster" Width="1.5" PointX="0.75" PointY="0.875" Height="2.5783902994791661" IsExpanded="true" />
+        <EntityTypeShape EntityType="MW_TestModel.M_Module" Width="1.5" PointX="5" PointY="6.5" Height="3.8931689453124996" IsExpanded="true" />
+        <EntityTypeShape EntityType="MW_TestModel.SectionFieldMaster" Width="1.5" PointX="3" PointY="0.5" Height="3.8931689453124996" IsExpanded="true" />
+        <EntityTypeShape EntityType="MW_TestModel.SectionMaster" Width="1.5" PointX="0.5" PointY="4" Height="3.4001269531249996" IsExpanded="true" />
+        <AssociationConnector Association="MW_TestModel.FK_C_Section_Feild_Mapping_M_Module" ManuallyRouted="false">
+          <ConnectorPoint PointX="6.25" PointY="6.5" />
+          <ConnectorPoint PointX="6.25" PointY="4.5181689453125" />
+        </AssociationConnector>
+        <AssociationConnector Association="MW_TestModel.FK_C_Section_Feild_Mapping_SectionFieldMaster" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="2.50908447265625" />
+          <ConnectorPoint PointX="6" PointY="2.50908447265625" />
+        </AssociationConnector>
+        <AssociationConnector Association="MW_TestModel.FK_FinanceSection_FieldStatusMaster" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="2.1641951497395828" />
+          <ConnectorPoint PointX="3" PointY="2.1641951497395828" />
+        </AssociationConnector>
+        <AssociationConnector Association="MW_TestModel.FK_SectionFieldMaster_SectionMaster" ManuallyRouted="false">
+          <ConnectorPoint PointX="2" PointY="4.19658447265625" />
+          <ConnectorPoint PointX="3" PointY="4.19658447265625" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="MW_TestModel.M_Company" Width="1.5" PointX="9.25" PointY="4.25" Height="2.7427376302083326" />
+        <AssociationConnector Association="MW_TestModel.FK_C_Section_Feild_Mapping_M_Company" >
+          <ConnectorPoint PointX="9.25" PointY="5.50908697265625" />
+          <ConnectorPoint PointX="7.802083333333333" PointY="5.5090869726562488" />
+          <ConnectorPoint PointX="7.635416666666667" PointY="5.50908697265625" />
+          <ConnectorPoint PointX="7.28125" PointY="5.50908697265625" />
+          <ConnectorPoint PointX="7.28125" PointY="4.5181689453125" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="MW_TestModel.Dept_Module_Section_Mapping" Width="1.5" PointX="2.75" PointY="5.375" Height="3.4001269531249996" />
+        <EntityTypeShape EntityType="MW_TestModel.Menu_Master" Width="1.5" PointX="6" PointY="14.625" Height="2.9070849609374978" />
+        <EntityTypeShape EntityType="MW_TestModel.Profile_Master" Width="1.5" PointX="6" PointY="10.875" Height="2.4140429687499996" />
+        <EntityTypeShape EntityType="MW_TestModel.Profile_Menu_Mapping" Width="1.5" PointX="8.25" PointY="13.25" Height="3.5644742838541656" />
+        <EntityTypeShape EntityType="MW_TestModel.Profile_Module_Mapping" Width="1.5" PointX="8.25" PointY="8.25" Height="3.5644742838541674" />
+        <AssociationConnector Association="MW_TestModel.FK_Dept_Module_Section_Mapping_M_Module" >
+          <ConnectorPoint PointX="5" PointY="7.6375634765625" />
+          <ConnectorPoint PointX="4.25" PointY="7.6375634765625" />
+        </AssociationConnector>
+        <AssociationConnector Association="MW_TestModel.FK_Dept_Module_Section_Mapping_SectionMaster" >
+          <ConnectorPoint PointX="2" PointY="6.3875634765625" />
+          <ConnectorPoint PointX="2.75" PointY="6.3875634765625" />
+        </AssociationConnector>
+        <AssociationConnector Association="MW_TestModel.FK_Profile_Module_Mapping_M_Module" >
+          <ConnectorPoint PointX="6.5" PointY="9.32158447265625" />
+          <ConnectorPoint PointX="7.635416666666667" PointY="9.32158447265625" />
+          <ConnectorPoint PointX="7.802083333333333" PointY="9.32158447265625" />
+          <ConnectorPoint PointX="8.25" PointY="9.32158447265625" />
+        </AssociationConnector>
+        <AssociationConnector Association="MW_TestModel.FK_Profile_Menu_Mapping_Menu_Master" >
+          <ConnectorPoint PointX="7.5" PointY="15.719737141927084" />
+          <ConnectorPoint PointX="8.25" PointY="15.719737141927084" />
+        </AssociationConnector>
+        <AssociationConnector Association="MW_TestModel.FK_Profile_Menu_Mapping_Profile_Master" >
+          <ConnectorPoint PointX="7.5" PointY="13.28904296875" />
+          <ConnectorPoint PointX="7.875" PointY="13.66404296875" />
+          <ConnectorPoint PointX="7.875" PointY="12.875" />
+          <ConnectorPoint PointX="8.25" PointY="13.25" />
+        </AssociationConnector>
+        <AssociationConnector Association="MW_TestModel.FK_Profile_Module_Mapping_Profile_Master" >
+          <ConnectorPoint PointX="7.5" PointY="11.344737141927084" />
+          <ConnectorPoint PointX="8.25" PointY="11.344737141927084" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="MW_TestModel.M_Department" Width="1.5" PointX="9.125" PointY="0.75" Height="1.9210009765625031" />
+        <AssociationConnector Association="MW_TestModel.FK_M_Company_M_Company" >
+          <ConnectorPoint PointX="9.7819230769230767" PointY="7.650126953125" />
+          <ConnectorPoint PointX="9.7819230769230767" PointY="7.900126953125" />
+          <ConnectorPoint PointX="10.228461538461538" PointY="7.900126953125" />
+          <ConnectorPoint PointX="10.228461538461538" PointY="7.650126953125" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="MW_TestModel.M_Plant_Group" Width="1.5" PointX="0.75" PointY="10" Height="2.9070849609375031" />
+        <AssociationConnector Association="MW_TestModel.FK_C_Section_Feild_Mapping_m_Plant_Group" >
+          <ConnectorPoint PointX="2.25" PointY="10.63408447265625" />
+          <ConnectorPoint PointX="7.71875" PointY="10.63408447265625" />
+          <ConnectorPoint PointX="7.71875" PointY="4.5181689453125" />
+        </AssociationConnector>
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

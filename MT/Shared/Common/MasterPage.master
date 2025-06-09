@@ -1,0 +1,21 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" MasterPageFile="~/Shared/Common/MainMaster.master"
+    Inherits="Shared_MasterPage" %>
+
+<%@ Register Namespace="AjaxControlToolkit" Assembly="AjaxControlToolkit" TagPrefix="ajax" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+    <table width="99%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+            <td valign="top" align="center">
+                <div id="divContainer" style="width: 100%; min-height: 400px; padding-top: 20px;
+                    padding-bottom: 100px;">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </td>
+        </tr>
+    </table>
+</asp:Content>

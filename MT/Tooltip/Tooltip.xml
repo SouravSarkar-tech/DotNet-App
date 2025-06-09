@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ToolTips>
+  <control id="txtMaterialNo">
+    <toolTip>
+      {p class="MsoNormal" style="line-height: normal; margin: 0in 0in 10pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-outline-level: 3"}{b}{span lang="EN-IN" style='font-family: "arial","sans-serif"; color: navy; font-size: 13.5pt; mso-fareast-font-family: "times new roman"; mso-fareast-language: en-in'}Customer Number
+      {o:p}{/o:p}{/span}{/b}{/p}
+      {p class="MsoNormal" style="line-height: normal; margin: 0in 0in 10pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto"}{span lang="EN-IN" style='font-family: "arial","sans-serif"; color: black; font-size: 9.5pt; mso-fareast-font-family: "times new roman"; mso-fareast-language: en-in'}Gives an alphanumeric key, which clearly identifies the customer or vendor in the SAP system.
+      {o:p}{/o:p}{/span}{/p}
+      {p class="MsoNormal" style="line-height: normal; margin: 0in 0in 10pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-outline-level: 3"}{b}{span lang="EN-IN" style='font-family: "arial","sans-serif"; color: navy; font-size: 13.5pt; mso-fareast-font-family: "times new roman"; mso-fareast-language: en-in'}Use
+      {o:p}{/o:p}{/span}{/b}{/p}{span lang="EN-IN" style='line-height: 115%; font-family: "arial","sans-serif"; color: black; font-size: 9.5pt; mso-fareast-font-family: "times new roman"; mso-fareast-language: en-in; mso-ansi-language: en-in; mso-bidi-language: ar-sa'}The customer number is used by the payment and dunning programs for clearing open items. For {/span}{span lang="EN-IN" style='line-height: 115%; font-family: "calibri","sans-serif"; font-size: 11pt; mso-fareast-font-family: calibri; mso-fareast-language: en-us; mso-ascii-theme-font: minor-latin; mso-fareast-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: "times new roman"; mso-bidi-theme-font: minor-bidi; mso-ansi-language: en-in; mso-bidi-language: ar-sa'}{a shape="rect" href="sapevent:DOCU_LINK\GL:line_item_display"}{b}{span style='line-height: 115%; font-family: "arial","sans-serif"; color: #0063a4; font-size: 9.5pt; text-decoration: none; mso-fareast-font-family: 'times new roman'; mso-fareast-language: en-in; text-underline: none'}line item display{/span}{/b}{/a}{/span}{span lang="EN-IN" style='line-height: 115%; font-family: "arial","sans-serif"; color: black; font-size: 9.5pt; mso-fareast-font-family: "times new roman"; mso-fareast-language: en-in; mso-ansi-language: en-in; mso-bidi-language: ar-sa'}, the link to the customer line items is established using this number.{/span}
+    </toolTip>
+    <width>300</width>
+    
+  </control>
+  <control id="txtMaterialNo2">
+    <toolTip>
+      {b}This is testing {/b}
+    
+    </toolTip>
+    <width>100</width>
+    
+  </control>
+</ToolTips>
