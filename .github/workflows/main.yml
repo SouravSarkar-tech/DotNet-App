@@ -1,25 +1,52 @@
-name: IIS AppPool Restart
+name: IIS AppPool Restart and Deploy
 
 on:
   workflow_dispatch:
 
 jobs:
-  restart-app-pool:
+  deploy-to-iis:
     runs-on: [self-hosted, Windows, dotnet]
 
     steps:
-      - name: Stop DefaultAppPool
-        shell: powershell
-        run: |
-          Import-Module WebAdministration
-          Stop-WebAppPool -Name "DefaultAppPool"
+    - name: Checkout code
+      uses: actions/checkout@v3
 
-      # Example placeholder: copy new files
-      # - name: Copy site files
-      #   run: Copy-Item -Path "C:\temp\newfiles\*" -Destination "C:\inetpub\wwwroot" -Recurse -Force
+    - name: Setup .NET (For legacy .NET Framework)
+      uses: microsoft/setup-msbuild@v1.1
+      # dotnet-version setup is not needed for .NET Framework 4.7.2
 
-      # - name: Start DefaultAppPool
-      #   shell: powershell
-      #   run: |
-      #     Import-Module WebAdministration
-      #     Start-WebAppPool -Name "DefaultAppPool"
+    - name: Restore NuGet packages
+      run: nuget restore MT.sln
+
+    - name: Publish Web Application
+      run: |
+        msbuild MT.sln /p:Configuration=Release `
+                       /p:DeployOnBuild=true `
+                       /p:WebPublishMethod=FileSystem `
+                       /p:publishUrl="$(GITHUB_WORKSPACE)\publish" `
+                       /p:DeleteExistingFiles=true `
+                       /p:PrecompileBeforePublish=true `
+                       /p:EnableUpdateable=true `
+                       /p:DebugSymbols=false
+
+    - name: Stop App Pool
+      shell: powershell
+      run: |
+        Import-Module WebAdministration
+        Stop-WebAppPool -Name "DefaultAppPool"
+
+    - name: Clean existing files
+      shell: powershell
+      run: |
+        Remove-Item "C:\inetpub\wwwroot\*" -Recurse -Force
+
+    - name: Deploy to Default Web Site
+      shell: powershell
+      run: |
+        Copy-Item "$(GITHUB_WORKSPACE)\publish\*" "C:\inetpub\wwwroot\" -Recurse -Force
+
+    - name: Start App Pool
+      shell: powershell
+      run: |
+        Import-Module WebAdministration
+        Start-WebAppPool -Name "DefaultAppPool"
