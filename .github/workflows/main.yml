@@ -8,18 +8,18 @@ jobs:
     runs-on: [self-hosted, Windows, dotnet]
 
     steps:
-      # - name: Stop DefaultAppPool
-      #   shell: powershell
-      #   run: |
-      #     Import-Module WebAdministration
-      #     Stop-WebAppPool -Name "DefaultAppPool"
+      - name: Stop DefaultAppPool
+        shell: powershell
+        run: |
+          Import-Module WebAdministration
+          Stop-WebAppPool -Name "DefaultAppPool"
 
       # Example placeholder: copy new files
       # - name: Copy site files
       #   run: Copy-Item -Path "C:\temp\newfiles\*" -Destination "C:\inetpub\wwwroot" -Recurse -Force
 
-      - name: Start DefaultAppPool
-        shell: powershell
-        run: |
-          Import-Module WebAdministration
-          Start-WebAppPool -Name "DefaultAppPool"
+      # - name: Start DefaultAppPool
+      #   shell: powershell
+      #   run: |
+      #     Import-Module WebAdministration
+      #     Start-WebAppPool -Name "DefaultAppPool"
