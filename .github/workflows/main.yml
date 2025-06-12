@@ -5,7 +5,7 @@ on:
 
 jobs:
   restart-app-pool:
-    runs-on: [self-hosted, win-dotnet-runner]
+    runs-on: [win-dotnet-runner]
 
     steps:
       - name: Stop DefaultAppPool
