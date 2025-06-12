@@ -35,24 +35,24 @@ jobs:
                        /p:EnableUpdateable=true `
                        /p:DebugSymbols=false
 
-    - name: Stop App Pool
-      shell: powershell
-      run: |
-        Import-Module WebAdministration
-        Stop-WebAppPool -Name "DefaultAppPool"
+    # - name: Stop App Pool
+    #   shell: powershell
+    #   run: |
+    #     Import-Module WebAdministration
+    #     Stop-WebAppPool -Name "DefaultAppPool"
 
-    - name: Clean existing files
-      shell: powershell
-      run: |
-        Remove-Item "C:\inetpub\wwwroot\*" -Recurse -Force
+    # - name: Clean existing files
+    #   shell: powershell
+    #   run: |
+    #     Remove-Item "C:\inetpub\wwwroot\*" -Recurse -Force
 
-    - name: Deploy to Default Web Site
-      shell: powershell
-      run: |
-        Copy-Item "$(GITHUB_WORKSPACE)\publish\*" "C:\inetpub\wwwroot\" -Recurse -Force
+    # - name: Deploy to Default Web Site
+    #   shell: powershell
+    #   run: |
+    #     Copy-Item "$(GITHUB_WORKSPACE)\publish\*" "C:\inetpub\wwwroot\" -Recurse -Force
 
-    - name: Start App Pool
-      shell: powershell
-      run: |
-        Import-Module WebAdministration
-        Start-WebAppPool -Name "DefaultAppPool"
+    # - name: Start App Pool
+    #   shell: powershell
+    #   run: |
+    #     Import-Module WebAdministration
+    #     Start-WebAppPool -Name "DefaultAppPool"
