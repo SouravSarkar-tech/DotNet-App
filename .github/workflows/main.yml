@@ -1,0 +1,25 @@
+name: IIS AppPool Restart
+
+on:
+  workflow_dispatch:
+
+jobs:
+  restart-app-pool:
+    runs-on: [self-hosted, win-dotnet-runner]
+
+    steps:
+      - name: Stop DefaultAppPool
+        shell: powershell
+        run: |
+          Import-Module WebAdministration
+          Stop-WebAppPool -Name "DefaultAppPool"
+
+      # Example placeholder: copy new files
+      # - name: Copy site files
+      #   run: Copy-Item -Path "C:\temp\newfiles\*" -Destination "C:\inetpub\wwwroot" -Recurse -Force
+
+      # - name: Start DefaultAppPool
+      #   shell: powershell
+      #   run: |
+      #     Import-Module WebAdministration
+      #     Start-WebAppPool -Name "DefaultAppPool"
