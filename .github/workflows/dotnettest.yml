@@ -11,10 +11,10 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
 
-    - name: Setup NuGet API Key
-      run: nuget setapikey ${{ secrets.GITHUB_TOKEN }} -Source https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json
+    # - name: Setup NuGet API Key
+    #   run: nuget setapikey ${{ secrets.GITHUB_TOKEN }} -Source https://ghcr.io/${{ github.repository_owner }}
 
     - name: Push NuGet Packages
       run: |
         Write-Host "Pushing NuGet packages to GitHub Packages..."
-        nuget push ./packages/*.nupkg -Source https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json -ApiKey "${{ secrets.PACAKEGE_TOKEN }}"
+        nuget push ./packages/*.nupkg -Source https://ghcr.io/${{ github.repository_owner }} -ApiKey "${{ secrets.PACAKEGE_TOKEN }}"
