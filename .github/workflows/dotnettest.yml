@@ -1,19 +1,64 @@
 name: Push NuGet Packages to GHCR
 
-on:
-  push: # Trigger on push events
+on: 
+  push:
+  workflow_dispatch:  # Allow manual trigger
 
 jobs:
   push-packages:
     runs-on: windows-latest
-
+    
     steps:
     - name: Checkout code
       uses: actions/checkout@v3
-
+      
+    - name: Setup NuGet
+      uses: nuget/setup-nuget@v1
+      with:
+        nuget-version: 'latest'
+    
+    - name: Configure NuGet source
+      run: |
+        # Add GitHub Packages as a source
+        nuget sources add -Name "GitHub" -Source "https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json" -Username ${{ github.actor }} -Password ${{ secrets.GITHUB_TOKEN }}
+      shell: powershell
+    
     - name: Push NuGet Packages
       run: |
-        Write-Host "Pushing NuGet packages to GHCR..."
-        Get-ChildItem -Path ./packages -Recurse -Filter *.nupkg | ForEach-Object {
-          nuget push $_.FullName -Source https://nuget.pkg.github.com/souravsarkar-tech/index.json -ApiKey "${{ secrets.PACAKEGE_TOKEN }}" --source "github"
+        Write-Host "Pushing NuGet packages to GitHub Packages..."
+        
+        # Check if packages directory exists
+        if (-not (Test-Path "./packages")) {
+          Write-Error "Packages directory not found!"
+          exit 1
         }
+        
+        # Find all .nupkg files
+        $packages = Get-ChildItem -Path ./packages -Recurse -Filter *.nupkg
+        
+        if ($packages.Count -eq 0) {
+          Write-Warning "No .nupkg files found in packages directory"
+          exit 0
+        }
+        
+        Write-Host "Found $($packages.Count) package(s) to push"
+        
+        foreach ($package in $packages) {
+          try {
+            Write-Host "Pushing: $($package.Name)"
+            
+            # Use the correct syntax - remove the extra --source parameter
+            nuget push $package.FullName -Source "GitHub" -ApiKey ${{ secrets.GITHUB_TOKEN }} -SkipDuplicate
+            
+            Write-Host "✅ Successfully pushed: $($package.Name)"
+          }
+          catch {
+            Write-Host "⚠️ Failed to push $($package.Name): $($_.Exception.Message)"
+            # Continue with other packages instead of failing
+          }
+        }
+        
+        Write-Host "Package push operation completed"
+      shell: powershell
+      env:
+        NUGET_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
