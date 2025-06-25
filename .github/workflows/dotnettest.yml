@@ -4,6 +4,10 @@ on:
   push:
   workflow_dispatch:  # Allow manual trigger
 
+permissions:
+  contents: read
+  packages: write
+
 jobs:
   push-packages:
     runs-on: windows-latest
