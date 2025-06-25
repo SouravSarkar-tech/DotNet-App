@@ -15,5 +15,5 @@ jobs:
       run: |
         Write-Host "Pushing NuGet packages to GHCR..."
         Get-ChildItem -Path ./packages -Recurse -Filter *.nupkg | ForEach-Object {
-          nuget push $_.FullName -Source https://nuget.pkg.github.com/souravsarkar-tech/index.json -ApiKey "${{ secrets.PACAKEGE_TOKEN }}"
+          nuget push $_.FullName -Source https://nuget.pkg.github.com/souravsarkar-tech/index.json -ApiKey "${{ secrets.PACAKEGE_TOKEN }}" --source "github"
         }
