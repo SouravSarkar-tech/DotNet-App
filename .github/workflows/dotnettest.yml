@@ -1,7 +1,7 @@
 name: Push NuGet Packages to GitHub Packages
 
 on:
-  workflow_dispatch: 
+  workflow_dispatch: # Trigger manually when needed
 
 jobs:
   push-packages:
@@ -12,7 +12,7 @@ jobs:
       uses: actions/checkout@v3
 
     - name: Setup NuGet API Key
-      run: nuget setapikey ${{ secrets.PACAKEGE_TOKEN }} -Source https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json
+      run: nuget setapikey ${{ secrets.GITHUB_TOKEN }} -Source https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json
 
     - name: Push NuGet Packages
       run: |
