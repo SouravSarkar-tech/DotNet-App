@@ -1,7 +1,7 @@
 name: Push NuGet Packages to GitHub Packages
 
 on:
-  workflow_dispatch: # Trigger manually when needed
+  push: # Trigger manually when needed
 
 jobs:
   push-packages:
@@ -17,4 +17,4 @@ jobs:
     - name: Push NuGet Packages
       run: |
         Write-Host "Pushing NuGet packages to GitHub Packages..."
-        nuget push ./packages/*.nupkg -Source https://ghcr.io/${{ github.repository_owner }} -ApiKey "${{ secrets.PACAKEGE_TOKEN }}"
+        for /r ./packages %f in (*.nupkg) do nuget push "%f" -Source https://ghcr.io/${{ github.repository_owner }} -ApiKey "${{ secrets.PACAKEGE_TOKEN }}"
