@@ -1,7 +1,7 @@
 name: Push NuGet Packages to GitHub Packages
 
 on:
-  workflow_dispatch: # Trigger manually when needed
+  push: # Trigger manually when needed
 
 jobs:
   push-packages:
