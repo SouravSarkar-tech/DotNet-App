@@ -1,7 +1,7 @@
 name: Push NuGet Packages to GitHub Packages
 
 on:
-  push: # Trigger manually when needed
+  workflow_dispatch: # Trigger manually when needed
 
 jobs:
   push-packages:
@@ -11,10 +11,12 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
 
-    # - name: Setup NuGet API Key
-    #   run: nuget setapikey ${{ secrets.GITHUB_TOKEN }} -Source https://ghcr.io/${{ github.repository_owner }}
+    - name: Debug Package Directory
+      run: dir ./packages /s
 
     - name: Push NuGet Packages
       run: |
         Write-Host "Pushing NuGet packages to GitHub Packages..."
-        for /r ./packages %f in (*.nupkg) do nuget push "%f" -Source https://ghcr.io/${{ github.repository_owner }} -ApiKey "${{ secrets.PACAKEGE_TOKEN }}"
+        Get-ChildItem -Path ./packages -Recurse -Filter *.nupkg | ForEach-Object {
+          nuget push $_.FullName -Source https://ghcr.io/${{ github.repository_owner }} -ApiKey "${{ secrets.PACAKEGE_TOKEN }}"
+        }
