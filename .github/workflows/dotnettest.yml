@@ -1,7 +1,7 @@
-name: Push NuGet Packages to GitHub Packages
+name: Push NuGet Packages to GHCR
 
 on:
-  push: # Trigger manually when needed
+  push: # Trigger on push events
 
 jobs:
   push-packages:
@@ -13,7 +13,7 @@ jobs:
 
     - name: Push NuGet Packages
       run: |
-        Write-Host "Pushing NuGet packages to GitHub Packages..."
+        Write-Host "Pushing NuGet packages to GHCR..."
         Get-ChildItem -Path ./packages -Recurse -Filter *.nupkg | ForEach-Object {
-          nuget push $_.FullName -Source https://ghcr.io/souravsarkar-tech/DotNet-App -ApiKey "${{ secrets.PACAKEGE_TOKEN }}"
+          nuget push $_.FullName -Source https://ghcr.io/${{ github.repository_owner }} -ApiKey "${{ secrets.PACAKEGE_TOKEN }}"
         }
