@@ -17,4 +17,4 @@ jobs:
     - name: Push NuGet Packages
       run: |
         Write-Host "Pushing NuGet packages to GitHub Packages..."
-        nuget push ./packages/*.nupkg -Source https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json
+        nuget push ./packages/*.nupkg -Source https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json -ApiKey ${{ secrets.GITHUB_TOKEN }}
